@@ -449,6 +449,33 @@ S["voie-insertion"] = ("0 0 200 200", f'<rect width="200" height="200" fill="{GR
                        + auto(145, 160, RED_C, 0) + auto(112, 120, BLUE_C, 0))
 
 
+# ---------- pictogrammes médicaments ----------
+def medoc(col, niveau, l1, l2):
+    return ("0 0 120 104",
+            f'<rect width="120" height="104" rx="8" fill="{WHT}"/>'
+            f'<polygon points="60,8 112,96 8,96" fill="{col}" stroke="{BLK}" stroke-width="3" stroke-linejoin="round"/>'
+            + voiture_face(60, 84, 1.25, BLK))
+
+
+P["med-1"] = medoc("#ffd400", 1, "Soyez prudent", "")
+P["med-2"] = medoc("#f28c00", 2, "Soyez très prudent", "")
+P["med-3"] = medoc("#e3001b", 3, "Attention, danger : ne pas conduire", "")
+
+# ---------- schémas conducteur / secours ----------
+S["angle-mort"] = ("0 0 160 220", f'<rect width="160" height="220" fill="{GRASS}"/><rect x="20" width="120" height="220" fill="{ROUTE}"/>'
+                   + discontinue(80, 0, 220, 14, 10)
+                   + '<polygon points="101,138 60,175 60,215 101,160" fill="#ffb703" opacity=".55"/>'
+                   + '<polygon points="119,138 140,175 140,215 119,160" fill="#ffb703" opacity=".55"/>'
+                   + auto(110, 130, "#e63946")
+                   + '<g transform="translate(68,182)"><rect x="-3" y="-11" width="6" height="22" rx="3" fill="#2f6fdf"/><circle cx="0" cy="-2" r="4" fill="#1a1a1a"/></g>')
+S["balisage"] = ("0 0 320 120", f'<rect width="320" height="120" fill="{GRASS}"/><rect y="25" width="320" height="70" fill="{ROUTE}"/>'
+                 + discontinue_h(60, 0, 320)
+                 + '<g transform="translate(250,77) rotate(90)">' + auto(0, 0, "#e63946")[len('<g transform="translate(0,0) rotate(0)">'):]
+                 + '<polygon points="120,66 132,86 108,86" fill="#ff3b30" stroke="#fff" stroke-width="1.5"/>'
+                 + f'<line x1="126" y1="100" x2="244" y2="100" stroke="{WHT}" stroke-width="1.5"/>'
+                 + '<polygon points="126,96 126,104 120,100" fill="#fff"/><polygon points="244,96 244,104 250,100" fill="#fff"/>'
+                 + text("au moins 30 m", 185, 110, 10, WHT))
+
 def main():
     os.makedirs(OUT_P, exist_ok=True)
     os.makedirs(OUT_S, exist_ok=True)
