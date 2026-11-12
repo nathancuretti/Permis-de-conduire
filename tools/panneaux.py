@@ -476,6 +476,18 @@ S["balisage"] = ("0 0 320 120", f'<rect width="320" height="120" fill="{GRASS}"/
                  + '<polygon points="126,96 126,104 120,100" fill="#fff"/><polygon points="244,96 244,104 250,100" fill="#fff"/>'
                  + text("au moins 30 m", 185, 110, 10, WHT))
 
+# croix de Saint-André (passage à niveau sans barrière)
+def croix_st_andre():
+    rouge = "".join(f'<rect x="4" y="38" width="92" height="24" rx="4" fill="{RED}" transform="rotate({g} 50 50)"/>' for g in (35, -35))
+    blanc = "".join(f'<rect x="8" y="42" width="84" height="16" rx="2" fill="{WHT}" transform="rotate({g} 50 50)"/>' for g in (35, -35))
+    return rouge + blanc
+
+
+P["G1"] = croix_st_andre()
+P["plaque-orange"] = ("0 0 160 110", f'<rect x="4" y="4" width="152" height="102" rx="6" fill="#ff8c00" stroke="{BLK}" stroke-width="6"/>'
+                      f'<line x1="4" y1="55" x2="156" y2="55" stroke="{BLK}" stroke-width="5"/>'
+                      + text("33", 80, 31, 34) + text("1203", 80, 81, 34))
+
 def main():
     os.makedirs(OUT_P, exist_ok=True)
     os.makedirs(OUT_S, exist_ok=True)

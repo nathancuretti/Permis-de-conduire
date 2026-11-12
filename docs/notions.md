@@ -29,6 +29,8 @@ Codes thèmes (codes officiels de l'ETG) :
 - L-PAN-12 Panonceaux (distance, étendue, catégorie, horaires) et leur portée
 - L-PAN-13 Signalisation temporaire (jaune) : priorité sur la signalisation permanente
 - L-PAN-14 Portée d'un panneau d'interdiction (jusqu'à la prochaine intersection, sauf panonceau)
+- L-PAN-15 Croix de Saint-André : passage à niveau sans barrière (une ou plusieurs voies)
+- L-PAN-16 Balisage des virages et des obstacles (balises, chevrons, délinéateurs)
 
 ### L-MAR · Signalisation horizontale (marquages au sol)
 - L-MAR-01 Ligne continue : interdiction de franchir / chevaucher
@@ -62,6 +64,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - L-PRI-10 Passages à niveau : types (avec/sans barrières), feux rouges clignotants
 - L-PRI-11 Intersection encombrée : ne pas s'engager si on risque de bloquer
 - L-PRI-12 Priorité aux piétons engagés ou manifestant l'intention de traverser
+- L-PRI-13 Feux éteints ou en panne : appliquer les panneaux, sinon la priorité à droite
 
 ### L-VIT · Vitesses
 - L-VIT-01 Agglomération : 50 km/h (et zones 30, zones de rencontre 20, aires piétonnes au pas)
@@ -74,6 +77,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - L-VIT-08 Vitesse minimale sur autoroute (voie de gauche), vitesse adaptée aux circonstances
 - L-VIT-09 Sanctions d'excès de vitesse : barème points / amendes / suspension
 - L-VIT-10 Radars (fixes, tronçon, feu rouge, embarqués) et avertisseurs
+- L-VIT-11 Vitesse et gravité des chocs (énergie cinétique)
 
 ### L-CIR · Circulation et placement
 - L-CIR-01 Circuler à droite, voies de circulation, changement de voie
@@ -83,6 +87,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - L-CIR-05 Demi-tour et marche arrière : où c'est interdit
 - L-CIR-06 Distance de sécurité (2 secondes, 2 traits sur autoroute)
 - L-CIR-07 Usage des clignotants
+- L-CIR-08 Réduction du nombre de voies : insertion alternée (« fermeture éclair »)
 
 ### L-DEP · Dépassement et croisement
 - L-DEP-01 Conditions pour dépasser (visibilité, espace, signalisation)
@@ -108,6 +113,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - L-AUT-04 Péages : voies (télépéage, CB), comportement
 - L-AUT-05 Aires de repos / de services ; pauses toutes les 2 h
 - L-AUT-06 Marche arrière / demi-tour interdits ; contresens
+- L-AUT-07 Panneaux à messages variables et radio d'information routière (107.7)
 
 ### L-TUN · Tunnels et ponts
 - L-TUN-01 Feux de croisement allumés, distance de sécurité, interdiction de dépasser selon signalisation
@@ -161,6 +167,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - C-COM-01 Stress, agressivité, colère au volant
 - C-COM-02 Pression des passagers, excès de confiance
 - C-COM-03 Communication avec les autres usagers (regard, signes)
+- C-COM-04 Jeunes conducteurs : surexposition au risque et principales causes d'accidents
 
 ### C-SAN · Santé
 - C-SAN-01 Vue : correction obligatoire si mentionnée sur le permis
@@ -175,6 +182,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - R-TYP-02 Rase campagne : virages, intersections, animaux
 - R-TYP-03 Routes de montagne : montée prioritaire, frein moteur dans les descentes
 - R-TYP-04 Voies rapides et autoroutes (rappel)
+- R-TYP-05 Accotements, bas-côtés et sortie de route : comment réagir
 
 ### R-VIR · Virages et trajectoires
 - R-VIR-01 Lecture d'un virage (signalisation, balises), freiner avant
@@ -188,6 +196,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - R-MET-05 Soleil rasant
 - R-MET-06 Adhérence : chaussée sale, feuilles, gravillons, marquages mouillés
 - R-MET-07 Loi Montagne : équipements hiver obligatoires (1er novembre – 31 mars) dans les communes concernées
+- R-MET-08 Route inondée : ne pas s'y engager
 
 ### R-NUI · Conduite de nuit
 - R-NUI-01 Visibilité réduite, usagers peu visibles
@@ -222,6 +231,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - U-LOU-03 Tramways
 - U-LOU-04 Engins agricoles, convois exceptionnels
 - U-LOU-05 Véhicules de secours et d'intervention
+- U-LOU-06 Gyrophares : bleu (véhicule prioritaire), orange (véhicule lent, encombrant ou en intervention)
 
 ### U-ANI · Animaux
 - U-ANI-01 Animaux sauvages et domestiques, cavaliers, troupeaux
@@ -238,6 +248,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - D-PER-05 Récupération de points (délais, stage de sensibilisation)
 - D-PER-06 Suspension, annulation, invalidation (solde nul)
 - D-PER-07 Permis à présenter lors d'un contrôle ; titre sécurisé, durée de validité
+- D-PER-08 Apprentissage anticipé de la conduite (AAC) et conduite supervisée
 
 ### D-DOC · Papiers du véhicule
 - D-DOC-01 Certificat d'immatriculation (carte grise) : changement d'adresse sous 1 mois
@@ -261,6 +272,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - D-INF-02 Amende forfaitaire, minorée, majorée
 - D-INF-03 Immobilisation, fourrière, confiscation
 - D-INF-04 Contrôles des forces de l'ordre : comportement
+- D-INF-05 Avis de contravention (radar) : responsabilité du titulaire de la carte grise, désignation du conducteur
 
 ### D-PRO · Infractions courantes avec points
 - D-PRO-01 Téléphone en main : 3 points
@@ -285,6 +297,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - P-PAS-09 Brûlure, victime qui s'étouffe : gestes de base
 - P-PAS-10 Incendie du véhicule : s'éloigner, extincteur
 - P-PAS-11 Non-assistance à personne en danger
+- P-PAS-12 Accident impliquant des matières dangereuses (plaques orange) : s'éloigner, alerter
 
 ---
 
@@ -309,6 +322,7 @@ Codes thèmes (codes officiels de l'ETG) :
 ### Q-REM · Remorques et attelages
 - Q-REM-01 Permis B / B96 / BE selon le poids de la remorque
 - Q-REM-02 Conduite avec remorque ou caravane : distances, vent, vitesses
+- Q-REM-03 Porte-vélos et coffre de toit : plaque, feux, hauteur, consommation
 
 ---
 
@@ -353,6 +367,7 @@ Codes thèmes (codes officiels de l'ETG) :
 - S-EQU-06 Systèmes de retenue pour enfants (normes, groupes)
 - S-EQU-07 Éthylotest : obligation de possession (non sanctionnée)
 - S-EQU-08 Plaques d'immatriculation lisibles
+- S-EQU-09 Vitres et pare-brise : visibilité, vitres avant surteintées interdites
 
 ---
 

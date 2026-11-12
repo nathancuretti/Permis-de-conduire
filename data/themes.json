@@ -84,6 +84,16 @@
        "id": "L-PAN-14",
        "nom": "Portée d'un panneau d'interdiction (jusqu'à la prochaine intersection, sauf panonceau)",
        "q": 3
+      },
+      {
+       "id": "L-PAN-15",
+       "nom": "Croix de Saint-André : passage à niveau sans barrière (une ou plusieurs voies)",
+       "q": 2
+      },
+      {
+       "id": "L-PAN-16",
+       "nom": "Balisage des virages et des obstacles (balises, chevrons, délinéateurs)",
+       "q": 2
       }
      ],
      "officiel": "L"
@@ -247,6 +257,11 @@
        "id": "L-PRI-12",
        "nom": "Priorité aux piétons engagés ou manifestant l'intention de traverser",
        "q": 3
+      },
+      {
+       "id": "L-PRI-13",
+       "nom": "Feux éteints ou en panne : appliquer les panneaux, sinon la priorité à droite",
+       "q": 2
       }
      ],
      "officiel": "L"
@@ -311,6 +326,11 @@
        "id": "L-VIT-10",
        "nom": "Radars (fixes, tronçon, feu rouge, embarqués) et avertisseurs",
        "q": 1
+      },
+      {
+       "id": "L-VIT-11",
+       "nom": "Vitesse et gravité des chocs (énergie cinétique)",
+       "q": 2
       }
      ],
      "officiel": "L"
@@ -359,6 +379,11 @@
       {
        "id": "L-CIR-07",
        "nom": "Usage des clignotants",
+       "q": 1
+      },
+      {
+       "id": "L-CIR-08",
+       "nom": "Réduction du nombre de voies : insertion alternée (« fermeture éclair »)",
        "q": 1
       }
      ],
@@ -420,7 +445,7 @@
       {
        "id": "L-ARR-01",
        "nom": "Différence arrêt / stationnement",
-       "q": 1
+       "q": 2
       },
       {
        "id": "L-ARR-02",
@@ -430,7 +455,7 @@
       {
        "id": "L-ARR-03",
        "nom": "Stationnement gênant / très gênant (trottoir, passage piéton, place PMR, bande cyclable)",
-       "q": 2
+       "q": 4
       },
       {
        "id": "L-ARR-04",
@@ -489,6 +514,11 @@
       {
        "id": "L-AUT-06",
        "nom": "Marche arrière / demi-tour interdits ; contresens",
+       "q": 2
+      },
+      {
+       "id": "L-AUT-07",
+       "nom": "Panneaux à messages variables et radio d'information routière (107.7)",
        "q": 2
       }
      ],
@@ -718,6 +748,11 @@
        "id": "C-COM-03",
        "nom": "Communication avec les autres usagers (regard, signes)",
        "q": 1
+      },
+      {
+       "id": "C-COM-04",
+       "nom": "Jeunes conducteurs : surexposition au risque et principales causes d'accidents",
+       "q": 2
       }
      ],
      "officiel": "C"
@@ -803,6 +838,11 @@
       {
        "id": "P-PAS-11",
        "nom": "Non-assistance à personne en danger",
+       "q": 2
+      },
+      {
+       "id": "P-PAS-12",
+       "nom": "Accident impliquant des matières dangereuses (plaques orange) : s'éloigner, alerter",
        "q": 2
       }
      ],
@@ -909,6 +949,11 @@
        "id": "U-LOU-05",
        "nom": "Véhicules de secours et d'intervention",
        "q": 0
+      },
+      {
+       "id": "U-LOU-06",
+       "nom": "Gyrophares : bleu (véhicule prioritaire), orange (véhicule lent, encombrant ou en intervention)",
+       "q": 0
       }
      ],
      "officiel": "U"
@@ -954,6 +999,11 @@
       {
        "id": "R-TYP-04",
        "nom": "Voies rapides et autoroutes (rappel)",
+       "q": 0
+      },
+      {
+       "id": "R-TYP-05",
+       "nom": "Accotements, bas-côtés et sortie de route : comment réagir",
        "q": 0
       }
      ],
@@ -1013,6 +1063,11 @@
       {
        "id": "R-MET-07",
        "nom": "Loi Montagne : équipements hiver obligatoires (1er novembre – 31 mars) dans les communes concernées",
+       "q": 0
+      },
+      {
+       "id": "R-MET-08",
+       "nom": "Route inondée : ne pas s'y engager",
        "q": 0
       }
      ],
@@ -1096,6 +1151,11 @@
       {
        "id": "D-PER-07",
        "nom": "Permis à présenter lors d'un contrôle ; titre sécurisé, durée de validité",
+       "q": 0
+      },
+      {
+       "id": "D-PER-08",
+       "nom": "Apprentissage anticipé de la conduite (AAC) et conduite supervisée",
        "q": 0
       }
      ],
@@ -1199,6 +1259,11 @@
       {
        "id": "D-INF-04",
        "nom": "Contrôles des forces de l'ordre : comportement",
+       "q": 0
+      },
+      {
+       "id": "D-INF-05",
+       "nom": "Avis de contravention (radar) : responsabilité du titulaire de la carte grise, désignation du conducteur",
        "q": 0
       }
      ],
@@ -1326,6 +1391,11 @@
       {
        "id": "Q-REM-02",
        "nom": "Conduite avec remorque ou caravane : distances, vent, vitesses",
+       "q": 0
+      },
+      {
+       "id": "Q-REM-03",
+       "nom": "Porte-vélos et coffre de toit : plaque, feux, hauteur, consommation",
        "q": 0
       }
      ],
@@ -1493,6 +1563,11 @@
       {
        "id": "S-EQU-08",
        "nom": "Plaques d'immatriculation lisibles",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-09",
+       "nom": "Vitres et pare-brise : visibilité, vitres avant surteintées interdites",
        "q": 0
       }
      ],

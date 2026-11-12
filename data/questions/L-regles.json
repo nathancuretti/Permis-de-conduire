@@ -1542,5 +1542,155 @@
 ],
 "ex": "La nuit, l'avertisseur sonore est remplacé par l'appel lumineux, sauf danger immédiat.",
 "src": "Code de la route, art. R416-1"
+},
+{
+"id": "L-PRI-13-a",
+"n": "L-PRI-13",
+"img": "img/panneaux/feu-orange-cli.svg",
+"q": "Les feux du carrefour sont en panne et clignotent à l'orange. Pour savoir qui est prioritaire :",
+"c": [
+"J'applique les panneaux placés sous les feux, sinon la priorité à droite",
+"Je suis prioritaire si je viens de la route principale",
+"Je passe en premier si j'arrive le premier"
+],
+"ok": [
+0
+],
+"ex": "Quand les feux sont éteints ou clignotent à l'orange, ce sont les panneaux (souvent placés sous les feux) qui s'appliquent. Sans panneau : priorité à droite.",
+"src": "Code de la route, art. R412-31"
+},
+{
+"id": "L-PRI-13-b",
+"n": "L-PRI-13",
+"q": "À un carrefour, les feux sont totalement éteints et il n'y a aucun panneau. Je dois :",
+"c": [
+"Appliquer la priorité à droite",
+"Considérer que je suis prioritaire",
+"M'arrêter comme à un stop dans tous les cas"
+],
+"ok": [
+0
+],
+"ex": "Sans feux ni panneau, c'est la règle par défaut : priorité à droite.",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-VIT-11-a",
+"n": "L-VIT-11",
+"q": "Un choc à 50 km/h contre un obstacle fixe équivaut à peu près à une chute de :",
+"c": [
+"1 mètre",
+"3 étages (environ 10 m)",
+"10 étages"
+],
+"ok": [
+1
+],
+"ex": "À 50 km/h, l'énergie du choc correspond à une chute d'environ 10 m (3 étages). À 90 km/h, c'est environ 32 m (11 étages).",
+"src": "Sécurité routière"
+},
+{
+"id": "L-VIT-11-b",
+"n": "L-VIT-11",
+"q": "Quand la vitesse double, l'énergie à dissiper lors d'un choc est :",
+"c": [
+"Doublée",
+"Multipliée par 4",
+"Inchangée"
+],
+"ok": [
+1
+],
+"ex": "L'énergie cinétique augmente avec le carré de la vitesse : 2 fois plus vite, 4 fois plus d'énergie, donc des blessures bien plus graves.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-CIR-08-a",
+"n": "L-CIR-08",
+"q": "Dans un bouchon, deux voies se rejoignent en une seule plus loin. Le plus efficace est :",
+"c": [
+"Utiliser les deux voies jusqu'au rétrécissement, puis s'insérer un véhicule sur deux",
+"Se rabattre le plus tôt possible sur la voie qui continue",
+"Empêcher les autres de s'insérer"
+],
+"ok": [
+0
+],
+"ex": "Insertion alternée, dite « fermeture éclair » : on remplit les deux voies jusqu'au point de rétrécissement, puis chacun s'insère à tour de rôle. Le trafic est plus fluide.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-07-a",
+"n": "L-AUT-07",
+"q": "Un panneau à messages variables, au-dessus de l'autoroute, affiche « Accident à 2 km, ralentissez ». Je dois :",
+"c": [
+"Tenir compte du message et adapter ma conduite",
+"L'ignorer, ce n'est qu'une information",
+"M'arrêter sur la bande d'arrêt d'urgence"
+],
+"ok": [
+0
+],
+"ex": "Les panneaux à messages variables donnent des informations en temps réel (bouchon, accident, météo, vitesse conseillée ou imposée).",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-07-b",
+"n": "L-AUT-07",
+"q": "Sur la plupart des autoroutes, la radio d'information trafic diffuse sur :",
+"c": [
+"107.7 FM",
+"88.8 FM",
+"101.1 FM"
+],
+"ok": [
+0
+],
+"ex": "Le 107.7 FM informe en continu sur la circulation, les travaux, les accidents et la météo.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-ARR-01-b",
+"n": "L-ARR-01",
+"q": "Sur une route à double sens, je m'arrête ou je stationne :",
+"c": [
+"Sur le côté droit de la chaussée, dans le sens de circulation",
+"Du côté qui m'arrange",
+"Sur le côté gauche si la place est plus grande"
+],
+"ok": [
+0
+],
+"ex": "Sur une chaussée à double sens, on s'arrête et on stationne à droite, dans le sens de circulation. Sur une voie à sens unique, on peut aussi le faire à gauche.",
+"src": "Code de la route, art. R417-1"
+},
+{
+"id": "L-ARR-03-c",
+"n": "L-ARR-03",
+"q": "Stationner en double file :",
+"c": [
+"Est interdit",
+"Est autorisé avec les feux de détresse",
+"Est autorisé pour moins de 5 minutes"
+],
+"ok": [
+0
+],
+"ex": "Le stationnement en double file est interdit et sanctionné. Les feux de détresse n'y changent rien.",
+"src": "Code de la route, art. R417-10"
+},
+{
+"id": "L-ARR-03-d",
+"n": "L-ARR-03",
+"q": "Je m'arrête 30 secondes sur une bande cyclable pour déposer un passager :",
+"c": [
+"C'est interdit",
+"C'est autorisé si je reste au volant"
+],
+"ok": [
+0
+],
+"ex": "Arrêt et stationnement sont interdits sur les bandes et pistes cyclables : cela oblige les cyclistes à se déporter dans la circulation.",
+"src": "Code de la route, art. R417-11"
 }
 ]
