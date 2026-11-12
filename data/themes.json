@@ -1,0 +1,1499 @@
+{
+ "fichiers": [
+  "data/questions/L-signalisation.json"
+ ],
+ "themes": [
+  {
+   "code": "L",
+   "nom": "Dispositions légales en matière de circulation routière",
+   "chapitres": [
+    {
+     "code": "L-PAN",
+     "nom": "Signalisation verticale (panneaux)",
+     "notions": [
+      {
+       "id": "L-PAN-01",
+       "nom": "Formes et couleurs : logique des familles de panneaux (danger, interdiction, obligation, indication, fin)",
+       "q": 4
+      },
+      {
+       "id": "L-PAN-02",
+       "nom": "Panneaux de danger (triangle) : virages, chaussée glissante, rétrécissement, passage piétons, enfants, travaux…",
+       "q": 18
+      },
+      {
+       "id": "L-PAN-03",
+       "nom": "Distance d'implantation des panneaux de danger (hors agglo / agglo)",
+       "q": 2
+      },
+      {
+       "id": "L-PAN-04",
+       "nom": "Panneaux d'intersection et de priorité (AB1 à AB7, stop, cédez-le-passage, route prioritaire et fin)",
+       "q": 8
+      },
+      {
+       "id": "L-PAN-05",
+       "nom": "Panneaux d'interdiction (sens interdit, interdit à tout véhicule, dépassement interdit, limitations de vitesse)",
+       "q": 8
+      },
+      {
+       "id": "L-PAN-06",
+       "nom": "Interdictions par catégorie de véhicule, poids, hauteur, largeur",
+       "q": 0
+      },
+      {
+       "id": "L-PAN-07",
+       "nom": "Panneaux d'obligation (direction obligatoire, voie réservée, chaînes à neige, vitesse minimale)",
+       "q": 6
+      },
+      {
+       "id": "L-PAN-08",
+       "nom": "Panneaux de fin d'interdiction / fin d'obligation",
+       "q": 3
+      },
+      {
+       "id": "L-PAN-09",
+       "nom": "Panneaux d'indication (impasse, parking, voie de détresse, zone 30, zone de rencontre, aire piétonne)",
+       "q": 7
+      },
+      {
+       "id": "L-PAN-10",
+       "nom": "Panneaux de localisation et de direction (couleurs : autoroute bleu, route verte, local blanc)",
+       "q": 4
+      },
+      {
+       "id": "L-PAN-11",
+       "nom": "Entrée / sortie d'agglomération et effets juridiques",
+       "q": 2
+      },
+      {
+       "id": "L-PAN-12",
+       "nom": "Panonceaux (distance, étendue, catégorie, horaires) et leur portée",
+       "q": 2
+      },
+      {
+       "id": "L-PAN-13",
+       "nom": "Signalisation temporaire (jaune) : priorité sur la signalisation permanente",
+       "q": 2
+      },
+      {
+       "id": "L-PAN-14",
+       "nom": "Portée d'un panneau d'interdiction (jusqu'à la prochaine intersection, sauf panonceau)",
+       "q": 3
+      }
+     ]
+    },
+    {
+     "code": "L-MAR",
+     "nom": "Signalisation horizontale (marquages au sol)",
+     "notions": [
+      {
+       "id": "L-MAR-01",
+       "nom": "Ligne continue : interdiction de franchir / chevaucher",
+       "q": 2
+      },
+      {
+       "id": "L-MAR-02",
+       "nom": "Ligne discontinue : types (traits courts, longs, ligne de dissuasion, ligne d'annonce)",
+       "q": 2
+      },
+      {
+       "id": "L-MAR-03",
+       "nom": "Lignes mixtes (continue + discontinue) : qui peut franchir",
+       "q": 2
+      },
+      {
+       "id": "L-MAR-04",
+       "nom": "Flèches de rabattement et de sélection",
+       "q": 1
+      },
+      {
+       "id": "L-MAR-05",
+       "nom": "Ligne d'effet du stop / du cédez-le-passage",
+       "q": 2
+      },
+      {
+       "id": "L-MAR-06",
+       "nom": "Marques jaunes : interdictions d'arrêt / stationnement, marquages temporaires",
+       "q": 3
+      },
+      {
+       "id": "L-MAR-07",
+       "nom": "Zébras, passages piétons, cases vélo (sas vélo)",
+       "q": 3
+      },
+      {
+       "id": "L-MAR-08",
+       "nom": "Voies réservées (bus, covoiturage, vélos) et marquage associé",
+       "q": 1
+      },
+      {
+       "id": "L-MAR-09",
+       "nom": "Bande d'arrêt d'urgence (BAU) : usages autorisés",
+       "q": 1
+      }
+     ]
+    },
+    {
+     "code": "L-FEU",
+     "nom": "Signalisation lumineuse et agents",
+     "notions": [
+      {
+       "id": "L-FEU-01",
+       "nom": "Feux tricolores : signification de chaque couleur, feu orange fixe",
+       "q": 3
+      },
+      {
+       "id": "L-FEU-02",
+       "nom": "Feu orange clignotant : prudence, règles de priorité normales",
+       "q": 2
+      },
+      {
+       "id": "L-FEU-03",
+       "nom": "Flèches lumineuses (vert directionnel, panneau-flèche jaune clignotant « tourne-à-droite »)",
+       "q": 1
+      },
+      {
+       "id": "L-FEU-04",
+       "nom": "Feux spécifiques (bus/tram, voies d'affectation au-dessus des voies : croix rouge, flèche verte)",
+       "q": 3
+      },
+      {
+       "id": "L-FEU-05",
+       "nom": "Gestes et injonctions des agents : priment sur tous les autres signaux",
+       "q": 2
+      },
+      {
+       "id": "L-FEU-06",
+       "nom": "Hiérarchie : agent > signalisation temporaire > feux > panneaux > marquages",
+       "q": 1
+      }
+     ]
+    },
+    {
+     "code": "L-PRI",
+     "nom": "Règles de priorité",
+     "notions": [
+      {
+       "id": "L-PRI-01",
+       "nom": "Priorité à droite (principe général)",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-02",
+       "nom": "Stop : arrêt obligatoire à la ligne, puis céder le passage",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-03",
+       "nom": "Cédez-le-passage",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-04",
+       "nom": "Route à caractère prioritaire",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-05",
+       "nom": "Carrefours à sens giratoire : priorité à l'anneau, placement, clignotant",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-06",
+       "nom": "Ronds-points sans panneau (priorité à droite)",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-07",
+       "nom": "Véhicules prioritaires (police, pompiers, SAMU) et véhicules à facilité de passage",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-08",
+       "nom": "Tramway : priorité, règles particulières",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-09",
+       "nom": "Sortie d'un chemin de terre, d'un parking, d'une propriété : céder le passage",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-10",
+       "nom": "Passages à niveau : types (avec/sans barrières), feux rouges clignotants",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-11",
+       "nom": "Intersection encombrée : ne pas s'engager si on risque de bloquer",
+       "q": 0
+      },
+      {
+       "id": "L-PRI-12",
+       "nom": "Priorité aux piétons engagés ou manifestant l'intention de traverser",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-VIT",
+     "nom": "Vitesses",
+     "notions": [
+      {
+       "id": "L-VIT-01",
+       "nom": "Agglomération : 50 km/h (et zones 30, zones de rencontre 20, aires piétonnes au pas)",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-02",
+       "nom": "Routes bidirectionnelles hors agglo : 80 km/h (possible 90 selon le gestionnaire)",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-03",
+       "nom": "Routes à chaussées séparées : 110 km/h",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-04",
+       "nom": "Autoroute : 130 km/h",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-05",
+       "nom": "Temps de pluie : réductions (130→110, 110→100, 90→80)",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-06",
+       "nom": "Visibilité < 50 m : 50 km/h partout",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-07",
+       "nom": "Jeunes conducteurs (permis probatoire) : 110 / 100 / 80",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-08",
+       "nom": "Vitesse minimale sur autoroute (voie de gauche), vitesse adaptée aux circonstances",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-09",
+       "nom": "Sanctions d'excès de vitesse : barème points / amendes / suspension",
+       "q": 0
+      },
+      {
+       "id": "L-VIT-10",
+       "nom": "Radars (fixes, tronçon, feu rouge, embarqués) et avertisseurs",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-CIR",
+     "nom": "Circulation et placement",
+     "notions": [
+      {
+       "id": "L-CIR-01",
+       "nom": "Circuler à droite, voies de circulation, changement de voie",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-02",
+       "nom": "Circulation en file (embouteillage) : dépassement par la droite admis",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-03",
+       "nom": "Voies de décélération / d'insertion",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-04",
+       "nom": "Changement de direction à droite / à gauche : placement",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-05",
+       "nom": "Demi-tour et marche arrière : où c'est interdit",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-06",
+       "nom": "Distance de sécurité (2 secondes, 2 traits sur autoroute)",
+       "q": 0
+      },
+      {
+       "id": "L-CIR-07",
+       "nom": "Usage des clignotants",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-DEP",
+     "nom": "Dépassement et croisement",
+     "notions": [
+      {
+       "id": "L-DEP-01",
+       "nom": "Conditions pour dépasser (visibilité, espace, signalisation)",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-02",
+       "nom": "Dépassement interdit : sommet de côte, virage, intersection sans priorité, passage piéton…",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-03",
+       "nom": "Dépasser par la gauche ; exceptions par la droite (tourne-à-gauche, tramway…)",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-04",
+       "nom": "Distances latérales : 1 m en agglo, 1,5 m hors agglo (cyclistes, piétons)",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-05",
+       "nom": "Être dépassé : ne pas accélérer, serrer à droite",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-06",
+       "nom": "Croisement sur route étroite / en montagne : qui recule",
+       "q": 0
+      },
+      {
+       "id": "L-DEP-07",
+       "nom": "Dépassement de véhicules lents, de poids lourds (angles morts)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-ARR",
+     "nom": "Arrêt et stationnement",
+     "notions": [
+      {
+       "id": "L-ARR-01",
+       "nom": "Différence arrêt / stationnement",
+       "q": 0
+      },
+      {
+       "id": "L-ARR-02",
+       "nom": "Arrêt et stationnement dangereux (virage, sommet de côte, passage à niveau…)",
+       "q": 0
+      },
+      {
+       "id": "L-ARR-03",
+       "nom": "Stationnement gênant / très gênant (trottoir, passage piéton, place PMR, bande cyclable)",
+       "q": 0
+      },
+      {
+       "id": "L-ARR-04",
+       "nom": "Stationnement unilatéral, alterné, à durée limitée (zone bleue, disque)",
+       "q": 0
+      },
+      {
+       "id": "L-ARR-05",
+       "nom": "Stationnement payant, places de livraison, places réservées",
+       "q": 0
+      },
+      {
+       "id": "L-ARR-06",
+       "nom": "Mise en fourrière : cas",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-AUT",
+     "nom": "Autoroutes et voies rapides",
+     "notions": [
+      {
+       "id": "L-AUT-01",
+       "nom": "Véhicules / usagers interdits sur autoroute",
+       "q": 0
+      },
+      {
+       "id": "L-AUT-02",
+       "nom": "Insertion, sortie, voie de gauche, rabattement",
+       "q": 0
+      },
+      {
+       "id": "L-AUT-03",
+       "nom": "Panne sur autoroute : BAU, gilet, sortir derrière la glissière, borne d'appel",
+       "q": 0
+      },
+      {
+       "id": "L-AUT-04",
+       "nom": "Péages : voies (télépéage, CB), comportement",
+       "q": 0
+      },
+      {
+       "id": "L-AUT-05",
+       "nom": "Aires de repos / de services ; pauses toutes les 2 h",
+       "q": 0
+      },
+      {
+       "id": "L-AUT-06",
+       "nom": "Marche arrière / demi-tour interdits ; contresens",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-TUN",
+     "nom": "Tunnels et ponts",
+     "notions": [
+      {
+       "id": "L-TUN-01",
+       "nom": "Feux de croisement allumés, distance de sécurité, interdiction de dépasser selon signalisation",
+       "q": 0
+      },
+      {
+       "id": "L-TUN-02",
+       "nom": "Panne ou incendie en tunnel : conduite à tenir, abris",
+       "q": 0
+      },
+      {
+       "id": "L-TUN-03",
+       "nom": "Signalisation propre aux tunnels (longueur, niches d'appel)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "L-ECL",
+     "nom": "Éclairage et signalisation du véhicule",
+     "notions": [
+      {
+       "id": "L-ECL-01",
+       "nom": "Feux de position",
+       "q": 0
+      },
+      {
+       "id": "L-ECL-02",
+       "nom": "Feux de croisement : quand (nuit, tunnel, pluie, jour en mauvaise visibilité)",
+       "q": 0
+      },
+      {
+       "id": "L-ECL-03",
+       "nom": "Feux de route : quand, ne pas éblouir",
+       "q": 0
+      },
+      {
+       "id": "L-ECL-04",
+       "nom": "Feux de brouillard avant / arrière : conditions d'usage",
+       "q": 0
+      },
+      {
+       "id": "L-ECL-05",
+       "nom": "Feux de détresse : usages",
+       "q": 0
+      },
+      {
+       "id": "L-ECL-06",
+       "nom": "Avertisseur sonore et appel lumineux (de jour / de nuit, en agglo)",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "nom": "Le conducteur",
+   "chapitres": [
+    {
+     "code": "C-ALC",
+     "nom": "Alcool",
+     "notions": [
+      {
+       "id": "C-ALC-01",
+       "nom": "Taux légaux : 0,5 g/l de sang (0,25 mg/l d'air) ; probatoire 0,2 g/l (0,1 mg/l)",
+       "q": 0
+      },
+      {
+       "id": "C-ALC-02",
+       "nom": "Élimination de l'alcool (environ 0,10–0,15 g/l par heure), rien ne l'accélère",
+       "q": 0
+      },
+      {
+       "id": "C-ALC-03",
+       "nom": "Effets : champ visuel réduit, temps de réaction allongé, euphorie",
+       "q": 0
+      },
+      {
+       "id": "C-ALC-04",
+       "nom": "Sanctions : contravention (0,5–0,8 g/l) vs délit (≥ 0,8 g/l), refus de dépistage",
+       "q": 0
+      },
+      {
+       "id": "C-ALC-05",
+       "nom": "Équivalences de verres standard",
+       "q": 0
+      },
+      {
+       "id": "C-ALC-06",
+       "nom": "Éthylotest anti-démarrage (EAD)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-DRO",
+     "nom": "Drogues et médicaments",
+     "notions": [
+      {
+       "id": "C-DRO-01",
+       "nom": "Stupéfiants : interdiction totale, dépistage salivaire, sanctions",
+       "q": 0
+      },
+      {
+       "id": "C-DRO-02",
+       "nom": "Cannabis + alcool : effets cumulés",
+       "q": 0
+      },
+      {
+       "id": "C-DRO-03",
+       "nom": "Médicaments : pictogrammes de niveaux 1, 2, 3 sur les boîtes",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-FAT",
+     "nom": "Fatigue et vigilance",
+     "notions": [
+      {
+       "id": "C-FAT-01",
+       "nom": "Signes de fatigue, pause toutes les 2 heures",
+       "q": 0
+      },
+      {
+       "id": "C-FAT-02",
+       "nom": "Hypovigilance / micro-sommeils, heures à risque",
+       "q": 0
+      },
+      {
+       "id": "C-FAT-03",
+       "nom": "Que faire en cas de somnolence (s'arrêter, sieste de 15–20 min)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-DIS",
+     "nom": "Distracteurs",
+     "notions": [
+      {
+       "id": "C-DIS-01",
+       "nom": "Téléphone tenu en main interdit ; kits oreillettes/casques interdits",
+       "q": 0
+      },
+      {
+       "id": "C-DIS-02",
+       "nom": "Écrans interdits dans le champ de vision (sauf aide à la conduite / GPS)",
+       "q": 0
+      },
+      {
+       "id": "C-DIS-03",
+       "nom": "Autres distractions (passagers, manger, régler le GPS)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-PER",
+     "nom": "Perception et temps de réaction",
+     "notions": [
+      {
+       "id": "C-PER-01",
+       "nom": "Champ visuel et vitesse (effet tunnel)",
+       "q": 0
+      },
+      {
+       "id": "C-PER-02",
+       "nom": "Temps de réaction (environ 1 s) et distance parcourue",
+       "q": 0
+      },
+      {
+       "id": "C-PER-03",
+       "nom": "Distance de freinage, distance d'arrêt, influence de la vitesse (au carré) et de la chaussée mouillée",
+       "q": 0
+      },
+      {
+       "id": "C-PER-04",
+       "nom": "Angles morts (son véhicule et ceux des autres)",
+       "q": 0
+      },
+      {
+       "id": "C-PER-05",
+       "nom": "Vision de nuit, éblouissement",
+       "q": 0
+      },
+      {
+       "id": "C-PER-06",
+       "nom": "Prise d'information : rétroviseurs, contrôle direct",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-COM",
+     "nom": "Comportement et émotions",
+     "notions": [
+      {
+       "id": "C-COM-01",
+       "nom": "Stress, agressivité, colère au volant",
+       "q": 0
+      },
+      {
+       "id": "C-COM-02",
+       "nom": "Pression des passagers, excès de confiance",
+       "q": 0
+      },
+      {
+       "id": "C-COM-03",
+       "nom": "Communication avec les autres usagers (regard, signes)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "C-SAN",
+     "nom": "Santé",
+     "notions": [
+      {
+       "id": "C-SAN-01",
+       "nom": "Vue : correction obligatoire si mentionnée sur le permis",
+       "q": 0
+      },
+      {
+       "id": "C-SAN-02",
+       "nom": "Affections incompatibles avec la conduite, avis médical",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "R",
+   "nom": "La route",
+   "chapitres": [
+    {
+     "code": "R-TYP",
+     "nom": "Types de routes et environnement",
+     "notions": [
+      {
+       "id": "R-TYP-01",
+       "nom": "Agglomération : densité, usagers vulnérables, sorties d'école",
+       "q": 0
+      },
+      {
+       "id": "R-TYP-02",
+       "nom": "Rase campagne : virages, intersections, animaux",
+       "q": 0
+      },
+      {
+       "id": "R-TYP-03",
+       "nom": "Routes de montagne : montée prioritaire, frein moteur dans les descentes",
+       "q": 0
+      },
+      {
+       "id": "R-TYP-04",
+       "nom": "Voies rapides et autoroutes (rappel)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "R-VIR",
+     "nom": "Virages et trajectoires",
+     "notions": [
+      {
+       "id": "R-VIR-01",
+       "nom": "Lecture d'un virage (signalisation, balises), freiner avant",
+       "q": 0
+      },
+      {
+       "id": "R-VIR-02",
+       "nom": "Trajectoire et position en virage",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "R-MET",
+     "nom": "Conditions météo et adhérence",
+     "notions": [
+      {
+       "id": "R-MET-01",
+       "nom": "Pluie : aquaplaning, distances allongées",
+       "q": 0
+      },
+      {
+       "id": "R-MET-02",
+       "nom": "Brouillard : feux, vitesse, distance",
+       "q": 0
+      },
+      {
+       "id": "R-MET-03",
+       "nom": "Neige et verglas : équipements, conduite souple",
+       "q": 0
+      },
+      {
+       "id": "R-MET-04",
+       "nom": "Vent latéral",
+       "q": 0
+      },
+      {
+       "id": "R-MET-05",
+       "nom": "Soleil rasant",
+       "q": 0
+      },
+      {
+       "id": "R-MET-06",
+       "nom": "Adhérence : chaussée sale, feuilles, gravillons, marquages mouillés",
+       "q": 0
+      },
+      {
+       "id": "R-MET-07",
+       "nom": "Loi Montagne : équipements hiver obligatoires (1er novembre – 31 mars) dans les communes concernées",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "R-NUI",
+     "nom": "Conduite de nuit",
+     "notions": [
+      {
+       "id": "R-NUI-01",
+       "nom": "Visibilité réduite, usagers peu visibles",
+       "q": 0
+      },
+      {
+       "id": "R-NUI-02",
+       "nom": "Fatigue la nuit, éblouissement",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "R-TRA",
+     "nom": "Zones de travaux et obstacles",
+     "notions": [
+      {
+       "id": "R-TRA-01",
+       "nom": "Signalisation de chantier, alternats, homme trafic (piquet K10)",
+       "q": 0
+      },
+      {
+       "id": "R-TRA-02",
+       "nom": "Ralentissements, bouchons : feux de détresse",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "U",
+   "nom": "Les autres usagers de la route",
+   "chapitres": [
+    {
+     "code": "U-PIE",
+     "nom": "Piétons",
+     "notions": [
+      {
+       "id": "U-PIE-01",
+       "nom": "Priorité aux piétons, passages piétons",
+       "q": 0
+      },
+      {
+       "id": "U-PIE-02",
+       "nom": "Piétons vulnérables : enfants, personnes âgées, PMR, aveugles (canne blanche)",
+       "q": 0
+      },
+      {
+       "id": "U-PIE-03",
+       "nom": "Zones de rencontre, aires piétonnes",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "U-VEL",
+     "nom": "Cyclistes et EDPM (trottinettes)",
+     "notions": [
+      {
+       "id": "U-VEL-01",
+       "nom": "Distances de dépassement, angles morts",
+       "q": 0
+      },
+      {
+       "id": "U-VEL-02",
+       "nom": "Double-sens cyclable, sas vélo, tourne-à-droite cycliste au feu",
+       "q": 0
+      },
+      {
+       "id": "U-VEL-03",
+       "nom": "Ouverture de portière (« dooring »)",
+       "q": 0
+      },
+      {
+       "id": "U-VEL-04",
+       "nom": "Trottinettes électriques : règles de circulation",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "U-2RM",
+     "nom": "Deux-roues motorisés",
+     "notions": [
+      {
+       "id": "U-2RM-01",
+       "nom": "Remontée de files, angles morts, vulnérabilité",
+       "q": 0
+      },
+      {
+       "id": "U-2RM-02",
+       "nom": "Estimation de vitesse difficile",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "U-LOU",
+     "nom": "Véhicules lourds et particuliers",
+     "notions": [
+      {
+       "id": "U-LOU-01",
+       "nom": "Poids lourds : angles morts (autocollants), girations, distance de freinage",
+       "q": 0
+      },
+      {
+       "id": "U-LOU-02",
+       "nom": "Bus et cars : priorité en sortie d'arrêt en agglo, transport d'enfants",
+       "q": 0
+      },
+      {
+       "id": "U-LOU-03",
+       "nom": "Tramways",
+       "q": 0
+      },
+      {
+       "id": "U-LOU-04",
+       "nom": "Engins agricoles, convois exceptionnels",
+       "q": 0
+      },
+      {
+       "id": "U-LOU-05",
+       "nom": "Véhicules de secours et d'intervention",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "U-ANI",
+     "nom": "Animaux",
+     "notions": [
+      {
+       "id": "U-ANI-01",
+       "nom": "Animaux sauvages et domestiques, cavaliers, troupeaux",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "nom": "Notions diverses",
+   "chapitres": [
+    {
+     "code": "D-PER",
+     "nom": "Permis de conduire",
+     "notions": [
+      {
+       "id": "D-PER-01",
+       "nom": "Catégories (AM, A1, A2, A, B, BE, B96…) ; ce que permet le B",
+       "q": 0
+      },
+      {
+       "id": "D-PER-02",
+       "nom": "Permis probatoire : durée (3 ans ; 2 ans avec AAC), disque « A »",
+       "q": 0
+      },
+      {
+       "id": "D-PER-03",
+       "nom": "Capital de points : 6 au départ, +2/an (+3/an avec AAC), 12 points",
+       "q": 0
+      },
+      {
+       "id": "D-PER-04",
+       "nom": "Retrait de points selon l'infraction (barème)",
+       "q": 0
+      },
+      {
+       "id": "D-PER-05",
+       "nom": "Récupération de points (délais, stage de sensibilisation)",
+       "q": 0
+      },
+      {
+       "id": "D-PER-06",
+       "nom": "Suspension, annulation, invalidation (solde nul)",
+       "q": 0
+      },
+      {
+       "id": "D-PER-07",
+       "nom": "Permis à présenter lors d'un contrôle ; titre sécurisé, durée de validité",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "D-DOC",
+     "nom": "Papiers du véhicule",
+     "notions": [
+      {
+       "id": "D-DOC-01",
+       "nom": "Certificat d'immatriculation (carte grise) : changement d'adresse sous 1 mois",
+       "q": 0
+      },
+      {
+       "id": "D-DOC-02",
+       "nom": "Attestation d'assurance (fichier des véhicules assurés)",
+       "q": 0
+      },
+      {
+       "id": "D-DOC-03",
+       "nom": "Contrôle technique : première fois à 4 ans, puis tous les 2 ans",
+       "q": 0
+      },
+      {
+       "id": "D-DOC-04",
+       "nom": "Vente d'un véhicule : déclaration de cession, certificat de non-gage",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "D-ASS",
+     "nom": "Assurance",
+     "notions": [
+      {
+       "id": "D-ASS-01",
+       "nom": "Responsabilité civile obligatoire ; garanties facultatives (tous risques, vol, bris de glace)",
+       "q": 0
+      },
+      {
+       "id": "D-ASS-02",
+       "nom": "Bonus-malus",
+       "q": 0
+      },
+      {
+       "id": "D-ASS-03",
+       "nom": "Conduite sans assurance : délit",
+       "q": 0
+      },
+      {
+       "id": "D-ASS-04",
+       "nom": "Prêt du volant, conducteur novice",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "D-ACC",
+     "nom": "Accidents et constats",
+     "notions": [
+      {
+       "id": "D-ACC-01",
+       "nom": "Constat amiable : remplissage, signature, envoi sous 5 jours ouvrés",
+       "q": 0
+      },
+      {
+       "id": "D-ACC-02",
+       "nom": "Délit de fuite",
+       "q": 0
+      },
+      {
+       "id": "D-ACC-03",
+       "nom": "Accident avec blessés : alerter les forces de l'ordre",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "D-INF",
+     "nom": "Infractions et sanctions",
+     "notions": [
+      {
+       "id": "D-INF-01",
+       "nom": "Contraventions (classes 1 à 5) vs délits",
+       "q": 0
+      },
+      {
+       "id": "D-INF-02",
+       "nom": "Amende forfaitaire, minorée, majorée",
+       "q": 0
+      },
+      {
+       "id": "D-INF-03",
+       "nom": "Immobilisation, fourrière, confiscation",
+       "q": 0
+      },
+      {
+       "id": "D-INF-04",
+       "nom": "Contrôles des forces de l'ordre : comportement",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "D-PRO",
+     "nom": "Infractions courantes avec points",
+     "notions": [
+      {
+       "id": "D-PRO-01",
+       "nom": "Téléphone en main : 3 points",
+       "q": 0
+      },
+      {
+       "id": "D-PRO-02",
+       "nom": "Ceinture non bouclée : 3 points",
+       "q": 0
+      },
+      {
+       "id": "D-PRO-03",
+       "nom": "Feu rouge / stop grillé : 4 points",
+       "q": 0
+      },
+      {
+       "id": "D-PRO-04",
+       "nom": "Refus de priorité : 4 points",
+       "q": 0
+      },
+      {
+       "id": "D-PRO-05",
+       "nom": "Circulation sur la BAU, chevauchement de ligne continue",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P",
+   "nom": "Premiers secours",
+   "chapitres": [
+    {
+     "code": "P-PAS",
+     "nom": "Protéger, Alerter, Secourir",
+     "notions": [
+      {
+       "id": "P-PAS-01",
+       "nom": "Protéger : feux de détresse, gilet, triangle, baliser, couper le contact, ne pas fumer",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-02",
+       "nom": "Alerter : 112, 15 (SAMU), 18 (pompiers), 17 (police), 114 (SMS / sourds et malentendants)",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-03",
+       "nom": "Message d'alerte : lieu, nombre de victimes, état, risques",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-04",
+       "nom": "Secourir : ne pas déplacer la victime (sauf danger), ne pas retirer le casque d'un motard",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-05",
+       "nom": "Ne pas donner à boire",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-06",
+       "nom": "Hémorragie : compression, garrot en dernier recours",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-07",
+       "nom": "Victime inconsciente qui respire : position latérale de sécurité (PLS)",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-08",
+       "nom": "Victime qui ne respire pas : massage cardiaque + défibrillateur (DAE)",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-09",
+       "nom": "Brûlure, victime qui s'étouffe : gestes de base",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-10",
+       "nom": "Incendie du véhicule : s'éloigner, extincteur",
+       "q": 0
+      },
+      {
+       "id": "P-PAS-11",
+       "nom": "Non-assistance à personne en danger",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "Q",
+   "nom": "Prendre et quitter son véhicule",
+   "chapitres": [
+    {
+     "code": "Q-INS",
+     "nom": "Installation au poste de conduite",
+     "notions": [
+      {
+       "id": "Q-INS-01",
+       "nom": "Réglage du siège, du volant, de l'appui-tête",
+       "q": 0
+      },
+      {
+       "id": "Q-INS-02",
+       "nom": "Réglage des rétroviseurs",
+       "q": 0
+      },
+      {
+       "id": "Q-INS-03",
+       "nom": "Ceinture bien positionnée",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "Q-PAS",
+     "nom": "Passagers",
+     "notions": [
+      {
+       "id": "Q-PAS-01",
+       "nom": "Enfants : système de retenue adapté jusqu'à 10 ans",
+       "q": 0
+      },
+      {
+       "id": "Q-PAS-02",
+       "nom": "Enfant à l'avant : interdit avant 10 ans sauf exceptions ; airbag désactivé si siège dos à la route",
+       "q": 0
+      },
+      {
+       "id": "Q-PAS-03",
+       "nom": "Responsabilité du conducteur pour les passagers mineurs non attachés",
+       "q": 0
+      },
+      {
+       "id": "Q-PAS-04",
+       "nom": "Chargement : répartition, arrimage, objets dans l'habitacle",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "Q-SOR",
+     "nom": "Monter et descendre",
+     "notions": [
+      {
+       "id": "Q-SOR-01",
+       "nom": "Ouvrir sa portière en vérifiant (rétroviseur, méthode « main opposée »)",
+       "q": 0
+      },
+      {
+       "id": "Q-SOR-02",
+       "nom": "Faire descendre les passagers côté trottoir",
+       "q": 0
+      },
+      {
+       "id": "Q-SOR-03",
+       "nom": "Quitter le véhicule : frein de stationnement, vitesse engagée, clé, fermeture",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "Q-REM",
+     "nom": "Remorques et attelages",
+     "notions": [
+      {
+       "id": "Q-REM-01",
+       "nom": "Permis B / B96 / BE selon le poids de la remorque",
+       "q": 0
+      },
+      {
+       "id": "Q-REM-02",
+       "nom": "Conduite avec remorque ou caravane : distances, vent, vitesses",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M",
+   "nom": "Éléments mécaniques liés à la sécurité",
+   "chapitres": [
+    {
+     "code": "M-TAB",
+     "nom": "Tableau de bord",
+     "notions": [
+      {
+       "id": "M-TAB-01",
+       "nom": "Voyants rouges (danger : s'arrêter), orange (anomalie), verts/bleus (fonctionnement)",
+       "q": 0
+      },
+      {
+       "id": "M-TAB-02",
+       "nom": "Voyants principaux : huile, température, freins, batterie, airbag, ABS, ceinture",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "M-PNE",
+     "nom": "Pneumatiques",
+     "notions": [
+      {
+       "id": "M-PNE-01",
+       "nom": "Profondeur minimale des sculptures : 1,6 mm ; témoins d'usure",
+       "q": 0
+      },
+      {
+       "id": "M-PNE-02",
+       "nom": "Pression : à froid, effets d'un sous-gonflage",
+       "q": 0
+      },
+      {
+       "id": "M-PNE-03",
+       "nom": "Pneus hiver / 4 saisons, chaînes",
+       "q": 0
+      },
+      {
+       "id": "M-PNE-04",
+       "nom": "Crevaison, éclatement : conduite à tenir",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "M-FRE",
+     "nom": "Freins et direction",
+     "notions": [
+      {
+       "id": "M-FRE-01",
+       "nom": "Liquide de frein, usure, frein de stationnement",
+       "q": 0
+      },
+      {
+       "id": "M-FRE-02",
+       "nom": "ABS, freinage d'urgence",
+       "q": 0
+      },
+      {
+       "id": "M-FRE-03",
+       "nom": "Frein moteur",
+       "q": 0
+      },
+      {
+       "id": "M-FRE-04",
+       "nom": "Direction assistée",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "M-ENT",
+     "nom": "Entretien",
+     "notions": [
+      {
+       "id": "M-ENT-01",
+       "nom": "Niveaux : huile, liquide de refroidissement, lave-glace",
+       "q": 0
+      },
+      {
+       "id": "M-ENT-02",
+       "nom": "Éclairage, essuie-glaces, batterie",
+       "q": 0
+      },
+      {
+       "id": "M-ENT-03",
+       "nom": "Rétroviseurs, vitres, propreté de la plaque",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "M-AID",
+     "nom": "Aides à la conduite",
+     "notions": [
+      {
+       "id": "M-AID-01",
+       "nom": "Régulateur et limiteur de vitesse",
+       "q": 0
+      },
+      {
+       "id": "M-AID-02",
+       "nom": "ESP / ESC, aides au freinage d'urgence",
+       "q": 0
+      },
+      {
+       "id": "M-AID-03",
+       "nom": "Alerte de franchissement de ligne, détecteur d'angle mort, caméras",
+       "q": 0
+      },
+      {
+       "id": "M-AID-04",
+       "nom": "Boîte automatique, véhicules électriques et hybrides : spécificités",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "S",
+   "nom": "Équipements de sécurité des véhicules",
+   "chapitres": [
+    {
+     "code": "S-EQU",
+     "nom": "Équipements de sécurité des véhicules",
+     "notions": [
+      {
+       "id": "S-EQU-01",
+       "nom": "Gilet haute visibilité obligatoire, à portée de main",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-02",
+       "nom": "Triangle de présignalisation : placé à au moins 30 m (sauf autoroute)",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-03",
+       "nom": "Ceinture de sécurité : obligatoire à toutes les places, exceptions",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-04",
+       "nom": "Airbags : fonctionnement, désactivation",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-05",
+       "nom": "Appuie-tête : rôle (coup du lapin)",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-06",
+       "nom": "Systèmes de retenue pour enfants (normes, groupes)",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-07",
+       "nom": "Éthylotest : obligation de possession (non sanctionnée)",
+       "q": 0
+      },
+      {
+       "id": "S-EQU-08",
+       "nom": "Plaques d'immatriculation lisibles",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "E",
+   "nom": "Environnement et éco-conduite",
+   "chapitres": [
+    {
+     "code": "E-ECO",
+     "nom": "Éco-conduite",
+     "notions": [
+      {
+       "id": "E-ECO-01",
+       "nom": "Conduite souple, anticipation, passer les rapports tôt",
+       "q": 0
+      },
+      {
+       "id": "E-ECO-02",
+       "nom": "Couper le moteur à l'arrêt prolongé ; stop & start",
+       "q": 0
+      },
+      {
+       "id": "E-ECO-03",
+       "nom": "Climatisation, barres de toit, charge : surconsommation",
+       "q": 0
+      },
+      {
+       "id": "E-ECO-04",
+       "nom": "Pression des pneus et consommation",
+       "q": 0
+      },
+      {
+       "id": "E-ECO-05",
+       "nom": "Vitesse et consommation (par ex. rouler à 110 au lieu de 130)",
+       "q": 0
+      }
+     ]
+    },
+    {
+     "code": "E-POL",
+     "nom": "Pollution et réglementation",
+     "notions": [
+      {
+       "id": "E-POL-01",
+       "nom": "Vignette Crit'Air, zones à faibles émissions (ZFE)",
+       "q": 0
+      },
+      {
+       "id": "E-POL-02",
+       "nom": "Circulation différenciée lors des pics de pollution",
+       "q": 0
+      },
+      {
+       "id": "E-POL-03",
+       "nom": "Bruit : avertisseur, échappement modifié interdit",
+       "q": 0
+      },
+      {
+       "id": "E-POL-04",
+       "nom": "Entretien et pollution (filtres, pot catalytique)",
+       "q": 0
+      },
+      {
+       "id": "E-POL-05",
+       "nom": "Covoiturage, voies réservées, mobilités alternatives",
+       "q": 0
+      },
+      {
+       "id": "E-POL-06",
+       "nom": "Véhicules électriques : recharge, autonomie",
+       "q": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
