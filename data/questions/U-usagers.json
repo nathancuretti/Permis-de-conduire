@@ -6,8 +6,8 @@
 "q": "Un piéton s'engage sur un passage pour piétons au moment où j'arrive. Je dois :",
 "c": [
 "M'arrêter pour le laisser traverser",
-"Klaxonner pour qu'il se dépêche",
-"Passer derrière lui sans ralentir"
+"Ralentir et passer s'il est encore loin de ma voie",
+"Passer derrière lui sans m'arrêter"
 ],
 "ok": [
 0
@@ -21,8 +21,8 @@
 "q": "Un piéton traverse hors d'un passage pour piétons, à moins de 50 m de celui-ci. Je dois :",
 "c": [
 "Faire preuve de prudence et éviter de le mettre en danger",
-"Accélérer, car il est en faute",
-"Le klaxonner longuement"
+"Garder ma vitesse : il est en faute, il doit me laisser passer",
+"Avertir d'un coup de klaxon et poursuivre ma route"
 ],
 "ok": [
 0
@@ -36,8 +36,8 @@
 "q": "Une personne avec une canne blanche ou un chien guide s'apprête à traverser. Je dois :",
 "c": [
 "Lui laisser le passage, même hors d'un passage pour piétons",
-"Klaxonner pour la prévenir",
-"Passer avant elle"
+"La laisser passer seulement si elle est sur un passage piéton",
+"Passer en premier, puis la laisser traverser derrière moi"
 ],
 "ok": [
 0
@@ -51,8 +51,8 @@
 "q": "Près d'une école, à la sortie des classes, je dois :",
 "c": [
 "Ralentir fortement et m'attendre à des comportements imprévisibles",
-"Rouler normalement si la limite est respectée",
-"Klaxonner pour prévenir les enfants"
+"Rouler normalement si je respecte la limitation de vitesse",
+"Rouler normalement, des agents surveillent la sortie"
 ],
 "ok": [
 0
@@ -66,8 +66,8 @@
 "q": "Un ballon traverse la rue devant moi. Je dois :",
 "c": [
 "Ralentir et m'attendre à voir un enfant courir derrière",
-"Continuer, ce n'est qu'un ballon",
-"Klaxonner"
+"Continuer à la même allure, ce n'est qu'un ballon",
+"Faire un écart pour éviter le ballon et continuer"
 ],
 "ok": [
 0
@@ -81,9 +81,9 @@
 "img": "img/panneaux/B52.svg",
 "q": "Dans une zone de rencontre, un piéton marche au milieu de la chaussée. Il est :",
 "c": [
-"Dans son droit : les piétons peuvent y circuler sur la chaussée et sont prioritaires",
-"En infraction",
-"Obligé de me laisser passer"
+"Dans son droit : les piétons peuvent y circuler sur la chaussée",
+"En infraction : même dans cette zone, il doit marcher sur le trottoir",
+"Tenu de me laisser passer, car les véhicules restent prioritaires"
 ],
 "ok": [
 0
@@ -112,9 +112,9 @@
 "n": "U-VEL-01",
 "q": "Deux cyclistes roulent côte à côte de jour, sur une route de campagne. Ils sont :",
 "c": [
-"Autorisés, mais doivent se mettre en file quand un véhicule veut les dépasser",
-"En infraction",
-"Autorisés à rester côte à côte en toutes circonstances"
+"Autorisés, mais doivent se mettre en file quand on veut les dépasser",
+"En infraction : les cyclistes doivent toujours rouler en file",
+"Autorisés à rester côte à côte, même si on veut les dépasser"
 ],
 "ok": [
 0
@@ -128,8 +128,8 @@
 "q": "Un cycliste roule devant moi et l'écart latéral réglementaire n'est pas possible. Je dois :",
 "c": [
 "Rester derrière lui en attendant de pouvoir dépasser",
-"Le dépasser en le frôlant",
-"Klaxonner pour qu'il se range"
+"Le dépasser en réduisant un peu l'écart latéral",
+"L'avertir d'un coup de klaxon pour qu'il se range"
 ],
 "ok": [
 0
@@ -143,9 +143,9 @@
 "img": "img/panneaux/B1-sauf-velos.svg",
 "q": "Ce panneau signifie :",
 "c": [
-"Sens interdit aux véhicules, sauf aux cyclistes qui peuvent circuler à contresens",
-"Sens interdit à tous",
-"Piste cyclable obligatoire"
+"Sens interdit aux véhicules, sauf aux cyclistes (contresens autorisé)",
+"Sens interdit à tous les véhicules, sauf aux cyclistes à pied",
+"Voie réservée aux cyclistes, interdite aux autres véhicules"
 ],
 "ok": [
 0
@@ -159,7 +159,7 @@
 "q": "Dans une rue à sens unique en zone 30, je dois m'attendre à croiser :",
 "c": [
 "Des cyclistes venant en face",
-"Aucun véhicule venant en face"
+"Des voitures venant en face"
 ],
 "ok": [
 0
@@ -174,8 +174,8 @@
 "q": "Au feu rouge, un cycliste tourne à droite alors que je suis arrêté. Si ce panonceau est présent, il :",
 "c": [
 "Est en règle, s'il cède le passage aux autres usagers",
-"Est en infraction",
-"Est prioritaire sur les piétons"
+"Est en infraction, car le feu rouge s'impose à tous",
+"Est en règle et prioritaire sur les autres usagers"
 ],
 "ok": [
 0
@@ -189,8 +189,8 @@
 "q": "Je suis garé le long du trottoir et je veux ouvrir ma portière. Je dois d'abord :",
 "c": [
 "Vérifier dans le rétroviseur et par-dessus l'épaule qu'aucun cycliste n'arrive",
-"Ouvrir rapidement pour gêner le moins longtemps possible",
-"Klaxonner"
+"Ouvrir rapidement, pour occuper la voie le moins longtemps possible",
+"Entrouvrir la portière quelques secondes pour signaler que je vais sortir"
 ],
 "ok": [
 0
@@ -204,8 +204,8 @@
 "q": "Le port du casque à vélo est obligatoire :",
 "c": [
 "Pour les enfants de moins de 12 ans, conducteurs ou passagers",
-"Pour tous les cyclistes",
-"Pour personne"
+"Pour tous les cyclistes, en agglomération comme hors agglo",
+"Pour les cyclistes qui roulent hors agglomération"
 ],
 "ok": [
 0
@@ -236,8 +236,8 @@
 "q": "En agglomération, une trottinette électrique doit circuler en priorité :",
 "c": [
 "Sur les pistes et bandes cyclables quand il y en a",
-"Sur le trottoir",
-"Sur la voie de bus"
+"Sur le trottoir, à vitesse réduite",
+"Sur les voies de bus, plus larges et plus sûres"
 ],
 "ok": [
 0
@@ -251,8 +251,8 @@
 "q": "Dans un bouchon, avant de changer de file :",
 "c": [
 "Je vérifie qu'aucune moto ne remonte entre les files",
-"Je change de file directement, personne ne peut arriver",
-"Je klaxonne"
+"Je mets mon clignotant et je change de file aussitôt",
+"Je regarde dans mon rétroviseur intérieur, cela suffit"
 ],
 "ok": [
 0
@@ -268,7 +268,7 @@
 "Ils n'ont pas de carrosserie pour les protéger",
 "Ils sont moins visibles que les voitures",
 "Leur freinage est plus délicat (risque de chute)",
-"Ils roulent toujours trop vite"
+"Ils ne peuvent pas rouler sur autoroute"
 ],
 "ok": [
 0,
@@ -284,8 +284,8 @@
 "q": "Il est difficile d'estimer la vitesse et la distance d'une moto parce que :",
 "c": [
 "Sa silhouette étroite la fait paraître plus lointaine et plus lente",
-"Elle n'a pas de phare",
-"Elle roule toujours sur le bord de la route"
+"Son phare unique éblouit et masque sa position réelle sur la route",
+"Elle change souvent de position dans sa voie, sans prévenir"
 ],
 "ok": [
 0
@@ -299,8 +299,8 @@
 "q": "Les autocollants « angles morts » sur les poids lourds signalent :",
 "c": [
 "Les zones où le conducteur ne peut pas me voir",
-"Un transport de matières dangereuses",
-"Un véhicule en panne"
+"Un transport de marchandises fragiles",
+"Les zones où il est interdit de doubler"
 ],
 "ok": [
 0
@@ -314,8 +314,8 @@
 "q": "Un camion qui tourne à droite peut d'abord se déporter vers la gauche. Je dois :",
 "c": [
 "Ne pas me glisser à sa droite",
-"En profiter pour le dépasser par la droite",
-"Klaxonner"
+"Le dépasser par la droite pendant qu'il se déporte",
+"Me placer à sa droite pour tourner en même temps"
 ],
 "ok": [
 0
@@ -344,8 +344,8 @@
 "q": "En agglomération, un bus signale qu'il quitte son arrêt. Je dois :",
 "c": [
 "Ralentir, voire m'arrêter, pour le laisser repartir",
-"Accélérer pour passer avant lui",
-"Klaxonner"
+"Passer avant lui, car il doit attendre que la voie soit libre",
+"Le laisser repartir seulement s'il transporte des enfants"
 ],
 "ok": [
 0
@@ -359,8 +359,8 @@
 "q": "Un car de ramassage scolaire est arrêté, feux de détresse allumés. Je dois :",
 "c": [
 "Ralentir fortement : des enfants peuvent traverser",
-"Le dépasser rapidement",
-"Klaxonner pour avertir les enfants"
+"Le dépasser rapidement pour ne pas rester derrière",
+"Garder ma vitesse, les enfants doivent attendre"
 ],
 "ok": [
 0
@@ -407,8 +407,8 @@
 "q": "Je croise un convoi exceptionnel précédé d'un véhicule pilote. Je dois :",
 "c": [
 "Suivre les indications du véhicule pilote ou des motards d'escorte",
-"Garder ma vitesse et ma position",
-"Dépasser le convoi par la droite"
+"Garder ma vitesse et ma position, le convoi doit s'adapter",
+"Dépasser le convoi rapidement pour ne pas rester derrière"
 ],
 "ok": [
 0
@@ -422,8 +422,8 @@
 "q": "Un véhicule de police avec gyrophare bleu et sirène arrive en face, sur une route étroite. Je dois :",
 "c": [
 "Serrer à droite et ralentir, voire m'arrêter",
-"Garder ma trajectoire",
-"Accélérer pour libérer la route plus vite"
+"Garder ma trajectoire pour rester prévisible",
+"Allumer mes feux de détresse et continuer"
 ],
 "ok": [
 0
@@ -437,8 +437,8 @@
 "q": "Un gyrophare bleu, avec avertisseur spécial (deux-tons), signale :",
 "c": [
 "Un véhicule prioritaire en intervention",
-"Un véhicule lent",
-"Un véhicule de livraison"
+"Un véhicule lent ou encombrant",
+"Un véhicule de dépannage en intervention"
 ],
 "ok": [
 0
@@ -451,9 +451,9 @@
 "n": "U-LOU-06",
 "q": "Un gyrophare orange signale :",
 "c": [
-"Un véhicule lent, encombrant ou en intervention (dépanneuse, chantier, déneigement…)",
-"Un véhicule prioritaire",
-"Un taxi libre"
+"Un véhicule lent, encombrant ou en intervention (dépanneuse, chantier…)",
+"Un véhicule prioritaire en intervention urgente (police, pompiers…)",
+"Un véhicule transportant des matières dangereuses"
 ],
 "ok": [
 0
@@ -467,8 +467,8 @@
 "q": "Un animal sauvage surgit devant moi, trop près pour l'éviter sans danger. Il vaut mieux :",
 "c": [
 "Freiner fort en gardant ma trajectoire, quitte à heurter l'animal",
-"Donner un grand coup de volant pour l'éviter",
-"Accélérer"
+"Donner un coup de volant pour éviter l'animal à tout prix",
+"Freiner et me déporter sur la voie de gauche pour l'éviter"
 ],
 "ok": [
 0
@@ -482,8 +482,8 @@
 "q": "Je dépasse un cavalier à cheval. Je dois :",
 "c": [
 "Ralentir et passer largement, sans klaxonner",
-"Klaxonner pour qu'il se range",
-"Le frôler pour passer vite"
+"Klaxonner de loin pour le prévenir de mon arrivée",
+"Passer rapidement pour rester peu de temps à côté"
 ],
 "ok": [
 0
@@ -496,9 +496,9 @@
 "n": "U-ANI-01",
 "q": "Un troupeau traverse la route devant moi. Je dois :",
 "c": [
-"M'arrêter et attendre qu'il ait traversé, ou suivre les indications du berger",
-"Klaxonner pour le disperser",
-"Me frayer un chemin au milieu des animaux"
+"M'arrêter et attendre, ou suivre les indications du berger",
+"Avancer lentement au milieu des animaux pour les écarter",
+"Klaxonner doucement pour que le troupeau se range"
 ],
 "ok": [
 0
@@ -512,8 +512,8 @@
 "q": "J'ai percuté un sanglier. Je dois :",
 "c": [
 "Me mettre en sécurité, baliser et prévenir les forces de l'ordre",
-"Charger l'animal dans mon coffre",
-"Repartir sans rien dire"
+"Déplacer moi-même l'animal blessé sur le bas-côté de la route",
+"Repartir si ma voiture n'a pas de dégâts et que l'animal a fui"
 ],
 "ok": [
 0

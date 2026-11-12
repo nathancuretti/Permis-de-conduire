@@ -206,6 +206,16 @@ def stamp_assets():
     open(sw, "w", encoding="utf-8").write(s)
 
 
+def rapport_indices():
+    """Avertit (sans bloquer) si des questions laissent deviner la réponse par la forme."""
+    sys.path.insert(0, os.path.dirname(__file__))
+    from indices import problemes
+    flag = [q["id"] for f in sorted(glob.glob(os.path.join(ROOT, "data", "questions", "*.json")))
+            for q in json.load(open(f, encoding="utf-8")) if problemes(q)]
+    print(f"Indices de forme : {len(flag)} question(s) à surveiller (détail : python3 tools/indices.py)")
+
+
 if __name__ == "__main__":
     main()
     stamp_assets()
+    rapport_indices()

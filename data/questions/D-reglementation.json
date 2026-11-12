@@ -20,8 +20,8 @@
 "q": "Avec le permis B, je peux transporter au maximum :",
 "c": [
 "8 passagers en plus du conducteur",
-"5 passagers",
-"12 passagers"
+"5 passagers en plus du conducteur",
+"12 passagers en plus du conducteur"
 ],
 "ok": [
 0
@@ -51,8 +51,8 @@
 "q": "Après 2 ans de permis B et une formation de 7 heures, je peux conduire :",
 "c": [
 "Une moto légère de 125 cm³ maximum",
-"N'importe quelle moto",
-"Un camion"
+"Une moto de 600 cm³ bridée à 35 kW",
+"Un camping-car de plus de 3,5 tonnes"
 ],
 "ok": [
 0
@@ -67,7 +67,7 @@
 "c": [
 "3 ans",
 "2 ans après un apprentissage anticipé (conduite accompagnée)",
-"5 ans dans tous les cas"
+"5 ans pour les conducteurs de moins de 21 ans"
 ],
 "ok": [
 0,
@@ -142,8 +142,8 @@
 "q": "Le nombre de points retirés pour une infraction est :",
 "c": [
 "Fixé par un barème, selon la gravité de l'infraction",
-"Choisi par l'agent qui me contrôle",
-"Toujours de 1 point"
+"Décidé par l'agent, selon les circonstances",
+"Fixé à 1 point par infraction, sauf pour les délits"
 ],
 "ok": [
 0
@@ -172,8 +172,8 @@
 "q": "Un stage de sensibilisation à la sécurité routière permet de récupérer :",
 "c": [
 "4 points, une fois par an au maximum",
-"12 points",
-"2 points par jour de stage"
+"6 points, une fois tous les deux ans",
+"Tous les points perdus, une seule fois"
 ],
 "ok": [
 0
@@ -187,8 +187,8 @@
 "q": "En période probatoire, je perds 3 points ou plus en une seule infraction. Je dois :",
 "c": [
 "Suivre un stage de sensibilisation obligatoire",
-"Repasser le permis",
-"Rien de particulier"
+"Repasser l'épreuve théorique générale du code",
+"Passer une visite médicale auprès d'un médecin agréé"
 ],
 "ok": [
 0
@@ -343,8 +343,8 @@
 "q": "Depuis 2024, pour prouver que mon véhicule est assuré lors d'un contrôle :",
 "c": [
 "Les forces de l'ordre consultent le fichier des véhicules assurés",
-"Je dois coller une vignette verte sur le pare-brise",
-"Je dois présenter une carte verte papier"
+"Je colle une vignette verte d'assurance sur le pare-brise",
+"Je présente la carte verte papier envoyée par l'assureur"
 ],
 "ok": [
 0
@@ -421,8 +421,8 @@
 "q": "L'assurance obligatoire minimale pour un véhicule est :",
 "c": [
 "La responsabilité civile (« au tiers »)",
-"L'assurance tous risques",
-"L'assurance vol"
+"L'assurance tous risques (dommages)",
+"L'assurance contre le vol et l'incendie"
 ],
 "ok": [
 0
@@ -451,8 +451,8 @@
 "q": "Avec le système bonus-malus, une année sans accident responsable :",
 "c": [
 "Fait baisser ma prime (bonus de 5 %)",
-"Fait augmenter ma prime",
-"Ne change rien"
+"Fait baisser ma prime (bonus de 25 %)",
+"Ne change rien à ma prime"
 ],
 "ok": [
 0
@@ -510,9 +510,9 @@
 "n": "D-ASS-04",
 "q": "Je prête ma voiture à un ami. En cas d'accident :",
 "c": [
-"Cela dépend de mon contrat (conducteur désigné, franchise pour conducteur novice…)",
-"Il n'est jamais couvert",
-"C'est son assurance personnelle qui paie toujours"
+"Cela dépend de mon contrat (conducteur désigné, franchise novice…)",
+"Mon assurance ne couvre que moi : mon ami n'est jamais assuré",
+"C'est l'assurance personnelle de mon ami qui prend tout en charge"
 ],
 "ok": [
 0
@@ -603,8 +603,8 @@
 "q": "Les infractions routières se classent en :",
 "c": [
 "Contraventions (de la 1re à la 5e classe) et délits",
-"Uniquement en amendes",
-"Fautes légères et fautes lourdes"
+"Amendes forfaitaires, amendes minorées et majorées",
+"Fautes légères, fautes graves et fautes lourdes"
 ],
 "ok": [
 0
@@ -666,8 +666,8 @@
 "q": "L'immobilisation d'un véhicule signifie :",
 "c": [
 "Il est interdit de le déplacer jusqu'à ce que l'infraction cesse",
-"Il est emmené à la fourrière",
-"Il est vendu par l'État"
+"Il est emmené à la fourrière jusqu'au paiement de l'amende",
+"Il est saisi définitivement et vendu aux enchères"
 ],
 "ok": [
 0
@@ -728,8 +728,8 @@
 "q": "Si le titulaire de la carte grise ne désigne pas le conducteur flashé par un radar :",
 "c": [
 "Il doit payer l'amende (il est redevable pécuniairement)",
-"Il perd automatiquement des points",
-"Il ne risque rien"
+"Il perd les points, puisqu'il n'a désigné personne",
+"L'amende est annulée faute de conducteur identifié"
 ],
 "ok": [
 0
@@ -759,7 +759,7 @@
 "c": [
 "1 point",
 "3 points",
-"Aucun point"
+"4 points"
 ],
 "ok": [
 1

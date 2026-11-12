@@ -151,9 +151,9 @@
 "img": "img/panneaux/A13a.svg",
 "q": "Ce panneau signale :",
 "c": [
-"Un passage pour piétons",
+"Un passage pour piétons à proximité",
 "Un endroit fréquenté par des enfants",
-"Une aire piétonne"
+"Une aire piétonne ou une zone de rencontre"
 ],
 "ok": [
 1
@@ -184,9 +184,9 @@
 "img": "img/panneaux/A2b.svg",
 "q": "Ce panneau signale :",
 "c": [
-"Une descente dangereuse",
+"Une descente dangereuse en forte pente",
 "Un ralentisseur de type dos d'âne",
-"Un pont"
+"Un pont étroit ou un rétrécissement"
 ],
 "ok": [
 1
@@ -216,9 +216,9 @@
 "img": "img/panneaux/A18.svg",
 "q": "Ce panneau signale :",
 "c": [
-"Une route à sens unique",
+"La fin d'une route à sens unique",
 "Une circulation dans les deux sens",
-"Une voie de dépassement"
+"Une voie réservée au dépassement"
 ],
 "ok": [
 1
@@ -232,9 +232,9 @@
 "img": "img/panneaux/A21.svg",
 "q": "Ce panneau signale :",
 "c": [
-"Une piste cyclable obligatoire",
+"Une piste cyclable obligatoire pour les vélos",
 "Un débouché de cyclistes venant de droite ou de gauche",
-"Une interdiction aux cycles"
+"Une route interdite aux cyclistes et cyclomoteurs"
 ],
 "ok": [
 1
@@ -265,8 +265,8 @@
 "q": "Ce panneau signale :",
 "c": [
 "Un passage d'animaux sauvages",
-"Une réserve naturelle",
-"Un passage de troupeaux"
+"Une zone de chasse à proximité",
+"Un passage de troupeaux domestiques"
 ],
 "ok": [
 0
@@ -297,9 +297,9 @@
 "img": "img/panneaux/A7.svg",
 "q": "Ce panneau annonce un passage à niveau :",
 "c": [
-"Muni de barrières",
-"Sans barrière",
-"Désaffecté"
+"Muni de barrières ou de demi-barrières",
+"Sans barrière ni demi-barrière",
+"Désaffecté, sans circulation de trains"
 ],
 "ok": [
 0
@@ -330,8 +330,8 @@
 "q": "Ce panneau signale :",
 "c": [
 "Un danger dont la nature est précisée par un panonceau",
-"Une interdiction",
-"Un accident"
+"Une interdiction dont la nature est précisée par un panonceau",
+"Un accident récent dont la position est précisée par un panonceau"
 ],
 "ok": [
 0
@@ -377,9 +377,9 @@
 "img": "img/panneaux/AB1.svg",
 "q": "À la prochaine intersection :",
 "c": [
-"Je suis prioritaire",
+"Je suis prioritaire sur les véhicules venant de droite",
 "Je dois céder le passage aux véhicules venant de droite",
-"Je dois obligatoirement m'arrêter"
+"Je dois marquer l'arrêt, puis céder le passage"
 ],
 "ok": [
 1
@@ -409,9 +409,9 @@
 "img": "img/panneaux/AB6.svg",
 "q": "Ce panneau indique :",
 "c": [
-"Une priorité à la prochaine intersection seulement",
+"Une route prioritaire, mais seulement à la prochaine intersection",
 "Une route prioritaire : je suis prioritaire aux intersections suivantes",
-"Une zone de travaux"
+"Une intersection où la priorité à droite reste la règle à suivre"
 ],
 "ok": [
 1
@@ -460,7 +460,7 @@
 "c": [
 "Marquer l'arrêt, même si personne n'arrive",
 "Céder le passage aux véhicules de la route abordée",
-"Seulement ralentir si la voie est libre"
+"Ralentir fortement, sans m'arrêter si la voie est libre"
 ],
 "ok": [
 0,
@@ -491,9 +491,9 @@
 "img": "img/panneaux/M1-150.svg",
 "q": "Ce panonceau placé sous un panneau indique :",
 "c": [
-"Une limitation de vitesse",
 "La distance entre le panneau et le danger ou l'intersection",
-"La longueur de la zone concernée"
+"La vitesse conseillée jusqu'au danger ou à l'intersection",
+"La longueur de la zone dans laquelle le panneau s'applique"
 ],
 "ok": [
 1
@@ -508,8 +508,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Circulation interdite à tout véhicule dans les deux sens",
-"Sens interdit",
-"Fin de toutes les interdictions"
+"Sens interdit à tout véhicule à partir du panneau",
+"Fin de toutes les interdictions précédemment signalées"
 ],
 "ok": [
 0
@@ -557,9 +557,9 @@
 "img": "img/panneaux/B14-70.svg",
 "q": "Ce panneau indique :",
 "c": [
-"Une vitesse conseillée de 70 km/h",
+"Une vitesse conseillée de 70 km/h, à adapter",
 "Une vitesse maximale autorisée de 70 km/h",
-"Une vitesse minimale de 70 km/h"
+"Une vitesse minimale obligatoire de 70 km/h"
 ],
 "ok": [
 1
@@ -574,8 +574,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Interdiction de tourner à gauche à la prochaine intersection",
-"Interdiction de faire demi-tour",
-"Obligation de tourner à gauche"
+"Interdiction de faire demi-tour à la prochaine intersection",
+"Obligation de tourner à gauche à la prochaine intersection"
 ],
 "ok": [
 0
@@ -621,9 +621,9 @@
 "img": "img/panneaux/B9b.svg",
 "q": "Ce panneau signifie :",
 "c": [
-"Piste cyclable",
+"Une piste cyclable conseillée",
 "Accès interdit aux cycles",
-"Débouché de cyclistes"
+"Un débouché de cyclistes"
 ],
 "ok": [
 1
@@ -654,8 +654,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Contournement obligatoire par la droite",
-"Sortie à droite",
-"Rétrécissement de chaussée"
+"Direction obligatoire à la prochaine sortie",
+"Chaussée rétrécie par la droite"
 ],
 "ok": [
 0
@@ -669,9 +669,9 @@
 "img": "img/panneaux/B21b.svg",
 "q": "Ce panneau signifie :",
 "c": [
-"Sens unique",
+"Une route à sens unique",
 "Obligation d'aller tout droit",
-"Route prioritaire"
+"Une route prioritaire"
 ],
 "ok": [
 1
@@ -686,8 +686,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Piste ou bande cyclable obligatoire pour les cycles",
-"Les voitures peuvent y circuler",
-"Débouché de cyclistes"
+"Piste cyclable conseillée, ouverte aux voitures",
+"Débouché de cyclistes venant de droite ou de gauche"
 ],
 "ok": [
 0
@@ -701,9 +701,9 @@
 "img": "img/panneaux/B25-30.svg",
 "q": "Ce panneau indique :",
 "c": [
-"Une vitesse maximale de 30 km/h",
+"Une vitesse maximale autorisée de 30 km/h",
 "Une vitesse minimale obligatoire de 30 km/h",
-"Une zone 30"
+"L'entrée d'une zone limitée à 30 km/h"
 ],
 "ok": [
 1
@@ -717,9 +717,9 @@
 "img": "img/panneaux/B40.svg",
 "q": "Ce panneau signifie :",
 "c": [
-"Interdit aux cycles",
+"Accès interdit aux cycles à partir d'ici",
 "Fin de piste ou bande cyclable obligatoire",
-"Fin de zone 30"
+"Fin de zone réservée aux cyclistes et piétons"
 ],
 "ok": [
 1
@@ -734,8 +734,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Fin de toutes les interdictions signalées pour les véhicules en mouvement",
-"Fin de route prioritaire",
-"Fin d'agglomération"
+"Fin de la route prioritaire et retour à la priorité à droite aux intersections",
+"Fin de l'agglomération et de toutes les règles qui s'y appliquent"
 ],
 "ok": [
 0
@@ -749,9 +749,9 @@
 "img": "img/panneaux/B33-70.svg",
 "q": "Après ce panneau, hors agglomération sur une route à double sens sans séparateur, la vitesse maximale est :",
 "c": [
-"70 km/h",
+"70 km/h, jusqu'à la prochaine intersection",
 "80 km/h, sauf autre indication",
-"90 km/h dans tous les cas"
+"90 km/h, sauf autre indication"
 ],
 "ok": [
 1
@@ -767,7 +767,7 @@
 "c": [
 "Interdiction de dépasser",
 "Fin d'interdiction de dépasser",
-"Fin de route à deux voies"
+"Fin d'une route à 2 × 2 voies"
 ],
 "ok": [
 1
@@ -830,8 +830,8 @@
 "q": "Dans la zone qui commence à ce panneau :",
 "c": [
 "La vitesse est limitée à 30 km/h dans toute la zone",
-"La vitesse est limitée à 30 km/h jusqu'à la prochaine intersection seulement",
-"Le stationnement est interdit"
+"La vitesse est limitée à 30 km/h jusqu'à la prochaine intersection",
+"Le stationnement est limité à 30 minutes dans la zone"
 ],
 "ok": [
 0
@@ -898,7 +898,7 @@
 "c": [
 "Par autoroute",
 "Touristique",
-"Local"
+"Local ou urbain"
 ],
 "ok": [
 0
@@ -912,9 +912,9 @@
 "img": "img/panneaux/D-vert.svg",
 "q": "Un panneau de direction à fond vert indique :",
 "c": [
-"Une autoroute",
+"Une autoroute ou une voie express",
 "Un grand itinéraire (route principale)",
-"Une déviation"
+"Une déviation ou un itinéraire bis"
 ],
 "ok": [
 1
@@ -928,9 +928,9 @@
 "img": "img/panneaux/D-jaune.svg",
 "q": "Un panneau de direction à fond jaune indique :",
 "c": [
-"Une direction touristique",
+"Une direction touristique, culturelle ou de loisirs",
 "Une signalisation temporaire, par exemple une déviation",
-"Un itinéraire pour poids lourds"
+"Un itinéraire conseillé aux poids lourds et aux cars"
 ],
 "ok": [
 1
@@ -945,8 +945,8 @@
 "q": "Un panneau à fond marron indique :",
 "c": [
 "Un lieu d'intérêt touristique ou culturel",
-"Une route forestière",
-"Une zone de travaux"
+"Une route forestière ou un chemin rural",
+"Un itinéraire de délestage temporaire"
 ],
 "ok": [
 0
@@ -978,8 +978,8 @@
 "q": "Ce panneau indique :",
 "c": [
 "La sortie de l'agglomération",
-"Une route barrée",
-"L'entrée d'une zone 30"
+"Une route barrée à l'entrée de la ville",
+"La fin d'une zone 30"
 ],
 "ok": [
 0
@@ -1009,8 +1009,8 @@
 "q": "Placé à côté d'un feu, ce panonceau permet aux cyclistes :",
 "c": [
 "De franchir le feu rouge dans la direction indiquée, en cédant le passage",
-"De franchir le feu rouge dans toutes les directions",
-"D'emprunter le trottoir"
+"De franchir le feu rouge dans la direction indiquée, en étant prioritaires",
+"D'attendre devant la ligne d'arrêt, dans l'espace qui leur est réservé"
 ],
 "ok": [
 0
@@ -1072,8 +1072,8 @@
 "q": "Ce panneau signifie :",
 "c": [
 "Stationnement interdit, l'arrêt reste autorisé",
-"Arrêt et stationnement interdits",
-"Sens interdit"
+"Arrêt et stationnement interdits de ce côté",
+"Stationnement réservé aux véhicules bleus (police)"
 ],
 "ok": [
 0
@@ -1103,7 +1103,7 @@
 "img": "img/schemas/ligne-continue.svg",
 "q": "Je suis la voiture rouge. Je peux franchir cette ligne pour dépasser :",
 "c": [
-"Oui, si personne n'arrive en face",
+"Oui, si personne n'arrive en face et que je vois loin",
 "Non, il est interdit de la franchir ou de la chevaucher"
 ],
 "ok": [
@@ -1135,8 +1135,8 @@
 "q": "Je suis la voiture rouge. Cette ligne discontinue :",
 "c": [
 "Peut être franchie pour dépasser si les conditions le permettent",
-"Ne doit jamais être franchie",
-"Délimite une voie réservée aux bus"
+"Peut être chevauchée pour tourner, mais pas franchie pour dépasser",
+"Sépare une voie réservée aux bus et taxis de la voie normale"
 ],
 "ok": [
 0
@@ -1213,8 +1213,8 @@
 "q": "Je suis la voiture rouge. Je dois marquer l'arrêt :",
 "c": [
 "Au niveau de la ligne continue transversale",
-"Seulement si un véhicule arrive",
-"Après la ligne, pour mieux voir"
+"Juste avant le panneau, là où il est planté",
+"Au bord de la chaussée abordée, après la ligne"
 ],
 "ok": [
 0
@@ -1260,9 +1260,9 @@
 "img": "img/schemas/jaune-discontinue.svg",
 "q": "Une ligne jaune discontinue le long du trottoir signifie :",
 "c": [
-"Arrêt et stationnement interdits",
+"Arrêt et stationnement interdits de ce côté",
 "Stationnement interdit, l'arrêt reste autorisé",
-"Zone de stationnement payant"
+"Stationnement réservé aux livraisons"
 ],
 "ok": [
 1
@@ -1291,9 +1291,9 @@
 "img": "img/schemas/zebra.svg",
 "q": "Sur ces hachures (zébras) bordées de lignes continues :",
 "c": [
-"Je peux circuler",
+"Je peux y circuler pour tourner à gauche",
 "Je ne dois ni circuler ni m'arrêter",
-"Je peux stationner"
+"Je peux m'y arrêter en cas de besoin"
 ],
 "ok": [
 1
@@ -1308,8 +1308,8 @@
 "q": "Je suis la voiture rouge, le feu est rouge. Je m'arrête :",
 "c": [
 "Avant la première ligne, sans empiéter sur l'espace vélo",
-"Sur l'espace vélo, s'il est vide",
-"Au niveau du feu"
+"Sur l'espace vélo s'il est vide, pour libérer la voie",
+"À la seconde ligne, juste devant le passage piéton"
 ],
 "ok": [
 0
@@ -1339,9 +1339,9 @@
 "n": "L-MAR-08",
 "q": "Une voie marquée « BUS » au sol, séparée par une ligne continue large :",
 "c": [
-"Est réservée aux bus (et éventuellement aux véhicules autorisés par panneau)",
-"Peut être utilisée par les voitures pour tourner plus tôt",
-"Est accessible à tous en dehors des heures de pointe"
+"Est réservée aux bus et aux véhicules autorisés par la signalisation",
+"Peut être empruntée par les voitures pour tourner à droite plus tôt",
+"Est ouverte aux voitures le soir et le week-end, hors heures de pointe"
 ],
 "ok": [
 0
@@ -1371,9 +1371,9 @@
 "img": "img/panneaux/feu-orange.svg",
 "q": "Le feu passe à l'orange fixe. Je dois :",
 "c": [
-"Accélérer pour passer",
-"M'arrêter, sauf si je ne peux plus le faire dans des conditions de sécurité suffisantes",
-"M'arrêter dans tous les cas, même en pilant"
+"M'arrêter, sauf si je suis trop près pour le faire sans danger",
+"Passer, car l'orange signifie que je peux encore franchir le feu",
+"M'arrêter immédiatement, quelle que soit ma distance du feu"
 ],
 "ok": [
 1
@@ -1403,9 +1403,9 @@
 "img": "img/panneaux/feu-vert.svg",
 "q": "Le feu est vert mais l'intersection est encombrée. Je dois :",
 "c": [
-"M'engager, car le feu est vert",
-"Attendre de ne pas risquer de rester bloqué dans l'intersection",
-"Klaxonner pour faire avancer les autres"
+"M'engager, car le feu vert me donne la priorité",
+"Attendre de pouvoir dégager entièrement l'intersection",
+"M'engager à moitié pour ne pas perdre mon tour"
 ],
 "ok": [
 1
@@ -1419,9 +1419,9 @@
 "img": "img/panneaux/feu-orange-cli.svg",
 "q": "Ce feu orange clignote. Je dois :",
 "c": [
-"M'arrêter",
+"Marquer l'arrêt, puis repartir quand la voie est libre",
 "Passer avec prudence, en respectant les règles de priorité",
-"Passer : je suis prioritaire"
+"Passer : le feu orange me rend prioritaire sur les autres"
 ],
 "ok": [
 1
@@ -1435,9 +1435,9 @@
 "img": "img/panneaux/feu-rouge-cli.svg",
 "q": "Ces deux feux rouges clignotent alternativement, par exemple devant un passage à niveau. Je dois :",
 "c": [
-"Ralentir et passer prudemment",
-"Marquer l'arrêt absolu",
-"Klaxonner avant de passer"
+"Ralentir et passer prudemment si aucun train n'est visible",
+"Marquer l'arrêt absolu, même si aucun train n'est visible",
+"Attendre que les barrières se baissent avant de m'arrêter"
 ],
 "ok": [
 1
@@ -1451,9 +1451,9 @@
 "img": "img/panneaux/feu-rouge-fleche-cli.svg",
 "q": "Le feu est rouge mais une flèche orange clignote à côté. Je peux :",
 "c": [
-"Aller dans la direction de la flèche en cédant le passage aux piétons et aux véhicules",
+"Aller dans la direction de la flèche en cédant le passage",
 "Aller dans la direction de la flèche en étant prioritaire",
-"Aller dans toutes les directions"
+"Aller tout droit ou dans la direction de la flèche"
 ],
 "ok": [
 0
@@ -1468,8 +1468,8 @@
 "q": "Ce signal est placé au-dessus d'une voie. Il signifie :",
 "c": [
 "Voie fermée : interdit d'y circuler",
-"Voie réservée aux secours",
-"Fin d'autoroute"
+"Voie réservée aux véhicules de secours",
+"Fin de l'autoroute à cet endroit"
 ],
 "ok": [
 0
@@ -1484,8 +1484,8 @@
 "q": "Cette flèche verte au-dessus d'une voie signifie :",
 "c": [
 "La voie est ouverte à la circulation",
-"Il faut changer de voie",
-"Vitesse libre"
+"La voie va être fermée, je dois en sortir",
+"La vitesse n'est plus limitée sur cette voie"
 ],
 "ok": [
 0
@@ -1500,8 +1500,8 @@
 "q": "Cette flèche orange oblique au-dessus de ma voie m'indique :",
 "c": [
 "De quitter la voie dans le sens de la flèche",
-"Que la voie est ouverte",
-"De tourner à la prochaine sortie"
+"Que la voie reste ouverte, avec prudence",
+"De prendre la prochaine sortie à droite"
 ],
 "ok": [
 0
@@ -1514,9 +1514,9 @@
 "n": "L-FEU-05",
 "q": "Le feu est vert, mais un agent de la circulation me fait signe de m'arrêter. Je dois :",
 "c": [
-"Passer, car le feu est vert",
+"Passer, car le feu vert l'emporte sur l'agent",
 "M'arrêter : j'obéis à l'agent",
-"Klaxonner pour signaler que le feu est vert"
+"Ralentir et passer si personne n'arrive"
 ],
 "ok": [
 1
@@ -1529,9 +1529,9 @@
 "n": "L-FEU-05",
 "q": "Un agent lève le bras verticalement. Cela signifie :",
 "c": [
-"« Attention, arrêt » pour tous les usagers, sauf ceux qui ne pourraient plus s'arrêter en sécurité",
-"Accélérez",
-"Passage autorisé uniquement pour les piétons"
+"« Attention, arrêt » pour tous, sauf ceux qui ne peuvent plus s'arrêter",
+"« Passage autorisé » pour les usagers qui arrivent de face ou de dos",
+"« Arrêt » pour les véhicules qui arrivent sur les côtés de l'agent"
 ],
 "ok": [
 0
@@ -1595,8 +1595,8 @@
 "q": "Devant une croix de Saint-André, sans feux ni barrière :",
 "c": [
 "Je ralentis, je regarde des deux côtés et j'écoute avant de traverser",
-"Je passe sans ralentir, car il n'y a pas de barrière",
-"Je klaxonne pour avertir le train"
+"Je passe sans m'arrêter : sans barrière, le train est encore loin",
+"Je traverse rapidement pour libérer les voies au plus vite"
 ],
 "ok": [
 0
@@ -1610,8 +1610,8 @@
 "q": "Dans un virage, une série de balises à chevrons indique :",
 "c": [
 "Le sens et la difficulté du virage",
-"Un passage pour piétons",
-"Une sortie d'autoroute"
+"Une sortie de chemin dans le virage",
+"La présence d'une voie de détresse"
 ],
 "ok": [
 0
@@ -1625,8 +1625,8 @@
 "q": "Les petits poteaux blancs avec réflecteurs, au bord des routes de campagne (délinéateurs), servent à :",
 "c": [
 "Matérialiser le bord de la chaussée, surtout la nuit",
-"Indiquer les kilomètres",
-"Interdire le stationnement"
+"Indiquer les points kilométriques le long de la route",
+"Signaler les endroits où le stationnement est interdit"
 ],
 "ok": [
 0

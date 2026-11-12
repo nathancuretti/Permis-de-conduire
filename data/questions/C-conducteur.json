@@ -49,10 +49,10 @@
 "n": "C-ALC-02",
 "q": "Pour éliminer l'alcool plus vite :",
 "c": [
-"Boire du café",
-"Boire beaucoup d'eau",
-"Faire du sport",
-"Rien ne permet d'accélérer l'élimination : il faut attendre"
+"Boire un café serré avant de reprendre la route",
+"Boire beaucoup d'eau pour diluer l'alcool",
+"Faire un effort physique pour transpirer l'alcool",
+"Rien ne l'accélère : il faut attendre"
 ],
 "ok": [
 3
@@ -132,8 +132,8 @@
 "q": "Refuser de se soumettre au dépistage d'alcoolémie est :",
 "c": [
 "Un délit, puni comme la conduite en état alcoolique",
-"Autorisé si l'on n'a pas bu",
-"Une simple contravention"
+"Une contravention, moins grave qu'un taux positif",
+"Autorisé si l'on accepte une prise de sang ensuite"
 ],
 "ok": [
 0
@@ -147,8 +147,8 @@
 "q": "En première année de permis probatoire (6 points), je suis contrôlé à 0,3 g/l. Je risque :",
 "c": [
 "Un retrait de 6 points, donc la perte de mon permis",
-"Un avertissement",
-"Un retrait de 1 point"
+"Un retrait de 3 points et un stage obligatoire",
+"Une amende sans retrait de points, sous 0,5 g/l"
 ],
 "ok": [
 0
@@ -162,8 +162,8 @@
 "q": "Un « verre standard » servi dans un bar (demi de bière, verre de vin, whisky…) contient :",
 "c": [
 "À peu près la même quantité d'alcool, quelle que soit la boisson",
-"Beaucoup moins d'alcool pour la bière",
-"Beaucoup plus d'alcool pour le whisky"
+"Nettement moins d'alcool pour la bière que pour le vin",
+"Deux à trois fois plus d'alcool pour le whisky que pour le vin"
 ],
 "ok": [
 0
@@ -239,9 +239,9 @@
 "img": "img/panneaux/med-1.svg",
 "q": "Ce pictogramme (jaune) sur une boîte de médicament signifie :",
 "c": [
-"Niveau 1 : soyez prudent, ne pas conduire sans avoir lu la notice",
-"Niveau 3 : ne pas conduire",
-"Aucun risque pour la conduite"
+"Niveau 1 : soyez prudent, lisez la notice avant de conduire",
+"Niveau 3 : attention, danger, ne pas conduire pendant le traitement",
+"Niveau 2 : soyez très prudent, demandez l'avis d'un médecin"
 ],
 "ok": [
 0
@@ -255,9 +255,9 @@
 "img": "img/panneaux/med-2.svg",
 "q": "Ce pictogramme (orange) sur une boîte de médicament signifie :",
 "c": [
-"Soyez très prudent, ne pas conduire sans l'avis d'un professionnel de santé",
-"Interdiction absolue de conduire",
-"Le médicament ne doit pas être pris avec de l'alcool"
+"Soyez très prudent : demandez l'avis d'un médecin avant de conduire",
+"Interdiction de conduire pendant toute la durée du traitement",
+"Ne pas associer ce médicament à l'alcool, sans autre risque"
 ],
 "ok": [
 0
@@ -272,8 +272,8 @@
 "q": "Ce pictogramme (rouge) sur une boîte de médicament signifie :",
 "c": [
 "Attention, danger : ne pas conduire",
-"Soyez prudent",
-"Ne pas conduire de nuit seulement"
+"Soyez prudent, lisez bien la notice",
+"Ne pas conduire la nuit ni sur autoroute"
 ],
 "ok": [
 0
@@ -289,7 +289,7 @@
 "Bâillements répétés",
 "Picotements dans les yeux, paupières lourdes",
 "Difficulté à garder une trajectoire régulière",
-"Envie d'accélérer"
+"Sensation de faim ou de soif"
 ],
 "ok": [
 0,
@@ -306,7 +306,7 @@
 "c": [
 "Toutes les 2 heures",
 "Toutes les 5 heures",
-"Uniquement pour faire le plein"
+"À chaque plein de carburant"
 ],
 "ok": [
 0
@@ -350,9 +350,9 @@
 "n": "C-FAT-03",
 "q": "Je sens que je m'endors au volant. La bonne solution :",
 "c": [
-"M'arrêter dans un lieu sûr et faire une sieste de 15 à 20 minutes",
-"Ouvrir la fenêtre et monter le son",
-"Boire un café et continuer"
+"M'arrêter dans un lieu sûr et dormir 15 à 20 minutes",
+"Ouvrir la fenêtre et monter le son de la radio",
+"Boire un café serré et continuer jusqu'à l'arrivée"
 ],
 "ok": [
 0
@@ -383,7 +383,7 @@
 "c": [
 "Interdit",
 "Autorisé",
-"Autorisé seulement hors agglomération"
+"Autorisé hors agglomération"
 ],
 "ok": [
 0
@@ -397,8 +397,8 @@
 "q": "Je dois répondre à un message urgent. Je dois :",
 "c": [
 "M'arrêter dans un endroit autorisé avant de répondre",
-"Répondre à un feu rouge",
-"Répondre en roulant lentement"
+"Profiter d'un arrêt à un feu rouge pour répondre",
+"Utiliser la dictée vocale en tenant le téléphone"
 ],
 "ok": [
 0
@@ -412,8 +412,8 @@
 "q": "Un écran placé dans le champ de vision du conducteur est autorisé s'il affiche :",
 "c": [
 "Une aide à la conduite ou à la navigation (GPS)",
-"Un film pour les passagers",
-"Des vidéos"
+"Un film, si seuls les passagers le regardent",
+"Des vidéos, son coupé, en circulation lente"
 ],
 "ok": [
 0
@@ -427,8 +427,8 @@
 "q": "Je veux changer la destination de mon GPS. Je dois :",
 "c": [
 "M'arrêter pour le faire, ou demander à un passager",
-"Le faire en roulant, c'est rapide",
-"Le faire en ligne droite seulement"
+"Le faire en roulant, sur une portion en ligne droite",
+"Le faire à un feu rouge, puisque je suis arrêté"
 ],
 "ok": [
 0
@@ -531,9 +531,9 @@
 "n": "C-PER-03",
 "q": "La distance d'arrêt est égale à :",
 "c": [
-"La distance parcourue pendant le temps de réaction + la distance de freinage",
-"La distance de freinage seule",
-"La distance de sécurité"
+"La distance parcourue pendant la réaction + la distance de freinage",
+"La distance de freinage, depuis l'appui sur la pédale",
+"La distance de sécurité de 2 secondes avec le véhicule de devant"
 ],
 "ok": [
 0
@@ -548,8 +548,8 @@
 "q": "Je suis la voiture rouge et je veux me déporter sur la voie de gauche. La moto bleue est dans la zone orange. Elle est :",
 "c": [
 "Dans mon angle mort : je risque de ne pas la voir dans mes rétroviseurs",
-"Bien visible dans mon rétroviseur intérieur",
-"Sans danger, car elle est derrière moi"
+"Visible dans mon rétroviseur gauche si celui-ci est bien réglé",
+"Hors de danger tant qu'elle reste derrière ma voiture"
 ],
 "ok": [
 0
@@ -565,7 +565,7 @@
 "Regarder dans mes rétroviseurs",
 "Contrôler mon angle mort en tournant la tête",
 "Mettre mon clignotant",
-"Klaxonner"
+"Ralentir nettement avant de me déporter"
 ],
 "ok": [
 0,
@@ -581,8 +581,8 @@
 "q": "La nuit, la vision du conducteur :",
 "c": [
 "Est moins bonne : distances et couleurs sont plus difficiles à percevoir",
-"Est identique à celle du jour",
-"Est meilleure grâce aux phares"
+"Est aussi bonne que de jour, si les phares sont bien réglés",
+"Est meilleure, car les phares attirent l'attention sur la route"
 ],
 "ok": [
 0
@@ -596,8 +596,8 @@
 "q": "En conduisant, je regarde de préférence :",
 "c": [
 "Loin devant, en balayant régulièrement les côtés et les rétroviseurs",
-"Uniquement le véhicule juste devant moi",
-"Le compteur de vitesse en permanence"
+"Principalement le véhicule juste devant moi, pour réagir vite",
+"Alternativement la route et le compteur, pour contrôler ma vitesse"
 ],
 "ok": [
 0
@@ -611,8 +611,8 @@
 "q": "Un conducteur me fait une queue de poisson. La bonne réaction :",
 "c": [
 "Garder mon calme et reprendre une distance de sécurité",
-"Le suivre de près pour lui montrer mon mécontentement",
-"Klaxonner et faire des appels de phares"
+"Le suivre de près pour qu'il comprenne son erreur",
+"Faire un appel de phares pour lui signaler son erreur"
 ],
 "ok": [
 0
@@ -626,8 +626,8 @@
 "q": "Je suis très en retard et stressé. Je dois :",
 "c": [
 "Accepter d'arriver en retard plutôt que de prendre des risques",
-"Rouler plus vite pour rattraper le temps perdu",
-"Dépasser dès que possible"
+"Rouler un peu plus vite sur les portions dégagées",
+"Prendre un itinéraire plus court par de petites routes"
 ],
 "ok": [
 0
@@ -641,8 +641,8 @@
 "q": "Mes passagers m'encouragent à rouler plus vite. Je dois :",
 "c": [
 "Rester maître de ma conduite et respecter les règles",
-"Leur faire plaisir pour une fois",
-"Accélérer seulement sur autoroute"
+"Rouler un peu plus vite sur les routes que je connais",
+"Rouler plus vite sur autoroute, où c'est moins risqué"
 ],
 "ok": [
 0
@@ -656,8 +656,8 @@
 "q": "Sur un trajet que je connais par cœur :",
 "c": [
 "Je reste aussi vigilant, car l'habitude fait baisser l'attention",
-"Je peux relâcher mon attention",
-"Je peux rouler plus vite"
+"Je peux relâcher un peu mon attention, je connais les dangers",
+"Je peux rouler plus vite, car je connais chaque virage"
 ],
 "ok": [
 0
@@ -702,8 +702,8 @@
 "q": "Certaines maladies (épilepsie, troubles graves du sommeil, de la vue…) :",
 "c": [
 "Peuvent être incompatibles avec la conduite et nécessitent un avis médical",
-"N'ont jamais d'effet sur le permis",
-"Imposent uniquement de rouler moins vite"
+"N'ont pas d'effet sur le permis tant que le traitement est correctement suivi",
+"Imposent seulement de signaler la maladie à son assureur, sans autre démarche"
 ],
 "ok": [
 0
@@ -716,9 +716,9 @@
 "n": "C-SAN-02",
 "q": "J'ai de la fièvre et je me sens mal. Avant de prendre le volant :",
 "c": [
-"J'évalue si je suis en état de conduire, et je renonce si ce n'est pas le cas",
-"Je conduis, la fièvre n'a pas d'effet sur la conduite",
-"Je prends un médicament et je pars tout de suite"
+"J'évalue si je suis en état de conduire, et je renonce si besoin",
+"Je conduis normalement : la fièvre n'a pas d'effet sur la conduite",
+"Je prends un médicament contre la fièvre et je pars aussitôt"
 ],
 "ok": [
 0

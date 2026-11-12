@@ -6,8 +6,8 @@
 "q": "Ce panneau interdit l'accès aux véhicules :",
 "c": [
 "Dont la hauteur, chargement compris, dépasse 3,5 m",
-"Qui roulent à plus de 35 km/h",
-"De plus de 3,5 tonnes"
+"Dont la largeur, rétroviseurs compris, dépasse 3,5 m",
+"Dont le poids total autorisé dépasse 3,5 tonnes"
 ],
 "ok": [
 0
@@ -22,8 +22,8 @@
 "q": "Ce panneau interdit l'accès aux véhicules :",
 "c": [
 "Dont le poids total autorisé en charge dépasse 5,5 t",
-"Qui transportent plus de 5 passagers",
-"Dont la largeur dépasse 5,5 m"
+"Dont le poids par essieu dépasse 5,5 tonnes",
+"Dont la longueur, remorque comprise, dépasse 5,5 m"
 ],
 "ok": [
 0
@@ -114,8 +114,8 @@
 "q": "La priorité à droite s'applique :",
 "c": [
 "Aux intersections sans signalisation particulière",
-"Uniquement en agglomération",
-"Uniquement hors agglomération"
+"En agglomération, sauf signalisation contraire",
+"Hors agglomération, sur les routes secondaires"
 ],
 "ok": [
 0
@@ -129,9 +129,9 @@
 "img": "img/schemas/stop-droite.svg",
 "q": "Je suis la voiture rouge, à un stop. La voiture bleue arrive par ma gauche. Je dois :",
 "c": [
-"Passer, car la bleue vient de gauche",
+"Passer, car la voiture bleue vient de ma gauche",
 "M'arrêter et laisser passer la voiture bleue",
-"Klaxonner et passer"
+"M'arrêter, puis passer avant elle car elle est à gauche"
 ],
 "ok": [
 1
@@ -159,9 +159,9 @@
 "n": "L-PRI-03",
 "q": "À un cédez-le-passage, la voie est parfaitement dégagée. Je dois :",
 "c": [
-"M'arrêter quand même",
+"Marquer l'arrêt, puis repartir",
 "Passer sans m'arrêter, après avoir vérifié",
-"Accélérer pour dégager vite"
+"Marquer l'arrêt si je suis en agglomération"
 ],
 "ok": [
 1
@@ -190,7 +190,7 @@
 "q": "Sur une route à caractère prioritaire, je peux dépasser à une intersection :",
 "c": [
 "Oui, si les conditions de visibilité et de sécurité le permettent",
-"Non, jamais"
+"Non, le dépassement est interdit à toutes les intersections"
 ],
 "ok": [
 0
@@ -204,7 +204,7 @@
 "img": "img/schemas/giratoire.svg",
 "q": "Je suis la voiture rouge, à l'entrée d'un giratoire avec un cédez-le-passage. Qui passe en premier ?",
 "c": [
-"La voiture rouge",
+"La voiture rouge, qui arrive par la droite",
 "La voiture bleue, déjà sur l'anneau"
 ],
 "ok": [
@@ -232,9 +232,9 @@
 "n": "L-PRI-05",
 "q": "Pour sortir d'un giratoire, je mets mon clignotant :",
 "c": [
-"À gauche",
-"À droite",
-"Aucun clignotant n'est nécessaire"
+"À gauche, en entrant dans le giratoire",
+"À droite, juste avant ma sortie",
+"À gauche, juste avant ma sortie"
 ],
 "ok": [
 1
@@ -264,7 +264,7 @@
 "q": "Je suis la voiture rouge. Ce rond-point n'a aucun panneau ni marquage à l'entrée. Qui passe en premier ?",
 "c": [
 "La voiture rouge, qui arrive par la droite de la bleue",
-"La voiture bleue, déjà sur l'anneau"
+"La voiture bleue, car elle est déjà engagée sur l'anneau"
 ],
 "ok": [
 0
@@ -278,8 +278,8 @@
 "q": "Un véhicule de pompiers arrive derrière moi avec gyrophare et sirène. Je dois :",
 "c": [
 "Faciliter son passage, en me serrant à droite si possible",
-"Accélérer pour rester devant lui",
-"Freiner brusquement et m'arrêter au milieu de la voie"
+"Garder ma vitesse et ma trajectoire pour rester prévisible",
+"M'arrêter immédiatement là où je suis, au milieu de la voie"
 ],
 "ok": [
 0
@@ -293,7 +293,7 @@
 "q": "Au feu rouge, une ambulance du SAMU en intervention arrive derrière moi. Je peux franchir la ligne d'arrêt pour la laisser passer :",
 "c": [
 "Oui, en le faisant prudemment et sans danger",
-"Non, jamais"
+"Non, le feu rouge impose l'arrêt absolu"
 ],
 "ok": [
 0
@@ -353,8 +353,8 @@
 "q": "À un passage à niveau, je ne m'engage que si :",
 "c": [
 "Je suis sûr de pouvoir le dégager sans m'arrêter dessus",
-"La circulation devant moi est dense",
-"Le train est encore loin"
+"Les barrières sont levées, même si la sortie est encombrée",
+"Je ne vois pas de train arriver au moment où je m'engage"
 ],
 "ok": [
 0
@@ -367,9 +367,9 @@
 "n": "L-PRI-10",
 "q": "Ma voiture tombe en panne sur un passage à niveau. Je dois en priorité :",
 "c": [
-"Faire évacuer tout le monde, puis prévenir (téléphone d'appel du passage à niveau, 112)",
-"Rester dans la voiture et attendre de l'aide",
-"Essayer de redémarrer jusqu'au passage du train"
+"Faire sortir tout le monde et s'éloigner, puis alerter",
+"Rester dans la voiture, feux de détresse allumés, et appeler",
+"Tenter de redémarrer pour dégager la voie au plus vite"
 ],
 "ok": [
 0
@@ -382,9 +382,9 @@
 "n": "L-PRI-11",
 "q": "Le feu est vert, mais la circulation est bloquée juste après le carrefour. Je dois :",
 "c": [
-"Avancer quand même pour ne pas perdre ma place",
+"Avancer dans le carrefour pour ne pas perdre ma place",
 "Attendre de pouvoir dégager le carrefour",
-"Klaxonner"
+"Avancer, car le feu vert me donne la priorité"
 ],
 "ok": [
 1
@@ -399,7 +399,7 @@
 "c": [
 "Lui céder le passage",
 "Passer, car il n'est pas encore engagé",
-"Klaxonner pour le prévenir"
+"Ralentir et passer s'il a le temps d'attendre"
 ],
 "ok": [
 0
@@ -609,8 +609,8 @@
 "q": "La vitesse indiquée sur un panneau de limitation est :",
 "c": [
 "Une vitesse maximale, à adapter aux conditions",
-"La vitesse à laquelle je dois rouler",
-"Une simple recommandation"
+"La vitesse à laquelle je dois rouler si la route est libre",
+"Une vitesse recommandée, que je peux dépasser un peu"
 ],
 "ok": [
 0
@@ -654,8 +654,8 @@
 "q": "Un radar « tronçon » mesure :",
 "c": [
 "Ma vitesse moyenne entre deux points",
-"Ma vitesse à un point précis",
-"Le respect des feux rouges"
+"Ma vitesse à l'entrée d'une zone de travaux",
+"Le respect des distances de sécurité"
 ],
 "ok": [
 0
@@ -684,7 +684,7 @@
 "q": "En agglomération, sur une chaussée à plusieurs voies dans mon sens, je peux choisir :",
 "c": [
 "La voie la plus adaptée à ma destination",
-"Uniquement la voie de droite"
+"La voie de droite, sauf pour dépasser"
 ],
 "ok": [
 0
@@ -697,8 +697,8 @@
 "n": "L-CIR-02",
 "q": "Sur autoroute, dans un embouteillage, ma file avance plus vite que celle de gauche. Est-ce un dépassement par la droite interdit ?",
 "c": [
-"Oui",
-"Non, en circulation en files ininterrompues, ce n'est pas un dépassement"
+"Oui, c'est un dépassement par la droite, donc interdit",
+"Non, en files ininterrompues ce n'est pas un dépassement"
 ],
 "ok": [
 1
@@ -713,8 +713,8 @@
 "q": "Je suis la voiture rouge, sur la voie d'insertion d'une voie rapide. Je dois :",
 "c": [
 "Céder le passage aux véhicules déjà sur la voie rapide",
-"Forcer le passage, car je suis prioritaire",
-"M'arrêter au bout de la voie d'insertion"
+"M'insérer : les véhicules sur la voie rapide doivent me céder la place",
+"M'arrêter au bout de la voie d'insertion, puis attendre un espace"
 ],
 "ok": [
 0
@@ -743,8 +743,8 @@
 "q": "Pour tourner à gauche sur une route à double sens, je me place :",
 "c": [
 "Près de l'axe médian de la chaussée",
-"Le plus à droite possible",
-"Au milieu de ma voie"
+"Le plus à droite possible de ma voie",
+"Au milieu de ma voie, sans me déporter"
 ],
 "ok": [
 0
@@ -806,8 +806,8 @@
 "q": "Sur autoroute, les chevrons ou traits peints sur la voie de droite servent à :",
 "c": [
 "Vérifier ma distance de sécurité",
-"Indiquer une sortie",
-"Signaler une voie réservée"
+"Annoncer une sortie proche",
+"Délimiter une voie réservée aux poids lourds"
 ],
 "ok": [
 0
@@ -838,7 +838,7 @@
 "Avant de changer de direction",
 "Avant de changer de voie",
 "Avant de quitter une place de stationnement",
-"Seulement s'il y a d'autres usagers autour"
+"Quand d'autres usagers sont visibles autour"
 ],
 "ok": [
 0,
@@ -856,7 +856,7 @@
 "Que je dispose d'une visibilité et d'un espace suffisants",
 "Que personne n'a commencé à me dépasser",
 "Que le véhicule de devant n'a pas signalé qu'il allait dépasser",
-"Que j'ai le temps de klaxonner"
+"Que le véhicule de devant roule sous la vitesse maximale"
 ],
 "ok": [
 0,
@@ -918,9 +918,9 @@
 "n": "L-DEP-03",
 "q": "Je peux dépasser par la droite :",
 "c": [
-"Un véhicule dont le conducteur a signalé qu'il tourne à gauche et s'est déporté",
-"N'importe quel véhicule lent",
-"Un véhicule qui roule sur la voie de gauche de l'autoroute"
+"Un véhicule qui a signalé qu'il tourne à gauche et s'est déporté",
+"Un véhicule lent qui roule au milieu de sa voie",
+"Un véhicule qui reste sur la voie de gauche de l'autoroute"
 ],
 "ok": [
 0
@@ -965,8 +965,8 @@
 "q": "Pour dépasser un cycliste, une ligne continue m'empêche de laisser 1,50 m d'écart. Je dois :",
 "c": [
 "Rester derrière lui jusqu'à pouvoir dépasser en sécurité",
-"Le frôler pour ne pas franchir la ligne",
-"Klaxonner pour qu'il se range"
+"Le dépasser en réduisant l'écart, sans franchir la ligne",
+"Le dépasser en franchissant la ligne continue si la voie est libre"
 ],
 "ok": [
 0
@@ -980,8 +980,8 @@
 "q": "Un véhicule me dépasse. Je dois :",
 "c": [
 "Serrer à droite et ne pas accélérer",
-"Accélérer pour lui compliquer la tâche",
-"Me décaler à gauche"
+"Garder ma vitesse et ma position",
+"Ralentir fortement et serrer à gauche"
 ],
 "ok": [
 0
@@ -996,7 +996,7 @@
 "c": [
 "Je cède le passage au véhicule qui arrive en face",
 "Le véhicule d'en face doit me laisser passer",
-"Je passe en premier en klaxonnant"
+"Le premier arrivé à l'obstacle passe en premier"
 ],
 "ok": [
 0
@@ -1010,8 +1010,8 @@
 "q": "Sur une route de montagne étroite, le croisement est difficile. En règle générale :",
 "c": [
 "Le véhicule qui descend cède le passage à celui qui monte",
-"Le véhicule qui monte cède le passage",
-"Le plus rapide passe en premier"
+"Le véhicule qui monte cède le passage à celui qui descend",
+"Le véhicule le plus léger cède le passage à l'autre"
 ],
 "ok": [
 0
@@ -1074,8 +1074,8 @@
 "n": "L-ARR-02",
 "q": "Le stationnement dangereux entraîne un retrait de :",
 "c": [
-"Aucun point",
 "1 point",
+"2 points",
 "3 points"
 ],
 "ok": [
@@ -1121,9 +1121,9 @@
 "n": "L-ARR-04",
 "q": "Dans une zone bleue, je dois :",
 "c": [
-"Placer un disque de stationnement indiquant mon heure d'arrivée",
-"Payer à l'horodateur",
-"Ne pas stationner"
+"Placer un disque indiquant mon heure d'arrivée",
+"Payer à l'horodateur pour la durée choisie",
+"Avoir une carte de résident de la commune"
 ],
 "ok": [
 0
@@ -1151,9 +1151,9 @@
 "n": "L-ARR-05",
 "q": "Je peux stationner sur une place réservée aux livraisons :",
 "c": [
-"Non, sauf pour effectuer une livraison si la signalisation le permet",
-"Oui, si c'est moins de 10 minutes",
-"Oui, la nuit et le week-end dans tous les cas"
+"Non, sauf pour livrer si la signalisation le permet",
+"Oui, pour moins de 10 minutes, feux de détresse allumés",
+"Oui, en restant à proximité du véhicule"
 ],
 "ok": [
 0
@@ -1285,7 +1285,7 @@
 "c": [
 "Toutes les 2 heures",
 "Toutes les 4 heures",
-"Seulement si je me sens fatigué"
+"Dès que je ressens de la fatigue"
 ],
 "ok": [
 0
@@ -1299,8 +1299,8 @@
 "q": "Sur autoroute, un message radio annonce un véhicule à contresens. Je dois :",
 "c": [
 "Ralentir, rester sur la voie de droite et ne pas dépasser",
-"Me placer sur la voie de gauche",
-"Faire des appels de phares en continu"
+"Me placer sur la voie de gauche pour être plus visible",
+"M'arrêter sur la bande d'arrêt d'urgence et attendre"
 ],
 "ok": [
 0
@@ -1378,8 +1378,8 @@
 "q": "Dans un tunnel, les niches de sécurité permettent :",
 "c": [
 "D'appeler les secours et d'utiliser un extincteur",
-"De stationner pour faire une pause",
-"De faire demi-tour"
+"De stationner en cas de malaise ou de fatigue",
+"De faire demi-tour en cas de bouchon"
 ],
 "ok": [
 0
@@ -1454,8 +1454,8 @@
 "q": "Je suis ébloui par les feux d'un véhicule venant en face. Je dois :",
 "c": [
 "Ralentir et regarder le bord droit de la chaussée",
-"Fixer ses phares pour le repérer",
-"Lui faire des appels en feux de route"
+"Regarder ses phares pour bien le situer",
+"Lui faire un appel en feux de route pour le prévenir"
 ],
 "ok": [
 0
@@ -1533,9 +1533,9 @@
 "n": "L-ECL-06",
 "q": "La nuit, pour avertir un autre usager de ma présence, j'utilise de préférence :",
 "c": [
-"Un appel lumineux (alternance feux de croisement / feux de route)",
-"Le klaxon",
-"Les feux de détresse"
+"Un appel lumineux (feux de croisement / feux de route)",
+"Un bref coup d'avertisseur sonore (klaxon)",
+"Un bref allumage de mes feux de brouillard avant"
 ],
 "ok": [
 0
@@ -1549,9 +1549,9 @@
 "img": "img/panneaux/feu-orange-cli.svg",
 "q": "Les feux du carrefour sont en panne et clignotent à l'orange. Pour savoir qui est prioritaire :",
 "c": [
-"J'applique les panneaux placés sous les feux, sinon la priorité à droite",
-"Je suis prioritaire si je viens de la route principale",
-"Je passe en premier si j'arrive le premier"
+"J'applique les panneaux sous les feux, sinon la priorité à droite",
+"Je suis prioritaire si je suis sur la route la plus large",
+"Je passe en premier si j'arrive le premier au carrefour"
 ],
 "ok": [
 0
@@ -1565,8 +1565,8 @@
 "q": "À un carrefour, les feux sont totalement éteints et il n'y a aucun panneau. Je dois :",
 "c": [
 "Appliquer la priorité à droite",
-"Considérer que je suis prioritaire",
-"M'arrêter comme à un stop dans tous les cas"
+"Considérer la route la plus large comme prioritaire",
+"Marquer l'arrêt comme à un stop"
 ],
 "ok": [
 0
@@ -1579,9 +1579,9 @@
 "n": "L-VIT-11",
 "q": "Un choc à 50 km/h contre un obstacle fixe équivaut à peu près à une chute de :",
 "c": [
-"1 mètre",
+"1 étage (environ 3 m)",
 "3 étages (environ 10 m)",
-"10 étages"
+"10 étages (environ 30 m)"
 ],
 "ok": [
 1
@@ -1609,9 +1609,9 @@
 "n": "L-CIR-08",
 "q": "Dans un bouchon, deux voies se rejoignent en une seule plus loin. Le plus efficace est :",
 "c": [
-"Utiliser les deux voies jusqu'au rétrécissement, puis s'insérer un véhicule sur deux",
+"Utiliser les deux voies jusqu'au rétrécissement, puis alterner",
 "Se rabattre le plus tôt possible sur la voie qui continue",
-"Empêcher les autres de s'insérer"
+"Rester sur sa voie et laisser les autres trouver leur place"
 ],
 "ok": [
 0
@@ -1655,8 +1655,8 @@
 "q": "Sur une route à double sens, je m'arrête ou je stationne :",
 "c": [
 "Sur le côté droit de la chaussée, dans le sens de circulation",
-"Du côté qui m'arrange",
-"Sur le côté gauche si la place est plus grande"
+"Du côté gauche ou du côté droit, selon la place disponible",
+"Sur le côté gauche si la place y est plus grande ou plus proche"
 ],
 "ok": [
 0
@@ -1712,7 +1712,7 @@
 "n": "L-ARR-01",
 "q": "Je laisse ma voiture le long du trottoir 3 minutes, le temps d'acheter du pain. C'est :",
 "c": [
-"Un arrêt, car c'est court",
+"Un arrêt, car je reviens dans quelques minutes",
 "Un stationnement, car je quitte le véhicule"
 ],
 "ok": [

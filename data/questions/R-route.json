@@ -7,7 +7,7 @@
 "Aux piétons et cyclistes qui peuvent surgir",
 "Aux portières qui s'ouvrent",
 "Aux véhicules qui sortent des places de stationnement",
-"Uniquement aux feux"
+"Aux radars, plus nombreux qu'à la campagne"
 ],
 "ok": [
 0,
@@ -22,9 +22,9 @@
 "n": "R-TYP-01",
 "q": "Les accidents en agglomération :",
 "c": [
-"Sont nombreux, mais les accidents les plus graves ont surtout lieu hors agglomération",
-"Sont toujours sans gravité",
-"Sont plus rares qu'à la campagne"
+"Sont nombreux, mais les plus graves ont lieu hors agglomération",
+"Sont moins nombreux, mais en moyenne plus graves qu'à la campagne",
+"Sont aussi nombreux et aussi graves que hors agglomération"
 ],
 "ok": [
 0
@@ -40,7 +40,7 @@
 "Des engins agricoles lents",
 "Des sorties de chemins et de propriétés cachées",
 "Des animaux sur la chaussée",
-"Aucun croisement de véhicule"
+"Des passages piétons non signalés"
 ],
 "ok": [
 0,
@@ -71,8 +71,8 @@
 "q": "Dans une longue descente de montagne, je dois :",
 "c": [
 "Utiliser le frein moteur, en gardant un rapport adapté",
-"Rouler au point mort",
-"Freiner en continu avec la pédale"
+"Rouler au point mort pour ménager le moteur",
+"Freiner régulièrement avec la pédale, rapport élevé"
 ],
 "ok": [
 0
@@ -86,8 +86,8 @@
 "q": "En montagne, sur une route étroite, en cas de croisement difficile :",
 "c": [
 "Le véhicule qui descend cède le passage à celui qui monte",
-"Le véhicule qui monte doit toujours reculer",
-"Le plus gros véhicule cède toujours le passage"
+"Le véhicule qui monte cède le passage à celui qui descend",
+"Le véhicule le plus lourd cède le passage à l'autre"
 ],
 "ok": [
 0
@@ -115,9 +115,9 @@
 "n": "R-TYP-05",
 "q": "Mes roues droites mordent sur le bas-côté. Je dois :",
 "c": [
-"Ralentir progressivement, sans freiner brutalement, puis revenir doucement sur la chaussée",
-"Donner un coup de volant brusque vers la gauche",
-"Freiner à fond"
+"Ralentir progressivement, puis revenir doucement sur la chaussée",
+"Braquer franchement vers la gauche pour remonter tout de suite",
+"Freiner fort pour m'arrêter au plus vite sur le bas-côté"
 ],
 "ok": [
 0
@@ -145,8 +145,8 @@
 "q": "Pour aborder un virage, je dois :",
 "c": [
 "Ralentir avant le virage, en ligne droite",
-"Freiner fort au milieu du virage",
-"Accélérer en entrant dans le virage"
+"Ralentir en freinant au milieu du virage",
+"Garder ma vitesse et freiner en sortie de virage"
 ],
 "ok": [
 0
@@ -208,8 +208,8 @@
 "q": "Ma voiture « flotte » sur une nappe d'eau (aquaplaning). Je dois :",
 "c": [
 "Lâcher l'accélérateur et tenir fermement le volant droit",
-"Freiner fort",
-"Donner des coups de volant"
+"Freiner fort pour que les pneus retrouvent l'adhérence",
+"Tourner le volant pour rejoindre une partie plus sèche"
 ],
 "ok": [
 0
@@ -223,8 +223,8 @@
 "q": "Les premières pluies après une longue période sèche rendent la route :",
 "c": [
 "Particulièrement glissante",
-"Plus adhérente",
-"Identique"
+"Plus adhérente qu'avant",
+"Glissante seulement la nuit"
 ],
 "ok": [
 0
@@ -318,8 +318,8 @@
 "q": "Un panneau rond bleu montrant une roue avec des chaînes signifie :",
 "c": [
 "Les chaînes (ou équipements équivalents) sont obligatoires",
-"Les chaînes sont interdites",
-"Une zone de stationnement pour véhicules équipés"
+"Les chaînes sont interdites, pour protéger la chaussée",
+"Une aire de chaînage pour monter ses chaînes"
 ],
 "ok": [
 0
@@ -353,7 +353,7 @@
 "Baisser le pare-soleil et ralentir",
 "Porter des lunettes de soleil adaptées",
 "Garder un pare-brise propre",
-"Accélérer pour sortir de la zone"
+"Allumer mes feux de route pour être vu"
 ],
 "ok": [
 0,
@@ -386,9 +386,9 @@
 "n": "R-MET-07",
 "q": "Dans les communes de montagne concernées par la « loi Montagne », du 1er novembre au 31 mars, je dois :",
 "c": [
-"Avoir des pneus hiver, ou des chaînes ou chaussettes à neige dans le coffre",
-"Avoir obligatoirement des pneus à clous",
-"Rien de particulier"
+"Avoir des pneus hiver, ou des chaînes ou chaussettes dans le coffre",
+"Avoir des pneus à clous, obligatoires dans ces communes en hiver",
+"Avoir des chaînes montées sur les roues pendant toute la période"
 ],
 "ok": [
 0
@@ -402,8 +402,8 @@
 "q": "La route devant moi est inondée. Je dois :",
 "c": [
 "Ne pas m'y engager et faire demi-tour si possible",
-"Traverser rapidement pour ne pas caler",
-"Traverser si l'eau ne semble pas profonde"
+"Traverser rapidement, en régime élevé, pour ne pas caler",
+"Traverser lentement si l'eau ne semble pas profonde"
 ],
 "ok": [
 0
@@ -433,8 +433,8 @@
 "q": "Rouler la nuit :",
 "c": [
 "Est plus dangereux : on voit moins loin et la fatigue est plus forte",
-"Est moins dangereux car il y a moins de trafic",
-"Ne change rien si les phares sont bons"
+"Est moins dangereux : il y a beaucoup moins de trafic que de jour",
+"Ne change rien si les phares sont bien réglés et les vitres propres"
 ],
 "ok": [
 0
@@ -463,9 +463,9 @@
 "n": "R-NUI-02",
 "q": "Après avoir été ébloui, la vue revient à la normale :",
 "c": [
-"Immédiatement",
+"Immédiatement, dès que les phares sont passés",
 "Après quelques secondes, plus longtemps avec l'âge",
-"Seulement le lendemain"
+"Après plusieurs minutes, quel que soit l'âge"
 ],
 "ok": [
 1
@@ -480,7 +480,7 @@
 "c": [
 "M'arrêter",
 "Passer prudemment",
-"Klaxonner pour qu'il me laisse passer"
+"Ralentir et attendre son geste"
 ],
 "ok": [
 0

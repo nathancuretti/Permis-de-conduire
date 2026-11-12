@@ -22,7 +22,7 @@
 "Allumer mes feux de détresse et enfiler mon gilet",
 "Baliser la zone de part et d'autre de l'accident",
 "Couper le contact des véhicules accidentés",
-"Fumer une cigarette pour me calmer"
+"Garer ma voiture au plus près des victimes"
 ],
 "ok": [
 0,
@@ -39,8 +39,8 @@
 "q": "Le triangle de présignalisation se place :",
 "c": [
 "À au moins 30 m du véhicule ou de l'obstacle",
-"Juste derrière le véhicule",
-"À 5 m du véhicule"
+"Juste derrière le véhicule, bien en vue",
+"À une dizaine de mètres du véhicule"
 ],
 "ok": [
 0
@@ -54,8 +54,8 @@
 "q": "Pour baliser un accident, on place des personnes ou un triangle à environ :",
 "c": [
 "150 à 200 m de part et d'autre de l'accident",
-"10 m de chaque côté",
-"Uniquement derrière l'accident"
+"10 à 20 m de part et d'autre de l'accident",
+"150 à 200 m derrière l'accident, d'un seul côté"
 ],
 "ok": [
 0
@@ -99,8 +99,8 @@
 "q": "Le 114 est le numéro d'urgence :",
 "c": [
 "Accessible par SMS, pour les personnes sourdes ou malentendantes",
-"Des dépanneuses",
-"Des autoroutes"
+"Des dépanneuses agréées sur les autoroutes et voies rapides",
+"Du centre antipoison, en cas d'intoxication"
 ],
 "ok": [
 0
@@ -161,9 +161,9 @@
 "n": "P-PAS-04",
 "q": "Une victime est consciente mais blessée. Je peux la déplacer :",
 "c": [
-"Uniquement en cas de danger réel et immédiat (incendie, risque d'être percutée)",
-"Toujours, pour l'installer confortablement",
-"Pour la mettre dans ma voiture et l'emmener à l'hôpital"
+"Seulement en cas de danger immédiat (incendie, risque d'être heurtée)",
+"Pour l'installer plus confortablement en attendant les secours",
+"Pour l'emmener moi-même à l'hôpital si les secours tardent"
 ],
 "ok": [
 0
@@ -223,8 +223,8 @@
 "q": "Une victime saigne abondamment. Je dois d'abord :",
 "c": [
 "Appuyer fortement sur la plaie avec la main ou un tissu propre",
-"Poser immédiatement un garrot",
-"Laisser saigner pour nettoyer la plaie"
+"Poser immédiatement un garrot serré au-dessus de la plaie",
+"Allonger la victime, jambes surélevées, et attendre les secours"
 ],
 "ok": [
 0
@@ -253,7 +253,7 @@
 "q": "Une victime est inconsciente mais respire. Je dois :",
 "c": [
 "La placer en position latérale de sécurité (PLS)",
-"La laisser sur le dos",
+"La laisser sur le dos et surélever ses jambes",
 "Lui faire un massage cardiaque"
 ],
 "ok": [
@@ -267,9 +267,9 @@
 "n": "P-PAS-07",
 "q": "Pour savoir si une victime inconsciente respire, je :",
 "c": [
-"Bascule légèrement sa tête en arrière et regarde, écoute et sens sa respiration pendant 10 secondes",
-"La secoue vigoureusement",
-"Prends son pouls au poignet pendant 1 minute"
+"Bascule sa tête en arrière, puis regarde et écoute sa respiration 10 s",
+"La secoue doucement par les épaules et attends qu'elle réagisse",
+"Prends son pouls au poignet pendant une minute environ"
 ],
 "ok": [
 0
@@ -301,8 +301,8 @@
 "q": "Un défibrillateur automatisé externe (DAE) peut être utilisé :",
 "c": [
 "Par n'importe qui, même sans formation",
-"Uniquement par un médecin",
-"Uniquement par les pompiers"
+"Par une personne formée aux premiers secours",
+"Par un médecin ou un secouriste diplômé"
 ],
 "ok": [
 0
@@ -316,8 +316,8 @@
 "q": "Une personne s'est brûlée à la main. Je dois :",
 "c": [
 "Refroidir la brûlure sous l'eau tempérée pendant plusieurs minutes",
-"Appliquer du beurre ou de l'huile",
-"Percer les cloques"
+"Appliquer une crème grasse ou du beurre pour calmer la douleur",
+"Percer les cloques pour éviter qu'elles grossissent"
 ],
 "ok": [
 0
@@ -330,9 +330,9 @@
 "n": "P-PAS-09",
 "q": "Une personne s'étouffe et ne peut plus parler ni tousser. Je dois :",
 "c": [
-"Lui donner des claques vigoureuses dans le dos, puis des compressions abdominales si besoin",
-"Lui donner à boire",
-"L'allonger sur le dos"
+"Lui donner des claques dans le dos, puis des compressions abdominales",
+"Lui donner à boire pour l'aider à faire passer ce qui la bloque",
+"L'allonger sur le dos et lui surélever les jambes en attendant"
 ],
 "ok": [
 0
@@ -363,7 +363,7 @@
 "c": [
 "Est un délit",
 "N'est pas sanctionné",
-"Est seulement une faute morale"
+"Est une simple contravention"
 ],
 "ok": [
 0
@@ -377,8 +377,8 @@
 "q": "Je ne connais pas les gestes de premiers secours. Face à un accident :",
 "c": [
 "J'alerte les secours, ce qui est déjà porter assistance",
-"Je passe mon chemin",
-"Je déplace les victimes vers le bas-côté"
+"Je continue ma route, d'autres sauront mieux faire",
+"Je déplace les victimes vers le bas-côté par sécurité"
 ],
 "ok": [
 0
