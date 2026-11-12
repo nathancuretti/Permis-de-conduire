@@ -1,0 +1,524 @@
+[
+{
+"id": "U-PIE-01-a",
+"n": "U-PIE-01",
+"img": "img/schemas/passage-pieton.svg",
+"q": "Un piéton s'engage sur un passage pour piétons au moment où j'arrive. Je dois :",
+"c": [
+"M'arrêter pour le laisser traverser",
+"Klaxonner pour qu'il se dépêche",
+"Passer derrière lui sans ralentir"
+],
+"ok": [
+0
+],
+"ex": "Le piéton engagé ou qui manifeste l'intention de traverser est prioritaire. Ne pas le laisser passer coûte 6 points.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "U-PIE-01-b",
+"n": "U-PIE-01",
+"q": "Un piéton traverse hors d'un passage pour piétons, à moins de 50 m de celui-ci. Je dois :",
+"c": [
+"Faire preuve de prudence et éviter de le mettre en danger",
+"Accélérer, car il est en faute",
+"Le klaxonner longuement"
+],
+"ok": [
+0
+],
+"ex": "Même en tort, le piéton reste vulnérable : le conducteur doit toujours adapter sa conduite pour éviter l'accident.",
+"src": "Code de la route"
+},
+{
+"id": "U-PIE-02-a",
+"n": "U-PIE-02",
+"q": "Une personne avec une canne blanche ou un chien guide s'apprête à traverser. Je dois :",
+"c": [
+"Lui laisser le passage, même hors d'un passage pour piétons",
+"Klaxonner pour la prévenir",
+"Passer avant elle"
+],
+"ok": [
+0
+],
+"ex": "Une personne aveugle ou malvoyante (canne blanche, chien guide) doit pouvoir traverser en toute sécurité : on s'arrête, sans klaxonner.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "U-PIE-02-b",
+"n": "U-PIE-02",
+"q": "Près d'une école, à la sortie des classes, je dois :",
+"c": [
+"Ralentir fortement et m'attendre à des comportements imprévisibles",
+"Rouler normalement si la limite est respectée",
+"Klaxonner pour prévenir les enfants"
+],
+"ok": [
+0
+],
+"ex": "Les enfants sont petits (peu visibles), rapides et imprévisibles. Les personnes âgées, elles, traversent lentement et entendent parfois moins bien.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-PIE-02-c",
+"n": "U-PIE-02",
+"q": "Un ballon traverse la rue devant moi. Je dois :",
+"c": [
+"Ralentir et m'attendre à voir un enfant courir derrière",
+"Continuer, ce n'est qu'un ballon",
+"Klaxonner"
+],
+"ok": [
+0
+],
+"ex": "Un ballon annonce souvent un enfant qui va surgir sans regarder.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-PIE-03-a",
+"n": "U-PIE-03",
+"img": "img/panneaux/B52.svg",
+"q": "Dans une zone de rencontre, un piéton marche au milieu de la chaussée. Il est :",
+"c": [
+"Dans son droit : les piétons peuvent y circuler sur la chaussée et sont prioritaires",
+"En infraction",
+"Obligé de me laisser passer"
+],
+"ok": [
+0
+],
+"ex": "En zone de rencontre (20 km/h), les piétons peuvent marcher sur la chaussée et sont prioritaires sur les véhicules (sauf les tramways).",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "U-VEL-01-a",
+"n": "U-VEL-01",
+"q": "Je tourne à droite à une intersection. Avant de tourner, je dois vérifier :",
+"c": [
+"Qu'aucun cycliste ne remonte à ma droite",
+"Mon rétroviseur droit et mon angle mort",
+"Uniquement le feu"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les cyclistes qui vont tout droit se trouvent souvent à droite, dans l'angle mort. Rétroviseur et coup d'œil avant de tourner.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-VEL-01-b",
+"n": "U-VEL-01",
+"q": "Deux cyclistes roulent côte à côte de jour, sur une route de campagne. Ils sont :",
+"c": [
+"Autorisés, mais doivent se mettre en file quand un véhicule veut les dépasser",
+"En infraction",
+"Autorisés à rester côte à côte en toutes circonstances"
+],
+"ok": [
+0
+],
+"ex": "Les cyclistes peuvent rouler à deux de front, mais doivent se mettre en file la nuit et lorsqu'un véhicule veut les dépasser.",
+"src": "Code de la route, art. R431-7"
+},
+{
+"id": "U-VEL-01-c",
+"n": "U-VEL-01",
+"q": "Un cycliste roule devant moi et l'écart latéral réglementaire n'est pas possible. Je dois :",
+"c": [
+"Rester derrière lui en attendant de pouvoir dépasser",
+"Le dépasser en le frôlant",
+"Klaxonner pour qu'il se range"
+],
+"ok": [
+0
+],
+"ex": "Écart minimum : 1 m en agglomération, 1,50 m hors agglomération. Sinon, patience.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "U-VEL-02-a",
+"n": "U-VEL-02",
+"img": "img/panneaux/B1-sauf-velos.svg",
+"q": "Ce panneau signifie :",
+"c": [
+"Sens interdit aux véhicules, sauf aux cyclistes qui peuvent circuler à contresens",
+"Sens interdit à tous",
+"Piste cyclable obligatoire"
+],
+"ok": [
+0
+],
+"ex": "Double-sens cyclable : les cyclistes peuvent arriver en face dans une rue à sens unique pour les voitures. C'est la règle par défaut dans les zones 30 et les zones de rencontre.",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "U-VEL-02-b",
+"n": "U-VEL-02",
+"q": "Dans une rue à sens unique en zone 30, je dois m'attendre à croiser :",
+"c": [
+"Des cyclistes venant en face",
+"Aucun véhicule venant en face"
+],
+"ok": [
+0
+],
+"ex": "En zone 30, le double-sens cyclable est la règle, sauf décision contraire signalée.",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "U-VEL-02-c",
+"n": "U-VEL-02",
+"img": "img/panneaux/M12.svg",
+"q": "Au feu rouge, un cycliste tourne à droite alors que je suis arrêté. Si ce panonceau est présent, il :",
+"c": [
+"Est en règle, s'il cède le passage aux autres usagers",
+"Est en infraction",
+"Est prioritaire sur les piétons"
+],
+"ok": [
+0
+],
+"ex": "Le panonceau « cédez-le-passage cycliste au feu » permet aux cyclistes de franchir le feu rouge dans la direction indiquée, en cédant le passage.",
+"src": "IISR"
+},
+{
+"id": "U-VEL-03-a",
+"n": "U-VEL-03",
+"q": "Je suis garé le long du trottoir et je veux ouvrir ma portière. Je dois d'abord :",
+"c": [
+"Vérifier dans le rétroviseur et par-dessus l'épaule qu'aucun cycliste n'arrive",
+"Ouvrir rapidement pour gêner le moins longtemps possible",
+"Klaxonner"
+],
+"ok": [
+0
+],
+"ex": "Une portière ouverte devant un cycliste peut le projeter. Astuce : ouvrir avec la main opposée (main droite pour la portière gauche), ce qui oblige à tourner le buste et la tête.",
+"src": "Code de la route"
+},
+{
+"id": "U-VEL-03-b",
+"n": "U-VEL-03",
+"q": "Le port du casque à vélo est obligatoire :",
+"c": [
+"Pour les enfants de moins de 12 ans, conducteurs ou passagers",
+"Pour tous les cyclistes",
+"Pour personne"
+],
+"ok": [
+0
+],
+"ex": "Casque obligatoire pour les moins de 12 ans (l'adulte qui transporte ou accompagne l'enfant est responsable). Recommandé pour tous.",
+"src": "Code de la route"
+},
+{
+"id": "U-VEL-04-a",
+"n": "U-VEL-04",
+"q": "Une trottinette électrique :",
+"c": [
+"Est interdite aux moins de 14 ans",
+"Ne doit pas dépasser 25 km/h",
+"Peut transporter un passager",
+"Peut circuler sur le trottoir à 25 km/h"
+],
+"ok": [
+0,
+1
+],
+"ex": "Trottinette électrique : 14 ans minimum, 25 km/h maximum, une seule personne, pas de circulation sur le trottoir (sauf autorisation locale, à l'allure du pas).",
+"src": "Code de la route"
+},
+{
+"id": "U-VEL-04-b",
+"n": "U-VEL-04",
+"q": "En agglomération, une trottinette électrique doit circuler en priorité :",
+"c": [
+"Sur les pistes et bandes cyclables quand il y en a",
+"Sur le trottoir",
+"Sur la voie de bus"
+],
+"ok": [
+0
+],
+"ex": "Elle emprunte les aménagements cyclables quand il y en a, sinon la chaussée des routes limitées à 50 km/h.",
+"src": "Code de la route"
+},
+{
+"id": "U-2RM-01-a",
+"n": "U-2RM-01",
+"q": "Dans un bouchon, avant de changer de file :",
+"c": [
+"Je vérifie qu'aucune moto ne remonte entre les files",
+"Je change de file directement, personne ne peut arriver",
+"Je klaxonne"
+],
+"ok": [
+0
+],
+"ex": "Les deux-roues remontent souvent entre les files et sont difficiles à voir : rétroviseurs et angle mort avant tout déplacement latéral.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-2RM-01-b",
+"n": "U-2RM-01",
+"q": "Les motards sont particulièrement vulnérables car :",
+"c": [
+"Ils n'ont pas de carrosserie pour les protéger",
+"Ils sont moins visibles que les voitures",
+"Leur freinage est plus délicat (risque de chute)",
+"Ils roulent toujours trop vite"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Les deux-roues motorisés représentent une faible part du trafic mais une part importante des tués. Ils sont peu protégés, peu visibles, et freiner fort peut les faire chuter.",
+"src": "Sécurité routière (ONISR)"
+},
+{
+"id": "U-2RM-02-a",
+"n": "U-2RM-02",
+"q": "Il est difficile d'estimer la vitesse et la distance d'une moto parce que :",
+"c": [
+"Sa silhouette étroite la fait paraître plus lointaine et plus lente",
+"Elle n'a pas de phare",
+"Elle roule toujours sur le bord de la route"
+],
+"ok": [
+0
+],
+"ex": "Un deux-roues paraît plus loin et plus lent qu'il ne l'est. Avant de couper sa route (tourner à gauche, sortir d'une intersection), prendre une marge.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-01-a",
+"n": "U-LOU-01",
+"q": "Les autocollants « angles morts » sur les poids lourds signalent :",
+"c": [
+"Les zones où le conducteur ne peut pas me voir",
+"Un transport de matières dangereuses",
+"Un véhicule en panne"
+],
+"ok": [
+0
+],
+"ex": "Ces autocollants (obligatoires sur les poids lourds, bus et cars) rappellent les grands angles morts. Si je ne vois pas les rétroviseurs du camion, son conducteur ne me voit pas.",
+"src": "Code de la route"
+},
+{
+"id": "U-LOU-01-b",
+"n": "U-LOU-01",
+"q": "Un camion qui tourne à droite peut d'abord se déporter vers la gauche. Je dois :",
+"c": [
+"Ne pas me glisser à sa droite",
+"En profiter pour le dépasser par la droite",
+"Klaxonner"
+],
+"ok": [
+0
+],
+"ex": "Les véhicules longs ont besoin de place pour tourner (giration) : l'arrière coupe le virage. Ne jamais se placer à leur droite.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-01-c",
+"n": "U-LOU-01",
+"q": "Par rapport à une voiture, un poids lourd :",
+"c": [
+"A besoin d'une distance plus longue pour freiner",
+"Freine plus court grâce à ses nombreuses roues",
+"Peut s'arrêter instantanément"
+],
+"ok": [
+0
+],
+"ex": "Sa masse lui impose une distance de freinage bien plus longue : ne jamais se rabattre juste devant lui.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-02-a",
+"n": "U-LOU-02",
+"q": "En agglomération, un bus signale qu'il quitte son arrêt. Je dois :",
+"c": [
+"Ralentir, voire m'arrêter, pour le laisser repartir",
+"Accélérer pour passer avant lui",
+"Klaxonner"
+],
+"ok": [
+0
+],
+"ex": "En agglomération, il faut laisser les bus quitter leur arrêt quand ils l'ont signalé.",
+"src": "Code de la route"
+},
+{
+"id": "U-LOU-02-b",
+"n": "U-LOU-02",
+"q": "Un car de ramassage scolaire est arrêté, feux de détresse allumés. Je dois :",
+"c": [
+"Ralentir fortement : des enfants peuvent traverser",
+"Le dépasser rapidement",
+"Klaxonner pour avertir les enfants"
+],
+"ok": [
+0
+],
+"ex": "Les feux de détresse d'un car scolaire signalent la montée ou la descente d'enfants, qui peuvent surgir devant ou derrière le car.",
+"src": "Code de la route"
+},
+{
+"id": "U-LOU-03-a",
+"n": "U-LOU-03",
+"q": "Concernant le tramway :",
+"c": [
+"Il ne peut pas se déporter pour m'éviter",
+"Il met longtemps à s'arrêter",
+"Il est silencieux : on l'entend mal arriver",
+"Je peux m'arrêter sur ses rails en cas de bouchon"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Le tramway est guidé par ses rails, lourd et silencieux. Ne jamais s'arrêter ni stationner sur ses voies.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-04-a",
+"n": "U-LOU-04",
+"q": "Je suis derrière un tracteur agricole sur une route étroite. Je dois :",
+"c": [
+"Patienter et dépasser seulement quand c'est sûr",
+"Le dépasser au plus vite, même en virage",
+"Le suivre de très près pour lui mettre la pression"
+],
+"ok": [
+0
+],
+"ex": "Les engins agricoles sont lents et larges, ils peuvent tourner sans prévenir et laisser de la terre sur la chaussée. On ne dépasse qu'avec une bonne visibilité.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-04-b",
+"n": "U-LOU-04",
+"q": "Je croise un convoi exceptionnel précédé d'un véhicule pilote. Je dois :",
+"c": [
+"Suivre les indications du véhicule pilote ou des motards d'escorte",
+"Garder ma vitesse et ma position",
+"Dépasser le convoi par la droite"
+],
+"ok": [
+0
+],
+"ex": "Les convois exceptionnels peuvent occuper toute la largeur de la chaussée. On se range et on suit les indications de l'escorte.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-LOU-05-a",
+"n": "U-LOU-05",
+"q": "Un véhicule de police avec gyrophare bleu et sirène arrive en face, sur une route étroite. Je dois :",
+"c": [
+"Serrer à droite et ralentir, voire m'arrêter",
+"Garder ma trajectoire",
+"Accélérer pour libérer la route plus vite"
+],
+"ok": [
+0
+],
+"ex": "On facilite le passage des véhicules prioritaires en intervention, sans manœuvre dangereuse.",
+"src": "Code de la route"
+},
+{
+"id": "U-LOU-06-a",
+"n": "U-LOU-06",
+"q": "Un gyrophare bleu, avec avertisseur spécial (deux-tons), signale :",
+"c": [
+"Un véhicule prioritaire en intervention",
+"Un véhicule lent",
+"Un véhicule de livraison"
+],
+"ok": [
+0
+],
+"ex": "Bleu + deux-tons : police, gendarmerie, pompiers, SAMU… en intervention. Ils sont prioritaires.",
+"src": "Code de la route"
+},
+{
+"id": "U-LOU-06-b",
+"n": "U-LOU-06",
+"q": "Un gyrophare orange signale :",
+"c": [
+"Un véhicule lent, encombrant ou en intervention (dépanneuse, chantier, déneigement…)",
+"Un véhicule prioritaire",
+"Un taxi libre"
+],
+"ok": [
+0
+],
+"ex": "Le feu orange tournant n'accorde aucune priorité : il signale un danger (véhicule lent, large, à l'arrêt sur la chaussée). On ralentit et on dépasse prudemment.",
+"src": "Code de la route"
+},
+{
+"id": "U-ANI-01-a",
+"n": "U-ANI-01",
+"q": "Un animal sauvage surgit devant moi, trop près pour l'éviter sans danger. Il vaut mieux :",
+"c": [
+"Freiner fort en gardant ma trajectoire, quitte à heurter l'animal",
+"Donner un grand coup de volant pour l'éviter",
+"Accélérer"
+],
+"ok": [
+0
+],
+"ex": "Un brusque coup de volant peut provoquer une sortie de route ou un choc frontal, bien plus graves. On freine en ligne droite.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-ANI-01-b",
+"n": "U-ANI-01",
+"q": "Je dépasse un cavalier à cheval. Je dois :",
+"c": [
+"Ralentir et passer largement, sans klaxonner",
+"Klaxonner pour qu'il se range",
+"Le frôler pour passer vite"
+],
+"ok": [
+0
+],
+"ex": "Un cheval peut s'effrayer d'un bruit ou d'un passage trop rapide et trop proche. Écart d'au moins 1,50 m hors agglomération.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "U-ANI-01-c",
+"n": "U-ANI-01",
+"q": "Un troupeau traverse la route devant moi. Je dois :",
+"c": [
+"M'arrêter et attendre qu'il ait traversé, ou suivre les indications du berger",
+"Klaxonner pour le disperser",
+"Me frayer un chemin au milieu des animaux"
+],
+"ok": [
+0
+],
+"ex": "Patience : les animaux sont imprévisibles. On suit les indications des conducteurs du troupeau.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-ANI-01-d",
+"n": "U-ANI-01",
+"q": "J'ai percuté un sanglier. Je dois :",
+"c": [
+"Me mettre en sécurité, baliser et prévenir les forces de l'ordre",
+"Charger l'animal dans mon coffre",
+"Repartir sans rien dire"
+],
+"ok": [
+0
+],
+"ex": "Protéger (feux de détresse, gilet, triangle), alerter (17 ou 112) si l'animal est sur la chaussée ou blessé. Ne pas toucher un animal blessé : il peut être dangereux.",
+"src": "Sécurité routière"
+}
+]

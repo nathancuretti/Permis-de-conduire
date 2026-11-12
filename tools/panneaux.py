@@ -488,6 +488,10 @@ P["plaque-orange"] = ("0 0 160 110", f'<rect x="4" y="4" width="152" height="102
                       f'<line x1="4" y1="55" x2="156" y2="55" stroke="{BLK}" stroke-width="5"/>'
                       + text("33", 80, 31, 34) + text("1203", 80, 81, 34))
 
+P["B1-sauf-velos"] = ("0 0 100 150", P["B1"] +
+                      f'<rect x="10" y="104" width="80" height="42" rx="4" fill="{WHT}" stroke="{BLK}" stroke-width="2"/>'
+                      + text("SAUF", 33, 126, 13) + velo(68, 140, 0.75))
+
 def main():
     os.makedirs(OUT_P, exist_ok=True)
     os.makedirs(OUT_S, exist_ok=True)

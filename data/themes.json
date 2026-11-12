@@ -4,7 +4,8 @@
   "data/questions/D-reglementation.json",
   "data/questions/L-regles.json",
   "data/questions/L-signalisation.json",
-  "data/questions/P-secours.json"
+  "data/questions/P-secours.json",
+  "data/questions/U-usagers.json"
  ],
  "themes": [
   {
@@ -863,17 +864,17 @@
       {
        "id": "U-PIE-01",
        "nom": "Priorité aux piétons, passages piétons",
-       "q": 0
+       "q": 2
       },
       {
        "id": "U-PIE-02",
        "nom": "Piétons vulnérables : enfants, personnes âgées, PMR, aveugles (canne blanche)",
-       "q": 0
+       "q": 3
       },
       {
        "id": "U-PIE-03",
        "nom": "Zones de rencontre, aires piétonnes",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "U"
@@ -885,22 +886,22 @@
       {
        "id": "U-VEL-01",
        "nom": "Distances de dépassement, angles morts",
-       "q": 0
+       "q": 3
       },
       {
        "id": "U-VEL-02",
        "nom": "Double-sens cyclable, sas vélo, tourne-à-droite cycliste au feu",
-       "q": 0
+       "q": 3
       },
       {
        "id": "U-VEL-03",
        "nom": "Ouverture de portière (« dooring »)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "U-VEL-04",
        "nom": "Trottinettes électriques : règles de circulation",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "U"
@@ -912,12 +913,12 @@
       {
        "id": "U-2RM-01",
        "nom": "Remontée de files, angles morts, vulnérabilité",
-       "q": 0
+       "q": 2
       },
       {
        "id": "U-2RM-02",
        "nom": "Estimation de vitesse difficile",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "U"
@@ -929,32 +930,32 @@
       {
        "id": "U-LOU-01",
        "nom": "Poids lourds : angles morts (autocollants), girations, distance de freinage",
-       "q": 0
+       "q": 3
       },
       {
        "id": "U-LOU-02",
        "nom": "Bus et cars : priorité en sortie d'arrêt en agglo, transport d'enfants",
-       "q": 0
+       "q": 2
       },
       {
        "id": "U-LOU-03",
        "nom": "Tramways",
-       "q": 0
+       "q": 1
       },
       {
        "id": "U-LOU-04",
        "nom": "Engins agricoles, convois exceptionnels",
-       "q": 0
+       "q": 2
       },
       {
        "id": "U-LOU-05",
        "nom": "Véhicules de secours et d'intervention",
-       "q": 0
+       "q": 1
       },
       {
        "id": "U-LOU-06",
        "nom": "Gyrophares : bleu (véhicule prioritaire), orange (véhicule lent, encombrant ou en intervention)",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "U"
@@ -966,7 +967,7 @@
       {
        "id": "U-ANI-01",
        "nom": "Animaux sauvages et domestiques, cavaliers, troupeaux",
-       "q": 0
+       "q": 4
       }
      ],
      "officiel": "U"
