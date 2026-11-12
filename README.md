@@ -26,3 +26,11 @@ Appli web (utilisable sur téléphone, installable sur l'écran d'accueil) pour 
 ```
 
 Après modification : `python3 tools/panneaux.py && python3 tools/build.py`.
+
+## Photos
+
+Les photos de `img/photos` proviennent de [Panoramax](https://panoramax.fr) (photos de rue libres). L'auteur et la licence
+sont indiqués sous chaque photo dans l'appli. Les photos sous licence CC BY-SA 4.0 ont été recadrées et redimensionnées :
+ces versions modifiées restent sous la même licence (CC BY-SA 4.0).
+
+Recherche de nouvelles photos : `python3 tools/panoramax.py FR:AB4 dossier/` (code de panneau OSM, ex. `FR:B14[50]`).

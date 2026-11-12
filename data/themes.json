@@ -7,7 +7,8 @@
   "data/questions/P-secours.json",
   "data/questions/R-route.json",
   "data/questions/U-usagers.json",
-  "data/questions/V-vehicule.json"
+  "data/questions/V-vehicule.json",
+  "data/questions/X-photos.json"
  ],
  "themes": [
   {
@@ -37,7 +38,7 @@
       {
        "id": "L-PAN-04",
        "nom": "Panneaux d'intersection et de priorité (AB1 à AB7, stop, cédez-le-passage, route prioritaire et fin)",
-       "q": 8
+       "q": 11
       },
       {
        "id": "L-PAN-15",
@@ -89,22 +90,22 @@
       {
        "id": "L-PAN-09",
        "nom": "Panneaux d'indication (impasse, parking, voie de détresse, zone 30, zone de rencontre, aire piétonne)",
-       "q": 7
+       "q": 8
       },
       {
        "id": "L-PAN-10",
        "nom": "Panneaux de localisation et de direction (couleurs : autoroute bleu, route verte, local blanc)",
-       "q": 4
+       "q": 5
       },
       {
        "id": "L-PAN-11",
        "nom": "Entrée / sortie d'agglomération et effets juridiques",
-       "q": 2
+       "q": 3
       },
       {
        "id": "L-PAN-12",
        "nom": "Panonceaux (distance, étendue, catégorie, horaires) et leur portée",
-       "q": 2
+       "q": 4
       },
       {
        "id": "L-PAN-13",
@@ -219,7 +220,7 @@
       {
        "id": "L-PRI-02",
        "nom": "Stop : arrêt obligatoire à la ligne, puis céder le passage",
-       "q": 2
+       "q": 4
       },
       {
        "id": "L-PRI-03",
@@ -229,7 +230,7 @@
       {
        "id": "L-PRI-04",
        "nom": "Route à caractère prioritaire",
-       "q": 2
+       "q": 3
       },
       {
        "id": "L-PRI-09",
@@ -292,7 +293,7 @@
       {
        "id": "L-PRI-12",
        "nom": "Priorité aux piétons engagés ou manifestant l'intention de traverser",
-       "q": 3
+       "q": 4
       }
      ]
     }
@@ -330,7 +331,7 @@
       {
        "id": "L-VIT-08",
        "nom": "Vitesse minimale sur autoroute (voie de gauche), vitesse adaptée aux circonstances",
-       "q": 2
+       "q": 3
       }
      ]
     },
@@ -431,7 +432,7 @@
       {
        "id": "L-CIR-06",
        "nom": "Distance de sécurité (2 secondes, 2 traits sur autoroute)",
-       "q": 3
+       "q": 4
       },
       {
        "id": "L-DEP-04",
@@ -467,7 +468,7 @@
       {
        "id": "L-DEP-06",
        "nom": "Croisement sur route étroite / en montagne : qui recule",
-       "q": 2
+       "q": 3
       },
       {
        "id": "L-DEP-07",
@@ -919,7 +920,7 @@
       {
        "id": "U-PIE-01",
        "nom": "Priorité aux piétons, passages piétons",
-       "q": 2
+       "q": 3
       },
       {
        "id": "U-PIE-02",
@@ -1066,7 +1067,7 @@
       {
        "id": "R-VIR-02",
        "nom": "Trajectoire et position en virage",
-       "q": 2
+       "q": 3
       }
      ]
     },
@@ -1082,7 +1083,7 @@
       {
        "id": "R-MET-02",
        "nom": "Brouillard : feux, vitesse, distance",
-       "q": 2
+       "q": 3
       },
       {
        "id": "R-MET-03",

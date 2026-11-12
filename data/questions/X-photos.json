@@ -1,0 +1,316 @@
+[
+{
+"id": "PH-stop-t",
+"n": "L-PRI-02",
+"img": "img/photos/stop-t.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "J'arrive à cette intersection. Je dois :",
+"c": [
+"Marquer l'arrêt à la ligne blanche, même si personne n'arrive",
+"Céder le passage aux véhicules venant de gauche et de droite",
+"Passer au ralenti sans m'arrêter si la route est dégagée"
+],
+"ok": [
+0,
+1
+],
+"ex": "Au stop, l'arrêt est obligatoire dans tous les cas, à la ligne d'effet. Ensuite, on cède le passage à tous les usagers de la route abordée.",
+"src": "Code de la route, art. R415-6"
+},
+{
+"id": "PH-stop-carrefour",
+"n": "L-PRI-02",
+"img": "img/photos/stop-carrefour.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "Je veux aller tout droit à ce carrefour. La route semble déserte. Je dois :",
+"c": [
+"M'arrêter à la ligne, puis repartir si personne n'arrive",
+"Franchir la ligne au pas, puisque la visibilité est bonne",
+"M'arrêter, puis céder le passage aux véhicules venant de droite"
+],
+"ok": [
+0
+],
+"ex": "Le panneau STOP, à droite, impose l'arrêt même quand la route paraît vide. Et l'on cède le passage aux véhicules venant de gauche comme de droite.",
+"src": "Code de la route, art. R415-6"
+},
+{
+"id": "PH-presignal-stop",
+"n": "L-PAN-04",
+"img": "img/photos/presignal-stop.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "Ce panneau m'annonce :",
+"c": [
+"Un stop, 50 m plus loin",
+"Un cédez-le-passage, 50 m plus loin",
+"Une zone où l'arrêt est interdit sur 50 m"
+],
+"ok": [
+0
+],
+"ex": "Le triangle pointe en bas avec le panonceau « STOP 50 m » est une présignalisation : un stop se trouve 50 m plus loin (on l'aperçoit au fond). Je dois m'y préparer.",
+"src": "IISR"
+},
+{
+"id": "PH-prioritaire-agglo",
+"n": "L-PRI-04",
+"img": "img/photos/prioritaire-agglo.jpg",
+"credit": "Photo : HugoC01 / Panoramax, CC BY-SA 4.0",
+"q": "Sur cette route, à partir des panneaux de droite :",
+"c": [
+"Je suis sur une route prioritaire",
+"J'entre en agglomération : la vitesse est limitée à 50 km/h, sauf indication",
+"Je dois céder le passage aux véhicules venant de droite aux prochaines intersections"
+],
+"ok": [
+0,
+1
+],
+"ex": "Le losange jaune (AB6) indique une route prioritaire : on reste prioritaire aux intersections jusqu'au panneau de fin. Le panneau blanc bordé de rouge marque l'entrée d'agglomération : 50 km/h sauf indication.",
+"src": "IISR ; Code de la route, art. R413-3"
+},
+{
+"id": "PH-brouillard-giratoire-a",
+"n": "L-PAN-04",
+"img": "img/photos/brouillard-giratoire.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Le panneau triangulaire à droite m'annonce :",
+"c": [
+"Un carrefour à sens giratoire",
+"Un demi-tour obligatoire",
+"Une zone de travaux"
+],
+"ok": [
+0
+],
+"ex": "Triangle avec trois flèches en rond (AB25) : carrefour à sens giratoire. Dans ce brouillard, il faut ralentir bien avant.",
+"src": "IISR"
+},
+{
+"id": "PH-brouillard-giratoire-b",
+"n": "R-MET-02",
+"img": "img/photos/brouillard-giratoire.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Par ce brouillard, j'allume :",
+"c": [
+"Mes feux de croisement",
+"Mes feux de route, pour mieux voir loin",
+"Mes feux de brouillard, si la visibilité le justifie"
+],
+"ok": [
+0,
+2
+],
+"ex": "Feux de croisement, et feux de brouillard si nécessaire (l'arrière seulement par brouillard épais). Les feux de route se reflètent sur le brouillard et éblouissent.",
+"src": "Code de la route, art. R416-7"
+},
+{
+"id": "PH-priorite-75m",
+"n": "L-PAN-04",
+"img": "img/photos/priorite-75m.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "À l'intersection annoncée 75 m plus loin :",
+"c": [
+"Je serai prioritaire, à cette intersection seulement",
+"Je devrai céder le passage aux véhicules venant de droite",
+"Je serai prioritaire jusqu'au panneau de fin de route prioritaire"
+],
+"ok": [
+0
+],
+"ex": "Triangle avec une croix dont la branche verticale est épaisse (AB2) : priorité ponctuelle, valable à la prochaine intersection seulement. Le panonceau donne la distance (75 m).",
+"src": "IISR"
+},
+{
+"id": "PH-50-route-etroite",
+"n": "L-DEP-06",
+"img": "img/photos/50-route-etroite.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "Sur cette route étroite limitée à 50 km/h, une voiture arrive en face. Je dois :",
+"c": [
+"Serrer à droite et ralentir si le croisement est difficile",
+"Garder 50 km/h, c'est la vitesse autorisée",
+"Rester au milieu de la chaussée jusqu'au dernier moment"
+],
+"ok": [
+0
+],
+"ex": "Sur une route étroite, on serre à droite et on adapte sa vitesse pour croiser en sécurité. 50 km/h est un maximum, pas un objectif.",
+"src": "Code de la route, art. R413-17"
+},
+{
+"id": "PH-30-bretelle",
+"n": "L-VIT-08",
+"img": "img/photos/30-bretelle.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Je m'engage dans cette bretelle très courbée. Je dois :",
+"c": [
+"Être à 30 km/h maximum avant d'entrer dans la courbe",
+"Garder ma vitesse, car je vais rejoindre une voie rapide",
+"Freiner fort au milieu de la courbe si je vais trop vite"
+],
+"ok": [
+0
+],
+"ex": "La limitation à 30 km/h signale une courbe serrée : on ralentit avant, en ligne droite. Freiner en pleine courbe peut faire perdre le contrôle.",
+"src": "IISR"
+},
+{
+"id": "PH-70-rappel",
+"n": "L-PAN-12",
+"img": "img/photos/70-rappel.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Le panonceau « RAPPEL » sous ce panneau 70 signifie :",
+"c": [
+"La limitation à 70 km/h, déjà en vigueur, continue de s'appliquer",
+"La limitation à 70 km/h commence à partir de ce panneau-ci",
+"La limitation à 70 km/h prend fin juste après ce panneau"
+],
+"ok": [
+0
+],
+"ex": "Le panonceau « RAPPEL » confirme une prescription déjà en vigueur, souvent après une intersection.",
+"src": "IISR"
+},
+{
+"id": "PH-passage-brouillard",
+"n": "U-PIE-01",
+"img": "img/photos/passage-brouillard.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "J'arrive sur ce passage pour piétons, dans le brouillard. Je dois :",
+"c": [
+"Ralentir : un piéton peut être peu visible",
+"Garder une grande distance avec le véhicule de devant",
+"Dépasser le véhicule de devant avant le passage, pour gagner du temps"
+],
+"ok": [
+0,
+1
+],
+"ex": "Par brouillard, les piétons sont difficiles à voir. Dépasser à l'approche d'un passage pour piétons est dangereux : un véhicule peut masquer un piéton.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "PH-passage-ville",
+"n": "L-PAN-09",
+"img": "img/photos/passage-ville.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Le panneau carré bleu, en haut à droite, indique :",
+"c": [
+"L'emplacement d'un passage pour piétons",
+"Une aire piétonne où je ne peux pas circuler",
+"Une zone de rencontre limitée à 20 km/h"
+],
+"ok": [
+0
+],
+"ex": "Panneau carré bleu avec un piéton sur un triangle blanc (C20a) : il indique l'emplacement du passage pour piétons. Céder le passage aux piétons engagés ou sur le point de traverser.",
+"src": "IISR"
+},
+{
+"id": "PH-passage-camion",
+"n": "L-PRI-12",
+"img": "img/photos/passage-camion.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Un passage pour piétons est annoncé. Un camion est arrêté sur la gauche, plus loin. Je dois :",
+"c": [
+"Ralentir : un piéton peut surgir de derrière le camion",
+"Me préparer à céder le passage à un piéton",
+"Garder ma vitesse tant qu'aucun piéton n'est visible"
+],
+"ok": [
+0,
+1
+],
+"ex": "Le panneau triangulaire annonce un passage pour piétons. Un véhicule arrêté peut cacher un piéton prêt à traverser : on anticipe.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "PH-brouillard-suivre",
+"n": "L-CIR-06",
+"img": "img/photos/brouillard-suivre.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Dans ce brouillard, je suis la voiture rouge. Je dois :",
+"c": [
+"Augmenter ma distance de sécurité",
+"M'attendre à un passage pour piétons 75 m plus loin",
+"La suivre de près pour me guider avec ses feux"
+],
+"ok": [
+0,
+1
+],
+"ex": "Visibilité réduite : on augmente nettement les distances. Le panneau à droite annonce un passage pour piétons à 75 m. Suivre de près les feux d'un autre véhicule ne laisse pas le temps de freiner.",
+"src": "Code de la route, art. R412-12"
+},
+{
+"id": "PH-virage-gauche",
+"n": "R-VIR-02",
+"img": "img/photos/virage-gauche.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Ce panneau annonce un virage, et une voiture arrive en face. Je dois :",
+"c": [
+"Ralentir avant le virage",
+"Rester bien à droite de ma voie",
+"Me décaler vers le centre pour mieux voir la sortie du virage"
+],
+"ok": [
+0,
+1
+],
+"ex": "Virage à gauche annoncé (A1b) : on ralentit avant et on garde sa droite, d'autant plus qu'un véhicule arrive en face.",
+"src": "IISR"
+},
+{
+"id": "PH-entree-agglo",
+"n": "L-PAN-11",
+"img": "img/photos/entree-agglo.jpg",
+"credit": "Photo : Cavokld / Panoramax, CC BY-SA 4.0",
+"q": "À partir de ce panneau, sauf indication contraire :",
+"c": [
+"La vitesse est limitée à 50 km/h",
+"Le klaxon n'est autorisé qu'en cas de danger immédiat",
+"La vitesse est limitée à 70 km/h jusqu'au centre"
+],
+"ok": [
+0,
+1
+],
+"ex": "Panneau blanc bordé de rouge avec le nom de la commune : entrée d'agglomération. On aperçoit plus loin d'autres panneaux qui peuvent abaisser encore la vitesse.",
+"src": "Code de la route, art. R413-3"
+},
+{
+"id": "PH-bretelle-90-a",
+"n": "L-PAN-12",
+"img": "img/photos/bretelle-90.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Le panneau 90 accompagné d'une flèche oblique, à droite, s'applique :",
+"c": [
+"À la bretelle de sortie située à droite",
+"À toutes les voies de cette route",
+"Aux véhicules de plus de 3,5 tonnes"
+],
+"ok": [
+0
+],
+"ex": "La flèche oblique sous le panneau indique que la limitation concerne la voie de sortie vers laquelle elle pointe.",
+"src": "IISR"
+},
+{
+"id": "PH-bretelle-90-b",
+"n": "L-PAN-10",
+"img": "img/photos/bretelle-90.jpg",
+"credit": "Photo : osm-operon / Panoramax, CC BY-SA 4.0",
+"q": "Le panneau bleu « A 20 » à gauche indique :",
+"c": [
+"Des directions accessibles par l'autoroute A20",
+"Des directions touristiques et de loisirs",
+"Une déviation temporaire liée à des travaux"
+],
+"ok": [
+0
+],
+"ex": "Fond bleu = itinéraire par autoroute. Fond vert = grands itinéraires, fond blanc = directions locales.",
+"src": "IISR"
+}
+]
