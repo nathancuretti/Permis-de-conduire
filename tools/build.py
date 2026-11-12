@@ -39,8 +39,40 @@ def parse_notions():
     return themes
 
 
+# Thèmes affichés dans l'appli (regroupement des 10 thèmes officiels en 12 thèmes équilibrés).
+# Une entrée d'une lettre = tous les chapitres de ce thème officiel.
+APP_THEMES = [
+    ("SIG", "Signalisation", ["L-PAN", "L-MAR", "L-FEU"]),
+    ("PRI", "Priorités et intersections", ["L-PRI"]),
+    ("VIT", "Vitesses", ["L-VIT"]),
+    ("CIR", "Circulation et dépassement", ["L-CIR", "L-DEP"]),
+    ("ARR", "Arrêt et stationnement", ["L-ARR"]),
+    ("AUT", "Autoroute, tunnels et éclairage", ["L-AUT", "L-TUN", "L-ECL"]),
+    ("CON", "Le conducteur", ["C"]),
+    ("SEC", "Premiers secours", ["P"]),
+    ("USA", "Les autres usagers", ["U"]),
+    ("ROU", "La route", ["R"]),
+    ("REG", "Réglementation", ["D"]),
+    ("VEH", "Le véhicule", ["Q", "M", "S", "E"]),
+]
+
+
+def regroup(official):
+    chaps = {c["code"]: dict(c, officiel=t["code"]) for t in official for c in t["chapitres"]}
+    by_theme = {t["code"]: [c["code"] for c in t["chapitres"]] for t in official}
+    used, out = set(), []
+    for i, (code, nom, parts) in enumerate(APP_THEMES, 1):
+        codes = [cc for p in parts for cc in (by_theme[p] if p in by_theme else [p])]
+        out.append({"code": code, "num": i, "nom": nom, "chapitres": [chaps[c] for c in codes]})
+        used.update(codes)
+    missing = set(chaps) - used
+    if missing:
+        sys.exit(f"Chapitres non rattachés à un thème de l'appli : {sorted(missing)}")
+    return out
+
+
 def main():
-    themes = parse_notions()
+    themes = regroup(parse_notions())
     notion_ids = {n["id"] for t in themes for c in t["chapitres"] for n in c["notions"]}
     files = sorted(glob.glob(os.path.join(ROOT, "data", "questions", "*.json")))
     count, errors, seen = {}, [], set()
@@ -72,7 +104,7 @@ def main():
     print(f"{len(seen)} questions · {covered}/{total_n} notions couvertes")
     for t in themes:
         tn = [n for c in t["chapitres"] for n in c["notions"]]
-        print(f"  {t['code']} {t['nom'][:45]:45} {sum(n['q'] for n in tn):4} q · "
+        print(f"  {t['num']:2} {t['nom'][:40]:40} {sum(n['q'] for n in tn):4} q · "
               f"{sum(1 for n in tn if n['q'])}/{len(tn)} notions")
     if errors:
         print("\nERREURS :\n  " + "\n  ".join(errors))

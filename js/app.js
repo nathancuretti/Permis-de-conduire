@@ -113,12 +113,12 @@
       }).join("");
       themes += `
         <div class="theme ${c.n ? "" : "empty"}" data-t="${t.code}" role="button" tabindex="0">
-          <div class="code">${t.code}</div>
+          <div class="code">${t.num}</div>
           <div class="info">
             <div class="name">${esc(t.nom)}</div>
             <div class="meta">${c.n ? `${c.n} questions · ${c.master} maîtrisées · ${c.ok} réussies · ${c.err} ratées` : "Bientôt disponible"}</div>
             ${c.n ? bar(c) : ""}
-            ${chaps ? `<div class="chaps">${chaps}</div>` : ""}
+            ${t.chapitres.filter((ch) => qs.some((q) => q.chap === ch.code)).length > 1 ? `<div class="chaps">${chaps}</div>` : ""}
           </div>
         </div>`;
     }
@@ -169,7 +169,7 @@
 
   const needFor = (n) => Math.ceil((n * EXAM_PASS) / EXAM_N);
   const passed = (e) => e.score >= needFor(e.n);
-  const scopeName = (e) => (!e.scope || e.scope === "all") ? "Examen blanc complet" : "Examen · " + e.scope.map((c) => (META.themes.find((t) => t.code === c) || { nom: c }).nom).join(", ");
+  const scopeName = (e) => (!e.scope || e.scope === "all") ? "Examen blanc complet" : "Examen · " + e.scope.map((c) => (META.themes.find((t) => t.code === c) || { nom: "ancien thème " + c }).nom).join(", ");
   const fmtDate = (ts) => { const d = new Date(ts); return `${d.toLocaleDateString("fr-FR")} ${d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`; };
 
   function examRows(list) {
@@ -317,7 +317,7 @@
       if (!tq) continue;
       html += `<details class="sel" open><summary>
           <input type="checkbox" data-theme="${t.code}">
-          <span class="name">${t.code} · ${esc(t.nom)}</span><span class="chev">›</span></summary>`;
+          <span class="name">${t.num} · ${esc(t.nom)}</span><span class="chev">›</span></summary>`;
       for (const c of t.chapitres) {
         const cq = Q.filter((q) => q.chap === c.code).length;
         if (!cq) continue;
