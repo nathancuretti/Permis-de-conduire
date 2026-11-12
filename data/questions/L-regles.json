@@ -232,7 +232,7 @@
 "n": "L-PRI-05",
 "q": "Pour sortir d'un giratoire, je mets mon clignotant :",
 "c": [
-"À gauche, en entrant dans le giratoire",
+"Aucun : le giratoire suffit à indiquer ma direction",
 "À droite, juste avant ma sortie",
 "À gauche, juste avant ma sortie"
 ],
@@ -367,7 +367,7 @@
 "n": "L-PRI-10",
 "q": "Ma voiture tombe en panne sur un passage à niveau. Je dois en priorité :",
 "c": [
-"Faire sortir tout le monde et s'éloigner, puis alerter",
+"Faire évacuer tout le monde, puis prévenir (téléphone d'appel du passage à niveau, 112)",
 "Rester dans la voiture, feux de détresse allumés, et appeler",
 "Tenter de redémarrer pour dégager la voie au plus vite"
 ],
@@ -1609,7 +1609,7 @@
 "n": "L-CIR-08",
 "q": "Dans un bouchon, deux voies se rejoignent en une seule plus loin. Le plus efficace est :",
 "c": [
-"Utiliser les deux voies jusqu'au rétrécissement, puis alterner",
+"Utiliser les deux voies jusqu'au rétrécissement, puis s'insérer un véhicule sur deux",
 "Se rabattre le plus tôt possible sur la voie qui continue",
 "Rester sur sa voie et laisser les autres trouver leur place"
 ],

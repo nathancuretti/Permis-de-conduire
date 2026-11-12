@@ -491,8 +491,8 @@
 "img": "img/panneaux/M1-150.svg",
 "q": "Ce panonceau placé sous un panneau indique :",
 "c": [
-"La distance entre le panneau et le danger ou l'intersection",
 "La vitesse conseillée jusqu'au danger ou à l'intersection",
+"La distance entre le panneau et le danger ou l'intersection",
 "La longueur de la zone dans laquelle le panneau s'applique"
 ],
 "ok": [
@@ -1371,8 +1371,8 @@
 "img": "img/panneaux/feu-orange.svg",
 "q": "Le feu passe à l'orange fixe. Je dois :",
 "c": [
-"M'arrêter, sauf si je suis trop près pour le faire sans danger",
 "Passer, car l'orange signifie que je peux encore franchir le feu",
+"M'arrêter, sauf si je suis trop près pour le faire sans danger",
 "M'arrêter immédiatement, quelle que soit ma distance du feu"
 ],
 "ok": [
@@ -1404,7 +1404,7 @@
 "q": "Le feu est vert mais l'intersection est encombrée. Je dois :",
 "c": [
 "M'engager, car le feu vert me donne la priorité",
-"Attendre de pouvoir dégager entièrement l'intersection",
+"Attendre de ne pas risquer de rester bloqué dans l'intersection",
 "M'engager à moitié pour ne pas perdre mon tour"
 ],
 "ok": [
@@ -1451,7 +1451,7 @@
 "img": "img/panneaux/feu-rouge-fleche-cli.svg",
 "q": "Le feu est rouge mais une flèche orange clignote à côté. Je peux :",
 "c": [
-"Aller dans la direction de la flèche en cédant le passage",
+"Aller dans la direction de la flèche en cédant le passage aux piétons et aux véhicules",
 "Aller dans la direction de la flèche en étant prioritaire",
 "Aller tout droit ou dans la direction de la flèche"
 ],
@@ -1529,7 +1529,7 @@
 "n": "L-FEU-05",
 "q": "Un agent lève le bras verticalement. Cela signifie :",
 "c": [
-"« Attention, arrêt » pour tous, sauf ceux qui ne peuvent plus s'arrêter",
+"« Attention, arrêt » pour tous les usagers, sauf ceux qui ne pourraient plus s'arrêter en sécurité",
 "« Passage autorisé » pour les usagers qui arrivent de face ou de dos",
 "« Arrêt » pour les véhicules qui arrivent sur les côtés de l'agent"
 ],

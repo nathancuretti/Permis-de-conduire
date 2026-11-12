@@ -22,7 +22,7 @@
 "n": "R-TYP-01",
 "q": "Les accidents en agglomération :",
 "c": [
-"Sont nombreux, mais les plus graves ont lieu hors agglomération",
+"Sont nombreux, mais les accidents les plus graves ont surtout lieu hors agglomération",
 "Sont moins nombreux, mais en moyenne plus graves qu'à la campagne",
 "Sont aussi nombreux et aussi graves que hors agglomération"
 ],
@@ -115,7 +115,7 @@
 "n": "R-TYP-05",
 "q": "Mes roues droites mordent sur le bas-côté. Je dois :",
 "c": [
-"Ralentir progressivement, puis revenir doucement sur la chaussée",
+"Ralentir progressivement, sans freiner brutalement, puis revenir doucement sur la chaussée",
 "Braquer franchement vers la gauche pour remonter tout de suite",
 "Freiner fort pour m'arrêter au plus vite sur le bas-côté"
 ],
@@ -480,7 +480,7 @@
 "c": [
 "M'arrêter",
 "Passer prudemment",
-"Ralentir et attendre son geste"
+"Passer au pas, en restant prudent"
 ],
 "ok": [
 0

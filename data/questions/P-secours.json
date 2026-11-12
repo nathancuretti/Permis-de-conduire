@@ -267,7 +267,7 @@
 "n": "P-PAS-07",
 "q": "Pour savoir si une victime inconsciente respire, je :",
 "c": [
-"Bascule sa tête en arrière, puis regarde et écoute sa respiration 10 s",
+"Bascule légèrement sa tête en arrière et regarde, écoute et sens sa respiration pendant 10 secondes",
 "La secoue doucement par les épaules et attends qu'elle réagisse",
 "Prends son pouls au poignet pendant une minute environ"
 ],
@@ -301,7 +301,7 @@
 "q": "Un défibrillateur automatisé externe (DAE) peut être utilisé :",
 "c": [
 "Par n'importe qui, même sans formation",
-"Par une personne formée aux premiers secours",
+"Seulement après une formation aux premiers secours",
 "Par un médecin ou un secouriste diplômé"
 ],
 "ok": [
@@ -330,7 +330,7 @@
 "n": "P-PAS-09",
 "q": "Une personne s'étouffe et ne peut plus parler ni tousser. Je dois :",
 "c": [
-"Lui donner des claques dans le dos, puis des compressions abdominales",
+"Lui donner des claques vigoureuses dans le dos, puis des compressions abdominales si besoin",
 "Lui donner à boire pour l'aider à faire passer ce qui la bloque",
 "L'allonger sur le dos et lui surélever les jambes en attendant"
 ],
