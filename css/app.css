@@ -230,6 +230,7 @@ input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--brand); fl
 .layout { display: grid; gap: 0 20px; grid-template-columns: 1fr; }
 .layout > * { min-width: 0; }
 .home { grid-template-areas: "a" "s" "b"; }
+.home .side { display: contents; }
 .home .a { grid-area: a; } .home .s { grid-area: s; } .home .b { grid-area: b; }
 .page-title { display: none; }
 
@@ -239,8 +240,8 @@ input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--brand); fl
   .page-title small { display: block; font-size: 14px; color: var(--muted); font-weight: 500; letter-spacing: 0; margin-top: 2px; }
 
   /* accueil : colonne d'actions à gauche, thèmes à droite */
-  .home { grid-template-columns: 340px 1fr; grid-template-rows: auto 1fr; grid-template-areas: "a s" "b s"; align-items: start; }
-  .home .a { position: sticky; top: 76px; }
+  .home { grid-template-columns: 340px 1fr; grid-template-areas: "side s"; align-items: start; }
+  .home .side { display: block; grid-area: side; position: sticky; top: 76px; }
   .themes { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
   .theme { padding: 16px; min-height: 100%; }
   .theme .chaps { display: block; }

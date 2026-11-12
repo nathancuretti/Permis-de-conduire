@@ -125,6 +125,7 @@
 
     $app.innerHTML = `
       <div class="layout home">
+        <div class="side">
         <div class="a">
           <div class="card">
             <div class="stats">
@@ -146,14 +147,15 @@
           </div>
           <button class="btn ghost" id="bChoose">Réviser par chapitres</button>
         </div>
-        <div class="s">
-          <h2 class="page-title">Thèmes<small>Clique sur un thème pour voir tes statistiques et le réviser</small></h2>
-          <div class="themes">${themes}</div>
-        </div>
         <div class="b">
           <div style="height:14px"></div>
           ${exams.length ? examHistory(exams.slice(-3), true) : ""}
           <button class="btn ghost" id="bSet">Réglages et sauvegarde</button>
+        </div>
+        </div>
+        <div class="s">
+          <h2 class="page-title">Thèmes<small>Clique sur un thème pour voir tes statistiques et le réviser</small></h2>
+          <div class="themes">${themes}</div>
         </div>
       </div>`;
     document.getElementById("bExam").onclick = () => startExam();
