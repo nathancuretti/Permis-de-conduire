@@ -1,0 +1,1153 @@
+[
+{
+"id": "Q-INS-01-a",
+"n": "Q-INS-01",
+"q": "Mon siège est bien réglé si :",
+"c": [
+"Mon dos est bien calé contre le dossier",
+"Mes bras restent légèrement fléchis en tenant le volant",
+"Ma jambe reste légèrement fléchie quand j'enfonce l'embrayage à fond",
+"Je suis le plus près possible du volant"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Dos calé, bras et jambes légèrement fléchis : on garde de la force et du contrôle, sans être trop près de l'airbag.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-INS-01-b",
+"n": "Q-INS-01",
+"q": "L'appui-tête est bien réglé quand son sommet arrive :",
+"c": [
+"Au niveau du haut de ma tête",
+"Au niveau de mes épaules",
+"Au niveau de ma nuque"
+],
+"ok": [
+0
+],
+"ex": "Le haut de l'appui-tête au niveau du sommet du crâne, le plus près possible de la tête : il protège la nuque en cas de choc arrière.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-INS-02-a",
+"n": "Q-INS-02",
+"q": "Je règle mes rétroviseurs :",
+"c": [
+"Avant de démarrer",
+"En roulant, quand j'en ai besoin"
+],
+"ok": [
+0
+],
+"ex": "Tous les réglages (siège, volant, rétroviseurs) se font à l'arrêt, avant de partir.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-INS-02-b",
+"n": "Q-INS-02",
+"q": "Un rétroviseur extérieur est bien réglé quand :",
+"c": [
+"Je vois un petit bout de la carrosserie de ma voiture et le reste de la route",
+"Je ne vois que ma carrosserie",
+"Je vois le ciel"
+],
+"ok": [
+0
+],
+"ex": "Un léger bout de carrosserie sert de repère. Même bien réglés, les rétroviseurs laissent des angles morts.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-INS-03-a",
+"n": "Q-INS-03",
+"q": "Une ceinture de sécurité est bien portée quand :",
+"c": [
+"La sangle diagonale passe sur l'épaule, sans toucher le cou",
+"La sangle horizontale passe bas, sur le bassin",
+"La sangle diagonale passe sous le bras"
+],
+"ok": [
+0,
+1
+],
+"ex": "Sangle diagonale sur la clavicule, sangle ventrale sur les os du bassin, bien tendue. Sous le bras, elle peut provoquer de graves blessures.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-INS-03-b",
+"n": "Q-INS-03",
+"q": "Une femme enceinte doit :",
+"c": [
+"Porter la ceinture, sangle ventrale placée sous le ventre",
+"Ne pas porter la ceinture",
+"Porter uniquement la sangle diagonale"
+],
+"ok": [
+0
+],
+"ex": "La ceinture est obligatoire et protège aussi le bébé. La sangle ventrale se place le plus bas possible, sous le ventre.",
+"src": "Code de la route, art. R412-1"
+},
+{
+"id": "Q-PAS-01-a",
+"n": "Q-PAS-01",
+"q": "Un enfant doit être installé dans un système de retenue adapté (siège auto, rehausseur) jusqu'à :",
+"c": [
+"10 ans",
+"6 ans",
+"14 ans"
+],
+"ok": [
+0
+],
+"ex": "Jusqu'à 10 ans, l'enfant doit être attaché dans un dispositif adapté à sa taille et à son poids.",
+"src": "Code de la route, art. R412-2"
+},
+{
+"id": "Q-PAS-01-b",
+"n": "Q-PAS-01",
+"q": "Un enfant peut voyager sur les genoux d'un adulte, si celui-ci est attaché :",
+"c": [
+"Non, jamais",
+"Oui, pour un court trajet",
+"Oui, à l'arrière"
+],
+"ok": [
+0
+],
+"ex": "En cas de choc, l'adulte ne peut pas retenir l'enfant, qui serait projeté ou écrasé. Chaque enfant doit avoir son propre dispositif.",
+"src": "Code de la route, art. R412-2"
+},
+{
+"id": "Q-PAS-02-a",
+"n": "Q-PAS-02",
+"q": "Je transporte un bébé dans un siège dos à la route, à l'avant. Je dois :",
+"c": [
+"Désactiver l'airbag passager",
+"Laisser l'airbag activé pour le protéger",
+"Mettre le siège face à la route"
+],
+"ok": [
+0
+],
+"ex": "Un airbag qui se déclenche contre un siège dos à la route peut tuer le bébé. Il doit être désactivé.",
+"src": "Code de la route, art. R412-2"
+},
+{
+"id": "Q-PAS-02-b",
+"n": "Q-PAS-02",
+"q": "Un enfant de moins de 10 ans peut voyager à l'avant :",
+"c": [
+"Dans un siège dos à la route, airbag désactivé",
+"Si le véhicule n'a pas de places arrière",
+"Si toutes les places arrière sont déjà occupées par des enfants de moins de 10 ans",
+"S'il le demande"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "À l'avant, c'est interdit avant 10 ans, sauf exceptions : bébé dos à la route (airbag désactivé), pas de places arrière, places arrière occupées par des enfants ou sans ceinture.",
+"src": "Code de la route, art. R412-3"
+},
+{
+"id": "Q-PAS-03-a",
+"n": "Q-PAS-03",
+"q": "Un passager de 15 ans ne s'attache pas. Qui est sanctionné ?",
+"c": [
+"Le conducteur",
+"Le passager",
+"Personne"
+],
+"ok": [
+0
+],
+"ex": "Le conducteur est responsable des passagers mineurs. Les passagers majeurs non attachés sont sanctionnés eux-mêmes.",
+"src": "Code de la route, art. R412-1"
+},
+{
+"id": "Q-PAS-04-a",
+"n": "Q-PAS-04",
+"q": "Pour charger ma voiture, je place les objets lourds :",
+"c": [
+"En bas du coffre, contre le dossier de la banquette arrière",
+"Sur la plage arrière",
+"Sur le siège passager, sans attache"
+],
+"ok": [
+0
+],
+"ex": "Objets lourds en bas et contre le dossier : en cas de freinage ou de choc, ils ne seront pas projetés vers les occupants.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-PAS-04-b",
+"n": "Q-PAS-04",
+"q": "Un objet non attaché dans l'habitacle, lors d'un choc :",
+"c": [
+"Peut devenir un projectile très dangereux",
+"Ne bouge pas",
+"Ne présente aucun danger s'il est léger"
+],
+"ok": [
+0
+],
+"ex": "Lors d'un choc, un objet de quelques kilos est projeté avec une force équivalente à plusieurs dizaines de fois son poids.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-SOR-01-a",
+"n": "Q-SOR-01",
+"q": "Avant d'ouvrir ma portière côté chaussée, je dois :",
+"c": [
+"Contrôler dans le rétroviseur et par-dessus l'épaule",
+"Ouvrir progressivement",
+"Ouvrir d'un coup pour gagner du temps"
+],
+"ok": [
+0,
+1
+],
+"ex": "Un cycliste ou un deux-roues peut arriver. Ouvrir avec la main opposée oblige à se retourner.",
+"src": "Code de la route"
+},
+{
+"id": "Q-SOR-02-a",
+"n": "Q-SOR-02",
+"q": "Je fais descendre des enfants de la voiture. Ils doivent sortir :",
+"c": [
+"Du côté du trottoir",
+"Du côté de la chaussée",
+"Du côté le plus proche de leur siège"
+],
+"ok": [
+0
+],
+"ex": "Côté trottoir, à l'abri de la circulation. La sécurité enfants empêche d'ouvrir les portières arrière de l'intérieur.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-SOR-03-a",
+"n": "Q-SOR-03",
+"q": "Je stationne dans une rue en forte montée. Je dois :",
+"c": [
+"Serrer le frein de stationnement",
+"Engager la première vitesse",
+"Laisser la boîte au point mort"
+],
+"ok": [
+0,
+1
+],
+"ex": "En montée : frein de stationnement + première. En descente : frein de stationnement + marche arrière. Braquer les roues vers le trottoir ajoute de la sécurité.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-SOR-03-b",
+"n": "Q-SOR-03",
+"q": "Par temps chaud, je peux laisser un enfant ou un animal seul dans la voiture fermée :",
+"c": [
+"Non, même quelques minutes",
+"Oui, si les vitres sont entrouvertes",
+"Oui, à l'ombre"
+],
+"ok": [
+0
+],
+"ex": "La température dans l'habitacle peut dépasser 50 °C en quelques minutes : danger de mort.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-REM-01-a",
+"n": "Q-REM-01",
+"q": "Une remorque dont le PTAC dépasse 500 kg :",
+"c": [
+"Doit avoir sa propre immatriculation (carte grise)",
+"Utilise toujours la plaque de la voiture",
+"N'a pas besoin de plaque"
+],
+"ok": [
+0
+],
+"ex": "Au-delà de 500 kg de PTAC, la remorque a sa propre carte grise. En dessous, elle reproduit la plaque du véhicule tracteur.",
+"src": "Code de la route"
+},
+{
+"id": "Q-REM-01-b",
+"n": "Q-REM-01",
+"q": "Pour tracter une caravane avec un ensemble (voiture + caravane) de 4 t, il me faut :",
+"c": [
+"Le permis B avec la formation B96",
+"Le permis B suffit toujours",
+"Le permis C"
+],
+"ok": [
+0
+],
+"ex": "Ensemble de plus de 3,5 t et jusqu'à 4,25 t : formation B96 (7 h). Au-delà : permis BE.",
+"src": "Code de la route, art. R221-4"
+},
+{
+"id": "Q-REM-02-a",
+"n": "Q-REM-02",
+"q": "Avec une remorque ou une caravane :",
+"c": [
+"Ma distance de freinage augmente",
+"Je suis plus sensible au vent latéral",
+"Je dois prévoir plus d'espace pour dépasser",
+"Je peux rouler plus vite en descente"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Plus de poids et de longueur : freinages plus longs, prise au vent, dépassements plus longs. Si la caravane masque la vue arrière, des rétroviseurs additionnels sont obligatoires.",
+"src": "Sécurité routière"
+},
+{
+"id": "Q-REM-03-a",
+"n": "Q-REM-03",
+"q": "Mon porte-vélos masque ma plaque et mes feux arrière. Je dois :",
+"c": [
+"Installer sur le porte-vélos une plaque d'immatriculation et des feux",
+"Ne rien faire, c'est toléré",
+"Enlever les vélos à chaque contrôle"
+],
+"ok": [
+0
+],
+"ex": "Plaque et feux doivent toujours être visibles : on les reporte sur le porte-vélos.",
+"src": "Code de la route"
+},
+{
+"id": "Q-REM-03-b",
+"n": "Q-REM-03",
+"q": "Avec un coffre de toit, je dois penser :",
+"c": [
+"À la hauteur de mon véhicule (parkings, tunnels, panneaux de hauteur)",
+"À ma consommation, qui augmente",
+"À la prise au vent",
+"À rouler plus vite pour compenser"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Un coffre ou des barres de toit modifient la hauteur, l'aérodynamique et la consommation. Les retirer quand ils ne servent pas.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-01-a",
+"n": "M-TAB-01",
+"q": "Un voyant rouge s'allume sur le tableau de bord. En général, cela signifie :",
+"c": [
+"Danger : je dois m'arrêter dès que possible",
+"Une simple information",
+"Une anomalie à surveiller à la prochaine révision"
+],
+"ok": [
+0
+],
+"ex": "Rouge = danger ou défaillance grave (s'arrêter), orange = anomalie (consulter rapidement), vert ou bleu = fonction en marche.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-01-b",
+"n": "M-TAB-01",
+"img": "img/panneaux/v-feux-route.svg",
+"q": "Ce voyant bleu signifie que :",
+"c": [
+"Mes feux de route sont allumés",
+"Mes feux de brouillard sont allumés",
+"Mon moteur est froid"
+],
+"ok": [
+0
+],
+"ex": "Le voyant bleu indique les feux de route (pleins phares). Attention à ne pas éblouir les autres.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-02-a",
+"n": "M-TAB-02",
+"img": "img/panneaux/v-huile.svg",
+"q": "Ce voyant rouge s'allume en roulant. Je dois :",
+"c": [
+"M'arrêter dès que possible et couper le moteur : problème de pression d'huile",
+"Continuer jusqu'à la prochaine révision",
+"Accélérer pour faire circuler l'huile"
+],
+"ok": [
+0
+],
+"ex": "Voyant de pression d'huile : le moteur risque de casser. On s'arrête rapidement et on vérifie le niveau.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-02-b",
+"n": "M-TAB-02",
+"img": "img/panneaux/v-temp.svg",
+"q": "Ce voyant rouge indique :",
+"c": [
+"Une température excessive du liquide de refroidissement",
+"Une température extérieure basse",
+"Un problème de climatisation"
+],
+"ok": [
+0
+],
+"ex": "Surchauffe du moteur : s'arrêter, couper le moteur, et ne jamais ouvrir le bouchon du radiateur à chaud (liquide brûlant sous pression).",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-02-c",
+"n": "M-TAB-02",
+"img": "img/panneaux/v-frein.svg",
+"q": "Ce voyant rouge, s'il reste allumé alors que le frein à main est desserré, signale :",
+"c": [
+"Un problème de freinage (niveau du liquide de frein bas, par exemple)",
+"Que l'ABS est actif",
+"Que les plaquettes sont neuves"
+],
+"ok": [
+0
+],
+"ex": "Le voyant de freinage signale le frein de stationnement serré, ou un défaut du circuit de freinage. En roulant : s'arrêter et faire vérifier.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-TAB-02-d",
+"n": "M-TAB-02",
+"img": "img/panneaux/v-abs.svg",
+"q": "Ce voyant orange signale :",
+"c": [
+"Un défaut de l'ABS : les freins fonctionnent, mais les roues peuvent se bloquer",
+"Que mes freins ne fonctionnent plus du tout",
+"Que l'ABS fonctionne normalement"
+],
+"ok": [
+0
+],
+"ex": "Orange = anomalie : le freinage classique reste possible, mais sans antiblocage. Faire réparer rapidement.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-PNE-01-a",
+"n": "M-PNE-01",
+"q": "La profondeur minimale légale des sculptures d'un pneu est de :",
+"c": [
+"1 mm",
+"1,6 mm",
+"3 mm"
+],
+"ok": [
+1
+],
+"ex": "1,6 mm minimum. Des témoins d'usure dans les rainures signalent cette limite. Un pneu usé évacue mal l'eau (aquaplaning).",
+"src": "Code de la route"
+},
+{
+"id": "M-PNE-01-b",
+"n": "M-PNE-01",
+"q": "Sur un même essieu, les pneus doivent être :",
+"c": [
+"De même type et de même dimension",
+"Différents pour mieux adhérer",
+"De n'importe quel type"
+],
+"ok": [
+0
+],
+"ex": "Les deux pneus d'un même essieu doivent être identiques (marque, type, dimension) pour un comportement équilibré.",
+"src": "Code de la route"
+},
+{
+"id": "M-PNE-02-a",
+"n": "M-PNE-02",
+"q": "Je vérifie la pression de mes pneus :",
+"c": [
+"Pneus froids",
+"Au moins une fois par mois et avant un long trajet",
+"Après un long trajet sur autoroute"
+],
+"ok": [
+0,
+1
+],
+"ex": "La pression se mesure à froid (pneus chauds = valeur faussée). Les valeurs sont indiquées dans la portière ou la trappe à carburant.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-PNE-02-b",
+"n": "M-PNE-02",
+"q": "Des pneus sous-gonflés entraînent :",
+"c": [
+"Une moins bonne tenue de route",
+"Une usure plus rapide",
+"Une consommation de carburant plus élevée",
+"Un meilleur freinage"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Sous-gonflage : tenue de route dégradée, risque d'éclatement, usure et surconsommation.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-PNE-03-a",
+"n": "M-PNE-03",
+"q": "Les pneus hiver :",
+"c": [
+"Améliorent l'adhérence par temps froid, sur neige et verglas",
+"Ne servent que sur la neige",
+"Sont interdits en France"
+],
+"ok": [
+0
+],
+"ex": "Leur gomme reste souple sous 7 °C environ. Ils sont reconnaissables au symbole montagne à trois pics et flocon (3PMSF).",
+"src": "Sécurité routière"
+},
+{
+"id": "M-PNE-03-b",
+"n": "M-PNE-03",
+"q": "Les chaînes à neige se montent :",
+"c": [
+"Sur les roues motrices",
+"Sur les roues avant uniquement, dans tous les cas",
+"Sur les quatre roues obligatoirement"
+],
+"ok": [
+0
+],
+"ex": "Sur les roues motrices (avant pour une traction, arrière pour une propulsion). Avec des chaînes, la vitesse est limitée (souvent 50 km/h).",
+"src": "Sécurité routière"
+},
+{
+"id": "M-PNE-04-a",
+"n": "M-PNE-04",
+"q": "Un pneu éclate en roulant. Je dois :",
+"c": [
+"Tenir fermement le volant et ralentir progressivement",
+"Freiner à fond",
+"Donner un coup de volant pour me ranger tout de suite"
+],
+"ok": [
+0
+],
+"ex": "On garde le contrôle : volant tenu fermement, on lâche l'accélérateur, on freine doucement et on se range.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-FRE-01-a",
+"n": "M-FRE-01",
+"q": "La pédale de frein devient molle et s'enfonce plus que d'habitude. Cela peut signifier :",
+"c": [
+"Un problème du circuit de freinage (fuite, liquide insuffisant)",
+"Que les freins sont neufs",
+"Rien de grave"
+],
+"ok": [
+0
+],
+"ex": "Une pédale molle est un signe de danger : s'arrêter et faire vérifier sans attendre.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-FRE-02-a",
+"n": "M-FRE-02",
+"q": "L'ABS (antiblocage des roues) permet :",
+"c": [
+"De garder le contrôle de la direction pendant un freinage d'urgence",
+"D'éviter le blocage des roues",
+"De freiner sans aucune limite de distance"
+],
+"ok": [
+0,
+1
+],
+"ex": "L'ABS empêche les roues de se bloquer : on peut freiner fort et tourner en même temps. Il ne raccourcit pas forcément la distance de freinage.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-FRE-02-b",
+"n": "M-FRE-02",
+"q": "En freinage d'urgence avec ABS, je dois :",
+"c": [
+"Appuyer fort sur la pédale et maintenir la pression",
+"Pomper sur la pédale",
+"Freiner doucement"
+],
+"ok": [
+0
+],
+"ex": "Avec l'ABS, on écrase la pédale et on ne relâche pas, même si elle vibre.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-FRE-03-a",
+"n": "M-FRE-03",
+"q": "Le frein moteur consiste à :",
+"c": [
+"Ralentir en lâchant l'accélérateur, avec une vitesse engagée",
+"Freiner avec le frein à main",
+"Couper le moteur en roulant"
+],
+"ok": [
+0
+],
+"ex": "Pied levé, rapport engagé : le moteur retient la voiture. Indispensable en descente pour ménager les freins.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-FRE-04-a",
+"n": "M-FRE-04",
+"q": "Si le moteur cale, la direction assistée :",
+"c": [
+"Ne fonctionne plus : le volant devient très dur",
+"Fonctionne normalement",
+"Bloque complètement le volant"
+],
+"ok": [
+0
+],
+"ex": "Sans moteur, l'assistance disparaît : on peut encore tourner, mais avec beaucoup plus d'effort.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-ENT-01-a",
+"n": "M-ENT-01",
+"q": "Pour contrôler le niveau d'huile moteur :",
+"c": [
+"Le véhicule doit être sur un sol plat, moteur arrêté",
+"Le moteur doit tourner",
+"Le véhicule doit être en pente"
+],
+"ok": [
+0
+],
+"ex": "Sur sol plat, moteur arrêté (idéalement froid), avec la jauge : le niveau doit être entre le mini et le maxi.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-ENT-01-b",
+"n": "M-ENT-01",
+"q": "J'ouvre le bouchon du liquide de refroidissement :",
+"c": [
+"Moteur froid uniquement",
+"Moteur chaud, pour vérifier la température"
+],
+"ok": [
+0
+],
+"ex": "Moteur chaud, le liquide est sous pression et brûlant : risque de graves brûlures.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-ENT-02-a",
+"n": "M-ENT-02",
+"q": "Je dois vérifier régulièrement :",
+"c": [
+"Le bon fonctionnement de tous mes feux",
+"L'état des balais d'essuie-glace",
+"Le niveau du lave-glace",
+"La couleur de la carrosserie"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Voir et être vu : feux, essuie-glaces et lave-glace en bon état sont indispensables, surtout en hiver.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-ENT-02-b",
+"n": "M-ENT-02",
+"q": "Par grand froid, une batterie :",
+"c": [
+"Perd de sa capacité et peut avoir du mal à démarrer le moteur",
+"Fonctionne mieux",
+"N'est pas affectée"
+],
+"ok": [
+0
+],
+"ex": "Le froid réduit la puissance de la batterie. Une batterie faible est un motif fréquent de panne en hiver.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-ENT-03-a",
+"n": "M-ENT-03",
+"q": "Ma plaque d'immatriculation est couverte de boue. Je dois :",
+"c": [
+"La nettoyer : elle doit toujours être lisible",
+"Rien, ce n'est pas grave"
+],
+"ok": [
+0
+],
+"ex": "Une plaque illisible est une infraction : elle doit rester propre et lisible, comme les vitres, les rétroviseurs et les feux.",
+"src": "Code de la route"
+},
+{
+"id": "M-AID-01-a",
+"n": "M-AID-01",
+"q": "La différence entre régulateur et limiteur de vitesse :",
+"c": [
+"Le régulateur maintient la vitesse choisie sans appuyer sur l'accélérateur",
+"Le limiteur empêche de dépasser la vitesse choisie",
+"Les deux freinent automatiquement devant un obstacle"
+],
+"ok": [
+0,
+1
+],
+"ex": "Régulateur : vitesse maintenue automatiquement. Limiteur : on accélère soi-même, mais sans pouvoir dépasser la limite réglée. Aucun des deux ne dispense de surveiller la route.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-AID-01-b",
+"n": "M-AID-01",
+"q": "Le régulateur de vitesse est déconseillé :",
+"c": [
+"Sur chaussée glissante (pluie forte, neige, verglas)",
+"En circulation dense",
+"Sur autoroute dégagée par temps sec"
+],
+"ok": [
+0,
+1
+],
+"ex": "Sur chaussée glissante, le régulateur peut maintenir l'accélération au mauvais moment. En circulation dense, il réduit la vigilance.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-AID-02-a",
+"n": "M-AID-02",
+"q": "L'ESP (contrôle de trajectoire) :",
+"c": [
+"Aide à corriger un début de dérapage",
+"Permet de rouler plus vite en virage sans risque",
+"Remplace la ceinture"
+],
+"ok": [
+0
+],
+"ex": "L'ESP freine individuellement certaines roues pour stabiliser la voiture. Il a ses limites : la vitesse doit rester adaptée.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-AID-03-a",
+"n": "M-AID-03",
+"q": "Les aides à la conduite (alerte de franchissement de ligne, détecteur d'angle mort, caméra de recul) :",
+"c": [
+"Complètent ma vigilance mais ne la remplacent pas",
+"Me permettent de ne plus regarder dans les rétroviseurs",
+"Sont infaillibles"
+],
+"ok": [
+0
+],
+"ex": "Ces systèmes peuvent ne pas détecter un usager (capteur sale, mauvaise météo). Le conducteur reste responsable.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-AID-04-a",
+"n": "M-AID-04",
+"q": "Sur une voiture à boîte automatique, la position « P » sert à :",
+"c": [
+"Stationner (les roues sont bloquées)",
+"Rouler en marche avant",
+"Rouler au point mort"
+],
+"ok": [
+0
+],
+"ex": "P = parking, R = marche arrière, N = point mort, D = marche avant. On démarre et on change de position le pied sur le frein.",
+"src": "Sécurité routière"
+},
+{
+"id": "M-AID-04-b",
+"n": "M-AID-04",
+"q": "À basse vitesse, une voiture électrique :",
+"c": [
+"Est très silencieuse : les piétons peuvent ne pas l'entendre",
+"Fait plus de bruit qu'une voiture thermique",
+"Ne peut pas rouler en ville"
+],
+"ok": [
+0
+],
+"ex": "Les voitures électriques émettent un son artificiel à basse vitesse, mais il faut rester très attentif aux piétons.",
+"src": "Sécurité routière"
+},
+{
+"id": "S-EQU-01-a",
+"n": "S-EQU-01",
+"q": "Le gilet de haute visibilité doit être :",
+"c": [
+"Dans l'habitacle, à portée de main du conducteur",
+"Dans le coffre, sous la roue de secours",
+"Facultatif"
+],
+"ok": [
+0
+],
+"ex": "Il doit pouvoir être enfilé avant de sortir du véhicule : il est obligatoire et doit être accessible depuis la place du conducteur.",
+"src": "Code de la route"
+},
+{
+"id": "S-EQU-02-a",
+"n": "S-EQU-02",
+"q": "Le triangle de présignalisation est :",
+"c": [
+"Obligatoire dans tout véhicule",
+"Facultatif",
+"Réservé aux poids lourds"
+],
+"ok": [
+0
+],
+"ex": "Obligatoire. On le place à au moins 30 m en amont, si cela ne met pas en danger (sur autoroute, mieux vaut se mettre derrière la glissière).",
+"src": "Code de la route"
+},
+{
+"id": "S-EQU-03-a",
+"n": "S-EQU-03",
+"q": "La ceinture de sécurité est obligatoire :",
+"c": [
+"Pour tous les occupants, à l'avant comme à l'arrière",
+"Seulement à l'avant",
+"Seulement sur autoroute"
+],
+"ok": [
+0
+],
+"ex": "Obligatoire à toutes les places équipées, en ville comme sur route. À l'arrière, un passager non attaché peut tuer un passager avant lors d'un choc.",
+"src": "Code de la route, art. R412-1"
+},
+{
+"id": "S-EQU-03-b",
+"n": "S-EQU-03",
+"q": "Sans ceinture, lors d'un choc à 50 km/h :",
+"c": [
+"Le corps est projeté vers l'avant avec une grande violence",
+"Les bras suffisent à se retenir",
+"Le choc est sans gravité en ville"
+],
+"ok": [
+0
+],
+"ex": "À 50 km/h, le choc équivaut à une chute de 3 étages : impossible de se retenir avec les bras.",
+"src": "Sécurité routière"
+},
+{
+"id": "S-EQU-04-a",
+"n": "S-EQU-04",
+"q": "L'airbag :",
+"c": [
+"Complète la ceinture, il ne la remplace pas",
+"Protège efficacement sans ceinture",
+"Doit être désactivé pour un siège bébé dos à la route à l'avant"
+],
+"ok": [
+0,
+2
+],
+"ex": "L'airbag se gonfle en quelques millisecondes : sans ceinture, l'occupant le percute et peut être gravement blessé. Ne rien poser sur le tableau de bord.",
+"src": "Sécurité routière"
+},
+{
+"id": "S-EQU-05-a",
+"n": "S-EQU-05",
+"q": "L'appui-tête protège surtout :",
+"c": [
+"La nuque, lors d'un choc arrière (« coup du lapin »)",
+"Le dos",
+"Les épaules"
+],
+"ok": [
+0
+],
+"ex": "Bien réglé (haut de l'appui-tête au niveau du sommet du crâne), il limite le mouvement de la tête vers l'arrière.",
+"src": "Sécurité routière"
+},
+{
+"id": "S-EQU-06-a",
+"n": "S-EQU-06",
+"q": "Pour un jeune enfant, il est recommandé de :",
+"c": [
+"Le transporter dos à la route le plus longtemps possible",
+"Choisir un siège homologué adapté à sa taille et à son poids",
+"Le mettre face à la route dès la naissance"
+],
+"ok": [
+0,
+1
+],
+"ex": "Dos à la route, la tête et la nuque sont mieux protégées (au moins jusqu'à 15 mois avec la norme R129 « i-Size »). Le siège doit être homologué et adapté.",
+"src": "Règlement ONU R129"
+},
+{
+"id": "S-EQU-07-a",
+"n": "S-EQU-07",
+"q": "Avoir un éthylotest dans son véhicule :",
+"c": [
+"Est une obligation, mais son absence n'est pas sanctionnée",
+"Est interdit",
+"Est sanctionné de 135 € en cas d'absence"
+],
+"ok": [
+0
+],
+"ex": "L'obligation existe depuis 2012, mais la sanction en cas d'absence a été supprimée. L'éthylotest reste utile pour vérifier son état avant de conduire.",
+"src": "Code des transports"
+},
+{
+"id": "S-EQU-08-a",
+"n": "S-EQU-08",
+"q": "Les plaques d'immatriculation doivent être :",
+"c": [
+"Lisibles en permanence, à l'avant et à l'arrière",
+"Visibles uniquement à l'arrière",
+"Facultatives en ville"
+],
+"ok": [
+0
+],
+"ex": "Plaques propres, lisibles, non modifiées, avec un éclairage de la plaque arrière en état de marche.",
+"src": "Code de la route"
+},
+{
+"id": "S-EQU-09-a",
+"n": "S-EQU-09",
+"q": "Les vitres avant d'une voiture (pare-brise et vitres latérales avant) :",
+"c": [
+"Doivent laisser passer au moins 70 % de la lumière",
+"Peuvent être totalement teintées",
+"Peuvent être couvertes d'autocollants"
+],
+"ok": [
+0
+],
+"ex": "Les vitres avant surteintées sont interdites : le conducteur doit bien voir, et être vu (contact visuel avec les autres usagers).",
+"src": "Code de la route"
+},
+{
+"id": "S-EQU-09-b",
+"n": "S-EQU-09",
+"q": "Un pare-brise fissuré dans le champ de vision du conducteur :",
+"c": [
+"Doit être réparé ou remplacé",
+"Ne pose aucun problème",
+"Est autorisé jusqu'au prochain contrôle technique"
+],
+"ok": [
+0
+],
+"ex": "Un impact ou une fissure peuvent gêner la vision et s'agrandir. Le pare-brise contribue aussi à la rigidité du véhicule.",
+"src": "Sécurité routière"
+},
+{
+"id": "E-ECO-01-a",
+"n": "E-ECO-01",
+"q": "L'éco-conduite consiste à :",
+"c": [
+"Anticiper pour éviter les freinages et accélérations inutiles",
+"Passer les rapports assez tôt",
+"Rouler en surrégime",
+"Rouler au point mort en descente"
+],
+"ok": [
+0,
+1
+],
+"ex": "Conduite souple, anticipation, rapports passés tôt : moins de carburant, moins de pollution, et plus de sécurité. Le point mort est dangereux et ne fait pas économiser.",
+"src": "ADEME"
+},
+{
+"id": "E-ECO-02-a",
+"n": "E-ECO-02",
+"q": "Lors d'un arrêt prolongé (attente devant une école, passage à niveau fermé…) :",
+"c": [
+"Je coupe le moteur",
+"Je laisse tourner le moteur pour qu'il reste chaud"
+],
+"ok": [
+0
+],
+"ex": "Un moteur qui tourne à l'arrêt consomme et pollue pour rien. Les systèmes « stop & start » le font automatiquement.",
+"src": "ADEME"
+},
+{
+"id": "E-ECO-03-a",
+"n": "E-ECO-03",
+"q": "Augmentent la consommation de carburant :",
+"c": [
+"La climatisation",
+"Les barres ou le coffre de toit",
+"Un coffre surchargé",
+"Des pneus bien gonflés"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Climatisation, équipements de toit (même vides) et charges inutiles font consommer davantage.",
+"src": "ADEME"
+},
+{
+"id": "E-ECO-04-a",
+"n": "E-ECO-04",
+"q": "Des pneus sous-gonflés :",
+"c": [
+"Augmentent la consommation de carburant",
+"Diminuent la consommation",
+"N'ont aucun effet sur la consommation"
+],
+"ok": [
+0
+],
+"ex": "Un pneu sous-gonflé résiste davantage au roulement : on consomme plus et le pneu s'use plus vite.",
+"src": "ADEME"
+},
+{
+"id": "E-ECO-05-a",
+"n": "E-ECO-05",
+"q": "Sur autoroute, rouler à 110 km/h au lieu de 130 km/h :",
+"c": [
+"Réduit nettement la consommation (de l'ordre de 20 %)",
+"Ne fait perdre que quelques minutes sur 100 km",
+"N'a aucun effet sur la consommation"
+],
+"ok": [
+0,
+1
+],
+"ex": "La consommation augmente fortement avec la vitesse. Sur 100 km, rouler à 130 au lieu de 110 ne fait gagner qu'environ 8 minutes.",
+"src": "ADEME"
+},
+{
+"id": "E-POL-01-a",
+"n": "E-POL-01",
+"img": "img/panneaux/critair-1.svg",
+"q": "La vignette Crit'Air :",
+"c": [
+"Classe les véhicules selon leurs émissions de polluants",
+"Est obligatoire pour circuler dans les zones à faibles émissions (ZFE) qui l'exigent",
+"Indique la date du dernier contrôle technique"
+],
+"ok": [
+0,
+1
+],
+"ex": "Crit'Air 0 (verte, électrique) à 5 (grise, plus polluant). Dans les ZFE, les véhicules les plus polluants peuvent être interdits.",
+"src": "Code de l'environnement"
+},
+{
+"id": "E-POL-01-b",
+"n": "E-POL-01",
+"q": "Les zones à faibles émissions (ZFE) :",
+"c": [
+"Peuvent interdire la circulation des véhicules les plus polluants selon leur vignette Crit'Air",
+"Sont réservées aux piétons",
+"Limitent la vitesse à 20 km/h"
+],
+"ok": [
+0
+],
+"ex": "Chaque agglomération concernée fixe ses règles : vignettes autorisées, horaires, dérogations.",
+"src": "Code général des collectivités territoriales"
+},
+{
+"id": "E-POL-02-a",
+"n": "E-POL-02",
+"q": "Lors d'un pic de pollution, les autorités peuvent :",
+"c": [
+"Mettre en place la circulation différenciée selon la vignette Crit'Air",
+"Abaisser les vitesses maximales",
+"Interdire toute circulation à pied"
+],
+"ok": [
+0,
+1
+],
+"ex": "Lors des pics : vitesses souvent abaissées de 20 km/h, et circulation différenciée (seuls certains véhicules autorisés).",
+"src": "Code de l'environnement"
+},
+{
+"id": "E-POL-03-a",
+"n": "E-POL-03",
+"q": "Modifier son pot d'échappement pour le rendre plus bruyant :",
+"c": [
+"Est interdit",
+"Est autorisé",
+"Est autorisé hors agglomération"
+],
+"ok": [
+0
+],
+"ex": "Le bruit est une pollution. Les dispositifs d'échappement modifiés ou bruyants sont interdits et sanctionnés.",
+"src": "Code de la route"
+},
+{
+"id": "E-POL-04-a",
+"n": "E-POL-04",
+"q": "Un véhicule bien entretenu (filtres, réglages, pot catalytique en bon état) :",
+"c": [
+"Pollue moins",
+"Consomme moins",
+"Pollue autant qu'un véhicule mal entretenu"
+],
+"ok": [
+0,
+1
+],
+"ex": "L'entretien réduit les émissions et la consommation. Le contrôle technique vérifie notamment les émissions polluantes.",
+"src": "ADEME"
+},
+{
+"id": "E-POL-05-a",
+"n": "E-POL-05",
+"q": "Une voie signalée par un losange blanc avec l'indication « covoiturage » est réservée :",
+"c": [
+"Aux véhicules transportant au moins 2 personnes (selon la signalisation)",
+"À tous les véhicules aux heures creuses",
+"Aux poids lourds"
+],
+"ok": [
+0
+],
+"ex": "Ces voies réservées encouragent le covoiturage. Le nombre minimal d'occupants et les horaires sont indiqués par la signalisation.",
+"src": "Code de la route"
+},
+{
+"id": "E-POL-06-a",
+"n": "E-POL-06",
+"q": "L'autonomie d'une voiture électrique diminue :",
+"c": [
+"Par temps froid",
+"À vitesse élevée, sur autoroute",
+"Avec le chauffage ou la climatisation",
+"En ville à faible vitesse"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Froid, vitesse et chauffage réduisent l'autonomie. En ville, la récupération d'énergie au freinage est au contraire efficace.",
+"src": "ADEME"
+}
+]

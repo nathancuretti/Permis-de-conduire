@@ -492,6 +492,27 @@ P["B1-sauf-velos"] = ("0 0 100 150", P["B1"] +
                       f'<rect x="10" y="104" width="80" height="42" rx="4" fill="{WHT}" stroke="{BLK}" stroke-width="2"/>'
                       + text("SAUF", 33, 126, 13) + velo(68, 140, 0.75))
 
+# ---------- voyants du tableau de bord ----------
+def voyant(inner, col):
+    return (f'<rect x="4" y="4" width="92" height="92" rx="14" fill="#16181c"/>' + inner.replace("COL", col))
+
+
+P["v-frein"] = voyant('<circle cx="50" cy="50" r="22" fill="none" stroke="COL" stroke-width="6"/>'
+                      '<path d="M22,26 A34,34 0 0 0 22,74 M78,26 A34,34 0 0 1 78,74" fill="none" stroke="COL" stroke-width="6"/>'
+                      '<rect x="46" y="36" width="8" height="18" fill="COL"/><circle cx="50" cy="62" r="4.5" fill="COL"/>', "#ff3b30")
+P["v-abs"] = voyant('<circle cx="50" cy="50" r="24" fill="none" stroke="COL" stroke-width="5"/>'
+                    '<path d="M20,28 A34,34 0 0 0 20,72 M80,28 A34,34 0 0 1 80,72" fill="none" stroke="COL" stroke-width="5"/>'
+                    + text("ABS", 50, 51, 17, "COL"), "#ffb000")
+P["v-huile"] = voyant('<path d="M18,46 L30,40 H58 L80,30 L84,34 L66,50 V64 H30 V46 Z" fill="COL"/>'
+                      '<path d="M84,44 q3,6 0,9 q-3,-3 0,-9 z" fill="COL"/><rect x="38" y="32" width="10" height="8" fill="COL"/>', "#ff3b30")
+P["v-temp"] = voyant('<rect x="45" y="20" width="10" height="38" rx="5" fill="COL"/><circle cx="50" cy="62" r="10" fill="COL"/>'
+                     '<rect x="56" y="26" width="12" height="4" fill="COL"/><rect x="56" y="36" width="12" height="4" fill="COL"/>'
+                     '<path d="M18,80 q8,-6 16,0 t16,0 t16,0 t16,0" fill="none" stroke="COL" stroke-width="4"/>', "#ff3b30")
+P["v-feux-route"] = voyant('<path d="M40,30 Q66,30 66,50 Q66,70 40,70 Z" fill="COL"/>'
+                           + "".join(f'<rect x="16" y="{y}" width="18" height="5" fill="COL"/>' for y in (32, 42, 52, 62)), "#3b82ff")
+P["critair-1"] = ("0 0 100 100", '<circle cx="50" cy="50" r="46" fill="#8e44ad"/><circle cx="50" cy="50" r="30" fill="#fff"/>'
+                  + text("1", 50, 52, 34, "#8e44ad") + text("CRIT'Air", 50, 12 + 0, 0.1))
+
 def main():
     os.makedirs(OUT_P, exist_ok=True)
     os.makedirs(OUT_S, exist_ok=True)

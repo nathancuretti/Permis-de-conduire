@@ -6,7 +6,8 @@
   "data/questions/L-signalisation.json",
   "data/questions/P-secours.json",
   "data/questions/R-route.json",
-  "data/questions/U-usagers.json"
+  "data/questions/U-usagers.json",
+  "data/questions/V-vehicule.json"
  ],
  "themes": [
   {
@@ -1318,17 +1319,17 @@
       {
        "id": "Q-INS-01",
        "nom": "Réglage du siège, du volant, de l'appui-tête",
-       "q": 0
+       "q": 2
       },
       {
        "id": "Q-INS-02",
        "nom": "Réglage des rétroviseurs",
-       "q": 0
+       "q": 2
       },
       {
        "id": "Q-INS-03",
        "nom": "Ceinture bien positionnée",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "Q"
@@ -1340,22 +1341,22 @@
       {
        "id": "Q-PAS-01",
        "nom": "Enfants : système de retenue adapté jusqu'à 10 ans",
-       "q": 0
+       "q": 2
       },
       {
        "id": "Q-PAS-02",
        "nom": "Enfant à l'avant : interdit avant 10 ans sauf exceptions ; airbag désactivé si siège dos à la route",
-       "q": 0
+       "q": 2
       },
       {
        "id": "Q-PAS-03",
        "nom": "Responsabilité du conducteur pour les passagers mineurs non attachés",
-       "q": 0
+       "q": 1
       },
       {
        "id": "Q-PAS-04",
        "nom": "Chargement : répartition, arrimage, objets dans l'habitacle",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "Q"
@@ -1367,17 +1368,17 @@
       {
        "id": "Q-SOR-01",
        "nom": "Ouvrir sa portière en vérifiant (rétroviseur, méthode « main opposée »)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "Q-SOR-02",
        "nom": "Faire descendre les passagers côté trottoir",
-       "q": 0
+       "q": 1
       },
       {
        "id": "Q-SOR-03",
        "nom": "Quitter le véhicule : frein de stationnement, vitesse engagée, clé, fermeture",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "Q"
@@ -1389,17 +1390,17 @@
       {
        "id": "Q-REM-01",
        "nom": "Permis B / B96 / BE selon le poids de la remorque",
-       "q": 0
+       "q": 2
       },
       {
        "id": "Q-REM-02",
        "nom": "Conduite avec remorque ou caravane : distances, vent, vitesses",
-       "q": 0
+       "q": 1
       },
       {
        "id": "Q-REM-03",
        "nom": "Porte-vélos et coffre de toit : plaque, feux, hauteur, consommation",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "Q"
@@ -1411,12 +1412,12 @@
       {
        "id": "M-TAB-01",
        "nom": "Voyants rouges (danger : s'arrêter), orange (anomalie), verts/bleus (fonctionnement)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-TAB-02",
        "nom": "Voyants principaux : huile, température, freins, batterie, airbag, ABS, ceinture",
-       "q": 0
+       "q": 4
       }
      ],
      "officiel": "M"
@@ -1428,22 +1429,22 @@
       {
        "id": "M-PNE-01",
        "nom": "Profondeur minimale des sculptures : 1,6 mm ; témoins d'usure",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-PNE-02",
        "nom": "Pression : à froid, effets d'un sous-gonflage",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-PNE-03",
        "nom": "Pneus hiver / 4 saisons, chaînes",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-PNE-04",
        "nom": "Crevaison, éclatement : conduite à tenir",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "M"
@@ -1455,22 +1456,22 @@
       {
        "id": "M-FRE-01",
        "nom": "Liquide de frein, usure, frein de stationnement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "M-FRE-02",
        "nom": "ABS, freinage d'urgence",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-FRE-03",
        "nom": "Frein moteur",
-       "q": 0
+       "q": 1
       },
       {
        "id": "M-FRE-04",
        "nom": "Direction assistée",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "M"
@@ -1482,17 +1483,17 @@
       {
        "id": "M-ENT-01",
        "nom": "Niveaux : huile, liquide de refroidissement, lave-glace",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-ENT-02",
        "nom": "Éclairage, essuie-glaces, batterie",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-ENT-03",
        "nom": "Rétroviseurs, vitres, propreté de la plaque",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "M"
@@ -1504,22 +1505,22 @@
       {
        "id": "M-AID-01",
        "nom": "Régulateur et limiteur de vitesse",
-       "q": 0
+       "q": 2
       },
       {
        "id": "M-AID-02",
        "nom": "ESP / ESC, aides au freinage d'urgence",
-       "q": 0
+       "q": 1
       },
       {
        "id": "M-AID-03",
        "nom": "Alerte de franchissement de ligne, détecteur d'angle mort, caméras",
-       "q": 0
+       "q": 1
       },
       {
        "id": "M-AID-04",
        "nom": "Boîte automatique, véhicules électriques et hybrides : spécificités",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "M"
@@ -1531,47 +1532,47 @@
       {
        "id": "S-EQU-01",
        "nom": "Gilet haute visibilité obligatoire, à portée de main",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-02",
        "nom": "Triangle de présignalisation : placé à au moins 30 m (sauf autoroute)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-03",
        "nom": "Ceinture de sécurité : obligatoire à toutes les places, exceptions",
-       "q": 0
+       "q": 2
       },
       {
        "id": "S-EQU-04",
        "nom": "Airbags : fonctionnement, désactivation",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-05",
        "nom": "Appuie-tête : rôle (coup du lapin)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-06",
        "nom": "Systèmes de retenue pour enfants (normes, groupes)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-07",
        "nom": "Éthylotest : obligation de possession (non sanctionnée)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-08",
        "nom": "Plaques d'immatriculation lisibles",
-       "q": 0
+       "q": 1
       },
       {
        "id": "S-EQU-09",
        "nom": "Vitres et pare-brise : visibilité, vitres avant surteintées interdites",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "S"
@@ -1583,27 +1584,27 @@
       {
        "id": "E-ECO-01",
        "nom": "Conduite souple, anticipation, passer les rapports tôt",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-ECO-02",
        "nom": "Couper le moteur à l'arrêt prolongé ; stop & start",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-ECO-03",
        "nom": "Climatisation, barres de toit, charge : surconsommation",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-ECO-04",
        "nom": "Pression des pneus et consommation",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-ECO-05",
        "nom": "Vitesse et consommation (par ex. rouler à 110 au lieu de 130)",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "E"
@@ -1615,32 +1616,32 @@
       {
        "id": "E-POL-01",
        "nom": "Vignette Crit'Air, zones à faibles émissions (ZFE)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "E-POL-02",
        "nom": "Circulation différenciée lors des pics de pollution",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-POL-03",
        "nom": "Bruit : avertisseur, échappement modifié interdit",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-POL-04",
        "nom": "Entretien et pollution (filtres, pot catalytique)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-POL-05",
        "nom": "Covoiturage, voies réservées, mobilités alternatives",
-       "q": 0
+       "q": 1
       },
       {
        "id": "E-POL-06",
        "nom": "Véhicules électriques : recharge, autonomie",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "E"
