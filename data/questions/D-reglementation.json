@@ -1,0 +1,830 @@
+[
+{
+"id": "D-PER-01-a",
+"n": "D-PER-01",
+"q": "Avec le permis B, je peux conduire un véhicule dont le poids total autorisé en charge (PTAC) ne dépasse pas :",
+"c": [
+"3,5 tonnes",
+"5 tonnes",
+"7,5 tonnes"
+],
+"ok": [
+0
+],
+"ex": "Permis B : véhicules de 3,5 t de PTAC maximum, avec au plus 8 places passagers en plus du conducteur.",
+"src": "Code de la route, art. R221-4"
+},
+{
+"id": "D-PER-01-b",
+"n": "D-PER-01",
+"q": "Avec le permis B, je peux transporter au maximum :",
+"c": [
+"8 passagers en plus du conducteur",
+"5 passagers",
+"12 passagers"
+],
+"ok": [
+0
+],
+"ex": "Le permis B autorise les véhicules de 9 places maximum, conducteur compris.",
+"src": "Code de la route, art. R221-4"
+},
+{
+"id": "D-PER-01-c",
+"n": "D-PER-01",
+"q": "Avec le permis B seul, je peux tracter une remorque :",
+"c": [
+"De 750 kg de PTAC au maximum, dans tous les cas",
+"De plus de 750 kg si le poids total de l'ensemble ne dépasse pas 3,5 t",
+"De n'importe quel poids"
+],
+"ok": [
+0,
+1
+],
+"ex": "Remorque jusqu'à 750 kg : toujours possible. Au-delà, possible si l'ensemble (voiture + remorque) ne dépasse pas 3,5 t. Jusqu'à 4,25 t : formation B96. Au-delà : permis BE.",
+"src": "Code de la route, art. R221-4"
+},
+{
+"id": "D-PER-01-d",
+"n": "D-PER-01",
+"q": "Après 2 ans de permis B et une formation de 7 heures, je peux conduire :",
+"c": [
+"Une moto légère de 125 cm³ maximum",
+"N'importe quelle moto",
+"Un camion"
+],
+"ok": [
+0
+],
+"ex": "Avec 2 ans de permis B et une formation de 7 heures, on peut conduire une moto légère (125 cm³ maximum, 11 kW).",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-02-a",
+"n": "D-PER-02",
+"q": "La période probatoire après l'obtention du permis dure :",
+"c": [
+"3 ans",
+"2 ans après un apprentissage anticipé (conduite accompagnée)",
+"5 ans dans tous les cas"
+],
+"ok": [
+0,
+1
+],
+"ex": "Période probatoire : 3 ans, ou 2 ans après une conduite accompagnée (AAC).",
+"src": "Code de la route, art. L223-1"
+},
+{
+"id": "D-PER-02-b",
+"n": "D-PER-02",
+"q": "Pendant la période probatoire, je dois apposer à l'arrière de mon véhicule :",
+"c": [
+"Le disque « A »",
+"Le disque « conduite accompagnée »",
+"Rien de particulier"
+],
+"ok": [
+0
+],
+"ex": "Le disque « A » (pour « apprenti ») signale un jeune conducteur pendant toute la période probatoire.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-03-a",
+"n": "D-PER-03",
+"q": "Un permis probatoire démarre avec :",
+"c": [
+"6 points",
+"8 points",
+"12 points"
+],
+"ok": [
+0
+],
+"ex": "6 points au départ. Sans infraction, on gagne 2 points par an (3 par an après une conduite accompagnée) jusqu'à 12 points.",
+"src": "Code de la route, art. L223-1"
+},
+{
+"id": "D-PER-03-b",
+"n": "D-PER-03",
+"q": "Sans infraction, après une formation traditionnelle, j'atteins 12 points au bout de :",
+"c": [
+"1 an",
+"2 ans",
+"3 ans"
+],
+"ok": [
+2
+],
+"ex": "6 + 2 + 2 + 2 = 12 points au bout de 3 ans. Avec la conduite accompagnée : 6 + 3 + 3 = 12 au bout de 2 ans.",
+"src": "Code de la route, art. L223-1"
+},
+{
+"id": "D-PER-04-a",
+"n": "D-PER-04",
+"q": "Lors d'infractions commises en même temps, on peut perdre au maximum en une seule fois :",
+"c": [
+"6 points",
+"8 points",
+"12 points"
+],
+"ok": [
+1
+],
+"ex": "Plusieurs infractions simultanées : les retraits s'additionnent, dans la limite de 8 points.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-04-b",
+"n": "D-PER-04",
+"q": "Le nombre de points retirés pour une infraction est :",
+"c": [
+"Fixé par un barème, selon la gravité de l'infraction",
+"Choisi par l'agent qui me contrôle",
+"Toujours de 1 point"
+],
+"ok": [
+0
+],
+"ex": "Chaque infraction correspond à un nombre de points fixé par la loi (de 1 à 6 points).",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-05-a",
+"n": "D-PER-05",
+"q": "Si je ne commets aucune nouvelle infraction pendant 2 ans, mes points perdus pour des contraventions :",
+"c": [
+"Sont tous récupérés",
+"Sont définitivement perdus",
+"Sont récupérés à moitié"
+],
+"ok": [
+0
+],
+"ex": "2 ans sans infraction (3 ans en cas de délit ou de contravention de 4e ou 5e classe) : le capital initial est rétabli. Une infraction à 1 point est récupérée au bout de 6 mois.",
+"src": "Code de la route, art. L223-6"
+},
+{
+"id": "D-PER-05-b",
+"n": "D-PER-05",
+"q": "Un stage de sensibilisation à la sécurité routière permet de récupérer :",
+"c": [
+"4 points, une fois par an au maximum",
+"12 points",
+"2 points par jour de stage"
+],
+"ok": [
+0
+],
+"ex": "Stage volontaire de 2 jours : jusqu'à 4 points récupérés, une fois par an au plus (sans dépasser le maximum du permis).",
+"src": "Code de la route, art. L223-6"
+},
+{
+"id": "D-PER-05-c",
+"n": "D-PER-05",
+"q": "En période probatoire, je perds 3 points ou plus en une seule infraction. Je dois :",
+"c": [
+"Suivre un stage de sensibilisation obligatoire",
+"Repasser le permis",
+"Rien de particulier"
+],
+"ok": [
+0
+],
+"ex": "En probatoire, une perte d'au moins 3 points impose un stage dans les 4 mois (lettre 48N). Le stage permet aussi de récupérer des points.",
+"src": "Code de la route, art. L223-6"
+},
+{
+"id": "D-PER-06-a",
+"n": "D-PER-06",
+"q": "Quand mon solde de points tombe à zéro :",
+"c": [
+"Mon permis est invalidé : je dois le restituer",
+"Je peux continuer à conduire jusqu'à la fin de l'année",
+"Je récupère automatiquement 6 points"
+],
+"ok": [
+0
+],
+"ex": "Solde nul : invalidation (lettre 48SI). Il faut rendre son permis et attendre au moins 6 mois avant de repasser l'examen.",
+"src": "Code de la route, art. L223-5"
+},
+{
+"id": "D-PER-06-b",
+"n": "D-PER-06",
+"q": "La différence entre une suspension et une annulation de permis :",
+"c": [
+"Suspension : interdiction temporaire, le permis est rendu à la fin",
+"Annulation : le permis est supprimé, il faut le repasser",
+"Il n'y a aucune différence"
+],
+"ok": [
+0,
+1
+],
+"ex": "Suspension (par le préfet ou le juge) : temporaire. Annulation (par le juge) : le permis n'existe plus, il faut le repasser, parfois après un délai fixé. Invalidation : perte de tous les points.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-07-a",
+"n": "D-PER-07",
+"q": "Lors d'un contrôle, je dois pouvoir présenter :",
+"c": [
+"Mon permis de conduire",
+"Le certificat d'immatriculation (carte grise) du véhicule",
+"Mon diplôme du code de la route"
+],
+"ok": [
+0,
+1
+],
+"ex": "Permis et carte grise doivent être présentés. Depuis 2024, il n'y a plus de carte verte d'assurance à présenter : les forces de l'ordre consultent le fichier des véhicules assurés.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-07-b",
+"n": "D-PER-07",
+"q": "Le permis de conduire au format carte de crédit (titre sécurisé) a une validité administrative de :",
+"c": [
+"5 ans",
+"15 ans",
+"À vie, sans renouvellement"
+],
+"ok": [
+1
+],
+"ex": "Le titre est à renouveler tous les 15 ans (démarche administrative, sans examen) : le droit à conduire, lui, ne change pas.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-08-a",
+"n": "D-PER-08",
+"q": "La conduite accompagnée (apprentissage anticipé, AAC) est possible dès :",
+"c": [
+"15 ans",
+"16 ans",
+"17 ans"
+],
+"ok": [
+0
+],
+"ex": "AAC : dès 15 ans, après une formation initiale en auto-école. Il faut parcourir au moins 3 000 km en au moins 1 an avant l'examen pratique.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-08-b",
+"n": "D-PER-08",
+"q": "En conduite accompagnée, l'accompagnateur doit :",
+"c": [
+"Être titulaire du permis B depuis au moins 5 ans",
+"Avoir l'accord de l'assureur du véhicule",
+"Être obligatoirement un parent"
+],
+"ok": [
+0,
+1
+],
+"ex": "L'accompagnateur doit avoir le permis B depuis 5 ans au moins, sans annulation récente, et l'assureur doit avoir donné son accord. Ce n'est pas forcément un parent.",
+"src": "Code de la route"
+},
+{
+"id": "D-PER-08-c",
+"n": "D-PER-08",
+"q": "La conduite accompagnée présente comme avantages :",
+"c": [
+"Une période probatoire plus courte (2 ans)",
+"Une surprime d'assurance jeune conducteur réduite",
+"Une meilleure expérience avant de conduire seul",
+"La dispense de l'examen pratique"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "AAC : probatoire de 2 ans, +3 points par an, surprime réduite de moitié, et surtout plus d'expérience. L'examen reste obligatoire.",
+"src": "Sécurité routière"
+},
+{
+"id": "D-DOC-01-a",
+"n": "D-DOC-01",
+"q": "Je déménage. Je dois mettre à jour ma carte grise dans un délai de :",
+"c": [
+"1 mois",
+"6 mois",
+"1 an"
+],
+"ok": [
+0
+],
+"ex": "Changement d'adresse : déclaration dans le mois, sinon amende de 135 €.",
+"src": "Code de la route, art. R322-7"
+},
+{
+"id": "D-DOC-01-b",
+"n": "D-DOC-01",
+"q": "J'achète une voiture d'occasion. Je dois faire établir la carte grise à mon nom dans un délai de :",
+"c": [
+"1 mois",
+"3 mois",
+"6 mois"
+],
+"ok": [
+0
+],
+"ex": "L'acheteur a 1 mois pour immatriculer le véhicule à son nom.",
+"src": "Code de la route"
+},
+{
+"id": "D-DOC-02-a",
+"n": "D-DOC-02",
+"q": "Depuis 2024, pour prouver que mon véhicule est assuré lors d'un contrôle :",
+"c": [
+"Les forces de l'ordre consultent le fichier des véhicules assurés",
+"Je dois coller une vignette verte sur le pare-brise",
+"Je dois présenter une carte verte papier"
+],
+"ok": [
+0
+],
+"ex": "La vignette et la carte verte ont été supprimées en 2024 : l'assurance est vérifiée dans le fichier des véhicules assurés (FVA).",
+"src": "Service-public.fr"
+},
+{
+"id": "D-DOC-03-a",
+"n": "D-DOC-03",
+"q": "Une voiture neuve doit passer son premier contrôle technique :",
+"c": [
+"Avant ses 4 ans",
+"Avant ses 2 ans",
+"Avant ses 10 ans"
+],
+"ok": [
+0
+],
+"ex": "Premier contrôle technique dans les 6 mois précédant le 4e anniversaire, puis tous les 2 ans.",
+"src": "Code de la route"
+},
+{
+"id": "D-DOC-03-b",
+"n": "D-DOC-03",
+"q": "Après le premier contrôle technique, une voiture doit être contrôlée :",
+"c": [
+"Tous les ans",
+"Tous les 2 ans",
+"Tous les 5 ans"
+],
+"ok": [
+1
+],
+"ex": "Tous les 2 ans. En cas de défaillance critique, la voiture ne peut circuler que le jour du contrôle ; défaillance majeure : contre-visite sous 2 mois.",
+"src": "Code de la route"
+},
+{
+"id": "D-DOC-04-a",
+"n": "D-DOC-04",
+"q": "Je vends ma voiture de 6 ans. Je dois remettre à l'acheteur :",
+"c": [
+"Un certificat de cession",
+"Un procès-verbal de contrôle technique de moins de 6 mois",
+"Un certificat de situation administrative (non-gage)",
+"Mon permis de conduire"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Vendeur : certificat de cession, carte grise barrée, contrôle technique de moins de 6 mois (véhicule de plus de 4 ans) et certificat de situation administrative.",
+"src": "Service-public.fr"
+},
+{
+"id": "D-DOC-04-b",
+"n": "D-DOC-04",
+"q": "Après la vente de mon véhicule, je dois déclarer la cession dans un délai de :",
+"c": [
+"15 jours",
+"2 mois",
+"1 an"
+],
+"ok": [
+0
+],
+"ex": "Le vendeur déclare la cession en ligne (ANTS) dans les 15 jours. Cela le protège des amendes commises ensuite par l'acheteur.",
+"src": "Code de la route"
+},
+{
+"id": "D-ASS-01-a",
+"n": "D-ASS-01",
+"q": "L'assurance obligatoire minimale pour un véhicule est :",
+"c": [
+"La responsabilité civile (« au tiers »)",
+"L'assurance tous risques",
+"L'assurance vol"
+],
+"ok": [
+0
+],
+"ex": "La responsabilité civile couvre les dommages causés aux autres. Elle est obligatoire pour tout véhicule terrestre à moteur, même s'il ne roule pas.",
+"src": "Code des assurances"
+},
+{
+"id": "D-ASS-01-b",
+"n": "D-ASS-01",
+"q": "Je suis responsable d'un accident et je n'ai qu'une assurance au tiers. Les dégâts de ma propre voiture :",
+"c": [
+"Restent à ma charge",
+"Sont pris en charge par mon assureur",
+"Sont pris en charge par l'autre conducteur"
+],
+"ok": [
+0
+],
+"ex": "Au tiers, seuls les dommages causés aux autres sont couverts. Pour être indemnisé de ses propres dégâts en étant responsable, il faut une garantie dommages (tous risques).",
+"src": "Code des assurances"
+},
+{
+"id": "D-ASS-02-a",
+"n": "D-ASS-02",
+"q": "Avec le système bonus-malus, une année sans accident responsable :",
+"c": [
+"Fait baisser ma prime (bonus de 5 %)",
+"Fait augmenter ma prime",
+"Ne change rien"
+],
+"ok": [
+0
+],
+"ex": "Chaque année sans sinistre responsable, le coefficient baisse de 5 % (jusqu'à 0,50). Un accident responsable l'augmente de 25 %.",
+"src": "Code des assurances"
+},
+{
+"id": "D-ASS-02-b",
+"n": "D-ASS-02",
+"q": "Un accident dont je suis entièrement responsable augmente mon coefficient bonus-malus de :",
+"c": [
+"5 %",
+"25 %",
+"100 %"
+],
+"ok": [
+1
+],
+"ex": "Malus de 25 % par sinistre entièrement responsable (12,5 % si responsabilité partagée).",
+"src": "Code des assurances"
+},
+{
+"id": "D-ASS-02-c",
+"n": "D-ASS-02",
+"q": "Un jeune conducteur peut payer une surprime d'assurance la première année allant jusqu'à :",
+"c": [
+"50 %",
+"100 %",
+"200 %"
+],
+"ok": [
+1
+],
+"ex": "Surprime jusqu'à 100 % la 1re année, puis 50 % et 25 %, si aucun sinistre responsable. Elle est réduite de moitié après une conduite accompagnée.",
+"src": "Code des assurances"
+},
+{
+"id": "D-ASS-03-a",
+"n": "D-ASS-03",
+"q": "Conduire sans assurance est :",
+"c": [
+"Un délit",
+"Une simple contravention",
+"Autorisé pour les petits trajets"
+],
+"ok": [
+0
+],
+"ex": "Défaut d'assurance : délit puni de 3 750 € d'amende, avec suspension ou annulation du permis et confiscation du véhicule possibles. Les victimes sont indemnisées par un fonds de garantie, qui se retourne contre le conducteur.",
+"src": "Code de la route, art. L324-2"
+},
+{
+"id": "D-ASS-04-a",
+"n": "D-ASS-04",
+"q": "Je prête ma voiture à un ami. En cas d'accident :",
+"c": [
+"Cela dépend de mon contrat (conducteur désigné, franchise pour conducteur novice…)",
+"Il n'est jamais couvert",
+"C'est son assurance personnelle qui paie toujours"
+],
+"ok": [
+0
+],
+"ex": "La plupart des contrats couvrent tout conducteur autorisé, mais certains prévoient une conduite exclusive ou une franchise supplémentaire (jeune conducteur, conducteur non désigné). Lire son contrat.",
+"src": "Code des assurances"
+},
+{
+"id": "D-ACC-01-a",
+"n": "D-ACC-01",
+"q": "Après un accident sans blessé, je remplis un constat amiable. Je dois l'envoyer à mon assureur dans un délai de :",
+"c": [
+"5 jours ouvrés",
+"1 mois",
+"3 mois"
+],
+"ok": [
+0
+],
+"ex": "Le constat doit parvenir à l'assureur dans les 5 jours ouvrés.",
+"src": "Code des assurances, art. L113-2"
+},
+{
+"id": "D-ACC-01-b",
+"n": "D-ACC-01",
+"q": "Après avoir signé un constat amiable :",
+"c": [
+"Je ne dois plus le modifier",
+"Chaque conducteur garde un exemplaire",
+"Je peux le compléter seul plus tard sur l'exemplaire de l'autre"
+],
+"ok": [
+0,
+1
+],
+"ex": "Une fois signé par les deux conducteurs, le constat ne se modifie plus. En cas de désaccord, on l'indique dans la case « observations » avant de signer, ou on ne signe pas.",
+"src": "Sécurité routière"
+},
+{
+"id": "D-ACC-01-c",
+"n": "D-ACC-01",
+"q": "Sur le constat amiable, le croquis de l'accident et les cases cochées servent à :",
+"c": [
+"Déterminer les responsabilités",
+"Calculer le montant de l'amende",
+"Rien, ils sont facultatifs"
+],
+"ok": [
+0
+],
+"ex": "Les cases cochées et le croquis permettent aux assureurs de déterminer les responsabilités : il faut les remplir avec soin.",
+"src": "Sécurité routière"
+},
+{
+"id": "D-ACC-02-a",
+"n": "D-ACC-02",
+"q": "Je heurte une voiture en stationnement et je repars sans laisser mes coordonnées. C'est :",
+"c": [
+"Un délit de fuite",
+"Une simple faute de politesse",
+"Autorisé si les dégâts sont faibles"
+],
+"ok": [
+0
+],
+"ex": "Délit de fuite : jusqu'à 3 ans de prison, 75 000 € d'amende et 6 points. Il faut laisser ses coordonnées ou prévenir les forces de l'ordre.",
+"src": "Code pénal, art. 434-10"
+},
+{
+"id": "D-ACC-03-a",
+"n": "D-ACC-03",
+"q": "Après un accident, je dois prévenir les forces de l'ordre :",
+"c": [
+"S'il y a des blessés",
+"Si l'autre conducteur refuse de remplir un constat",
+"Si l'accident est matériel et que le constat est rempli"
+],
+"ok": [
+0,
+1
+],
+"ex": "Blessés, conducteur qui refuse le constat ou prend la fuite : on appelle le 17 ou le 112. Pour un simple accrochage, le constat amiable suffit.",
+"src": "Sécurité routière"
+},
+{
+"id": "D-INF-01-a",
+"n": "D-INF-01",
+"q": "Les infractions routières se classent en :",
+"c": [
+"Contraventions (de la 1re à la 5e classe) et délits",
+"Uniquement en amendes",
+"Fautes légères et fautes lourdes"
+],
+"ok": [
+0
+],
+"ex": "Contraventions : amendes (et éventuellement points, suspension). Délits (alcool à 0,8 g/l, stupéfiants, défaut d'assurance, délit de fuite…) : jugés au tribunal correctionnel, prison possible.",
+"src": "Code pénal"
+},
+{
+"id": "D-INF-01-b",
+"n": "D-INF-01",
+"q": "Parmi ces infractions, lesquelles sont des délits ?",
+"c": [
+"Conduire avec 0,9 g/l d'alcool dans le sang",
+"Conduire sans permis",
+"Délit de fuite",
+"Stationner sur un trottoir"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Alcool ≥ 0,8 g/l, conduite sans permis, délit de fuite, défaut d'assurance, stupéfiants : délits. Le stationnement sur trottoir est une contravention.",
+"src": "Code de la route"
+},
+{
+"id": "D-INF-02-a",
+"n": "D-INF-02",
+"q": "Pour une contravention de 4e classe (téléphone, feu rouge…), l'amende forfaitaire est de :",
+"c": [
+"35 €",
+"135 €",
+"375 €"
+],
+"ok": [
+1
+],
+"ex": "4e classe : 135 € (amende forfaitaire), 90 € si payée rapidement (minorée), 375 € si payée en retard (majorée).",
+"src": "Code de procédure pénale, art. R49"
+},
+{
+"id": "D-INF-02-b",
+"n": "D-INF-02",
+"q": "Si je paie rapidement une amende de 4e classe (dans les 15 jours, ou 30 jours en ligne), je paie :",
+"c": [
+"L'amende minorée : 90 €",
+"L'amende majorée : 375 €",
+"Rien"
+],
+"ok": [
+0
+],
+"ex": "L'amende minorée récompense un paiement rapide. Au-delà de 45 jours, l'amende est majorée.",
+"src": "Code de procédure pénale, art. R49-9"
+},
+{
+"id": "D-INF-03-a",
+"n": "D-INF-03",
+"q": "L'immobilisation d'un véhicule signifie :",
+"c": [
+"Il est interdit de le déplacer jusqu'à ce que l'infraction cesse",
+"Il est emmené à la fourrière",
+"Il est vendu par l'État"
+],
+"ok": [
+0
+],
+"ex": "Immobilisation : le véhicule reste sur place (ex. : conducteur alcoolisé, en attendant un conducteur en état). Fourrière : il est déplacé. Confiscation : il est saisi définitivement.",
+"src": "Code de la route, art. L325-1"
+},
+{
+"id": "D-INF-03-b",
+"n": "D-INF-03",
+"q": "La confiscation du véhicule peut être prononcée notamment en cas de :",
+"c": [
+"Conduite sans permis ou sans assurance",
+"Grand excès de vitesse ou alcool en récidive",
+"Stationnement de plus de 2 heures"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les délits graves (sans permis, sans assurance, récidive d'alcool, grand excès de vitesse…) peuvent entraîner la confiscation du véhicule.",
+"src": "Code de la route"
+},
+{
+"id": "D-INF-04-a",
+"n": "D-INF-04",
+"q": "Lors d'un contrôle routier :",
+"c": [
+"Je m'arrête là où l'agent me l'indique",
+"Je garde mon calme et je suis ses instructions",
+"Je repars si je suis pressé"
+],
+"ok": [
+0,
+1
+],
+"ex": "On obéit aux injonctions des agents et on présente les documents demandés. Refuser d'obtempérer est un délit.",
+"src": "Code de la route"
+},
+{
+"id": "D-INF-05-a",
+"n": "D-INF-05",
+"q": "Ma voiture est flashée par un radar alors que c'est un ami qui conduisait. Je dois :",
+"c": [
+"Désigner le conducteur dans les 45 jours",
+"Payer l'amende et perdre les points à sa place",
+"Ignorer l'avis de contravention"
+],
+"ok": [
+0
+],
+"ex": "Le titulaire de la carte grise reçoit l'avis. S'il ne conduisait pas, il désigne le conducteur (45 jours), qui paiera l'amende et perdra les points.",
+"src": "Code de la route, art. L121-2"
+},
+{
+"id": "D-INF-05-b",
+"n": "D-INF-05",
+"q": "Si le titulaire de la carte grise ne désigne pas le conducteur flashé par un radar :",
+"c": [
+"Il doit payer l'amende (il est redevable pécuniairement)",
+"Il perd automatiquement des points",
+"Il ne risque rien"
+],
+"ok": [
+0
+],
+"ex": "Sans désignation, le titulaire paie l'amende mais ne perd pas de points (sauf s'il est reconnu comme conducteur). Pour une entreprise, ne pas désigner est une infraction à part.",
+"src": "Code de la route, art. L121-3"
+},
+{
+"id": "D-PRO-01-a",
+"n": "D-PRO-01",
+"q": "Tenir son téléphone en main en conduisant coûte :",
+"c": [
+"1 point",
+"3 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "3 points et 135 €.",
+"src": "Code de la route, art. R412-6-1"
+},
+{
+"id": "D-PRO-02-a",
+"n": "D-PRO-02",
+"q": "Ne pas attacher sa ceinture de sécurité coûte au conducteur :",
+"c": [
+"1 point",
+"3 points",
+"Aucun point"
+],
+"ok": [
+1
+],
+"ex": "3 points et 135 €. Le conducteur est aussi responsable des passagers de moins de 18 ans non attachés.",
+"src": "Code de la route"
+},
+{
+"id": "D-PRO-03-a",
+"n": "D-PRO-03",
+"q": "Ne pas respecter un feu rouge coûte :",
+"c": [
+"2 points",
+"4 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Feu rouge ou stop non respecté : 4 points et 135 €, avec suspension de permis possible.",
+"src": "Code de la route, art. R412-30"
+},
+{
+"id": "D-PRO-04-a",
+"n": "D-PRO-04",
+"q": "Un refus de priorité coûte :",
+"c": [
+"2 points",
+"4 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Refus de priorité : 4 points (6 points s'il s'agit d'un piéton).",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "D-PRO-05-a",
+"n": "D-PRO-05",
+"q": "Chevaucher une ligne continue coûte :",
+"c": [
+"1 point",
+"3 points",
+"6 points"
+],
+"ok": [
+0
+],
+"ex": "Chevauchement : 1 point. Franchissement : 3 points.",
+"src": "Code de la route, art. R412-19"
+},
+{
+"id": "D-PRO-05-b",
+"n": "D-PRO-05",
+"q": "Franchir complètement une ligne continue coûte :",
+"c": [
+"1 point",
+"3 points",
+"4 points"
+],
+"ok": [
+1
+],
+"ex": "Franchissement de ligne continue : 3 points et 135 €.",
+"src": "Code de la route, art. R412-19"
+}
+]

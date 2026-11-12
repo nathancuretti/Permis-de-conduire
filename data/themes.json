@@ -1,6 +1,7 @@
 {
  "fichiers": [
   "data/questions/C-conducteur.json",
+  "data/questions/D-reglementation.json",
   "data/questions/L-regles.json",
   "data/questions/L-signalisation.json",
   "data/questions/P-secours.json"
@@ -1121,42 +1122,42 @@
       {
        "id": "D-PER-01",
        "nom": "Catégories (AM, A1, A2, A, B, BE, B96…) ; ce que permet le B",
-       "q": 0
+       "q": 4
       },
       {
        "id": "D-PER-02",
        "nom": "Permis probatoire : durée (3 ans ; 2 ans avec AAC), disque « A »",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-PER-03",
        "nom": "Capital de points : 6 au départ, +2/an (+3/an avec AAC), 12 points",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-PER-04",
        "nom": "Retrait de points selon l'infraction (barème)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-PER-05",
        "nom": "Récupération de points (délais, stage de sensibilisation)",
-       "q": 0
+       "q": 3
       },
       {
        "id": "D-PER-06",
        "nom": "Suspension, annulation, invalidation (solde nul)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-PER-07",
        "nom": "Permis à présenter lors d'un contrôle ; titre sécurisé, durée de validité",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-PER-08",
        "nom": "Apprentissage anticipé de la conduite (AAC) et conduite supervisée",
-       "q": 0
+       "q": 3
       }
      ],
      "officiel": "D"
@@ -1168,22 +1169,22 @@
       {
        "id": "D-DOC-01",
        "nom": "Certificat d'immatriculation (carte grise) : changement d'adresse sous 1 mois",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-DOC-02",
        "nom": "Attestation d'assurance (fichier des véhicules assurés)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-DOC-03",
        "nom": "Contrôle technique : première fois à 4 ans, puis tous les 2 ans",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-DOC-04",
        "nom": "Vente d'un véhicule : déclaration de cession, certificat de non-gage",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "D"
@@ -1195,22 +1196,22 @@
       {
        "id": "D-ASS-01",
        "nom": "Responsabilité civile obligatoire ; garanties facultatives (tous risques, vol, bris de glace)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-ASS-02",
        "nom": "Bonus-malus",
-       "q": 0
+       "q": 3
       },
       {
        "id": "D-ASS-03",
        "nom": "Conduite sans assurance : délit",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-ASS-04",
        "nom": "Prêt du volant, conducteur novice",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "D"
@@ -1222,17 +1223,17 @@
       {
        "id": "D-ACC-01",
        "nom": "Constat amiable : remplissage, signature, envoi sous 5 jours ouvrés",
-       "q": 0
+       "q": 3
       },
       {
        "id": "D-ACC-02",
        "nom": "Délit de fuite",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-ACC-03",
        "nom": "Accident avec blessés : alerter les forces de l'ordre",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "D"
@@ -1244,27 +1245,27 @@
       {
        "id": "D-INF-01",
        "nom": "Contraventions (classes 1 à 5) vs délits",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-INF-02",
        "nom": "Amende forfaitaire, minorée, majorée",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-INF-03",
        "nom": "Immobilisation, fourrière, confiscation",
-       "q": 0
+       "q": 2
       },
       {
        "id": "D-INF-04",
        "nom": "Contrôles des forces de l'ordre : comportement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-INF-05",
        "nom": "Avis de contravention (radar) : responsabilité du titulaire de la carte grise, désignation du conducteur",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "D"
@@ -1276,27 +1277,27 @@
       {
        "id": "D-PRO-01",
        "nom": "Téléphone en main : 3 points",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-PRO-02",
        "nom": "Ceinture non bouclée : 3 points",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-PRO-03",
        "nom": "Feu rouge / stop grillé : 4 points",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-PRO-04",
        "nom": "Refus de priorité : 4 points",
-       "q": 0
+       "q": 1
       },
       {
        "id": "D-PRO-05",
        "nom": "Circulation sur la BAU, chevauchement de ligne continue",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "D"
