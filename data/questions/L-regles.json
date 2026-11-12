@@ -1692,5 +1692,33 @@
 ],
 "ex": "Arrêt et stationnement sont interdits sur les bandes et pistes cyclables : cela oblige les cyclistes à se déporter dans la circulation.",
 "src": "Code de la route, art. R417-11"
+},
+{
+"id": "L-ARR-01-c",
+"n": "L-ARR-01",
+"q": "Je dépose un ami devant la gare et je reste au volant, prêt à repartir. C'est :",
+"c": [
+"Un arrêt",
+"Un stationnement"
+],
+"ok": [
+0
+],
+"ex": "Immobilisation momentanée pour faire monter ou descendre quelqu'un, conducteur au volant : c'est un arrêt.",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "L-ARR-01-d",
+"n": "L-ARR-01",
+"q": "Je laisse ma voiture le long du trottoir 3 minutes, le temps d'acheter du pain. C'est :",
+"c": [
+"Un arrêt, car c'est court",
+"Un stationnement, car je quitte le véhicule"
+],
+"ok": [
+1
+],
+"ex": "Ce n'est pas la durée qui compte : dès que le conducteur s'éloigne du véhicule, il s'agit d'un stationnement.",
+"src": "Code de la route, art. R110-2"
 }
 ]
