@@ -16,21 +16,6 @@
 "src": "Code de la route, art. R415-11"
 },
 {
-"id": "U-PIE-01-b",
-"n": "U-PIE-01",
-"q": "Un piéton traverse hors d'un passage pour piétons, à moins de 50 m de celui-ci. Je dois :",
-"c": [
-"Faire preuve de prudence et éviter de le mettre en danger",
-"Garder ma vitesse : il est en faute, il doit me laisser passer",
-"Avertir d'un coup de klaxon et poursuivre ma route"
-],
-"ok": [
-0
-],
-"ex": "Même en tort, le piéton reste vulnérable : le conducteur doit toujours adapter sa conduite pour éviter l'accident.",
-"src": "Code de la route"
-},
-{
 "id": "U-PIE-02-a",
 "n": "U-PIE-02",
 "q": "Une personne avec une canne blanche ou un chien guide s'apprête à traverser. Je dois :",
@@ -121,21 +106,6 @@
 ],
 "ex": "Les cyclistes peuvent rouler à deux de front, mais doivent se mettre en file la nuit et lorsqu'un véhicule veut les dépasser.",
 "src": "Code de la route, art. R431-7"
-},
-{
-"id": "U-VEL-01-c",
-"n": "U-VEL-01",
-"q": "Un cycliste roule devant moi et l'écart latéral réglementaire n'est pas possible. Je dois :",
-"c": [
-"Rester derrière lui en attendant de pouvoir dépasser",
-"Le dépasser en réduisant un peu l'écart latéral",
-"L'avertir d'un coup de klaxon pour qu'il se range"
-],
-"ok": [
-0
-],
-"ex": "Écart minimum : 1 m en agglomération, 1,50 m hors agglomération. Sinon, patience.",
-"src": "Code de la route, art. R414-4"
 },
 {
 "id": "U-VEL-02-a",
@@ -244,21 +214,6 @@
 ],
 "ex": "Elle emprunte les aménagements cyclables quand il y en a, sinon la chaussée des routes limitées à 50 km/h.",
 "src": "Code de la route"
-},
-{
-"id": "U-2RM-01-a",
-"n": "U-2RM-01",
-"q": "Dans un bouchon, avant de changer de file :",
-"c": [
-"Je vérifie qu'aucune moto ne remonte entre les files",
-"Je mets mon clignotant et je change de file aussitôt",
-"Je regarde dans mon rétroviseur intérieur, cela suffit"
-],
-"ok": [
-0
-],
-"ex": "Les deux-roues remontent souvent entre les files et sont difficiles à voir : rétroviseurs et angle mort avant tout déplacement latéral.",
-"src": "Sécurité routière"
 },
 {
 "id": "U-2RM-01-b",
@@ -519,6 +474,21 @@
 0
 ],
 "ex": "Protéger (feux de détresse, gilet, triangle), alerter (17 ou 112) si l'animal est sur la chaussée ou blessé. Ne pas toucher un animal blessé : il peut être dangereux.",
+"src": "Sécurité routière"
+},
+{
+"id": "U-2RM-01-a",
+"n": "U-2RM-01",
+"q": "Dans un bouchon, avant de changer de file :",
+"c": [
+"Je vérifie qu'aucune moto ne remonte entre les files",
+"Je mets mon clignotant et je change de file aussitôt",
+"Je regarde dans mon rétroviseur intérieur, cela suffit"
+],
+"ok": [
+0
+],
+"ex": "Les deux-roues remontent souvent entre les files et sont difficiles à voir : rétroviseurs et angle mort avant tout déplacement latéral.",
 "src": "Sécurité routière"
 }
 ]

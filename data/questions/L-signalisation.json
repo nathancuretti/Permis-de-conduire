@@ -388,38 +388,6 @@
 "src": "Code de la route, art. R415-5"
 },
 {
-"id": "L-PAN-04-b",
-"n": "L-PAN-04",
-"img": "img/panneaux/AB2.svg",
-"q": "Ce panneau m'indique que je suis prioritaire :",
-"c": [
-"À la prochaine intersection seulement",
-"À toutes les intersections jusqu'au panneau de fin",
-"Uniquement sur les véhicules venant de droite"
-],
-"ok": [
-0
-],
-"ex": "AB2 : priorité ponctuelle, valable uniquement à la prochaine intersection. Ne pas confondre avec la route prioritaire (losange jaune).",
-"src": "IISR"
-},
-{
-"id": "L-PAN-04-c",
-"n": "L-PAN-04",
-"img": "img/panneaux/AB6.svg",
-"q": "Ce panneau indique :",
-"c": [
-"Une route prioritaire, mais seulement à la prochaine intersection",
-"Une route prioritaire : je suis prioritaire aux intersections suivantes",
-"Une intersection où la priorité à droite reste la règle à suivre"
-],
-"ok": [
-1
-],
-"ex": "AB6 : route à caractère prioritaire. La priorité vaut à chaque intersection jusqu'au panneau de fin (AB7).",
-"src": "IISR"
-},
-{
 "id": "L-PAN-04-d",
 "n": "L-PAN-04",
 "img": "img/panneaux/AB7.svg",
@@ -451,39 +419,6 @@
 ],
 "ex": "AB3a : cédez-le-passage. On ralentit, on regarde et on passe sans s'arrêter si personne n'arrive. L'arrêt n'est obligatoire que si un véhicule arrive.",
 "src": "Code de la route, art. R415-7"
-},
-{
-"id": "L-PAN-04-f",
-"n": "L-PAN-04",
-"img": "img/panneaux/AB4.svg",
-"q": "À ce panneau, je dois :",
-"c": [
-"Marquer l'arrêt, même si personne n'arrive",
-"Céder le passage aux véhicules de la route abordée",
-"Ralentir fortement, sans m'arrêter si la voie est libre"
-],
-"ok": [
-0,
-1
-],
-"ex": "Au STOP, l'arrêt est obligatoire dans tous les cas (roues immobilisées, à la limite de la chaussée), puis on cède le passage. Le non-respect coûte 4 points.",
-"src": "Code de la route, art. R415-6"
-},
-{
-"id": "L-PAN-04-g",
-"n": "L-PAN-04",
-"img": "img/panneaux/AB25.svg",
-"q": "Ce panneau annonce :",
-"c": [
-"Un carrefour à sens giratoire",
-"Un demi-tour obligatoire",
-"Une zone de stationnement alterné"
-],
-"ok": [
-0
-],
-"ex": "AB25 : carrefour à sens giratoire. On y circule dans le sens inverse des aiguilles d'une montre. À l'entrée, un cédez-le-passage donne généralement la priorité aux véhicules déjà dans l'anneau.",
-"src": "Code de la route, art. R415-10"
 },
 {
 "id": "L-PAN-04-h",
@@ -808,22 +743,6 @@
 "src": "IISR"
 },
 {
-"id": "L-PAN-09-c",
-"n": "L-PAN-09",
-"img": "img/panneaux/C20a.svg",
-"q": "Ce panneau :",
-"c": [
-"Indique l'emplacement d'un passage pour piétons",
-"Interdit l'accès aux piétons",
-"Signale un endroit fréquenté par des enfants"
-],
-"ok": [
-0
-],
-"ex": "C20a (carré bleu) : il indique l'emplacement même du passage pour piétons. Le triangle rouge (A13b) l'annonce à l'avance.",
-"src": "IISR"
-},
-{
 "id": "L-PAN-09-d",
 "n": "L-PAN-09",
 "img": "img/panneaux/B30.svg",
@@ -891,22 +810,6 @@
 "src": "IISR"
 },
 {
-"id": "L-PAN-10-a",
-"n": "L-PAN-10",
-"img": "img/panneaux/D-bleu.svg",
-"q": "Un panneau de direction à fond bleu indique un itinéraire :",
-"c": [
-"Par autoroute",
-"Touristique",
-"Local ou urbain"
-],
-"ok": [
-0
-],
-"ex": "Bleu = autoroute. Vert = grands itinéraires, blanc = itinéraires locaux, jaune = signalisation temporaire, marron = intérêt touristique.",
-"src": "IISR"
-},
-{
 "id": "L-PAN-10-b",
 "n": "L-PAN-10",
 "img": "img/panneaux/D-vert.svg",
@@ -953,23 +856,6 @@
 ],
 "ex": "Marron = signalisation d'animation culturelle et touristique.",
 "src": "IISR"
-},
-{
-"id": "L-PAN-11-a",
-"n": "L-PAN-11",
-"img": "img/panneaux/EB10.svg",
-"q": "À partir de ce panneau, sauf indication contraire :",
-"c": [
-"La vitesse est limitée à 50 km/h",
-"L'avertisseur sonore est interdit, sauf danger immédiat",
-"Je dois allumer mes feux de croisement"
-],
-"ok": [
-0,
-1
-],
-"ex": "EB10 : entrée d'agglomération. Les règles de l'agglomération s'appliquent : 50 km/h maximum, avertisseur sonore réservé au danger immédiat. Le panneau a une valeur réglementaire, que le nom soit écrit sur fond blanc bordé de rouge.",
-"src": "Code de la route, art. R413-3 et R416-1"
 },
 {
 "id": "L-PAN-11-b",
@@ -1380,22 +1266,6 @@
 ],
 "ex": "Le feu orange fixe impose l'arrêt, sauf si le véhicule est trop près pour s'arrêter sans danger.",
 "src": "Code de la route, art. R412-31"
-},
-{
-"id": "L-FEU-01-b",
-"n": "L-FEU-01",
-"img": "img/panneaux/feu-rouge.svg",
-"q": "Face à un feu rouge fixe :",
-"c": [
-"Je marque l'arrêt absolu",
-"Je peux passer si personne n'arrive",
-"Je peux tourner à droite"
-],
-"ok": [
-0
-],
-"ex": "Feu rouge = arrêt absolu, sauf signalisation particulière (flèche jaune clignotante, panonceau cycliste). Le non-respect coûte 4 points.",
-"src": "Code de la route, art. R412-30"
 },
 {
 "id": "L-FEU-01-c",

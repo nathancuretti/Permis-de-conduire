@@ -38,7 +38,7 @@
       {
        "id": "L-PAN-04",
        "nom": "Panneaux d'intersection et de priorité (AB1 à AB7, stop, cédez-le-passage, route prioritaire et fin)",
-       "q": 11
+       "q": 7
       },
       {
        "id": "L-PAN-15",
@@ -59,7 +59,7 @@
       {
        "id": "L-PAN-05",
        "nom": "Panneaux d'interdiction (sens interdit, interdit à tout véhicule, dépassement interdit, limitations de vitesse)",
-       "q": 8
+       "q": 9
       },
       {
        "id": "L-PAN-06",
@@ -90,17 +90,17 @@
       {
        "id": "L-PAN-09",
        "nom": "Panneaux d'indication (impasse, parking, voie de détresse, zone 30, zone de rencontre, aire piétonne)",
-       "q": 8
+       "q": 7
       },
       {
        "id": "L-PAN-10",
        "nom": "Panneaux de localisation et de direction (couleurs : autoroute bleu, route verte, local blanc)",
-       "q": 5
+       "q": 4
       },
       {
        "id": "L-PAN-11",
        "nom": "Entrée / sortie d'agglomération et effets juridiques",
-       "q": 3
+       "q": 2
       },
       {
        "id": "L-PAN-12",
@@ -293,7 +293,7 @@
       {
        "id": "L-PRI-12",
        "nom": "Priorité aux piétons engagés ou manifestant l'intention de traverser",
-       "q": 4
+       "q": 5
       }
      ]
     }
@@ -507,7 +507,7 @@
       {
        "id": "L-ARR-03",
        "nom": "Stationnement gênant / très gênant (trottoir, passage piéton, place PMR, bande cyclable)",
-       "q": 4
+       "q": 5
       }
      ]
     },
@@ -925,7 +925,7 @@
       {
        "id": "U-PIE-02",
        "nom": "Piétons vulnérables : enfants, personnes âgées, PMR, aveugles (canne blanche)",
-       "q": 3
+       "q": 4
       },
       {
        "id": "U-PIE-03",
@@ -972,7 +972,7 @@
       {
        "id": "U-2RM-02",
        "nom": "Estimation de vitesse difficile",
-       "q": 1
+       "q": 2
       }
      ]
     },
@@ -1037,7 +1037,7 @@
       {
        "id": "R-TYP-01",
        "nom": "Agglomération : densité, usagers vulnérables, sorties d'école",
-       "q": 2
+       "q": 3
       },
       {
        "id": "R-TYP-02",
@@ -1067,7 +1067,7 @@
       {
        "id": "R-VIR-02",
        "nom": "Trajectoire et position en virage",
-       "q": 3
+       "q": 2
       }
      ]
     },
@@ -1083,7 +1083,7 @@
       {
        "id": "R-MET-02",
        "nom": "Brouillard : feux, vitesse, distance",
-       "q": 3
+       "q": 2
       },
       {
        "id": "R-MET-03",

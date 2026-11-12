@@ -944,21 +944,6 @@
 "src": "Code de la route, art. R414-4"
 },
 {
-"id": "L-DEP-04-b",
-"n": "L-DEP-04",
-"q": "En agglomération, pour dépasser un cycliste, je laisse un espace latéral d'au moins :",
-"c": [
-"50 cm",
-"1 m",
-"1,50 m"
-],
-"ok": [
-1
-],
-"ex": "1 m en agglomération, 1,50 m hors agglomération.",
-"src": "Code de la route, art. R414-4"
-},
-{
 "id": "L-DEP-04-c",
 "n": "L-DEP-04",
 "img": "img/schemas/ligne-continue.svg",

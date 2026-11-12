@@ -312,5 +312,199 @@
 ],
 "ex": "Fond bleu = itinéraire par autoroute. Fond vert = grands itinéraires, fond blanc = directions locales.",
 "src": "IISR"
+},
+{
+"id": "PH-cycliste-devant",
+"n": "U-VEL-01",
+"img": "img/photos/cycliste-devant.jpg",
+"credit": "Photo : immergis / Panoramax, Licence Ouverte 2.0",
+"q": "Un cycliste roule devant moi, sur la voie de droite. Pour le dépasser :",
+"c": [
+"Je me déporte sur la voie de gauche si elle est libre",
+"Je reste derrière lui si je ne peux pas laisser l'écart réglementaire",
+"Je le dépasse sans changer de voie : c'est à lui de serrer à droite"
+],
+"ok": [
+0,
+1
+],
+"ex": "En agglomération, il faut au moins 1 m d'écart latéral avec un cycliste. Si ce n'est pas possible dans la même voie, on change de voie quand c'est libre, sinon on reste derrière.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "PH-pietons-passage",
+"n": "L-PRI-12",
+"img": "img/photos/pietons-passage.jpg",
+"credit": "Photo : immergis / Panoramax, Licence Ouverte 2.0",
+"q": "Des piétons traversent sur le passage, à gauche. Si je m'engage vers la gauche, sur ce passage :",
+"c": [
+"Je les laisse finir de traverser avant de passer",
+"Je passe entre deux groupes de piétons pour ne pas bloquer le carrefour",
+"Je passe d'abord : le véhicule qui tourne est prioritaire"
+],
+"ok": [
+0
+],
+"ex": "En tournant, on croise souvent des piétons qui traversent la rue où l'on s'engage. Ils sont prioritaires.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "PH-moto-droite",
+"n": "U-2RM-02",
+"img": "img/photos/moto-droite.jpg",
+"credit": "Photo : immergis / Panoramax, Licence Ouverte 2.0",
+"q": "Une voiture et une moto arrivent en face. Concernant la moto, à droite :",
+"c": [
+"Elle est plus difficile à repérer que la voiture",
+"Sa vitesse et sa distance sont plus difficiles à estimer",
+"Elle roule forcément moins vite que la voiture"
+],
+"ok": [
+0,
+1
+],
+"ex": "Silhouette étroite : une moto se repère moins bien et paraît plus loin et plus lente qu'elle ne l'est. Avant de tourner devant elle, on garde une bonne marge.",
+"src": "Sécurité routière"
+},
+{
+"id": "PH-rue-bus-cyclistes",
+"n": "R-TYP-01",
+"img": "img/photos/rue-bus-cyclistes.jpg",
+"credit": "Photo : Carto'Cité / Panoramax, CC BY-SA 4.0",
+"q": "Je circule dans cette rue où passent des bus, des cyclistes et de nombreux piétons. Je dois :",
+"c": [
+"Rouler lentement, prêt à m'arrêter",
+"M'attendre à ce que des piétons traversent hors des passages",
+"Doubler le cycliste en passant entre lui et le bus"
+],
+"ok": [
+0,
+1
+],
+"ex": "Rue très fréquentée : vitesse très modérée et vigilance permanente. Se faufiler entre un cycliste et un bus ne laisse aucune marge.",
+"src": "Sécurité routière"
+},
+{
+"id": "PH-camionnette-interdit",
+"n": "L-ARR-03",
+"img": "img/photos/camionnette-interdit.jpg",
+"credit": "Photo : apb / Panoramax, Licence Ouverte 2.0",
+"q": "Cette camionnette est stationnée sous le panneau rond bleu barré de rouge, à gauche. Je constate que :",
+"c": [
+"Elle est en stationnement interdit",
+"Pour la contourner, je ralentis : un piéton peut surgir devant elle",
+"Je peux me garer juste derrière elle quelques minutes"
+],
+"ok": [
+0,
+1
+],
+"ex": "Rond bleu bordé et barré de rouge : stationnement interdit de ce côté. Un véhicule garé masque la vue : on ralentit en le contournant.",
+"src": "IISR"
+},
+{
+"id": "PH-pietons-hors-passage",
+"n": "U-PIE-01",
+"img": "img/photos/pietons-hors-passage.jpg",
+"credit": "Photo : motocultrice / Panoramax, CC BY-SA 4.0",
+"q": "Des piétons traversent devant moi, en dehors d'un passage pour piétons. Je dois :",
+"c": [
+"Ralentir et les laisser traverser",
+"Les avertir d'un coup de klaxon et continuer",
+"Passer : ils traversent en dehors du passage"
+],
+"ok": [
+0
+],
+"ex": "Même en tort, un piéton reste vulnérable : le conducteur doit tout faire pour éviter l'accident. En agglomération, le klaxon est réservé au danger immédiat.",
+"src": "Code de la route, art. R412-6"
+},
+{
+"id": "PH-rue-etroite-garee",
+"n": "R-TYP-01",
+"img": "img/photos/rue-etroite-garee.jpg",
+"credit": "Photo : motocultrice / Panoramax, CC BY-SA 4.0",
+"q": "Dans cette rue étroite bordée de véhicules garés, je dois me méfier :",
+"c": [
+"D'une portière qui s'ouvre",
+"D'un piéton qui surgit entre deux voitures",
+"D'un véhicule qui quitte sa place",
+"D'un véhicule qui arrive à contresens à grande vitesse"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "En ville, les véhicules garés masquent les piétons, les portières peuvent s'ouvrir et les voitures déboîter. On roule lentement, à distance des véhicules garés si possible.",
+"src": "Sécurité routière"
+},
+{
+"id": "PH-pieton-chaussee",
+"n": "U-PIE-02",
+"img": "img/photos/pieton-chaussee.jpg",
+"credit": "Photo : motocultrice / Panoramax, CC BY-SA 4.0",
+"q": "Un piéton marche au milieu de la chaussée, vers moi. Je dois :",
+"c": [
+"Ralentir et le contourner largement, ou attendre",
+"Klaxonner pour qu'il regagne le trottoir",
+"Garder ma vitesse : il va s'écarter"
+],
+"ok": [
+0
+],
+"ex": "En agglomération, le klaxon est réservé au danger immédiat. Un piéton peut être distrait ou ne pas entendre : on ralentit et on lui laisse de la place.",
+"src": "Code de la route, art. R416-1"
+},
+{
+"id": "PH-interdit-droite",
+"n": "L-PAN-05",
+"img": "img/photos/interdit-droite-terrasses.jpg",
+"credit": "Photo : Jean CARTIER / Panoramax, CC BY-SA 4.0",
+"q": "Le panneau en haut à droite :",
+"c": [
+"M'interdit de tourner à droite à la prochaine intersection",
+"M'interdit de tourner à gauche à la prochaine intersection",
+"M'oblige à tourner à droite à la prochaine intersection"
+],
+"ok": [
+0
+],
+"ex": "Rond à bordure rouge avec une flèche vers la droite barrée (B2b) : interdiction de tourner à droite. Ici, avec les terrasses, il faut aussi rouler au pas.",
+"src": "IISR"
+},
+{
+"id": "PH-depassement-cycliste",
+"n": "L-DEP-04",
+"img": "img/photos/depassement-cycliste.jpg",
+"credit": "Photo : Nzau / Panoramax, CC BY-SA 4.0",
+"q": "La voiture grise dépasse le cycliste qui a pris cette photo. En agglomération, elle doit lui laisser un écart d'au moins :",
+"c": [
+"50 cm",
+"1 m",
+"1,50 m"
+],
+"ok": [
+1
+],
+"ex": "1 m en agglomération, 1,50 m hors agglomération. Ici, l'écart semble bien trop faible : il aurait fallu rester derrière.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "PH-feu-rouge-ville",
+"n": "L-FEU-01",
+"img": "img/photos/feu-rouge-ville.jpg",
+"credit": "Photo : Carto'Cité / Panoramax, CC BY-SA 4.0",
+"q": "Le feu à droite est rouge et personne ne semble traverser. Je dois :",
+"c": [
+"Marquer l'arrêt avant le feu",
+"Passer prudemment, puisque personne ne traverse",
+"Ralentir, puis passer si un cycliste passe aussi"
+],
+"ok": [
+0
+],
+"ex": "Feu rouge = arrêt absolu, même si la voie semble libre (4 points en moins sinon). Un cycliste peut parfois passer grâce à un panonceau qui lui est réservé : cela ne concerne pas les voitures.",
+"src": "Code de la route, art. R412-30"
 }
 ]

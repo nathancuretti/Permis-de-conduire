@@ -1,23 +1,5 @@
 [
 {
-"id": "R-TYP-01-a",
-"n": "R-TYP-01",
-"q": "En agglomération, je dois être particulièrement attentif :",
-"c": [
-"Aux piétons et cyclistes qui peuvent surgir",
-"Aux portières qui s'ouvrent",
-"Aux véhicules qui sortent des places de stationnement",
-"Aux radars, plus nombreux qu'à la campagne"
-],
-"ok": [
-0,
-1,
-2
-],
-"ex": "En ville, la densité d'usagers et les obstacles masquant la vue imposent une vitesse modérée et une observation constante.",
-"src": "Sécurité routière"
-},
-{
 "id": "R-TYP-01-b",
 "n": "R-TYP-01",
 "q": "Les accidents en agglomération :",
@@ -173,21 +155,6 @@
 "src": "Sécurité routière"
 },
 {
-"id": "R-VIR-02-a",
-"n": "R-VIR-02",
-"q": "Dans un virage à gauche, je me place :",
-"c": [
-"Plutôt sur la droite de ma voie",
-"Au milieu de la chaussée",
-"Sur la gauche de ma voie pour couper le virage"
-],
-"ok": [
-0
-],
-"ex": "Dans un virage à gauche, se placer à droite de sa voie améliore la visibilité et éloigne des véhicules qui arrivent en face et coupent parfois le virage.",
-"src": "Sécurité routière"
-},
-{
 "id": "R-VIR-02-b",
 "n": "R-VIR-02",
 "q": "Dans un virage, mon regard doit se porter :",
@@ -246,22 +213,6 @@
 ],
 "ex": "Sur chaussée mouillée, la distance de freinage augmente nettement. D'où la baisse des vitesses maximales par temps de pluie.",
 "src": "Sécurité routière"
-},
-{
-"id": "R-MET-02-a",
-"n": "R-MET-02",
-"q": "Par temps de brouillard, je dois :",
-"c": [
-"Allumer mes feux de croisement et mes feux de brouillard",
-"Réduire ma vitesse et augmenter ma distance de sécurité",
-"Allumer mes feux de route pour mieux voir"
-],
-"ok": [
-0,
-1
-],
-"ex": "Les feux de route se reflètent dans le brouillard et éblouissent. Si la visibilité est inférieure à 50 m : 50 km/h maximum.",
-"src": "Code de la route, art. R416-7"
 },
 {
 "id": "R-MET-02-b",
