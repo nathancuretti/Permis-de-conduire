@@ -47,7 +47,7 @@
       if (!s || !s.h.length) return "new";
       if (s.err) return "err";
       if (s.box >= MASTER_BOX) return "master";
-      return "seen";
+      return "ok"; // réussie à la dernière tentative, pas encore maîtrisée
     },
     isError(id) { const s = data.q[id]; return !!(s && s.err); },
     isDue(id) { const s = data.q[id]; return !!(s && s.h.length && s.due <= Date.now()); },

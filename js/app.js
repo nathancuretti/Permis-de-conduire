@@ -46,6 +46,7 @@
 
   function route() {
     stopTimer();
+    document.onkeydown = null;
     const h = location.hash.slice(1);
     if (h === "choisir") return viewChoose();
     if (h === "reglages") return viewSettings();
@@ -56,53 +57,73 @@
   const go = (h) => { if (location.hash === "#" + h) route(); else location.hash = h; };
 
   // ---------- accueil ----------
-  function themeStats(code) {
-    const qs = Q.filter((q) => q.theme === code);
-    let master = 0, seen = 0;
-    qs.forEach((q) => { const s = Store.status(q.id); if (s === "master") master++; else if (s !== "new") seen++; });
-    return { n: qs.length, master, seen };
+  function counts(qs) {
+    const c = { n: qs.length, master: 0, ok: 0, err: 0, new: 0 };
+    qs.forEach((q) => c[Store.status(q.id)]++);
+    return c;
   }
+  const bar = (c) => `<div class="bar">${["master", "ok", "err"].map((k) => `<i class="c-${k}" style="width:${(100 * c[k]) / (c.n || 1)}%"></i>`).join("")}</div>`;
 
   function viewHome() {
     setHeader("Code de la route");
     const errors = Q.filter((q) => Store.isError(q.id));
     const due = Q.filter((q) => Store.isDue(q.id) && !Store.isError(q.id));
-    const seen = Q.filter((q) => !Store.isNew(q.id)).length;
-    const master = Q.filter((q) => Store.status(q.id) === "master").length;
+    const all = counts(Q);
     const exams = Store.exams();
     const last = exams[exams.length - 1];
 
-    let html = `
-      <div class="card">
-        <div class="stats">
-          <div><b>${seen}<small style="font-size:14px;color:var(--muted)">/${Q.length}</small></b><span>questions vues</span></div>
-          <div><b>${pct(master, Q.length)}%</b><span>maîtrisées</span></div>
-          <div><b>${last ? last.score + "/" + last.n : "–"}</b><span>dernier examen</span></div>
-        </div>
-      </div>
-      <button class="btn" id="bExam">Examen blanc <small>· ${Math.min(EXAM_N, Q.length)} questions · ${EXAM_SECONDS} s</small></button>
-      <div class="row">
-        <button class="btn secondary" id="bErr" ${errors.length ? "" : "disabled"}>Mes erreurs <small>(${errors.length})</small></button>
-        <button class="btn secondary" id="bDue" ${due.length ? "" : "disabled"}>À revoir <small>(${due.length})</small></button>
-      </div>
-      <button class="btn ghost" id="bChoose">Réviser par thèmes et chapitres</button>
-      <div class="card"><h2>Thèmes</h2>`;
+    let themes = "";
     for (const t of META.themes) {
-      const s = themeStats(t.code);
-      html += `
-        <div class="theme ${s.n ? "" : "empty"}" data-t="${t.code}">
+      const qs = Q.filter((q) => q.theme === t.code), c = counts(qs);
+      const chaps = t.chapitres.map((ch) => {
+        const cq = qs.filter((q) => q.chap === ch.code);
+        return cq.length ? `<div><span>${esc(ch.nom)}</span><span>${counts(cq).master}/${cq.length}</span></div>` : "";
+      }).join("");
+      themes += `
+        <div class="theme ${c.n ? "" : "empty"}" data-t="${t.code}" role="button" tabindex="0">
           <div class="code">${t.code}</div>
           <div class="info">
             <div class="name">${esc(t.nom)}</div>
-            <div class="meta">${s.n ? `${s.n} questions · ${pct(s.master, s.n)}% maîtrisées` : "bientôt"}</div>
-            ${s.n ? `<div class="bar"><i style="width:${pct(s.master, s.n)}%"></i><i class="seen" style="width:${pct(s.seen, s.n)}%"></i></div>` : ""}
+            <div class="meta">${c.n ? `${c.n} questions · ${c.master} maîtrisées · ${c.ok} réussies · ${c.err} ratées` : "Bientôt disponible"}</div>
+            ${c.n ? bar(c) : ""}
+            ${chaps ? `<div class="chaps">${chaps}</div>` : ""}
           </div>
         </div>`;
     }
-    html += `</div>
-      ${exams.length ? examHistory(exams) : ""}
-      <button class="btn ghost" id="bSet">Réglages et sauvegarde</button>`;
-    $app.innerHTML = html;
+
+    $app.innerHTML = `
+      <div class="layout home">
+        <div class="a">
+          <div class="card">
+            <div class="stats">
+              <div><b>${all.n - all.new}<small>/${all.n}</small></b><span>vues</span></div>
+              <div><b>${pct(all.master, all.n)}%</b><span>maîtrisées</span></div>
+              <div><b>${last ? last.score + "<small>/" + last.n + "</small>" : "–"}</b><span>dernier examen</span></div>
+            </div>
+            ${bar(all)}
+            <div class="legend">
+              <span><i class="c-master"></i>maîtrisées (2 bonnes d'affilée)</span>
+              <span><i class="c-ok"></i>réussies</span>
+              <span><i class="c-err"></i>ratées</span>
+            </div>
+          </div>
+          <button class="btn" id="bExam">Examen blanc <small>· ${Math.min(EXAM_N, Q.length)} questions · ${EXAM_SECONDS} s</small></button>
+          <div class="row">
+            <button class="btn secondary" id="bErr" ${errors.length ? "" : "disabled"}>Mes erreurs <small>(${errors.length})</small></button>
+            <button class="btn secondary" id="bDue" ${due.length ? "" : "disabled"}>À revoir <small>(${due.length})</small></button>
+          </div>
+          <button class="btn ghost" id="bChoose">Réviser par chapitres</button>
+        </div>
+        <div class="s">
+          <h2 class="page-title">Thèmes<small>Clique sur un thème pour une série de 20 questions</small></h2>
+          <div class="themes">${themes}</div>
+        </div>
+        <div class="b">
+          <div style="height:14px"></div>
+          ${exams.length ? examHistory(exams) : ""}
+          <button class="btn ghost" id="bSet">Réglages et sauvegarde</button>
+        </div>
+      </div>`;
     document.getElementById("bExam").onclick = startExam;
     document.getElementById("bErr").onclick = () => start(shuffle(errors), "Mes erreurs", false);
     document.getElementById("bDue").onclick = () => start(shuffle(due), "À revoir", false);
@@ -139,7 +160,7 @@
   function viewChoose() {
     setHeader("Réviser", () => go(""));
     if (!choice.chaps) choice.chaps = new Set();
-    let html = `<div class="card"><h2>Chapitres</h2>`;
+    let html = `<div class="layout choose"><div><h2 class="page-title">Réviser par chapitres</h2><div class="card"><h2>Chapitres</h2>`;
     for (const t of META.themes) {
       const tq = Q.filter((q) => q.theme === t.code).length;
       if (!tq) continue;
@@ -154,8 +175,8 @@
       }
       html += `</details>`;
     }
-    html += `</div>
-      <div class="card">
+    html += `</div></div>
+      <div class="opts"><div class="card">
         <div class="label">Questions</div>
         <div class="seg" id="segF">
           ${[["toutes", "Toutes"], ["nouvelles", "Jamais vues"], ["erreurs", "Ratées"], ["revoir", "À revoir"]].map(([k, l]) => `<button data-v="${k}" class="${choice.filtre === k ? "on" : ""}">${l}</button>`).join("")}
@@ -165,7 +186,7 @@
           ${[[10, "10"], [20, "20"], [40, "40"], [0, "Toutes"]].map(([k, l]) => `<button data-v="${k}" class="${choice.n === k ? "on" : ""}">${l}</button>`).join("")}
         </div>
       </div>
-      <div class="sticky-actions"><button class="btn" id="go"></button></div>`;
+      <div class="sticky-actions"><button class="btn" id="go"></button></div></div></div>`;
     $app.innerHTML = html;
 
     const syncThemes = () => {
@@ -234,12 +255,14 @@
     const isSvg = q.img && q.img.endsWith(".svg");
     const isSchema = q.img && q.img.includes("/schemas/");
     let html = `
+      <div class="layout quiz ${q.img ? "" : "no-img"}">
+      ${q.img ? `<div class="q-media"><div class="media ${isSvg && !isSchema ? "signe" : ""}"><img src="${esc(q.img)}" alt="" class="${isSvg ? "svg" : ""} ${isSchema ? "schema" : ""}">${q.credit ? `<div class="credit">${esc(q.credit)}</div>` : ""}</div></div>` : ""}
+      <div class="q-body">
       <div class="qhead">
         <span>${s.i + 1}/${s.items.length}</span>
         <div class="prog"><i style="width:${pct(s.i, s.items.length)}%"></i></div>
         <button class="flag" id="flag" title="Signaler un problème sur cette question">🚩</button>
       </div>
-      ${q.img ? `<div class="media"><img src="${esc(q.img)}" alt="" class="${isSvg ? "svg" : ""} ${isSchema ? "schema" : ""}">${q.credit ? `<div class="credit">${esc(q.credit)}</div>` : ""}</div>` : ""}
       <div class="qtext">${esc(q.q)}</div>
       <div class="hint">Une ou plusieurs réponses possibles</div>
       <div id="choices">`;
@@ -247,7 +270,9 @@
       html += `<button class="choice" data-k="${k}"><span class="letter">${LETTERS[pos]}</span><span>${esc(q.c[k])}</span></button>`;
     });
     html += `</div><div id="after"></div>
-      <div class="sticky-actions"><button class="btn" id="valid" disabled>Valider</button></div>`;
+      <div class="sticky-actions"><button class="btn" id="valid" disabled>Valider</button></div>
+      <div class="kbd">Clavier : A B C D pour répondre · Entrée pour valider</div>
+      </div></div>`;
     $app.innerHTML = html;
     window.scrollTo(0, 0);
 
@@ -265,6 +290,12 @@
     });
     refresh();
     document.getElementById("flag").onclick = () => flag(q, it);
+    document.onkeydown = (e) => {
+      if (location.hash !== "#quiz" || e.metaKey || e.ctrlKey || e.altKey) return;
+      const pos = LETTERS.indexOf(e.key.toUpperCase());
+      if (pos >= 0 && pos < btns.length) { btns[pos].click(); e.preventDefault(); }
+      else if (e.key === "Enter" && !valid.disabled) { valid.click(); e.preventDefault(); }
+    };
     valid.onclick = () => submit();
 
     if (s.exam) {
@@ -294,6 +325,7 @@
       document.getElementById("after").innerHTML = `
         <div class="verdict ${it.ok ? "ok" : "ko"}">${it.ok ? "✓ Bonne réponse" : "✗ Mauvaise réponse"}</div>
         <div class="expl">${esc(q.ex)}${q.src ? `<span class="src">Source : ${esc(q.src)}</span>` : ""}</div>`;
+      document.getElementById("after").scrollIntoView({ behavior: "smooth", block: "nearest" });
       valid.disabled = false;
       valid.textContent = s.i + 1 < s.items.length ? "Question suivante" : "Voir le résultat";
       valid.onclick = next;
@@ -315,13 +347,14 @@
     const pass = s.exam ? score >= need : score / n >= EXAM_PASS / EXAM_N;
     const wrong = s.items.filter((x) => !x.ok).map((x) => x.q);
     let html = `
+      <div class="layout result"><div class="a">
       <div class="card score ${pass ? "pass" : "fail"}">
         <b>${score}/${n}</b>
         ${s.exam ? (pass ? "Examen réussi 🎉" : `Échec : il faut ${need} bonnes réponses`) : `${pct(score, n)}% de bonnes réponses`}
       </div>
       ${wrong.length ? `<button class="btn" id="redo">Rejouer mes ${wrong.length} erreur${wrong.length > 1 ? "s" : ""}</button>` : ""}
       <button class="btn ghost" id="home">Accueil</button>
-      <div class="card"><h2>Correction</h2>`;
+      </div><div><div class="card"><h2>Correction</h2>`;
     s.items.forEach((x, i) => {
       const q = x.q;
       const mine = x.order.filter((k) => x.picked.has(k)).map((k) => LETTERS[x.order.indexOf(k)]).join(", ") || "aucune";
@@ -336,7 +369,7 @@
             <div class="expl">${esc(q.ex)}${q.src ? `<span class="src">Source : ${esc(q.src)}</span>` : ""}</div>
           </div></div></div>`;
     });
-    html += `</div>`;
+    html += `</div></div></div>`;
     $app.innerHTML = html;
     window.scrollTo(0, 0);
     const redo = document.getElementById("redo");
@@ -362,7 +395,14 @@
   // ---------- réglages ----------
   function viewSettings() {
     setHeader("Réglages", () => go(""));
-    $app.innerHTML = `
+    let theme = "auto";
+    try { theme = localStorage.getItem("permis.theme") || "auto"; } catch (e) {}
+    $app.innerHTML = `<div class="narrow">
+      <div class="card"><h2>Apparence</h2>
+        <div class="seg" id="segT" style="margin:0">
+          ${[["auto", "Automatique"], ["light", "Clair"], ["dark", "Sombre"]].map(([k, l]) => `<button data-v="${k}" class="${theme === k ? "on" : ""}">${l}</button>`).join("")}
+        </div>
+      </div>
       <div class="card"><h2>Sauvegarde</h2>
         <p class="muted">Ta progression est enregistrée dans ce navigateur. Exporte-la de temps en temps (ou pour changer d'appareil).</p>
         <button class="btn secondary" id="exp">Exporter ma progression</button>
@@ -376,7 +416,13 @@
       </div>
       <div class="card"><h2>Zone sensible</h2>
         <button class="btn ghost" id="reset" style="color:var(--ko)">Effacer toute ma progression</button>
-      </div>`;
+      </div></div>`;
+    document.querySelectorAll("#segT button").forEach((b) => b.onclick = () => {
+      const v = b.dataset.v;
+      try { v === "auto" ? localStorage.removeItem("permis.theme") : localStorage.setItem("permis.theme", v); } catch (e) {}
+      if (v === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = v;
+      document.querySelectorAll("#segT button").forEach((x) => x.classList.toggle("on", x === b));
+    });
     document.getElementById("exp").onclick = () => {
       const blob = new Blob([Store.export()], { type: "application/json" });
       const a = document.createElement("a");
