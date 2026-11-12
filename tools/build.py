@@ -190,5 +190,22 @@ def main():
         sys.exit(1)
 
 
+def stamp_assets():
+    """Ajoute à index.html une version (empreinte) des fichiers CSS/JS pour éviter de mélanger
+    une ancienne et une nouvelle version en cache dans le navigateur."""
+    import hashlib
+    h = hashlib.sha1()
+    for f in ("css/app.css", "js/store.js", "js/app.js"):
+        h.update(open(os.path.join(ROOT, f), "rb").read())
+    v = h.hexdigest()[:10]
+    p = os.path.join(ROOT, "index.html")
+    html = re.sub(r"\?v=[0-9a-z]+", f"?v={v}", open(p, encoding="utf-8").read())
+    open(p, "w", encoding="utf-8").write(html)
+    sw = os.path.join(ROOT, "sw.js")
+    s = re.sub(r'const CACHE = "permis-[^"]*";', f'const CACHE = "permis-{v}";', open(sw, encoding="utf-8").read())
+    open(sw, "w", encoding="utf-8").write(s)
+
+
 if __name__ == "__main__":
     main()
+    stamp_assets()
