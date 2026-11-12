@@ -315,9 +315,9 @@
     for (const t of META.themes) {
       const tq = Q.filter((q) => q.theme === t.code).length;
       if (!tq) continue;
-      html += `<details class="sel" open><summary>
+      html += `<details class="sel"><summary>
           <input type="checkbox" data-theme="${t.code}">
-          <span class="name">${t.num} · ${esc(t.nom)}</span><span class="chev">›</span></summary>`;
+          <span class="name">${t.num} · ${esc(t.nom)}</span><span class="n">${tq}</span><span class="chev">›</span></summary>`;
       for (const c of t.chapitres) {
         const cq = Q.filter((q) => q.chap === c.code).length;
         if (!cq) continue;

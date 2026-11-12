@@ -331,3 +331,5 @@ body.modal-open { overflow: hidden; }
   .m-body .sticky-actions { bottom: -20px; margin: 0 -24px -20px; padding: 14px 24px; }
   .m-body .choose { grid-template-columns: 1fr 360px; }
 }
+details.sel summary .n { color: var(--muted); font-size: 13px; }
+.m-body .choose .sticky-actions { margin: 0; padding: 0; border: 0; background: none; }
