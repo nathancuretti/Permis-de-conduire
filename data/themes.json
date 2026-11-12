@@ -5,6 +5,7 @@
   "data/questions/L-regles.json",
   "data/questions/L-signalisation.json",
   "data/questions/P-secours.json",
+  "data/questions/R-route.json",
   "data/questions/U-usagers.json"
  ],
  "themes": [
@@ -986,27 +987,27 @@
       {
        "id": "R-TYP-01",
        "nom": "Agglomération : densité, usagers vulnérables, sorties d'école",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-TYP-02",
        "nom": "Rase campagne : virages, intersections, animaux",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-TYP-03",
        "nom": "Routes de montagne : montée prioritaire, frein moteur dans les descentes",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-TYP-04",
        "nom": "Voies rapides et autoroutes (rappel)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "R-TYP-05",
        "nom": "Accotements, bas-côtés et sortie de route : comment réagir",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "R"
@@ -1018,12 +1019,12 @@
       {
        "id": "R-VIR-01",
        "nom": "Lecture d'un virage (signalisation, balises), freiner avant",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-VIR-02",
        "nom": "Trajectoire et position en virage",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "R"
@@ -1035,42 +1036,42 @@
       {
        "id": "R-MET-01",
        "nom": "Pluie : aquaplaning, distances allongées",
-       "q": 0
+       "q": 3
       },
       {
        "id": "R-MET-02",
        "nom": "Brouillard : feux, vitesse, distance",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-MET-03",
        "nom": "Neige et verglas : équipements, conduite souple",
-       "q": 0
+       "q": 3
       },
       {
        "id": "R-MET-04",
        "nom": "Vent latéral",
-       "q": 0
+       "q": 1
       },
       {
        "id": "R-MET-05",
        "nom": "Soleil rasant",
-       "q": 0
+       "q": 1
       },
       {
        "id": "R-MET-06",
        "nom": "Adhérence : chaussée sale, feuilles, gravillons, marquages mouillés",
-       "q": 0
+       "q": 1
       },
       {
        "id": "R-MET-07",
        "nom": "Loi Montagne : équipements hiver obligatoires (1er novembre – 31 mars) dans les communes concernées",
-       "q": 0
+       "q": 1
       },
       {
        "id": "R-MET-08",
        "nom": "Route inondée : ne pas s'y engager",
-       "q": 0
+       "q": 1
       }
      ],
      "officiel": "R"
@@ -1082,12 +1083,12 @@
       {
        "id": "R-NUI-01",
        "nom": "Visibilité réduite, usagers peu visibles",
-       "q": 0
+       "q": 2
       },
       {
        "id": "R-NUI-02",
        "nom": "Fatigue la nuit, éblouissement",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "R"
@@ -1099,12 +1100,12 @@
       {
        "id": "R-TRA-01",
        "nom": "Signalisation de chantier, alternats, homme trafic (piquet K10)",
-       "q": 0
+       "q": 3
       },
       {
        "id": "R-TRA-02",
        "nom": "Ralentissements, bouchons : feux de détresse",
-       "q": 0
+       "q": 2
       }
      ],
      "officiel": "R"

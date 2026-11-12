@@ -1,0 +1,550 @@
+[
+{
+"id": "R-TYP-01-a",
+"n": "R-TYP-01",
+"q": "En agglomération, je dois être particulièrement attentif :",
+"c": [
+"Aux piétons et cyclistes qui peuvent surgir",
+"Aux portières qui s'ouvrent",
+"Aux véhicules qui sortent des places de stationnement",
+"Uniquement aux feux"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "En ville, la densité d'usagers et les obstacles masquant la vue imposent une vitesse modérée et une observation constante.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-TYP-01-b",
+"n": "R-TYP-01",
+"q": "Les accidents en agglomération :",
+"c": [
+"Sont nombreux, mais les accidents les plus graves ont surtout lieu hors agglomération",
+"Sont toujours sans gravité",
+"Sont plus rares qu'à la campagne"
+],
+"ok": [
+0
+],
+"ex": "La majorité des accidents corporels a lieu en ville, mais la majorité des tués l'est sur les routes hors agglomération, à cause des vitesses plus élevées.",
+"src": "Sécurité routière (ONISR)"
+},
+{
+"id": "R-TYP-02-a",
+"n": "R-TYP-02",
+"q": "Sur une route de campagne, je dois m'attendre à :",
+"c": [
+"Des engins agricoles lents",
+"Des sorties de chemins et de propriétés cachées",
+"Des animaux sur la chaussée",
+"Aucun croisement de véhicule"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Hors agglomération : vitesses élevées, chocs frontaux, obstacles fixes (arbres), engins lents et animaux. C'est là que se produisent la plupart des accidents mortels.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-TYP-02-b",
+"n": "R-TYP-02",
+"q": "Sur une route bidirectionnelle hors agglomération, le type d'accident le plus grave est :",
+"c": [
+"Le choc frontal avec un véhicule venant en face",
+"L'accrochage en stationnement",
+"La collision avec un piéton sur un passage"
+],
+"ok": [
+0
+],
+"ex": "Les chocs frontaux (dépassements ratés, sorties de voie) et les chocs contre des obstacles fixes sont les plus meurtriers sur ces routes.",
+"src": "Sécurité routière (ONISR)"
+},
+{
+"id": "R-TYP-03-a",
+"n": "R-TYP-03",
+"q": "Dans une longue descente de montagne, je dois :",
+"c": [
+"Utiliser le frein moteur, en gardant un rapport adapté",
+"Rouler au point mort",
+"Freiner en continu avec la pédale"
+],
+"ok": [
+0
+],
+"ex": "Freiner en continu fait chauffer les freins, qui perdent leur efficacité. Repère : descendre avec le rapport qu'on utiliserait pour monter.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-TYP-03-b",
+"n": "R-TYP-03",
+"q": "En montagne, sur une route étroite, en cas de croisement difficile :",
+"c": [
+"Le véhicule qui descend cède le passage à celui qui monte",
+"Le véhicule qui monte doit toujours reculer",
+"Le plus gros véhicule cède toujours le passage"
+],
+"ok": [
+0
+],
+"ex": "Le véhicule montant est en principe prioritaire, car redémarrer en côte est plus difficile.",
+"src": "Code de la route"
+},
+{
+"id": "R-TYP-04-a",
+"n": "R-TYP-04",
+"q": "Sur une voie rapide à chaussées séparées, par temps sec et sans indication, la vitesse maximale est :",
+"c": [
+"90 km/h",
+"110 km/h",
+"130 km/h"
+],
+"ok": [
+1
+],
+"ex": "110 km/h (100 km/h par temps de pluie et pour les jeunes conducteurs).",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "R-TYP-05-a",
+"n": "R-TYP-05",
+"q": "Mes roues droites mordent sur le bas-côté. Je dois :",
+"c": [
+"Ralentir progressivement, sans freiner brutalement, puis revenir doucement sur la chaussée",
+"Donner un coup de volant brusque vers la gauche",
+"Freiner à fond"
+],
+"ok": [
+0
+],
+"ex": "Un coup de volant brutal peut faire traverser la route ou partir en tête-à-queue. On lève le pied, on tient le volant et on revient en douceur.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-TYP-05-b",
+"n": "R-TYP-05",
+"q": "Je peux circuler sur l'accotement (bas-côté) pour doubler une file à l'arrêt :",
+"c": [
+"Non",
+"Oui, s'il est assez large"
+],
+"ok": [
+0
+],
+"ex": "Les accotements ne sont pas faits pour circuler : ils sont souvent instables et peuvent accueillir des piétons ou des véhicules en panne.",
+"src": "Code de la route"
+},
+{
+"id": "R-VIR-01-a",
+"n": "R-VIR-01",
+"q": "Pour aborder un virage, je dois :",
+"c": [
+"Ralentir avant le virage, en ligne droite",
+"Freiner fort au milieu du virage",
+"Accélérer en entrant dans le virage"
+],
+"ok": [
+0
+],
+"ex": "On adapte sa vitesse avant d'entrer dans le virage. Freiner en plein virage peut faire perdre le contrôle du véhicule.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-VIR-01-b",
+"n": "R-VIR-01",
+"q": "Pour évaluer la difficulté d'un virage, je peux m'aider :",
+"c": [
+"Des panneaux de danger",
+"Des balises et chevrons",
+"Des marquages au sol (ligne continue, flèches)",
+"Du nombre d'arbres sur le bord"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Panneaux, balises, chevrons et marquages renseignent sur la courbure et le danger du virage.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-VIR-02-a",
+"n": "R-VIR-02",
+"q": "Dans un virage à gauche, je me place :",
+"c": [
+"Plutôt sur la droite de ma voie",
+"Au milieu de la chaussée",
+"Sur la gauche de ma voie pour couper le virage"
+],
+"ok": [
+0
+],
+"ex": "Dans un virage à gauche, se placer à droite de sa voie améliore la visibilité et éloigne des véhicules qui arrivent en face et coupent parfois le virage.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-VIR-02-b",
+"n": "R-VIR-02",
+"q": "Dans un virage, mon regard doit se porter :",
+"c": [
+"Vers la sortie du virage, là où je veux aller",
+"Sur le bord de la route, juste devant moi",
+"Sur le compteur"
+],
+"ok": [
+0
+],
+"ex": "Le véhicule va là où l'on regarde : on regarde loin, vers la sortie du virage.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-01-a",
+"n": "R-MET-01",
+"q": "Ma voiture « flotte » sur une nappe d'eau (aquaplaning). Je dois :",
+"c": [
+"Lâcher l'accélérateur et tenir fermement le volant droit",
+"Freiner fort",
+"Donner des coups de volant"
+],
+"ok": [
+0
+],
+"ex": "Aquaplaning : les pneus ne touchent plus la route. On lâche l'accélérateur sans freiner brutalement, on garde le volant droit jusqu'à ce que l'adhérence revienne.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-01-b",
+"n": "R-MET-01",
+"q": "Les premières pluies après une longue période sèche rendent la route :",
+"c": [
+"Particulièrement glissante",
+"Plus adhérente",
+"Identique"
+],
+"ok": [
+0
+],
+"ex": "L'eau se mélange aux dépôts d'huile, de gomme et de poussière : la chaussée devient très glissante.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-01-c",
+"n": "R-MET-01",
+"q": "Sous la pluie, ma distance de freinage :",
+"c": [
+"Augmente",
+"Diminue",
+"Ne change pas"
+],
+"ok": [
+0
+],
+"ex": "Sur chaussée mouillée, la distance de freinage augmente nettement. D'où la baisse des vitesses maximales par temps de pluie.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-02-a",
+"n": "R-MET-02",
+"q": "Par temps de brouillard, je dois :",
+"c": [
+"Allumer mes feux de croisement et mes feux de brouillard",
+"Réduire ma vitesse et augmenter ma distance de sécurité",
+"Allumer mes feux de route pour mieux voir"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les feux de route se reflètent dans le brouillard et éblouissent. Si la visibilité est inférieure à 50 m : 50 km/h maximum.",
+"src": "Code de la route, art. R416-7"
+},
+{
+"id": "R-MET-02-b",
+"n": "R-MET-02",
+"q": "Dans le brouillard, je peux me guider grâce :",
+"c": [
+"À la ligne de rive (bord droit de la chaussée)",
+"Aux feux arrière du véhicule de devant, en le suivant de près",
+"Au milieu de la chaussée"
+],
+"ok": [
+0
+],
+"ex": "Suivre de près les feux arrière d'un véhicule est dangereux (distance trop courte). La ligne de rive guide sans risque.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-03-a",
+"n": "R-MET-03",
+"q": "Le verglas se forme en priorité :",
+"c": [
+"Sur les ponts",
+"Dans les zones ombragées et les sous-bois",
+"Dans les endroits exposés au soleil"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les ponts (refroidis par-dessous) et les zones à l'ombre gèlent en premier et dégèlent en dernier.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-03-b",
+"n": "R-MET-03",
+"q": "Sur la neige ou le verglas, je dois :",
+"c": [
+"Conduire avec douceur (accélérations, freinages et coups de volant progressifs)",
+"Augmenter fortement ma distance de sécurité",
+"Rouler en sous-régime avec des rapports élevés",
+"Freiner brusquement en cas de doute"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Douceur avant tout : rapports élevés pour éviter le patinage, freinage anticipé, distances multipliées.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-03-c",
+"n": "R-MET-03",
+"q": "Un panneau rond bleu montrant une roue avec des chaînes signifie :",
+"c": [
+"Les chaînes (ou équipements équivalents) sont obligatoires",
+"Les chaînes sont interdites",
+"Une zone de stationnement pour véhicules équipés"
+],
+"ok": [
+0
+],
+"ex": "B26 : équipements spéciaux obligatoires (chaînes ou équivalents) sur au moins deux roues motrices.",
+"src": "IISR"
+},
+{
+"id": "R-MET-04-a",
+"n": "R-MET-04",
+"q": "Par fort vent latéral, je dois être particulièrement vigilant :",
+"c": [
+"En sortie de tunnel ou de forêt",
+"Sur les ponts et viaducs",
+"En dépassant un poids lourd",
+"Dans les embouteillages"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Les rafales surprennent là où l'on passe d'un abri à une zone exposée. On ralentit et on tient fermement le volant.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-05-a",
+"n": "R-MET-05",
+"q": "Je suis ébloui par un soleil rasant. Je dois :",
+"c": [
+"Baisser le pare-soleil et ralentir",
+"Porter des lunettes de soleil adaptées",
+"Garder un pare-brise propre",
+"Accélérer pour sortir de la zone"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Un pare-brise sale diffuse la lumière et aggrave l'éblouissement. Attention aussi : les autres usagers peuvent ne pas me voir.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-06-a",
+"n": "R-MET-06",
+"q": "L'adhérence est réduite sur :",
+"c": [
+"Les feuilles mortes",
+"Les gravillons",
+"Les marquages au sol et plaques d'égout mouillés",
+"Un enrobé sec et propre"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Feuilles, gravillons, boue, gasoil, marquages et plaques métalliques mouillés : autant de pièges, surtout pour les deux-roues.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-MET-07-a",
+"n": "R-MET-07",
+"q": "Dans les communes de montagne concernées par la « loi Montagne », du 1er novembre au 31 mars, je dois :",
+"c": [
+"Avoir des pneus hiver, ou des chaînes ou chaussettes à neige dans le coffre",
+"Avoir obligatoirement des pneus à clous",
+"Rien de particulier"
+],
+"ok": [
+0
+],
+"ex": "Obligation d'équipement en période hivernale : pneus hiver (marquage montagne à trois pics et flocon) ou dispositifs antidérapants (chaînes, chaussettes) dans le coffre.",
+"src": "Code de la route"
+},
+{
+"id": "R-MET-08-a",
+"n": "R-MET-08",
+"q": "La route devant moi est inondée. Je dois :",
+"c": [
+"Ne pas m'y engager et faire demi-tour si possible",
+"Traverser rapidement pour ne pas caler",
+"Traverser si l'eau ne semble pas profonde"
+],
+"ok": [
+0
+],
+"ex": "Environ 30 cm d'eau suffisent à faire flotter une voiture, et la profondeur réelle comme le courant sont impossibles à juger. On ne s'engage jamais.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-NUI-01-a",
+"n": "R-NUI-01",
+"q": "La nuit, les usagers les plus difficiles à voir sont :",
+"c": [
+"Les piétons habillés en sombre",
+"Les cyclistes sans éclairage",
+"Les poids lourds éclairés"
+],
+"ok": [
+0,
+1
+],
+"ex": "Un piéton en vêtements sombres n'est visible qu'à une vingtaine de mètres en feux de croisement : il faut adapter sa vitesse.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-NUI-01-b",
+"n": "R-NUI-01",
+"q": "Rouler la nuit :",
+"c": [
+"Est plus dangereux : on voit moins loin et la fatigue est plus forte",
+"Est moins dangereux car il y a moins de trafic",
+"Ne change rien si les phares sont bons"
+],
+"ok": [
+0
+],
+"ex": "Moins de trafic, mais davantage d'accidents graves : visibilité réduite, fatigue, alcool, vitesses plus élevées.",
+"src": "Sécurité routière (ONISR)"
+},
+{
+"id": "R-NUI-02-a",
+"n": "R-NUI-02",
+"q": "La nuit, pour limiter l'éblouissement par les véhicules d'en face, je peux :",
+"c": [
+"Regarder vers le bord droit de la chaussée",
+"Garder un pare-brise propre, intérieur compris",
+"Fixer les phares pour les surveiller"
+],
+"ok": [
+0,
+1
+],
+"ex": "Un pare-brise sale ou embué diffuse la lumière des phares. On détourne le regard vers la ligne de rive.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-NUI-02-b",
+"n": "R-NUI-02",
+"q": "Après avoir été ébloui, la vue revient à la normale :",
+"c": [
+"Immédiatement",
+"Après quelques secondes, plus longtemps avec l'âge",
+"Seulement le lendemain"
+],
+"ok": [
+1
+],
+"ex": "Il faut plusieurs secondes pour récupérer, et ce temps augmente avec l'âge : d'où l'importance de ralentir.",
+"src": "Sécurité routière"
+},
+{
+"id": "R-TRA-01-a",
+"n": "R-TRA-01",
+"q": "Dans une zone de travaux, un agent présente un piquet à face rouge. Je dois :",
+"c": [
+"M'arrêter",
+"Passer prudemment",
+"Klaxonner pour qu'il me laisse passer"
+],
+"ok": [
+0
+],
+"ex": "Piquet K10 : face rouge = arrêt, face verte = passage autorisé. Les indications des agents priment sur toute autre signalisation.",
+"src": "IISR"
+},
+{
+"id": "R-TRA-01-b",
+"n": "R-TRA-01",
+"q": "À l'approche d'une zone de travaux, je dois :",
+"c": [
+"Respecter la signalisation temporaire jaune",
+"Ralentir : des ouvriers peuvent être sur la chaussée",
+"Garder ma vitesse pour ne pas gêner"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les zones de travaux sont dangereuses pour les ouvriers et les usagers : rétrécissements, gravillons, engins. La signalisation jaune prime.",
+"src": "IISR"
+},
+{
+"id": "R-TRA-01-c",
+"n": "R-TRA-01",
+"q": "Une circulation alternée est réglée par des feux de chantier. Le feu est rouge, mais personne n'arrive en face. Je dois :",
+"c": [
+"Attendre le feu vert",
+"Passer, puisque la voie est libre"
+],
+"ok": [
+0
+],
+"ex": "Le feu de chantier s'impose comme un feu ordinaire : des véhicules peuvent être engagés plus loin, hors de vue.",
+"src": "Code de la route, art. R412-30"
+},
+{
+"id": "R-TRA-02-a",
+"n": "R-TRA-02",
+"q": "Sur autoroute, j'arrive sur un bouchon. Pour prévenir les conducteurs qui me suivent, je peux :",
+"c": [
+"Allumer brièvement mes feux de détresse",
+"Freiner brutalement",
+"Me mettre sur la bande d'arrêt d'urgence"
+],
+"ok": [
+0
+],
+"ex": "Les feux de détresse signalent un ralentissement brutal aux usagers qui arrivent derrière.",
+"src": "Code de la route"
+},
+{
+"id": "R-TRA-02-b",
+"n": "R-TRA-02",
+"q": "Dans un bouchon, je laisse devant moi :",
+"c": [
+"Un espace suffisant pour pouvoir manœuvrer en cas de besoin",
+"Le moins de place possible pour qu'on ne me double pas"
+],
+"ok": [
+0
+],
+"ex": "Garder un peu d'espace permet de ne pas être projeté sur le véhicule de devant en cas de choc arrière, et de pouvoir se dégager.",
+"src": "Sécurité routière"
+}
+]
