@@ -4,7 +4,9 @@
   const EXAM_N = 40, EXAM_PASS = 35, EXAM_SECONDS = 20;
   const LETTERS = "ABCD";
 
-  const $app = document.getElementById("app");
+  const $main = document.getElementById("app");
+  let $app = $main;          // conteneur de la vue en cours (page ou fenêtre)
+  let modal = null;          // fenêtre ouverte : { el, title }
   const $title = document.getElementById("title");
   const $back = document.getElementById("back");
   const $topRight = document.getElementById("topRight");
@@ -26,6 +28,7 @@
     document.body.appendChild(t); setTimeout(() => t.remove(), 2200);
   }
   function setHeader(title, back) {
+    if (modal) { modal.el.querySelector(".m-title").textContent = title; return; }
     $title.textContent = title;
     $back.hidden = !back;
     $back.onclick = back || null;
@@ -44,15 +47,41 @@
     route();
   }
 
+  // Pages intermédiaires affichées en fenêtre par-dessus l'accueil.
+  const MODALS = [["choisir", () => viewChoose()], ["erreurs", () => viewErrors()], ["examens", () => viewExams()],
+    ["reglages", () => viewSettings()], ["theme/", (h) => viewTheme(h.slice(6))]];
+
+  function closeModal() {
+    if (!modal) return;
+    modal.el.remove(); modal = null; $app = $main;
+    document.body.classList.remove("modal-open");
+  }
+  function openModal(render, h) {
+    const keepScroll = window.scrollY;
+    viewHome();
+    window.scrollTo(0, keepScroll);
+    const el = document.createElement("div");
+    el.className = "overlay";
+    el.innerHTML = `<div class="sheet" role="dialog" aria-modal="true">
+        <div class="m-head"><span class="m-title"></span><button class="m-close" aria-label="Fermer">✕</button></div>
+        <div class="m-body"></div></div>`;
+    document.body.appendChild(el);
+    document.body.classList.add("modal-open");
+    modal = { el };
+    $app = el.querySelector(".m-body");
+    el.onclick = (e) => { if (e.target === el) go(""); };
+    el.querySelector(".m-close").onclick = () => go("");
+    document.onkeydown = (e) => { if (e.key === "Escape") go(""); };
+    render(h);
+  }
+
   function route() {
     stopTimer();
     document.onkeydown = null;
+    closeModal();
     const h = location.hash.slice(1);
-    if (h === "choisir") return viewChoose();
-    if (h === "erreurs") return viewErrors();
-    if (h === "examens") return viewExams();
-    if (h.startsWith("theme/")) return viewTheme(h.slice(6));
-    if (h === "reglages") return viewSettings();
+    const m = MODALS.find(([k]) => (k.endsWith("/") ? h.startsWith(k) : h === k));
+    if (m) return openModal(m[1], h);
     if (h === "quiz" && session) return viewQuestion();
     if (h === "resultat" && session) return viewResult();
     return viewHome();
@@ -301,7 +330,7 @@
       <div class="opts"><div class="card">
         <div class="label">Mode</div>
         <div class="seg" id="segM">
-          ${[["train", "Entraînement"], ["exam", "Examen (20 s, note)"]].map(([k, l]) => `<button data-v="${k}" class="${choice.mode === k ? "on" : ""}">${l}</button>`).join("")}
+          ${[["train", "Entraînement"], ["exam", "Examen chronométré"]].map(([k, l]) => `<button data-v="${k}" class="${choice.mode === k ? "on" : ""}">${l}</button>`).join("")}
         </div>
         <div class="label">Questions</div>
         <div class="seg" id="segF">
