@@ -53,7 +53,7 @@
     isDue(id) { const s = data.q[id]; return !!(s && s.h.length && s.due <= Date.now()); },
     isNew(id) { const s = data.q[id]; return !s || !s.h.length; },
 
-    addExam(score, n) { data.exams.push({ ts: Date.now(), score, n }); save(); },
+    addExam(score, n, scope) { data.exams.push({ ts: Date.now(), score, n, scope: scope || "all" }); if (data.exams.length > 200) data.exams = data.exams.slice(-200); save(); },
     exams() { return data.exams; },
 
     export() { return JSON.stringify(data); },

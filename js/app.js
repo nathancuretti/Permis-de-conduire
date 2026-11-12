@@ -49,6 +49,9 @@
     document.onkeydown = null;
     const h = location.hash.slice(1);
     if (h === "choisir") return viewChoose();
+    if (h === "erreurs") return viewErrors();
+    if (h === "examens") return viewExams();
+    if (h.startsWith("theme/")) return viewTheme(h.slice(6));
     if (h === "reglages") return viewSettings();
     if (h === "quiz" && session) return viewQuestion();
     if (h === "resultat" && session) return viewResult();
@@ -98,7 +101,7 @@
             <div class="stats">
               <div><b>${all.n - all.new}<small>/${all.n}</small></b><span>vues</span></div>
               <div><b>${pct(all.master, all.n)}%</b><span>maîtrisées</span></div>
-              <div><b>${last ? last.score + "<small>/" + last.n + "</small>" : "–"}</b><span>dernier examen</span></div>
+              <div class="click" id="bLast" role="button" tabindex="0"><b class="${last ? (passed(last) ? "t-ok" : "t-ko") : ""}">${last ? last.score + "<small>/" + last.n + "</small>" : "–"}</b><span>dernier examen ›</span></div>
             </div>
             ${bar(all)}
             <div class="legend">
@@ -115,36 +118,155 @@
           <button class="btn ghost" id="bChoose">Réviser par chapitres</button>
         </div>
         <div class="s">
-          <h2 class="page-title">Thèmes<small>Clique sur un thème pour une série de 20 questions</small></h2>
+          <h2 class="page-title">Thèmes<small>Clique sur un thème pour voir tes statistiques et le réviser</small></h2>
           <div class="themes">${themes}</div>
         </div>
         <div class="b">
           <div style="height:14px"></div>
-          ${exams.length ? examHistory(exams) : ""}
+          ${exams.length ? examHistory(exams.slice(-3), true) : ""}
           <button class="btn ghost" id="bSet">Réglages et sauvegarde</button>
         </div>
       </div>`;
-    document.getElementById("bExam").onclick = startExam;
-    document.getElementById("bErr").onclick = () => start(shuffle(errors), "Mes erreurs", false);
+    document.getElementById("bExam").onclick = () => startExam();
+    document.getElementById("bErr").onclick = () => go("erreurs");
+    document.getElementById("bLast").onclick = () => go("examens");
     document.getElementById("bDue").onclick = () => start(shuffle(due), "À revoir", false);
     document.getElementById("bChoose").onclick = () => go("choisir");
     document.getElementById("bSet").onclick = () => go("reglages");
     $app.querySelectorAll(".theme[data-t]").forEach((el) => {
-      el.onclick = () => {
-        const t = el.dataset.t, qs = Q.filter((q) => q.theme === t);
-        if (qs.length) start(pickTraining(qs, 20), META.themes.find((x) => x.code === t).nom, false);
-      };
+      el.onclick = () => { if (!el.classList.contains("empty")) go("theme/" + el.dataset.t); };
     });
   }
 
-  function examHistory(exams) {
-    const rows = exams.slice(-8).reverse().map((e) => {
-      const d = new Date(e.ts);
-      const ok = e.n === EXAM_N ? e.score >= EXAM_PASS : e.score >= Math.ceil(e.n * EXAM_PASS / EXAM_N);
-      return `<div class="rev"><div class="dot ${ok ? "ok" : "ko"}">${ok ? "✓" : "✗"}</div>
-        <div class="t"><b>${e.score}/${e.n}</b> <span class="muted">· ${d.toLocaleDateString("fr-FR")} ${d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}</span></div></div>`;
+  const needFor = (n) => Math.ceil((n * EXAM_PASS) / EXAM_N);
+  const passed = (e) => e.score >= needFor(e.n);
+  const scopeName = (e) => (!e.scope || e.scope === "all") ? "Examen blanc complet" : "Examen · " + e.scope.map((c) => (META.themes.find((t) => t.code === c) || { nom: c }).nom).join(", ");
+  const fmtDate = (ts) => { const d = new Date(ts); return `${d.toLocaleDateString("fr-FR")} ${d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`; };
+
+  function examRows(list) {
+    return list.slice().reverse().map((e) => `<div class="rev">
+        <div class="dot ${passed(e) ? "ok" : "ko"}">${passed(e) ? "✓" : "✗"}</div>
+        <div class="t"><b>${e.score}/${e.n}</b> <span class="muted">· ${esc(scopeName(e))}</span><div class="muted">${fmtDate(e.ts)}</div></div></div>`).join("");
+  }
+  function examHistory(list, link) {
+    return `<div class="card"><h2>Derniers examens</h2>${examRows(list)}
+      ${link ? `<button class="btn ghost" style="margin:10px 0 0" onclick="location.hash='examens'">Voir les 20 dernières notes</button>` : ""}</div>`;
+  }
+
+  // ---------- historique des examens ----------
+  function viewExams() {
+    setHeader("Mes examens", () => go(""));
+    const list = Store.exams().slice(-20);
+    if (!list.length) {
+      $app.innerHTML = `<div class="narrow"><div class="card"><p class="muted">Aucun examen pour l'instant.</p>
+        <button class="btn" id="bE">Lancer un examen blanc</button></div></div>`;
+      document.getElementById("bE").onclick = () => startExam();
+      return;
+    }
+    const pcts = list.map((e) => e.score / e.n);
+    const avg = Math.round((100 * pcts.reduce((a, b) => a + b, 0)) / pcts.length);
+    const nPass = list.filter(passed).length;
+    const W = 600, H = 180, pad = 24, bw = (W - pad) / 20;
+    const yPass = H - (H - 20) * (EXAM_PASS / EXAM_N);
+    const bars = list.map((e, i) => {
+      const h = (H - 20) * (e.score / e.n);
+      return `<rect x="${pad + i * bw + 3}" y="${H - h}" width="${bw - 6}" height="${h}" rx="3" class="${passed(e) ? "b-ok" : "b-ko"}"><title>${e.score}/${e.n} · ${fmtDate(e.ts)}</title></rect>`;
     }).join("");
-    return `<div class="card"><h2>Examens blancs</h2>${rows}</div>`;
+    $app.innerHTML = `<div class="narrow">
+      <h2 class="page-title">Mes 20 dernières notes</h2>
+      <div class="card">
+        <div class="stats">
+          <div><b>${list.length}</b><span>examens</span></div>
+          <div><b>${avg}%</b><span>moyenne</span></div>
+          <div><b>${nPass}<small>/${list.length}</small></b><span>réussis</span></div>
+        </div>
+        <svg class="chart" viewBox="0 0 ${W} ${H + 4}" preserveAspectRatio="none" role="img" aria-label="Notes des derniers examens">
+          ${bars}
+          <line x1="${pad}" x2="${W}" y1="${yPass}" y2="${yPass}" class="pass-line"/>
+          <text x="0" y="${yPass + 4}" class="pass-txt">35</text>
+        </svg>
+        <div class="legend"><span><i class="c-master"></i>réussi</span><span><i class="c-err"></i>échoué</span><span>— seuil 35/40</span></div>
+      </div>
+      <div class="card"><h2>Détail</h2>${examRows(list)}</div>
+      <button class="btn" id="bE">Nouvel examen blanc</button></div>`;
+    document.getElementById("bE").onclick = () => startExam();
+  }
+
+  // ---------- page d'un thème ----------
+  function viewTheme(code) {
+    const t = META.themes.find((x) => x.code === code);
+    if (!t) return go("");
+    setHeader(t.nom, () => go(""));
+    const qs = Q.filter((q) => q.theme === code), c = counts(qs);
+    const errs = qs.filter((q) => Store.isError(q.id));
+    const ex = Store.exams().filter((e) => Array.isArray(e.scope) && e.scope.length === 1 && e.scope[0] === code).slice(-5);
+    const chaps = t.chapitres.map((ch) => {
+      const cq = qs.filter((q) => q.chap === ch.code);
+      if (!cq.length) return "";
+      const cc = counts(cq);
+      return `<div class="chap-row">
+        <div class="t"><div>${esc(ch.nom)}</div>
+          <div class="muted">${cc.n} questions · ${cc.master} maîtrisées · ${cc.ok} réussies · ${cc.err} ratées · ${cc.new} jamais vues</div>${bar(cc)}</div>
+        <button class="mini" data-chap="${ch.code}">Réviser</button></div>`;
+    }).join("");
+    $app.innerHTML = `<div class="narrow">
+      <h2 class="page-title">${esc(t.nom)}</h2>
+      <div class="card">
+        <div class="stats four">
+          <div><b>${pct(c.master, c.n)}%</b><span>maîtrisées</span></div>
+          <div><b>${c.ok}</b><span>réussies</span></div>
+          <div><b class="${c.err ? "t-ko" : ""}">${c.err}</b><span>ratées</span></div>
+          <div><b>${c.new}</b><span>jamais vues</span></div>
+        </div>
+        ${bar(c)}
+        <div class="legend"><span><i class="c-master"></i>maîtrisées</span><span><i class="c-ok"></i>réussies</span><span><i class="c-err"></i>ratées</span><span><i class="c-new"></i>jamais vues</span></div>
+      </div>
+      <div class="card"><h2>Chapitres</h2>${chaps}</div>
+      ${ex.length ? `<div class="card"><h2>Examens sur ce thème</h2>${examRows(ex)}</div>` : ""}
+      <div class="sticky-actions">
+        <div class="row">
+          <button class="btn" id="bRev">Réviser <small>· 20 q</small></button>
+          <button class="btn secondary" id="bTx">Examen <small>· ${Math.min(EXAM_N, qs.length)} q · 20 s</small></button>
+        </div>
+        ${errs.length ? `<button class="btn ghost" id="bTe">Revoir mes ${errs.length} erreur${errs.length > 1 ? "s" : ""} de ce thème</button>` : ""}
+      </div></div>`;
+    document.getElementById("bRev").onclick = () => start(pickTraining(qs, 20), t.nom, false);
+    document.getElementById("bTx").onclick = () => startExam([code]);
+    const bTe = document.getElementById("bTe");
+    if (bTe) bTe.onclick = () => start(shuffle(errs), "Erreurs · " + t.nom, false);
+    $app.querySelectorAll("button[data-chap]").forEach((b) => b.onclick = () => {
+      const ch = t.chapitres.find((x) => x.code === b.dataset.chap);
+      start(pickTraining(qs.filter((q) => q.chap === ch.code), 20), ch.nom, false);
+    });
+  }
+
+  // ---------- mes erreurs ----------
+  function viewErrors() {
+    setHeader("Mes erreurs", () => go(""));
+    const errs = Q.filter((q) => Store.isError(q.id));
+    const sel = new Set(META.themes.map((t) => t.code).filter((c) => errs.some((q) => q.theme === c)));
+    let rows = "";
+    for (const t of META.themes) {
+      const te = errs.filter((q) => q.theme === t.code);
+      if (!te.length) continue;
+      const detail = t.chapitres.map((ch) => { const n = te.filter((q) => q.chap === ch.code).length; return n ? `${esc(ch.nom)} : ${n}` : ""; }).filter(Boolean).join(" · ");
+      rows += `<label class="err-row"><input type="checkbox" data-t="${t.code}" checked>
+        <div class="t"><div><b>${esc(t.nom)}</b></div><div class="muted">${detail}</div></div>
+        <span class="count">${te.length}</span></label>`;
+    }
+    $app.innerHTML = `<div class="narrow">
+      <h2 class="page-title">Mes erreurs<small>Une question sort de cette liste après 2 bonnes réponses d'affilée</small></h2>
+      <div class="card"><h2>Erreurs par thème</h2>${rows || `<p class="muted">Aucune erreur en cours. 👏</p>`}</div>
+      <div class="sticky-actions"><button class="btn" id="go"></button></div></div>`;
+    const btn = document.getElementById("go");
+    const sync = () => {
+      const n = errs.filter((q) => sel.has(q.theme)).length;
+      btn.disabled = !n;
+      btn.textContent = n ? `Revoir ${n} erreur${n > 1 ? "s" : ""}` : "Choisis au moins un thème";
+    };
+    $app.querySelectorAll("input[data-t]").forEach((b) => b.onchange = () => { b.checked ? sel.add(b.dataset.t) : sel.delete(b.dataset.t); sync(); });
+    btn.onclick = () => start(shuffle(errs.filter((q) => sel.has(q.theme))), "Mes erreurs", false);
+    sync();
   }
 
   // Ordre de priorité en entraînement : erreurs, puis à revoir, puis jamais vues, puis le reste.
@@ -155,7 +277,7 @@
   }
 
   // ---------- choix des chapitres ----------
-  const choice = { chaps: null, n: 20, filtre: "toutes" };
+  const choice = { chaps: null, n: 20, filtre: "toutes", mode: "train" };
 
   function viewChoose() {
     setHeader("Réviser", () => go(""));
@@ -177,6 +299,10 @@
     }
     html += `</div></div>
       <div class="opts"><div class="card">
+        <div class="label">Mode</div>
+        <div class="seg" id="segM">
+          ${[["train", "Entraînement"], ["exam", "Examen (20 s, note)"]].map(([k, l]) => `<button data-v="${k}" class="${choice.mode === k ? "on" : ""}">${l}</button>`).join("")}
+        </div>
         <div class="label">Questions</div>
         <div class="seg" id="segF">
           ${[["toutes", "Toutes"], ["nouvelles", "Jamais vues"], ["erreurs", "Ratées"], ["revoir", "À revoir"]].map(([k, l]) => `<button data-v="${k}" class="${choice.filtre === k ? "on" : ""}">${l}</button>`).join("")}
@@ -200,7 +326,7 @@
       const n = choice.n ? Math.min(choice.n, pool.length) : pool.length;
       const btn = document.getElementById("go");
       btn.disabled = !pool.length;
-      btn.textContent = pool.length ? `Commencer · ${n} question${n > 1 ? "s" : ""}` : "Aucune question pour cette sélection";
+      btn.textContent = pool.length ? `${choice.mode === "exam" ? "Lancer l'examen" : "Commencer"} · ${n} question${n > 1 ? "s" : ""}` : "Aucune question pour cette sélection";
     };
     $app.querySelectorAll("input[data-chap]").forEach((b) => {
       b.onchange = () => { b.checked ? choice.chaps.add(b.dataset.chap) : choice.chaps.delete(b.dataset.chap); syncThemes(); };
@@ -219,7 +345,14 @@
     });
     seg("segF", "filtre", (v) => v);
     seg("segN", "n", (v) => +v);
-    document.getElementById("go").onclick = () => start(pickTraining(poolFor(), choice.n), "Entraînement", false);
+    seg("segM", "mode", (v) => v);
+    document.getElementById("go").onclick = () => {
+      const pool = poolFor();
+      if (choice.mode === "exam") {
+        const scope = [...new Set(pool.map((q) => q.theme))];
+        start(shuffle(pool).slice(0, choice.n || pool.length), "Examen", true, scope);
+      } else start(pickTraining(pool, choice.n), "Entraînement", false);
+    };
     syncThemes();
   }
 
@@ -232,18 +365,18 @@
   }
 
   // ---------- session de questions ----------
-  function startExam() {
-    // Répartition proportionnelle aux thèmes disponibles, priorité aux questions jamais vues.
-    const pool = shuffle(Q);
+  function startExam(themes) {
+    // Examen complet (tous thèmes) ou limité à des thèmes ; priorité aux questions jamais vues.
+    const pool = shuffle(themes ? Q.filter((q) => themes.includes(q.theme)) : Q);
     const rank = (q) => (Store.isNew(q.id) ? 0 : 1);
     const picked = pool.sort((a, b) => rank(a) - rank(b)).slice(0, EXAM_N);
-    start(shuffle(picked), "Examen blanc", true);
+    start(shuffle(picked), themes ? "Examen · " + themes.map((c) => META.themes.find((t) => t.code === c).nom).join(", ") : "Examen blanc", true, themes || "all");
   }
 
-  function start(qs, label, exam) {
+  function start(qs, label, exam, scope) {
     if (!qs.length) return;
     session = {
-      label, exam, i: 0,
+      label, exam, scope, i: 0,
       items: qs.map((q) => ({ q, order: shuffle(q.c.map((_, k) => k)), picked: new Set(), done: false, ok: null })),
     };
     go("quiz");
@@ -333,7 +466,7 @@
     function next() {
       if (s.i + 1 < s.items.length) { s.i++; viewQuestion(); }
       else {
-        if (s.exam) Store.addExam(s.items.filter((x) => x.ok).length, s.items.length);
+        if (s.exam) Store.addExam(s.items.filter((x) => x.ok).length, s.items.length, s.scope);
         go("resultat");
       }
     }
@@ -343,7 +476,7 @@
     const s = session;
     setHeader("Résultat", () => { session = null; go(""); });
     const score = s.items.filter((x) => x.ok).length, n = s.items.length;
-    const need = s.exam ? Math.ceil(n * EXAM_PASS / EXAM_N) : null;
+    const need = s.exam ? needFor(n) : null;
     const pass = s.exam ? score >= need : score / n >= EXAM_PASS / EXAM_N;
     const wrong = s.items.filter((x) => !x.ok).map((x) => x.q);
     let html = `
