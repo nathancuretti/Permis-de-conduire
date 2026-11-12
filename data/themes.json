@@ -1,5 +1,6 @@
 {
  "fichiers": [
+  "data/questions/L-regles.json",
   "data/questions/L-signalisation.json"
  ],
  "themes": [
@@ -39,7 +40,7 @@
       {
        "id": "L-PAN-06",
        "nom": "Interdictions par catégorie de véhicule, poids, hauteur, largeur",
-       "q": 0
+       "q": 3
       },
       {
        "id": "L-PAN-07",
@@ -177,62 +178,62 @@
       {
        "id": "L-PRI-01",
        "nom": "Priorité à droite (principe général)",
-       "q": 0
+       "q": 5
       },
       {
        "id": "L-PRI-02",
        "nom": "Stop : arrêt obligatoire à la ligne, puis céder le passage",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-PRI-03",
        "nom": "Cédez-le-passage",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-PRI-04",
        "nom": "Route à caractère prioritaire",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-PRI-05",
        "nom": "Carrefours à sens giratoire : priorité à l'anneau, placement, clignotant",
-       "q": 0
+       "q": 4
       },
       {
        "id": "L-PRI-06",
        "nom": "Ronds-points sans panneau (priorité à droite)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-PRI-07",
        "nom": "Véhicules prioritaires (police, pompiers, SAMU) et véhicules à facilité de passage",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-PRI-08",
        "nom": "Tramway : priorité, règles particulières",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-PRI-09",
        "nom": "Sortie d'un chemin de terre, d'un parking, d'une propriété : céder le passage",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-PRI-10",
        "nom": "Passages à niveau : types (avec/sans barrières), feux rouges clignotants",
-       "q": 0
+       "q": 3
       },
       {
        "id": "L-PRI-11",
        "nom": "Intersection encombrée : ne pas s'engager si on risque de bloquer",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-PRI-12",
        "nom": "Priorité aux piétons engagés ou manifestant l'intention de traverser",
-       "q": 0
+       "q": 3
       }
      ]
     },
@@ -243,52 +244,52 @@
       {
        "id": "L-VIT-01",
        "nom": "Agglomération : 50 km/h (et zones 30, zones de rencontre 20, aires piétonnes au pas)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-VIT-02",
        "nom": "Routes bidirectionnelles hors agglo : 80 km/h (possible 90 selon le gestionnaire)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-VIT-03",
        "nom": "Routes à chaussées séparées : 110 km/h",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-VIT-04",
        "nom": "Autoroute : 130 km/h",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-VIT-05",
        "nom": "Temps de pluie : réductions (130→110, 110→100, 90→80)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-VIT-06",
        "nom": "Visibilité < 50 m : 50 km/h partout",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-VIT-07",
        "nom": "Jeunes conducteurs (permis probatoire) : 110 / 100 / 80",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-VIT-08",
        "nom": "Vitesse minimale sur autoroute (voie de gauche), vitesse adaptée aux circonstances",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-VIT-09",
        "nom": "Sanctions d'excès de vitesse : barème points / amendes / suspension",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-VIT-10",
        "nom": "Radars (fixes, tronçon, feu rouge, embarqués) et avertisseurs",
-       "q": 0
+       "q": 1
       }
      ]
     },
@@ -299,37 +300,37 @@
       {
        "id": "L-CIR-01",
        "nom": "Circuler à droite, voies de circulation, changement de voie",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-CIR-02",
        "nom": "Circulation en file (embouteillage) : dépassement par la droite admis",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-CIR-03",
        "nom": "Voies de décélération / d'insertion",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-CIR-04",
        "nom": "Changement de direction à droite / à gauche : placement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-CIR-05",
        "nom": "Demi-tour et marche arrière : où c'est interdit",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-CIR-06",
        "nom": "Distance de sécurité (2 secondes, 2 traits sur autoroute)",
-       "q": 0
+       "q": 3
       },
       {
        "id": "L-CIR-07",
        "nom": "Usage des clignotants",
-       "q": 0
+       "q": 1
       }
      ]
     },
@@ -340,37 +341,37 @@
       {
        "id": "L-DEP-01",
        "nom": "Conditions pour dépasser (visibilité, espace, signalisation)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-DEP-02",
        "nom": "Dépassement interdit : sommet de côte, virage, intersection sans priorité, passage piéton…",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-DEP-03",
        "nom": "Dépasser par la gauche ; exceptions par la droite (tourne-à-gauche, tramway…)",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-DEP-04",
        "nom": "Distances latérales : 1 m en agglo, 1,5 m hors agglo (cyclistes, piétons)",
-       "q": 0
+       "q": 3
       },
       {
        "id": "L-DEP-05",
        "nom": "Être dépassé : ne pas accélérer, serrer à droite",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-DEP-06",
        "nom": "Croisement sur route étroite / en montagne : qui recule",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-DEP-07",
        "nom": "Dépassement de véhicules lents, de poids lourds (angles morts)",
-       "q": 0
+       "q": 1
       }
      ]
     },
@@ -381,32 +382,32 @@
       {
        "id": "L-ARR-01",
        "nom": "Différence arrêt / stationnement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-ARR-02",
        "nom": "Arrêt et stationnement dangereux (virage, sommet de côte, passage à niveau…)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ARR-03",
        "nom": "Stationnement gênant / très gênant (trottoir, passage piéton, place PMR, bande cyclable)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ARR-04",
        "nom": "Stationnement unilatéral, alterné, à durée limitée (zone bleue, disque)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ARR-05",
        "nom": "Stationnement payant, places de livraison, places réservées",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-ARR-06",
        "nom": "Mise en fourrière : cas",
-       "q": 0
+       "q": 1
       }
      ]
     },
@@ -417,32 +418,32 @@
       {
        "id": "L-AUT-01",
        "nom": "Véhicules / usagers interdits sur autoroute",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-AUT-02",
        "nom": "Insertion, sortie, voie de gauche, rabattement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-AUT-03",
        "nom": "Panne sur autoroute : BAU, gilet, sortir derrière la glissière, borne d'appel",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-AUT-04",
        "nom": "Péages : voies (télépéage, CB), comportement",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-AUT-05",
        "nom": "Aires de repos / de services ; pauses toutes les 2 h",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-AUT-06",
        "nom": "Marche arrière / demi-tour interdits ; contresens",
-       "q": 0
+       "q": 2
       }
      ]
     },
@@ -453,17 +454,17 @@
       {
        "id": "L-TUN-01",
        "nom": "Feux de croisement allumés, distance de sécurité, interdiction de dépasser selon signalisation",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-TUN-02",
        "nom": "Panne ou incendie en tunnel : conduite à tenir, abris",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-TUN-03",
        "nom": "Signalisation propre aux tunnels (longueur, niches d'appel)",
-       "q": 0
+       "q": 1
       }
      ]
     },
@@ -474,32 +475,32 @@
       {
        "id": "L-ECL-01",
        "nom": "Feux de position",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-ECL-02",
        "nom": "Feux de croisement : quand (nuit, tunnel, pluie, jour en mauvaise visibilité)",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ECL-03",
        "nom": "Feux de route : quand, ne pas éblouir",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ECL-04",
        "nom": "Feux de brouillard avant / arrière : conditions d'usage",
-       "q": 0
+       "q": 2
       },
       {
        "id": "L-ECL-05",
        "nom": "Feux de détresse : usages",
-       "q": 0
+       "q": 1
       },
       {
        "id": "L-ECL-06",
        "nom": "Avertisseur sonore et appel lumineux (de jour / de nuit, en agglo)",
-       "q": 0
+       "q": 2
       }
      ]
     }

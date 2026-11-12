@@ -1,0 +1,1546 @@
+[
+{
+"id": "L-PAN-06-a",
+"n": "L-PAN-06",
+"img": "img/panneaux/B12.svg",
+"q": "Ce panneau interdit l'accès aux véhicules :",
+"c": [
+"Dont la hauteur, chargement compris, dépasse 3,5 m",
+"Qui roulent à plus de 35 km/h",
+"De plus de 3,5 tonnes"
+],
+"ok": [
+0
+],
+"ex": "B12 : accès interdit aux véhicules dont la hauteur (chargement compris) dépasse le nombre indiqué. Attention avec un coffre de toit ou un camping-car.",
+"src": "IISR"
+},
+{
+"id": "L-PAN-06-b",
+"n": "L-PAN-06",
+"img": "img/panneaux/B13.svg",
+"q": "Ce panneau interdit l'accès aux véhicules :",
+"c": [
+"Dont le poids total autorisé en charge dépasse 5,5 t",
+"Qui transportent plus de 5 passagers",
+"Dont la largeur dépasse 5,5 m"
+],
+"ok": [
+0
+],
+"ex": "B13 : accès interdit aux véhicules pesant plus que le poids indiqué (ponts, routes fragiles). Une voiture ne dépasse pas ce poids.",
+"src": "IISR"
+},
+{
+"id": "L-PAN-06-c",
+"n": "L-PAN-06",
+"img": "img/panneaux/B11.svg",
+"q": "Ce panneau interdit l'accès aux véhicules :",
+"c": [
+"Dont la largeur dépasse 2 m",
+"Dont la longueur dépasse 2 m",
+"Qui roulent en file à moins de 2 m"
+],
+"ok": [
+0
+],
+"ex": "B11 : accès interdit aux véhicules dont la largeur, chargement compris, dépasse le nombre indiqué. Les flèches horizontales indiquent la largeur.",
+"src": "IISR"
+},
+{
+"id": "L-PRI-01-a",
+"n": "L-PRI-01",
+"img": "img/schemas/prio-droite.svg",
+"q": "Je suis la voiture rouge. Il n'y a aucune signalisation. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue"
+],
+"ok": [
+1
+],
+"ex": "Sans signalisation, priorité à droite. La voiture bleue arrive par ma droite : je lui cède le passage.",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-PRI-01-b",
+"n": "L-PRI-01",
+"img": "img/schemas/prio-gauche.svg",
+"q": "Je suis la voiture rouge. Il n'y a aucune signalisation. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue"
+],
+"ok": [
+0
+],
+"ex": "La voiture bleue arrive par ma gauche : c'est elle qui doit me céder le passage. Je reste prudent : je vérifie qu'elle s'arrête bien.",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-PRI-01-c",
+"n": "L-PRI-01",
+"img": "img/schemas/trois-voitures.svg",
+"q": "Je suis la voiture rouge. Aucune signalisation. Dans quel ordre les voitures passent-elles ?",
+"c": [
+"Bleue, puis rouge, puis verte",
+"Rouge, puis bleue, puis verte",
+"Verte, puis rouge, puis bleue"
+],
+"ok": [
+0
+],
+"ex": "La bleue n'a personne à sa droite : elle passe en premier. Ensuite la rouge (la bleue était à sa droite), puis la verte, qui doit céder à la rouge venant de sa droite.",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-PRI-01-d",
+"n": "L-PRI-01",
+"img": "img/schemas/tourne-gauche-face.svg",
+"q": "Je suis la voiture rouge et je tourne à gauche. La voiture bleue, en face, va tout droit. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue"
+],
+"ok": [
+1
+],
+"ex": "Pour tourner à gauche, je dois céder le passage aux véhicules qui arrivent en sens inverse.",
+"src": "Code de la route, art. R415-4"
+},
+{
+"id": "L-PRI-01-e",
+"n": "L-PRI-01",
+"q": "La priorité à droite s'applique :",
+"c": [
+"Aux intersections sans signalisation particulière",
+"Uniquement en agglomération",
+"Uniquement hors agglomération"
+],
+"ok": [
+0
+],
+"ex": "La priorité à droite est la règle par défaut à toutes les intersections, en agglomération comme hors agglomération, sauf signalisation contraire.",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-PRI-02-a",
+"n": "L-PRI-02",
+"img": "img/schemas/stop-droite.svg",
+"q": "Je suis la voiture rouge, à un stop. La voiture bleue arrive par ma gauche. Je dois :",
+"c": [
+"Passer, car la bleue vient de gauche",
+"M'arrêter et laisser passer la voiture bleue",
+"Klaxonner et passer"
+],
+"ok": [
+1
+],
+"ex": "Au stop, je dois m'arrêter puis céder le passage à tous les véhicules de la route abordée, qu'ils viennent de droite ou de gauche.",
+"src": "Code de la route, art. R415-6"
+},
+{
+"id": "L-PRI-02-b",
+"n": "L-PRI-02",
+"q": "Le non-respect d'un stop entraîne un retrait de :",
+"c": [
+"2 points",
+"4 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Le non-respect de l'arrêt au stop est sanctionné par une amende et un retrait de 4 points.",
+"src": "Code de la route, art. R415-6"
+},
+{
+"id": "L-PRI-03-a",
+"n": "L-PRI-03",
+"q": "À un cédez-le-passage, la voie est parfaitement dégagée. Je dois :",
+"c": [
+"M'arrêter quand même",
+"Passer sans m'arrêter, après avoir vérifié",
+"Accélérer pour dégager vite"
+],
+"ok": [
+1
+],
+"ex": "Contrairement au stop, le cédez-le-passage n'impose l'arrêt que si un véhicule arrive. Voie libre : on passe, en restant attentif.",
+"src": "Code de la route, art. R415-7"
+},
+{
+"id": "L-PRI-04-a",
+"n": "L-PRI-04",
+"img": "img/schemas/prioritaire-droite.svg",
+"q": "Je suis la voiture rouge, sur une route à caractère prioritaire. La voiture bleue arrive par ma droite. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue"
+],
+"ok": [
+0
+],
+"ex": "Sur une route prioritaire (losange jaune), je suis prioritaire aux intersections : la bleue doit me céder le passage, même si elle vient de ma droite.",
+"src": "IISR"
+},
+{
+"id": "L-PRI-04-b",
+"n": "L-PRI-04",
+"q": "Sur une route à caractère prioritaire, je peux dépasser à une intersection :",
+"c": [
+"Oui, si les conditions de visibilité et de sécurité le permettent",
+"Non, jamais"
+],
+"ok": [
+0
+],
+"ex": "Le dépassement est interdit aux intersections, sauf pour les usagers circulant sur une route prioritaire (et aux carrefours à feux ou à sens giratoire).",
+"src": "Code de la route, art. R414-11"
+},
+{
+"id": "L-PRI-05-a",
+"n": "L-PRI-05",
+"img": "img/schemas/giratoire.svg",
+"q": "Je suis la voiture rouge, à l'entrée d'un giratoire avec un cédez-le-passage. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue, déjà sur l'anneau"
+],
+"ok": [
+1
+],
+"ex": "À l'entrée d'un carrefour à sens giratoire signalé par un cédez-le-passage, on cède le passage aux véhicules déjà engagés sur l'anneau.",
+"src": "Code de la route, art. R415-10"
+},
+{
+"id": "L-PRI-05-b",
+"n": "L-PRI-05",
+"q": "Dans un carrefour à sens giratoire, on tourne :",
+"c": [
+"Dans le sens des aiguilles d'une montre",
+"Dans le sens inverse des aiguilles d'une montre"
+],
+"ok": [
+1
+],
+"ex": "En France, on circule à droite : on tourne autour de l'îlot central par la droite, donc dans le sens inverse des aiguilles d'une montre.",
+"src": "Code de la route"
+},
+{
+"id": "L-PRI-05-c",
+"n": "L-PRI-05",
+"q": "Pour sortir d'un giratoire, je mets mon clignotant :",
+"c": [
+"À gauche",
+"À droite",
+"Aucun clignotant n'est nécessaire"
+],
+"ok": [
+1
+],
+"ex": "On signale sa sortie avec le clignotant droit, juste après la sortie qui précède la sienne.",
+"src": "Code de la route"
+},
+{
+"id": "L-PRI-05-d",
+"n": "L-PRI-05",
+"q": "Dans un giratoire à deux voies, je prends la première sortie. Je me place de préférence :",
+"c": [
+"Sur la voie de droite",
+"Sur la voie de gauche",
+"Peu importe"
+],
+"ok": [
+0
+],
+"ex": "Pour une sortie proche, on reste sur la voie de droite. Pour une sortie lointaine, la voie de gauche est conseillée, puis on se décale à droite avant de sortir.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-PRI-06-a",
+"n": "L-PRI-06",
+"img": "img/schemas/giratoire-sans-panneau.svg",
+"q": "Je suis la voiture rouge. Ce rond-point n'a aucun panneau ni marquage à l'entrée. Qui passe en premier ?",
+"c": [
+"La voiture rouge, qui arrive par la droite de la bleue",
+"La voiture bleue, déjà sur l'anneau"
+],
+"ok": [
+0
+],
+"ex": "Sans cédez-le-passage à l'entrée, c'est la priorité à droite qui s'applique : les véhicules qui entrent sont prioritaires sur ceux de l'anneau. C'est rare, mais ça existe (par exemple place de l'Étoile à Paris).",
+"src": "Code de la route, art. R415-5"
+},
+{
+"id": "L-PRI-07-a",
+"n": "L-PRI-07",
+"q": "Un véhicule de pompiers arrive derrière moi avec gyrophare et sirène. Je dois :",
+"c": [
+"Faciliter son passage, en me serrant à droite si possible",
+"Accélérer pour rester devant lui",
+"Freiner brusquement et m'arrêter au milieu de la voie"
+],
+"ok": [
+0
+],
+"ex": "Les véhicules d'intérêt général prioritaires (pompiers, police, SAMU…) en intervention doivent pouvoir passer. On facilite leur passage sans manœuvre dangereuse.",
+"src": "Code de la route"
+},
+{
+"id": "L-PRI-07-b",
+"n": "L-PRI-07",
+"q": "Au feu rouge, une ambulance du SAMU en intervention arrive derrière moi. Je peux franchir la ligne d'arrêt pour la laisser passer :",
+"c": [
+"Oui, en le faisant prudemment et sans danger",
+"Non, jamais"
+],
+"ok": [
+0
+],
+"ex": "Pour libérer le passage à un véhicule prioritaire en intervention, il est toléré de s'avancer prudemment, à condition de ne mettre personne en danger.",
+"src": "Code de la route"
+},
+{
+"id": "L-PRI-08-a",
+"n": "L-PRI-08",
+"q": "À une intersection sans feux, un tramway arrive. En règle générale :",
+"c": [
+"Je lui cède le passage",
+"Il me cède le passage s'il vient de ma gauche",
+"La priorité à droite s'applique normalement"
+],
+"ok": [
+0
+],
+"ex": "Le tramway est en général prioritaire sur les autres véhicules : il ne peut ni dévier ni freiner court.",
+"src": "Code de la route"
+},
+{
+"id": "L-PRI-09-a",
+"n": "L-PRI-09",
+"img": "img/schemas/parking-sortie.svg",
+"q": "Je suis la voiture rouge et je sors d'un parking. La voiture bleue circule sur la route. Qui passe en premier ?",
+"c": [
+"La voiture rouge",
+"La voiture bleue"
+],
+"ok": [
+1
+],
+"ex": "En sortant d'un parking, d'une propriété, d'une station-service ou d'un chemin de terre, on doit céder le passage aux usagers de la route.",
+"src": "Code de la route, art. R415-9"
+},
+{
+"id": "L-PRI-10-a",
+"n": "L-PRI-10",
+"img": "img/panneaux/feu-rouge-cli.svg",
+"q": "Les feux rouges clignotent au passage à niveau, mais les barrières sont encore levées. Je dois :",
+"c": [
+"Passer vite avant que les barrières ne se baissent",
+"Marquer l'arrêt",
+"Ralentir et regarder des deux côtés avant de passer"
+],
+"ok": [
+1
+],
+"ex": "Feux rouges clignotants = arrêt absolu, même si les barrières ne sont pas encore baissées.",
+"src": "Code de la route, art. R412-30"
+},
+{
+"id": "L-PRI-10-b",
+"n": "L-PRI-10",
+"q": "À un passage à niveau, je ne m'engage que si :",
+"c": [
+"Je suis sûr de pouvoir le dégager sans m'arrêter dessus",
+"La circulation devant moi est dense",
+"Le train est encore loin"
+],
+"ok": [
+0
+],
+"ex": "Ne jamais s'engager sur un passage à niveau si l'on risque de s'y retrouver bloqué (bouchon de l'autre côté). Le train est toujours prioritaire et ne peut pas s'arrêter.",
+"src": "Code de la route, art. R422-3"
+},
+{
+"id": "L-PRI-10-c",
+"n": "L-PRI-10",
+"q": "Ma voiture tombe en panne sur un passage à niveau. Je dois en priorité :",
+"c": [
+"Faire évacuer tout le monde, puis prévenir (téléphone d'appel du passage à niveau, 112)",
+"Rester dans la voiture et attendre de l'aide",
+"Essayer de redémarrer jusqu'au passage du train"
+],
+"ok": [
+0
+],
+"ex": "La vie avant le véhicule : tout le monde sort et s'éloigne, puis on alerte. Si possible, on pousse le véhicule hors des voies.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-PRI-11-a",
+"n": "L-PRI-11",
+"q": "Le feu est vert, mais la circulation est bloquée juste après le carrefour. Je dois :",
+"c": [
+"Avancer quand même pour ne pas perdre ma place",
+"Attendre de pouvoir dégager le carrefour",
+"Klaxonner"
+],
+"ok": [
+1
+],
+"ex": "On ne s'engage pas dans une intersection si l'on risque d'y être immobilisé et de bloquer la circulation transversale.",
+"src": "Code de la route, art. R415-2"
+},
+{
+"id": "L-PRI-12-a",
+"n": "L-PRI-12",
+"q": "Un piéton attend au bord d'un passage pour piétons et manifeste l'intention de traverser. Je dois :",
+"c": [
+"Lui céder le passage",
+"Passer, car il n'est pas encore engagé",
+"Klaxonner pour le prévenir"
+],
+"ok": [
+0
+],
+"ex": "Il faut céder le passage aux piétons engagés ou qui manifestent clairement l'intention de traverser.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "L-PRI-12-b",
+"n": "L-PRI-12",
+"q": "Ne pas céder le passage à un piéton qui traverse régulièrement coûte :",
+"c": [
+"2 points",
+"4 points",
+"6 points"
+],
+"ok": [
+2
+],
+"ex": "Refus de priorité à un piéton : 6 points et 135 € d'amende.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "L-PRI-12-c",
+"n": "L-PRI-12",
+"q": "En tournant à droite au feu vert, un piéton traverse la rue dans laquelle je m'engage. Je dois :",
+"c": [
+"Le laisser traverser",
+"Passer, car mon feu est vert",
+"Passer devant lui s'il est loin"
+],
+"ok": [
+0
+],
+"ex": "En tournant, on croise souvent des piétons dont le feu est aussi vert. Ils sont prioritaires.",
+"src": "Code de la route, art. R415-11"
+},
+{
+"id": "L-VIT-01-a",
+"n": "L-VIT-01",
+"img": "img/panneaux/EB10.svg",
+"q": "En agglomération, sans autre indication, la vitesse est limitée à :",
+"c": [
+"30 km/h",
+"50 km/h",
+"70 km/h"
+],
+"ok": [
+1
+],
+"ex": "50 km/h en agglomération, sauf signalisation particulière (zones 30, zones de rencontre à 20 km/h, ou parfois 70 km/h sur certains axes).",
+"src": "Code de la route, art. R413-3"
+},
+{
+"id": "L-VIT-01-b",
+"n": "L-VIT-01",
+"q": "Dans une zone de rencontre, la vitesse est limitée à :",
+"c": [
+"10 km/h",
+"20 km/h",
+"30 km/h"
+],
+"ok": [
+1
+],
+"ex": "Zone de rencontre : 20 km/h, les piétons sont prioritaires et peuvent marcher sur la chaussée.",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "L-VIT-02-a",
+"n": "L-VIT-02",
+"q": "Hors agglomération, sur une route à double sens sans séparateur central et sans indication, la vitesse est limitée à :",
+"c": [
+"80 km/h",
+"90 km/h",
+"100 km/h"
+],
+"ok": [
+0
+],
+"ex": "80 km/h par défaut. Le gestionnaire de la route peut la relever à 90 km/h sur certaines sections : c'est alors signalé par des panneaux.",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "L-VIT-03-a",
+"n": "L-VIT-03",
+"q": "Sur une route à deux chaussées séparées par un terre-plein central, par temps sec, la vitesse maximale est :",
+"c": [
+"90 km/h",
+"110 km/h",
+"130 km/h"
+],
+"ok": [
+1
+],
+"ex": "Routes à chaussées séparées par un terre-plein central : 110 km/h (100 km/h par temps de pluie).",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "L-VIT-04-a",
+"n": "L-VIT-04",
+"img": "img/panneaux/C207.svg",
+"q": "Sur autoroute, par temps sec et sans autre indication, la vitesse maximale est :",
+"c": [
+"110 km/h",
+"120 km/h",
+"130 km/h"
+],
+"ok": [
+2
+],
+"ex": "130 km/h sur autoroute, 110 km/h par temps de pluie ou pour les jeunes conducteurs.",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "L-VIT-05-a",
+"n": "L-VIT-05",
+"q": "Sur autoroute, par temps de pluie, la vitesse maximale est :",
+"c": [
+"100 km/h",
+"110 km/h",
+"120 km/h"
+],
+"ok": [
+1
+],
+"ex": "Pluie : 130 → 110 sur autoroute, 110 → 100 sur route à chaussées séparées, 80 km/h sur les autres routes.",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "L-VIT-05-b",
+"n": "L-VIT-05",
+"q": "Par temps de pluie, sur une route à chaussées séparées limitée à 110 km/h, je roule au maximum à :",
+"c": [
+"90 km/h",
+"100 km/h",
+"110 km/h"
+],
+"ok": [
+1
+],
+"ex": "110 km/h devient 100 km/h par temps de pluie.",
+"src": "Code de la route, art. R413-2"
+},
+{
+"id": "L-VIT-06-a",
+"n": "L-VIT-06",
+"q": "Sur autoroute, un brouillard réduit la visibilité à moins de 50 m. Je roule au maximum à :",
+"c": [
+"50 km/h",
+"70 km/h",
+"90 km/h"
+],
+"ok": [
+0
+],
+"ex": "Visibilité inférieure à 50 m (brouillard, neige, forte pluie) : 50 km/h maximum sur toutes les routes, autoroutes comprises.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-07-a",
+"n": "L-VIT-07",
+"q": "En permis probatoire, ma vitesse maximale sur autoroute est :",
+"c": [
+"110 km/h",
+"120 km/h",
+"130 km/h"
+],
+"ok": [
+0
+],
+"ex": "Jeunes conducteurs : 110 km/h sur autoroute, 100 km/h sur route à chaussées séparées, 80 km/h sur les autres routes.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-07-b",
+"n": "L-VIT-07",
+"q": "En permis probatoire, sur une route à double sens où le panneau autorise 90 km/h, je roule au maximum à :",
+"c": [
+"80 km/h",
+"90 km/h"
+],
+"ok": [
+0
+],
+"ex": "Les jeunes conducteurs restent limités à 80 km/h sur ces routes, même si 90 km/h est autorisé pour les autres.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-08-a",
+"n": "L-VIT-08",
+"q": "Sur autoroute, sur la voie la plus à gauche, par bonnes conditions, la vitesse minimale est :",
+"c": [
+"60 km/h",
+"80 km/h",
+"Il n'y a pas de minimum"
+],
+"ok": [
+1
+],
+"ex": "Sur la voie de gauche d'une autoroute, la vitesse minimale est de 80 km/h quand la circulation est fluide et la visibilité bonne.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-08-b",
+"n": "L-VIT-08",
+"q": "La vitesse indiquée sur un panneau de limitation est :",
+"c": [
+"Une vitesse maximale, à adapter aux conditions",
+"La vitesse à laquelle je dois rouler",
+"Une simple recommandation"
+],
+"ok": [
+0
+],
+"ex": "Tout conducteur doit rester maître de sa vitesse et l'adapter à l'état de la route, à la météo, au trafic et à la visibilité, même sous la limite.",
+"src": "Code de la route, art. R413-17"
+},
+{
+"id": "L-VIT-09-a",
+"n": "L-VIT-09",
+"q": "Un excès de vitesse de 25 km/h, hors agglomération, entraîne un retrait de :",
+"c": [
+"1 point",
+"2 points",
+"3 points"
+],
+"ok": [
+1
+],
+"ex": "Barème : moins de 20 km/h = 1 point (aucun point si moins de 5 km/h), de 20 à 29 = 2 points, de 30 à 39 = 3 points, de 40 à 49 = 4 points, 50 et plus = 6 points.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-09-b",
+"n": "L-VIT-09",
+"q": "Un excès de vitesse de 50 km/h ou plus entraîne un retrait de :",
+"c": [
+"4 points",
+"6 points",
+"8 points"
+],
+"ok": [
+1
+],
+"ex": "50 km/h et plus au-dessus de la limite : 6 points, suspension de permis possible et confiscation du véhicule possible.",
+"src": "Code de la route"
+},
+{
+"id": "L-VIT-10-a",
+"n": "L-VIT-10",
+"q": "Un radar « tronçon » mesure :",
+"c": [
+"Ma vitesse moyenne entre deux points",
+"Ma vitesse à un point précis",
+"Le respect des feux rouges"
+],
+"ok": [
+0
+],
+"ex": "Le radar tronçon calcule la vitesse moyenne entre deux points de contrôle.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-CIR-01-a",
+"n": "L-CIR-01",
+"q": "Hors agglomération, sur une route à deux voies dans mon sens, je circule :",
+"c": [
+"Sur la voie de droite, sauf pour dépasser",
+"Sur la voie de mon choix",
+"Sur la voie de gauche si je roule vite"
+],
+"ok": [
+0
+],
+"ex": "Hors agglomération, on circule sur la voie la plus à droite et on n'utilise celle de gauche que pour dépasser.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-01-b",
+"n": "L-CIR-01",
+"q": "En agglomération, sur une chaussée à plusieurs voies dans mon sens, je peux choisir :",
+"c": [
+"La voie la plus adaptée à ma destination",
+"Uniquement la voie de droite"
+],
+"ok": [
+0
+],
+"ex": "En agglomération, on peut emprunter la voie la mieux adaptée à sa destination, sans zigzaguer.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-02-a",
+"n": "L-CIR-02",
+"q": "Sur autoroute, dans un embouteillage, ma file avance plus vite que celle de gauche. Est-ce un dépassement par la droite interdit ?",
+"c": [
+"Oui",
+"Non, en circulation en files ininterrompues, ce n'est pas un dépassement"
+],
+"ok": [
+1
+],
+"ex": "Quand la circulation est dense et en files continues, le fait qu'une file de droite avance plus vite n'est pas considéré comme un dépassement par la droite. Changer de file pour doubler reste interdit.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-03-a",
+"n": "L-CIR-03",
+"img": "img/schemas/voie-insertion.svg",
+"q": "Je suis la voiture rouge, sur la voie d'insertion d'une voie rapide. Je dois :",
+"c": [
+"Céder le passage aux véhicules déjà sur la voie rapide",
+"Forcer le passage, car je suis prioritaire",
+"M'arrêter au bout de la voie d'insertion"
+],
+"ok": [
+0
+],
+"ex": "Sur la voie d'insertion, on prend de la vitesse et on s'insère en cédant le passage aux véhicules déjà sur la voie. On évite de s'arrêter au bout, sauf nécessité.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-03-b",
+"n": "L-CIR-03",
+"q": "Pour sortir d'une autoroute, je ralentis :",
+"c": [
+"Sur la voie de décélération",
+"Sur la voie de droite, avant la sortie",
+"Sur la bande d'arrêt d'urgence"
+],
+"ok": [
+0
+],
+"ex": "On met son clignotant, on se déporte sur la voie de décélération, puis on ralentit sur cette voie, pas avant.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-CIR-04-a",
+"n": "L-CIR-04",
+"q": "Pour tourner à gauche sur une route à double sens, je me place :",
+"c": [
+"Près de l'axe médian de la chaussée",
+"Le plus à droite possible",
+"Au milieu de ma voie"
+],
+"ok": [
+0
+],
+"ex": "Pour tourner à gauche, on se rapproche de l'axe de la chaussée (sans le franchir). Pour tourner à droite, on serre le bord droit.",
+"src": "Code de la route, art. R415-4"
+},
+{
+"id": "L-CIR-05-a",
+"n": "L-CIR-05",
+"q": "Le demi-tour est interdit :",
+"c": [
+"Sur autoroute",
+"Dans un virage sans visibilité",
+"Lorsqu'il faut franchir une ligne continue",
+"Sur une route droite et dégagée"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Demi-tour et marche arrière sont interdits sur autoroute. Le demi-tour est aussi interdit quand il est dangereux (virage, sommet de côte) ou impose de franchir une ligne continue.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-05-b",
+"n": "L-CIR-05",
+"q": "J'ai raté ma sortie sur l'autoroute. Je dois :",
+"c": [
+"Continuer jusqu'à la sortie suivante",
+"Faire marche arrière sur la bande d'arrêt d'urgence",
+"M'arrêter et attendre"
+],
+"ok": [
+0
+],
+"ex": "Marche arrière et demi-tour sont strictement interdits sur autoroute : on continue jusqu'à la sortie suivante.",
+"src": "Code de la route"
+},
+{
+"id": "L-CIR-06-a",
+"n": "L-CIR-06",
+"q": "La distance de sécurité minimale avec le véhicule qui me précède correspond à environ :",
+"c": [
+"1 seconde",
+"2 secondes",
+"5 secondes"
+],
+"ok": [
+1
+],
+"ex": "Au moins 2 secondes : quand le véhicule de devant passe un repère, je compte 2 secondes avant de l'atteindre. Davantage sous la pluie.",
+"src": "Code de la route, art. R412-12"
+},
+{
+"id": "L-CIR-06-b",
+"n": "L-CIR-06",
+"q": "Sur autoroute, les chevrons ou traits peints sur la voie de droite servent à :",
+"c": [
+"Vérifier ma distance de sécurité",
+"Indiquer une sortie",
+"Signaler une voie réservée"
+],
+"ok": [
+0
+],
+"ex": "Ces repères permettent de contrôler sa distance : il faut voir au moins deux traits (ou chevrons) entre soi et le véhicule de devant.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-CIR-06-c",
+"n": "L-CIR-06",
+"q": "Le non-respect des distances de sécurité est sanctionné par un retrait de :",
+"c": [
+"1 point",
+"3 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Distance de sécurité insuffisante : 3 points et 135 €.",
+"src": "Code de la route, art. R412-12"
+},
+{
+"id": "L-CIR-07-a",
+"n": "L-CIR-07",
+"q": "Je dois mettre mon clignotant :",
+"c": [
+"Avant de changer de direction",
+"Avant de changer de voie",
+"Avant de quitter une place de stationnement",
+"Seulement s'il y a d'autres usagers autour"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "On signale toujours ses intentions, même si l'on ne voit personne : un usager peut être caché dans un angle mort.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-01-a",
+"n": "L-DEP-01",
+"q": "Avant de dépasser, je dois m'assurer :",
+"c": [
+"Que je dispose d'une visibilité et d'un espace suffisants",
+"Que personne n'a commencé à me dépasser",
+"Que le véhicule de devant n'a pas signalé qu'il allait dépasser",
+"Que j'ai le temps de klaxonner"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Avant de dépasser : visibilité suffisante, voie libre assez loin, personne qui me dépasse déjà, et le véhicule de devant n'a pas lui-même signalé un dépassement.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "L-DEP-01-b",
+"n": "L-DEP-01",
+"q": "Un dépassement dangereux est sanctionné par un retrait de :",
+"c": [
+"1 point",
+"3 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Dépassement dangereux : 3 points et 135 €.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "L-DEP-02-a",
+"n": "L-DEP-02",
+"q": "Le dépassement est interdit :",
+"c": [
+"Dans un virage sans visibilité suffisante",
+"Au sommet d'une côte sans visibilité",
+"À une intersection sans être prioritaire",
+"Sur une longue ligne droite dégagée"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Dépassement interdit quand la visibilité est insuffisante (virage, sommet de côte) et aux intersections, sauf pour ceux qui circulent sur une route prioritaire.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-02-b",
+"n": "L-DEP-02",
+"q": "Je peux dépasser un véhicule arrêté devant un passage pour piétons pour laisser traverser un piéton :",
+"c": [
+"Oui",
+"Non"
+],
+"ok": [
+1
+],
+"ex": "Un véhicule arrêté avant un passage pour piétons laisse probablement traverser quelqu'un, qu'il cache. Le dépasser est interdit et très dangereux.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-03-a",
+"n": "L-DEP-03",
+"q": "Je peux dépasser par la droite :",
+"c": [
+"Un véhicule dont le conducteur a signalé qu'il tourne à gauche et s'est déporté",
+"N'importe quel véhicule lent",
+"Un véhicule qui roule sur la voie de gauche de l'autoroute"
+],
+"ok": [
+0
+],
+"ex": "Le dépassement se fait par la gauche. Exception : un véhicule qui a signalé son intention de tourner à gauche et s'est placé à gauche peut être dépassé par la droite.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-04-a",
+"n": "L-DEP-04",
+"q": "Hors agglomération, pour dépasser un cycliste, je laisse un espace latéral d'au moins :",
+"c": [
+"50 cm",
+"1 m",
+"1,50 m"
+],
+"ok": [
+2
+],
+"ex": "Pour dépasser un cycliste, un piéton, un cavalier ou un animal : au moins 1 m en agglomération et 1,50 m hors agglomération.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "L-DEP-04-b",
+"n": "L-DEP-04",
+"q": "En agglomération, pour dépasser un cycliste, je laisse un espace latéral d'au moins :",
+"c": [
+"50 cm",
+"1 m",
+"1,50 m"
+],
+"ok": [
+1
+],
+"ex": "1 m en agglomération, 1,50 m hors agglomération.",
+"src": "Code de la route, art. R414-4"
+},
+{
+"id": "L-DEP-04-c",
+"n": "L-DEP-04",
+"img": "img/schemas/ligne-continue.svg",
+"q": "Pour dépasser un cycliste, une ligne continue m'empêche de laisser 1,50 m d'écart. Je dois :",
+"c": [
+"Rester derrière lui jusqu'à pouvoir dépasser en sécurité",
+"Le frôler pour ne pas franchir la ligne",
+"Klaxonner pour qu'il se range"
+],
+"ok": [
+0
+],
+"ex": "Si l'écart réglementaire n'est pas possible sans franchir la ligne continue, on patiente derrière le cycliste.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-05-a",
+"n": "L-DEP-05",
+"q": "Un véhicule me dépasse. Je dois :",
+"c": [
+"Serrer à droite et ne pas accélérer",
+"Accélérer pour lui compliquer la tâche",
+"Me décaler à gauche"
+],
+"ok": [
+0
+],
+"ex": "Le conducteur qui se fait dépasser doit serrer à droite et ne pas accélérer.",
+"src": "Code de la route, art. R414-16"
+},
+{
+"id": "L-DEP-06-a",
+"n": "L-DEP-06",
+"q": "Sur une route étroite, un obstacle se trouve de mon côté. Pour le croisement :",
+"c": [
+"Je cède le passage au véhicule qui arrive en face",
+"Le véhicule d'en face doit me laisser passer",
+"Je passe en premier en klaxonnant"
+],
+"ok": [
+0
+],
+"ex": "Quand l'obstacle est de son côté, c'est à soi de laisser passer les véhicules qui arrivent en face.",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-06-b",
+"n": "L-DEP-06",
+"q": "Sur une route de montagne étroite, le croisement est difficile. En règle générale :",
+"c": [
+"Le véhicule qui descend cède le passage à celui qui monte",
+"Le véhicule qui monte cède le passage",
+"Le plus rapide passe en premier"
+],
+"ok": [
+0
+],
+"ex": "En montagne, c'est en principe le véhicule descendant qui s'arrête pour laisser passer celui qui monte (redémarrer en côte est plus difficile).",
+"src": "Code de la route"
+},
+{
+"id": "L-DEP-07-a",
+"n": "L-DEP-07",
+"q": "Je m'apprête à dépasser un poids lourd. Je dois savoir que :",
+"c": [
+"Son conducteur a de grands angles morts",
+"Le dépassement sera plus long qu'avec une voiture",
+"Le vent peut me déporter en sortie de dépassement",
+"Il freine plus court qu'une voiture"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Un poids lourd a de vastes angles morts, il est long à dépasser, et il crée des turbulences. Il lui faut aussi une plus grande distance pour freiner.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-ARR-01-a",
+"n": "L-ARR-01",
+"q": "La différence entre arrêt et stationnement :",
+"c": [
+"À l'arrêt, le conducteur reste au volant ou à proximité pour repartir",
+"Au stationnement, le véhicule reste immobilisé plus longtemps, conducteur absent",
+"Il n'y a aucune différence"
+],
+"ok": [
+0,
+1
+],
+"ex": "Arrêt : immobilisation momentanée (faire descendre quelqu'un, charger), conducteur à bord ou tout près. Stationnement : immobilisation hors de ces circonstances.",
+"src": "Code de la route, art. R110-2"
+},
+{
+"id": "L-ARR-02-a",
+"n": "L-ARR-02",
+"q": "Le stationnement est considéré comme dangereux :",
+"c": [
+"Dans un virage ou près d'un sommet de côte, sans visibilité",
+"Près d'un passage à niveau",
+"Sur une place de parking matérialisée"
+],
+"ok": [
+0,
+1
+],
+"ex": "Le stationnement dangereux (visibilité insuffisante, intersection, virage, sommet de côte, passage à niveau) est puni d'un retrait de 3 points.",
+"src": "Code de la route, art. R417-9"
+},
+{
+"id": "L-ARR-02-b",
+"n": "L-ARR-02",
+"q": "Le stationnement dangereux entraîne un retrait de :",
+"c": [
+"Aucun point",
+"1 point",
+"3 points"
+],
+"ok": [
+2
+],
+"ex": "Stationnement dangereux : 3 points et 135 €, immobilisation et fourrière possibles.",
+"src": "Code de la route, art. R417-9"
+},
+{
+"id": "L-ARR-03-a",
+"n": "L-ARR-03",
+"q": "Le stationnement est très gênant (et donc interdit) :",
+"c": [
+"Sur un trottoir",
+"Sur une place réservée aux personnes handicapées, sans carte",
+"Sur une piste cyclable",
+"Sur une place de parking payante, ticket payé"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Stationnement très gênant (135 €) : trottoirs, passages piétons, pistes et bandes cyclables, places pour personnes handicapées, voies de bus…",
+"src": "Code de la route, art. R417-11"
+},
+{
+"id": "L-ARR-03-b",
+"n": "L-ARR-03",
+"q": "Je peux m'arrêter brièvement sur une place réservée aux personnes handicapées si je reste au volant :",
+"c": [
+"Oui",
+"Non"
+],
+"ok": [
+1
+],
+"ex": "Même un arrêt bref est interdit sur ces places sans carte de stationnement pour personne handicapée.",
+"src": "Code de la route, art. R417-11"
+},
+{
+"id": "L-ARR-04-a",
+"n": "L-ARR-04",
+"q": "Dans une zone bleue, je dois :",
+"c": [
+"Placer un disque de stationnement indiquant mon heure d'arrivée",
+"Payer à l'horodateur",
+"Ne pas stationner"
+],
+"ok": [
+0
+],
+"ex": "Zone bleue : stationnement gratuit mais limité en durée, contrôlé par un disque de stationnement posé bien visible derrière le pare-brise.",
+"src": "Code de la route"
+},
+{
+"id": "L-ARR-04-b",
+"n": "L-ARR-04",
+"q": "Un véhicule stationné au même endroit sur la voie publique est en stationnement abusif au-delà de :",
+"c": [
+"24 heures",
+"7 jours",
+"1 mois"
+],
+"ok": [
+1
+],
+"ex": "Au-delà de 7 jours sans être déplacé, le stationnement est abusif : le véhicule peut être mis en fourrière.",
+"src": "Code de la route, art. R417-12"
+},
+{
+"id": "L-ARR-05-a",
+"n": "L-ARR-05",
+"q": "Je peux stationner sur une place réservée aux livraisons :",
+"c": [
+"Non, sauf pour effectuer une livraison si la signalisation le permet",
+"Oui, si c'est moins de 10 minutes",
+"Oui, la nuit et le week-end dans tous les cas"
+],
+"ok": [
+0
+],
+"ex": "Les aires de livraison sont réservées aux véhicules qui livrent, aux horaires indiqués. En dehors des horaires affichés, la réglementation locale peut l'autoriser : lire les panneaux.",
+"src": "Code de la route"
+},
+{
+"id": "L-ARR-06-a",
+"n": "L-ARR-06",
+"q": "Mon véhicule peut être mis en fourrière s'il est :",
+"c": [
+"En stationnement très gênant",
+"En stationnement abusif",
+"En stationnement dangereux",
+"Correctement stationné sur une place payée"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "La mise en fourrière est possible en cas de stationnement gênant, très gênant, dangereux ou abusif.",
+"src": "Code de la route, art. L325-1"
+},
+{
+"id": "L-AUT-01-a",
+"n": "L-AUT-01",
+"img": "img/panneaux/C207.svg",
+"q": "Sur autoroute, sont interdits :",
+"c": [
+"Les piétons",
+"Les cyclistes",
+"Les cyclomoteurs",
+"Les motos de 600 cm³"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "L'autoroute est interdite aux piétons, cycles, cyclomoteurs, tracteurs agricoles et véhicules lents. Les motos de cylindrée suffisante y sont autorisées.",
+"src": "Code de la route, art. R421-2"
+},
+{
+"id": "L-AUT-01-b",
+"n": "L-AUT-01",
+"img": "img/panneaux/C107.svg",
+"q": "Ce panneau signale :",
+"c": [
+"Une route pour automobiles",
+"Un parking",
+"Une aire de covoiturage"
+],
+"ok": [
+0
+],
+"ex": "C107 : route pour automobiles. Elle est réservée aux véhicules à moteur (comme une autoroute, piétons, cycles et véhicules lents y sont interdits) et n'a pas d'accès riverains.",
+"src": "IISR"
+},
+{
+"id": "L-AUT-02-a",
+"n": "L-AUT-02",
+"q": "Sur autoroute, après avoir dépassé, je dois :",
+"c": [
+"Me rabattre sur la voie de droite dès que possible",
+"Rester sur la voie de gauche si je roule vite",
+"Rester sur la voie du milieu"
+],
+"ok": [
+0
+],
+"ex": "On revient sur la voie la plus à droite dès que le dépassement est terminé, sans gêner le véhicule dépassé.",
+"src": "Code de la route"
+},
+{
+"id": "L-AUT-03-a",
+"n": "L-AUT-03",
+"img": "img/schemas/bau.svg",
+"q": "Je tombe en panne sur autoroute. Je dois :",
+"c": [
+"Me garer le plus à droite possible sur la bande d'arrêt d'urgence et allumer les feux de détresse",
+"Enfiler le gilet avant de sortir du véhicule",
+"Faire sortir tout le monde côté glissière et se mettre derrière la glissière",
+"Attendre à l'intérieur du véhicule"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Feux de détresse, gilet enfilé avant de sortir, sortie par le côté droit, tout le monde derrière la glissière. On appelle les secours par une borne orange (tous les 2 km) ou le 112.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-03-b",
+"n": "L-AUT-03",
+"q": "Sur autoroute, les bornes d'appel d'urgence sont espacées d'environ :",
+"c": [
+"500 m",
+"2 km",
+"10 km"
+],
+"ok": [
+1
+],
+"ex": "Les bornes orange sont installées environ tous les 2 km. Elles localisent automatiquement l'appelant.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-04-a",
+"n": "L-AUT-04",
+"q": "À l'approche d'un péage, je dois :",
+"c": [
+"Ralentir tôt et choisir la voie correspondant à mon moyen de paiement",
+"Changer de voie au dernier moment si une file est plus courte",
+"Garder ma vitesse jusqu'à la barrière"
+],
+"ok": [
+0
+],
+"ex": "On ralentit à l'avance, on repère les voies (télépéage, carte bancaire…) et on évite les changements de voie brusques.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-05-a",
+"n": "L-AUT-05",
+"q": "Sur un long trajet, il est recommandé de faire une pause :",
+"c": [
+"Toutes les 2 heures",
+"Toutes les 4 heures",
+"Seulement si je me sens fatigué"
+],
+"ok": [
+0
+],
+"ex": "Une pause d'au moins 15 minutes toutes les 2 heures. La fatigue est en cause dans environ un accident mortel sur trois sur autoroute.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-06-a",
+"n": "L-AUT-06",
+"q": "Sur autoroute, un message radio annonce un véhicule à contresens. Je dois :",
+"c": [
+"Ralentir, rester sur la voie de droite et ne pas dépasser",
+"Me placer sur la voie de gauche",
+"Faire des appels de phares en continu"
+],
+"ok": [
+0
+],
+"ex": "Un conducteur à contresens roule souvent sur la voie de gauche (qu'il prend pour sa droite) : on se serre à droite, on ralentit et on ne dépasse pas.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-AUT-06-b",
+"n": "L-AUT-06",
+"q": "Circuler sur la bande d'arrêt d'urgence (hors urgence) entraîne un retrait de :",
+"c": [
+"1 point",
+"3 points",
+"6 points"
+],
+"ok": [
+1
+],
+"ex": "Circulation sur la bande d'arrêt d'urgence : 3 points et 135 €.",
+"src": "Code de la route"
+},
+{
+"id": "L-TUN-01-a",
+"n": "L-TUN-01",
+"q": "Dans un tunnel, même éclairé, je dois allumer :",
+"c": [
+"Mes feux de croisement",
+"Mes feux de route",
+"Mes feux de brouillard arrière"
+],
+"ok": [
+0
+],
+"ex": "Feux de croisement obligatoires dans les tunnels, quel que soit l'éclairage.",
+"src": "Code de la route"
+},
+{
+"id": "L-TUN-01-b",
+"n": "L-TUN-01",
+"q": "Dans un tunnel, je dois :",
+"c": [
+"Respecter la distance de sécurité indiquée",
+"Ne pas faire demi-tour ni marche arrière",
+"Ne m'arrêter qu'en cas d'urgence",
+"Dépasser dès que possible pour en sortir vite"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "En tunnel : distances respectées (souvent signalées), aucun demi-tour, arrêt uniquement en cas d'urgence, et respect des interdictions de dépasser.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-TUN-02-a",
+"n": "L-TUN-02",
+"q": "Un incendie se déclare dans le tunnel et je ne peux pas en sortir en voiture. Je dois :",
+"c": [
+"M'arrêter, couper le moteur en laissant la clé sur le contact",
+"Rejoindre à pied l'issue de secours la plus proche",
+"Rester dans mon véhicule fenêtres fermées"
+],
+"ok": [
+0,
+1
+],
+"ex": "On laisse la clé pour que les secours puissent déplacer le véhicule, puis on évacue à pied vers une issue de secours. La fumée est le danger principal.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-TUN-03-a",
+"n": "L-TUN-03",
+"q": "Dans un tunnel, les niches de sécurité permettent :",
+"c": [
+"D'appeler les secours et d'utiliser un extincteur",
+"De stationner pour faire une pause",
+"De faire demi-tour"
+],
+"ok": [
+0
+],
+"ex": "Les niches de sécurité (signalées par des panneaux) contiennent un téléphone d'urgence et des extincteurs.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-ECL-01-a",
+"n": "L-ECL-01",
+"q": "La nuit, hors agglomération, je stationne sur le bord d'une route non éclairée. Je dois laisser allumés :",
+"c": [
+"Les feux de position",
+"Les feux de route",
+"Les feux de brouillard"
+],
+"ok": [
+0
+],
+"ex": "Un véhicule stationné la nuit sur une chaussée non éclairée doit être signalé par ses feux de position.",
+"src": "Code de la route"
+},
+{
+"id": "L-ECL-02-a",
+"n": "L-ECL-02",
+"q": "Les feux de croisement éclairent environ à :",
+"c": [
+"30 m",
+"100 m",
+"200 m"
+],
+"ok": [
+0
+],
+"ex": "Feux de croisement : environ 30 m, sans éblouir. Feux de route : environ 100 m.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-ECL-02-b",
+"n": "L-ECL-02",
+"q": "Le jour, j'allume mes feux de croisement :",
+"c": [
+"Quand il pleut fort ou en cas de brouillard",
+"Dans un tunnel",
+"Par beau temps, en ville, en voiture"
+],
+"ok": [
+0,
+1
+],
+"ex": "De jour, les feux de croisement sont obligatoires dès que la visibilité est réduite (pluie, brouillard, neige) et dans les tunnels.",
+"src": "Code de la route"
+},
+{
+"id": "L-ECL-03-a",
+"n": "L-ECL-03",
+"q": "La nuit, hors agglomération, je roule en feux de route. Une voiture arrive en face. Je dois :",
+"c": [
+"Passer en feux de croisement",
+"Garder mes feux de route pour bien voir",
+"Éteindre tous mes feux un instant"
+],
+"ok": [
+0
+],
+"ex": "On passe en feux de croisement pour ne pas éblouir les usagers venant en face, ainsi que lorsqu'on suit un véhicule de près.",
+"src": "Code de la route"
+},
+{
+"id": "L-ECL-03-b",
+"n": "L-ECL-03",
+"q": "Je suis ébloui par les feux d'un véhicule venant en face. Je dois :",
+"c": [
+"Ralentir et regarder le bord droit de la chaussée",
+"Fixer ses phares pour le repérer",
+"Lui faire des appels en feux de route"
+],
+"ok": [
+0
+],
+"ex": "En cas d'éblouissement : on ralentit (voire on s'arrête) et on regarde vers le bord droit de la route.",
+"src": "Sécurité routière"
+},
+{
+"id": "L-ECL-04-a",
+"n": "L-ECL-04",
+"q": "Le feu de brouillard arrière s'utilise :",
+"c": [
+"Par temps de brouillard ou de neige",
+"Par forte pluie",
+"La nuit, sur route non éclairée"
+],
+"ok": [
+0
+],
+"ex": "Le feu de brouillard arrière éblouit les usagers qui suivent : il est réservé au brouillard et à la neige. Pas à la pluie.",
+"src": "Code de la route, art. R416-7"
+},
+{
+"id": "L-ECL-04-b",
+"n": "L-ECL-04",
+"q": "Les feux de brouillard avant peuvent être utilisés :",
+"c": [
+"Par temps de brouillard ou de neige",
+"Par forte pluie",
+"Hors agglomération, sur route étroite et sinueuse",
+"En ville la nuit pour mieux voir"
+],
+"ok": [
+0,
+1,
+2
+],
+"ex": "Feux de brouillard avant : brouillard, neige, forte pluie, et hors agglomération sur les routes étroites et sinueuses.",
+"src": "Code de la route"
+},
+{
+"id": "L-ECL-05-a",
+"n": "L-ECL-05",
+"q": "J'allume mes feux de détresse :",
+"c": [
+"Quand je suis en panne ou accidenté sur la chaussée",
+"Pour prévenir ceux qui me suivent d'un ralentissement brutal ou d'un bouchon",
+"Pour stationner en double file",
+"Pour signaler que je remercie un autre conducteur"
+],
+"ok": [
+0,
+1
+],
+"ex": "Les feux de détresse signalent un danger : panne, accident, ralentissement brutal. Ils n'autorisent pas un stationnement interdit.",
+"src": "Code de la route"
+},
+{
+"id": "L-ECL-06-a",
+"n": "L-ECL-06",
+"q": "En agglomération, l'avertisseur sonore (klaxon) est autorisé :",
+"c": [
+"Uniquement en cas de danger immédiat",
+"Pour saluer quelqu'un",
+"Pour signaler que le feu est vert"
+],
+"ok": [
+0
+],
+"ex": "En agglomération, le klaxon est réservé au danger immédiat.",
+"src": "Code de la route, art. R416-1"
+},
+{
+"id": "L-ECL-06-b",
+"n": "L-ECL-06",
+"q": "La nuit, pour avertir un autre usager de ma présence, j'utilise de préférence :",
+"c": [
+"Un appel lumineux (alternance feux de croisement / feux de route)",
+"Le klaxon",
+"Les feux de détresse"
+],
+"ok": [
+0
+],
+"ex": "La nuit, l'avertisseur sonore est remplacé par l'appel lumineux, sauf danger immédiat.",
+"src": "Code de la route, art. R416-1"
+}
+]

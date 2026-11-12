@@ -358,6 +358,97 @@ S["bau"] = route(f'<rect x="70" width="3" height="200" fill="{WHT}"/>' + discont
 S["passage-pieton"] = route("".join(f'<rect x="{16 + i*11}" y="80" width="6" height="40" fill="{WHT}"/>' for i in range(9)) + auto(85, 165))
 
 
+def discontinue_h(y, x0, x1, trait=10, vide=14, w=3):
+    out, x = "", x0
+    while x < x1:
+        out += f'<rect x="{x}" y="{y - w/2}" width="{min(trait, x1 - x)}" height="{w}" fill="{WHT}"/>'
+        x += trait + vide
+    return out
+
+
+# ---------- panneaux complémentaires ----------
+P["B12"] = rond_rouge(text("3,5 m", 50, 52, 20) +
+                      f'<polygon points="44,22 56,22 50,30" fill="{BLK}"/><polygon points="44,80 56,80 50,72" fill="{BLK}"/>')
+P["B13"] = rond_rouge(text("5,5 t", 50, 52, 24))
+P["B11"] = rond_rouge(text("2 m", 50, 52, 22) +
+                      f'<polygon points="20,44 20,56 28,50" fill="{BLK}"/><polygon points="80,44 80,56 72,50" fill="{BLK}"/>')
+P["C107"] = carre_bleu(f'<rect x="20" y="20" width="60" height="60" rx="4" fill="{WHT}"/>' + voiture_face(50, 66, 1.2, BLK))
+P["C207"] = carre_bleu(f'<path d="M36,86 L44,30 M64,86 L56,30" stroke="{WHT}" stroke-width="7"/>'
+                       f'<path d="M20,46 Q50,20 80,46" fill="none" stroke="{WHT}" stroke-width="6"/>')
+
+
+# ---------- carrefours (vue de dessus) ----------
+GRASS = "#8fbf6a"
+
+
+def carrefour(inner, rond=False):
+    """Croisement de deux routes à double sens, 200x200. Voies : x=85/115, y=85/115."""
+    b = f'<rect width="200" height="200" fill="{GRASS}"/>'
+    if rond:
+        b += (f'<rect x="70" width="60" height="200" fill="{ROUTE}"/><rect y="70" width="200" height="60" fill="{ROUTE}"/>'
+              f'<circle cx="100" cy="100" r="62" fill="{ROUTE}"/><circle cx="100" cy="100" r="30" fill="{GRASS}" stroke="{WHT}" stroke-width="2"/>')
+    else:
+        b += f'<rect x="70" width="60" height="200" fill="{ROUTE}"/><rect y="70" width="200" height="60" fill="{ROUTE}"/>'
+        b += discontinue(100, 0, 66, 8, 8) + discontinue(100, 134, 200, 8, 8)
+        b += "".join(f'<rect x="{x}" y="98.5" width="8" height="3" fill="{WHT}"/>' for x in (2, 18, 34, 50, 142, 158, 174, 190))
+    return ("0 0 200 200", b + inner)
+
+
+def chemin(d, c):
+    return (f'<path d="{d}" fill="none" stroke="{c}" stroke-width="3" stroke-dasharray="6 4" stroke-linecap="round" opacity=".9"/>')
+
+
+def mini(code, x, y, s=0.2):
+    v = P[code]
+    body = v[1] if isinstance(v, tuple) else v
+    return f'<g transform="translate({x},{y}) scale({s})">{body}</g>'
+
+
+RED_C, BLUE_C, GREEN_C = "#e63946", "#2f6fdf", "#2a9d8f"
+SUD = (115, 160, 0)      # vient du sud, roule vers le nord
+EST = (160, 85, -90)     # vient de l'est, roule vers l'ouest
+NORD = (85, 40, 180)     # vient du nord, roule vers le sud
+OUEST = (40, 115, 90)    # vient de l'ouest, roule vers l'est
+
+
+def car(pos, c):
+    x, y, r = pos
+    return auto(x, y, c, r)
+
+
+TOUT_DROIT_S = "M115,140 L115,10"
+GAUCHE_S = "M115,140 C115,100 100,85 15,85"
+DROITE_S = "M115,140 C115,125 125,115 190,115"
+TOUT_DROIT_E = "M140,85 L10,85"
+TOUT_DROIT_N = "M85,60 L85,190"
+GAUCHE_N = "M85,60 C85,100 100,115 190,115"
+TOUT_DROIT_O = "M60,115 L190,115"
+
+S["prio-droite"] = carrefour(chemin(TOUT_DROIT_S, RED_C) + chemin(TOUT_DROIT_E, BLUE_C) + car(SUD, RED_C) + car(EST, BLUE_C))
+S["prio-gauche"] = carrefour(chemin(TOUT_DROIT_S, RED_C) + chemin(TOUT_DROIT_O, BLUE_C) + car(SUD, RED_C) + car(OUEST, BLUE_C))
+S["tourne-gauche-face"] = carrefour(chemin(GAUCHE_S, RED_C) + chemin(TOUT_DROIT_N, BLUE_C) + car(SUD, RED_C) + car(NORD, BLUE_C))
+S["trois-voitures"] = carrefour(chemin(TOUT_DROIT_S, RED_C) + chemin(TOUT_DROIT_E, BLUE_C) + chemin(TOUT_DROIT_O, GREEN_C)
+                                + car(SUD, RED_C) + car(EST, BLUE_C) + car(OUEST, GREEN_C))
+S["stop-droite"] = carrefour(f'<rect x="100" y="134" width="30" height="4" fill="{WHT}"/>' + mini("AB4", 134, 140)
+                             + chemin(TOUT_DROIT_S, RED_C) + chemin(TOUT_DROIT_O, BLUE_C) + car(SUD, RED_C) + car(OUEST, BLUE_C))
+S["prioritaire-droite"] = carrefour(mini("AB6", 134, 140) + f'<rect x="134" y="66" width="4" height="30" fill="{WHT}"/>'
+                                    + chemin(TOUT_DROIT_S, RED_C) + chemin(TOUT_DROIT_E, BLUE_C) + car(SUD, RED_C) + car(EST, BLUE_C))
+S["giratoire"] = carrefour("".join(f'<rect x="{100 + i*6}" y="140" width="4" height="3" fill="{WHT}"/>' for i in range(5))
+                           + mini("AB3a", 134, 146) + chemin("M50,100 A50,50 0 0 0 100,150", BLUE_C)
+                           + auto(115, 172, RED_C, 0) + auto(54, 110, BLUE_C, 160), rond=True)
+S["giratoire-sans-panneau"] = carrefour(chemin("M50,100 A50,50 0 0 0 100,150", BLUE_C)
+                                        + auto(115, 172, RED_C, 0) + auto(54, 110, BLUE_C, 160), rond=True)
+S["parking-sortie"] = ("0 0 200 200", f'<rect width="200" height="200" fill="{GRASS}"/><rect y="70" width="200" height="60" fill="{ROUTE}"/>'
+                       + discontinue_h(100, 0, 200) + f'<rect x="100" y="130" width="40" height="70" fill="#9b9b9b"/>'
+                       + "".join(f'<rect x="{102 + i*0}" y="{150 + i*14}" width="36" height="2" fill="{WHT}"/>' for i in range(3))
+                       + chemin("M120,150 C120,125 130,115 190,115", RED_C) + chemin("M190,115 L10,115", BLUE_C).replace("190,115 L10", "10,115 L190")
+                       + auto(120, 165, RED_C, 0) + auto(40, 115, BLUE_C, 90))
+S["voie-insertion"] = ("0 0 200 200", f'<rect width="200" height="200" fill="{GRASS}"/>'
+                       f'<rect x="60" width="70" height="200" fill="{ROUTE}"/><polygon points="130,200 160,200 160,120 130,40" fill="{ROUTE}"/>'
+                       + discontinue(95, 0, 200, 14, 10) + discontinue(130, 40, 200, 4, 4)
+                       + auto(145, 160, RED_C, 0) + auto(112, 120, BLUE_C, 0))
+
+
 def main():
     os.makedirs(OUT_P, exist_ok=True)
     os.makedirs(OUT_S, exist_ok=True)
